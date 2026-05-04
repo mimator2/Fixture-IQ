@@ -196,11 +196,7 @@ This project welcomes:
 
 For questions, suggestions, or collaboration opportunities, please open an issue or contact the project maintainer.
 
----
 
-## 📜 License
-
-[Specify your preferred license - e.g., MIT, GPL, etc.]
 
 ---
 
