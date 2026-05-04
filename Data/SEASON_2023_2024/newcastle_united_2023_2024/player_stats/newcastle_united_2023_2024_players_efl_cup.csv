@@ -1,0 +1,32 @@
+Player,Nation,Pos,Age,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,Gls_90,Ast_90,G+A_90,G-PK_90,G+A-PK_90,Matches
+Valentino Livramento,engENG,DF,20,3,3,300,3.3,0,1,1,0,0,0,0,0,0.00,0.30,0.30,0.00,0.30,Matches
+Martin Dúbravka,skSVK,GK,34,2,2,210,2.3,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Jamaal Lascelles,engENG,DF,29,2,2,210,2.3,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Sean Longstaff,engENG,MF,25,2,2,210,2.3,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Joelinton,brBRA,"MF,FW",26,2,2,180,2.0,0,2,2,0,0,0,1,0,0.00,1.00,1.00,0.00,1.00,Matches
+Paul Dummett,wlsWAL,DF,31,2,2,179,2.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Lewis Miley,engENG,MF,17,2,2,165,1.8,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Anthony Gordon,engENG,FW,22,3,2,159,1.8,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Emil Krafth,seSWE,DF,28,2,2,135,1.5,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Lewis Hall,engENG,"FW,DF",18,2,2,118,1.3,1,0,1,1,0,0,0,0,0.76,0.00,0.76,0.76,0.76,Matches
+Matt Targett,engENG,"MF,DF",27,2,2,94,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Miguel Almirón,pyPAR,FW,29,3,1,235,2.6,1,0,1,1,0,0,0,0,0.38,0.00,0.38,0.38,0.38,Matches
+Bruno Guimarães,brBRA,MF,25,3,1,192,2.1,0,0,0,0,0,0,2,0,0.00,0.00,0.00,0.00,0.00,Matches
+Callum Wilson,engENG,FW,31,2,1,147,1.6,1,0,1,1,0,0,1,0,0.61,0.00,0.61,0.61,0.61,Matches
+Matt Ritchie,sctSCO,FW,33,2,1,143,1.6,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Jacob Murphy,engENG,FW,28,1,1,90,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Nick Pope,engENG,GK,31,1,1,90,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Sandro Tonali,itITA,MF,23,1,1,89,1.0,0,0,0,0,0,0,1,0,0.00,0.00,0.00,0.00,0.00,Matches
+Joe Willock,engENG,MF,23,1,1,63,0.7,1,0,1,1,0,0,1,0,1.43,0.00,1.43,1.43,1.43,Matches
+Alexander Isak,seSWE,FW,23,1,1,61,0.7,1,0,1,1,0,0,0,0,1.48,0.00,1.48,1.48,1.48,Matches
+Sven Botman,nlNED,DF,23,1,1,45,0.5,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Dan Burn,engENG,DF,31,2,0,92,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Kieran Trippier,engENG,"DF,MF",32,2,0,91,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Elliot Anderson,engENG,MF,20,1,0,1,0.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Fabian Schär,chSUI,DF,31,1,0,1,0.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Amadou Diallo,engENG,FW,20,0,0,,,,,,,,,,,,,,,,Matches
+Mark Gillespie,engENG,GK,31,0,0,,,,,,,,,,,,,,,,Matches
+Loris Karius,deGER,GK,30,0,0,,,,,,,,,,,,,,,,Matches
+Javier Manquillo,esESP,DF,29,0,0,,,,,,,,,,,,,,,,Matches
+Alex Murphy,ieIRL,DF,19,0,0,,,,,,,,,,,,,,,,Matches
+Ben Parkinson,engENG,FW,18,0,0,,,,,,,,,,,,,,,,Matches

@@ -1,0 +1,39 @@
+Player,Nation,Pos,Age,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,Gls_90,Ast_90,G+A_90,G-PK_90,G+A-PK_90,Matches
+David Raya,esESP,GK,28,38,38,"3,420",38.0,0,0,0,0,0,0,3,0,0.00,0.00,0.00,0.00,0.00,Matches
+William Saliba,frFRA,DF,23,35,35,"3,039",33.8,2,0,2,2,0,0,2,1,0.06,0.00,0.06,0.06,0.06,Matches
+Declan Rice,engENG,MF,25,35,33,"2,825",31.4,4,7,11,4,0,0,7,1,0.13,0.22,0.35,0.13,0.35,Matches
+Thomas Partey,ghGHA,"MF,DF",31,35,31,"2,797",31.1,4,2,6,4,0,0,4,0,0.13,0.06,0.19,0.13,0.19,Matches
+Leandro Trossard,beBEL,FW,29,38,28,"2,546",28.3,8,7,15,8,0,0,4,1,0.28,0.25,0.53,0.28,0.53,Matches
+Gabriel Magalhães,brBRA,DF,26,28,28,"2,363",26.3,3,1,4,3,0,0,4,0,0.11,0.04,0.15,0.11,0.15,Matches
+Jurriën Timber,nlNED,DF,23,30,27,"2,417",26.9,1,3,4,1,0,0,7,0,0.04,0.11,0.15,0.04,0.15,Matches
+Martin Ødegaard,noNOR,MF,25,30,26,"2,325",25.8,3,8,11,2,1,1,4,0,0.12,0.31,0.43,0.08,0.39,Matches
+Gabriel Martinelli,brBRA,"FW,MF",23,33,25,"2,290",25.4,8,4,12,8,0,0,1,0,0.31,0.16,0.47,0.31,0.47,Matches
+Kai Havertz,deGER,FW,25,23,21,"1,875",20.8,9,3,12,9,0,0,5,0,0.43,0.14,0.58,0.43,0.58,Matches
+Bukayo Saka,engENG,"FW,MF",22,25,20,"1,729",19.2,6,10,16,5,1,1,3,0,0.31,0.52,0.83,0.26,0.78,Matches
+Mikel Merino,esESP,"MF,FW",28,28,17,"1,586",17.6,7,2,9,7,0,0,4,1,0.40,0.11,0.51,0.40,0.51,Matches
+Myles Lewis-Skelly,engENG,DF,17,23,15,"1,369",15.2,1,0,1,1,0,0,3,2,0.07,0.00,0.07,0.07,0.07,Matches
+Ben White,engENG,DF,26,17,13,"1,198",13.3,0,2,2,0,0,0,2,0,0.00,0.15,0.15,0.00,0.15,Matches
+Riccardo Calafiori,itITA,DF,22,19,11,983,10.9,2,1,3,2,0,0,4,0,0.18,0.09,0.27,0.18,0.27,Matches
+Ethan Nwaneri,engENG,"FW,MF",17,26,11,895,9.9,4,2,6,4,0,0,1,0,0.40,0.20,0.60,0.40,0.60,Matches
+Jakub Kiwior,plPOL,DF,24,17,10,"1,122",12.5,1,0,1,1,0,0,1,0,0.08,0.00,0.08,0.08,0.08,Matches
+Jorginho,itITA,MF,32,15,9,704,7.8,0,0,0,0,0,0,5,0,0.00,0.00,0.00,0.00,0.00,Matches
+Raheem Sterling,engENG,"FW,MF",29,17,7,499,5.5,0,2,2,0,0,0,1,0,0.00,0.36,0.36,0.00,0.36,Matches
+Gabriel Jesus,brBRA,FW,27,17,6,608,6.8,3,0,3,3,0,0,4,0,0.44,0.00,0.44,0.44,0.44,Matches
+Oleksandr Zinchenko,uaUKR,"DF,MF",27,15,5,527,5.9,0,1,1,0,0,0,1,0,0.00,0.17,0.17,0.00,0.17,Matches
+Kieran Tierney,sctSCO,DF,27,13,2,259,2.9,1,0,1,1,0,0,0,0,0.35,0.00,0.35,0.35,0.35,Matches
+Nathan Butler-Oyedeji,engENG,FW,21,1,0,7,0.1,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Takehiro Tomiyasu,jpJPN,DF,25,1,0,7,0.1,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Reiss Nelson,engENG,"FW,MF",24,1,0,3,0.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Brayden Clarke,wlsWAL,DF,17,0,0,,,,,,,,,,,,,,,,Matches
+Jimi Gower,engENG,MF,19,0,0,,,,,,,,,,,,,,,,Matches
+Ayden Heaven,engENG,DF,17,0,0,,,,,,,,,,,,,,,,Matches
+Jack Henry-Francis,ieIRL,MF,20,0,0,,,,,,,,,,,,,,,,Matches
+Ismeal Kabia,engENG,MF,18,0,0,,,,,,,,,,,,,,,,Matches
+Maldini Kacurri,alALB,DF,18,0,0,,,,,,,,,,,,,,,,Matches
+Neto,brBRA,GK,35,0,0,,,,,,,,,,,,,,,,Matches
+Josh Nichols,engENG,DF,18,0,0,,,,,,,,,,,,,,,,Matches
+Eddie Nketiah,engENG,FW,25,0,0,,,,,,,,,,,,,,,,Matches
+Salah Oulad M'Hand,nlNED,MF,20,0,0,,,,,,,,,,,,,,,,Matches
+Jack Porter,engENG,GK,16,0,0,,,,,,,,,,,,,,,,Matches
+Aaron Ramsdale,engENG,GK,26,0,0,,,,,,,,,,,,,,,,Matches
+Tommy Setford,engENG,GK,18,0,0,,,,,,,,,,,,,,,,Matches

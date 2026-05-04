@@ -1,0 +1,29 @@
+Player,Nation,Pos,Age,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,Gls_90,Ast_90,G+A_90,G-PK_90,G+A-PK_90,Matches
+Jurriën Timber,nlNED,DF,23,4,4,302,3.4,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Jorginho,itITA,MF,32,5,3,315,3.5,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+William Saliba,frFRA,DF,23,4,3,315,3.5,0,0,0,0,0,0,1,0,0.00,0.00,0.00,0.00,0.00,Matches
+Gabriel Jesus,brBRA,FW,27,4,3,302,3.4,4,1,5,4,0,0,0,0,1.19,0.30,1.49,1.19,1.49,Matches
+Myles Lewis-Skelly,engENG,DF,17,5,3,279,3.1,0,0,0,0,0,0,1,0,0.00,0.00,0.00,0.00,0.00,Matches
+David Raya,esESP,GK,28,3,3,270,3.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Raheem Sterling,engENG,FW,29,4,3,269,3.0,1,1,2,1,0,0,1,0,0.33,0.33,0.67,0.33,0.67,Matches
+Ethan Nwaneri,engENG,MF,17,4,3,268,3.0,3,0,3,3,0,0,0,0,1.01,0.00,1.01,1.01,1.01,Matches
+Jakub Kiwior,plPOL,DF,24,3,3,266,3.0,0,2,2,0,0,0,0,0,0.00,0.68,0.68,0.00,0.68,Matches
+Declan Rice,engENG,MF,25,3,3,241,2.7,1,1,2,1,0,0,0,0,0.37,0.37,0.75,0.37,0.75,Matches
+Thomas Partey,ghGHA,"MF,DF",31,4,3,225,2.5,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Leandro Trossard,beBEL,FW,29,3,3,208,2.3,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Gabriel Martinelli,brBRA,FW,23,4,3,207,2.3,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Kai Havertz,deGER,FW,25,4,2,254,2.8,2,0,2,2,0,0,1,0,0.71,0.00,0.71,0.71,0.71,Matches
+Gabriel Magalhães,brBRA,DF,26,4,2,213,2.4,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Martin Ødegaard,noNOR,MF,25,3,2,195,2.2,0,2,2,0,0,0,0,0,0.00,0.92,0.92,0.00,0.92,Matches
+Mikel Merino,esESP,MF,28,3,2,165,1.8,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Bukayo Saka,engENG,FW,22,3,1,120,1.3,0,1,1,0,0,0,0,0,0.00,0.75,0.75,0.00,0.75,Matches
+Josh Nichols,engENG,DF,18,1,1,90,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Jack Porter,engENG,GK,16,1,1,90,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Tommy Setford,engENG,GK,18,1,1,90,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Riccardo Calafiori,itITA,DF,22,2,1,82,0.9,0,0,0,0,0,0,1,0,0.00,0.00,0.00,0.00,0.00,Matches
+Oleksandr Zinchenko,uaUKR,DF,27,2,1,74,0.8,0,0,0,0,0,0,1,0,0.00,0.00,0.00,0.00,0.00,Matches
+Kieran Tierney,sctSCO,DF,27,1,1,68,0.8,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Maldini Kacurri,alALB,DF,18,1,0,21,0.2,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Ayden Heaven,engENG,DF,17,1,0,11,0.1,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Ismeal Kabia,engENG,MF,18,1,0,10,0.1,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Alexei Rojas,coCOL,GK,18,0,0,,,,,,,,,,,,,,,,Matches
