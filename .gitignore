@@ -1,0 +1,73 @@
+# Data files and directories
+Data/
+EDA/DATA/
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.feather
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Large files and cache
+*.pkl
+*.pickle
+*.joblib
+.cache/
+*.npy
+*.npz
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# OS specific
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
