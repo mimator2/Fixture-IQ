@@ -89,31 +89,6 @@ Even small performance differences can translate into significant financial cons
 
 ---
 
-## 📁 Project Structure
-
-```
-PROYECT/
-├── EDA/
-│   ├── 01_Match_Calendar_and_Workload_Analysis.ipynb
-│   ├── DATA/
-│   │   ├── arsenal_matches_2024_25.csv
-│   │   ├── aston_villa_matches_2024_25.csv
-│   │   ├── liverpool_matches_2024_25.csv
-│   │   └── manchester_city_matches_2024_25.csv
-│   ├── LOGOS/
-│   │   ├── england_english-premier-league_128x128.football-logos.cc.png
-│   │   ├── tournaments_uefa-champions-league_128x128.football-logos.cc.png
-│   │   ├── england_emirates-fa-cup_128x128.football-logos.cc.png
-│   │   ├── england_efl-cup_128x128.football-logos.cc.png
-│   │   └── england_fa-community-shield_128x128.football-logos.cc.png
-│   └── VISUALIZATIONS/
-│       └── [Output charts and figures]
-├── README.md
-└── Data.md
-```
-
----
-
 ## 🔄 Analytical Workflow
 
 ### Phase 1: Data Foundation
