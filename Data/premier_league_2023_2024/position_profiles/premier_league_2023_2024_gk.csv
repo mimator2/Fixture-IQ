@@ -1,0 +1,571 @@
+team,appearances,minutesPlayed,saves,goalsConceded,rating
+Burnley,10,900,64,16,8.0
+Brentford,2,135,6,2,7.4
+West Ham United,31,2699,138,53,7.36
+Manchester United,38,3420,149,58,7.21
+Everton,38,3420,121,51,7.21
+Newcastle United,23,1994,88,42,7.2
+Bournemouth,4,360,13,5,7.18
+Brighton & Hove Albion,21,1890,65,28,7.12
+Wolverhampton,35,3038,134,58,7.12
+Chelsea,16,1434,53,25,7.11
+Bournemouth,32,2880,115,55,7.1
+Aston Villa,34,3015,95,48,7.1
+Aston Villa,5,405,21,13,7.1
+Fulham,38,3420,134,61,7.1
+Brentford,37,3285,115,63,7.09
+Tottenham Hotspur,38,3420,110,61,7.04
+West Ham United,10,721,33,21,7.03
+Liverpool FC,28,2520,83,30,7.02
+Luton Town,1,14,2,0,7.0
+Manchester City,33,2788,57,27,7.0
+Newcastle United,15,1346,43,16,6.99
+Burnley,28,2520,106,62,6.99
+Sheffield United,30,2648,133,79,6.98
+Nottingham Forest,17,1530,55,28,6.98
+Liverpool FC,10,900,28,11,6.96
+Manchester City,9,632,20,7,6.96
+Chelsea,23,1994,75,38,6.94
+Luton Town,38,3406,145,85,6.91
+Arsenal,32,2880,46,24,6.85
+Crystal Palace,18,1620,58,30,6.84
+Crystal Palace,20,1797,41,27,6.82
+Sheffield United,9,772,37,25,6.73
+Brighton & Hove Albion,17,1530,43,34,6.69
+Nottingham Forest,5,450,10,12,6.68
+Nottingham Forest,16,1440,38,27,6.67
+Arsenal,6,540,9,5,6.63
+Wolverhampton,5,382,8,7,6.54
+Newcastle United,1,90,4,4,6.4
+Crystal Palace,1,16,0,1,6.1
+Bournemouth,2,180,5,7,6.05
+Liverpool FC,23,1691,0,22,7.43
+Manchester City,28,2328,0,23,7.4
+Liverpool FC,36,3178,0,40,7.38
+Tottenham Hotspur,35,3092,0,54,7.34
+Liverpool FC,11,761,0,7,7.32
+Everton,38,3419,0,51,7.32
+Newcastle United,28,2240,0,43,7.31
+Liverpool FC,28,2159,0,28,7.31
+Arsenal,37,2995,0,26,7.26
+Tottenham Hotspur,33,2792,0,42,7.25
+Manchester City,30,2514,0,23,7.24
+Arsenal,36,3053,0,26,7.23
+Manchester City,30,2557,0,28,7.21
+Arsenal,27,1730,0,15,7.18
+Brighton & Hove Albion,33,2872,0,52,7.16
+Manchester City,32,2767,0,29,7.15
+Wolverhampton,25,2211,0,38,7.13
+Manchester United,22,1667,0,29,7.13
+Brighton & Hove Albion,28,2368,0,38,7.13
+Manchester United,36,3174,0,55,7.11
+Manchester City,29,2052,0,20,7.1
+Liverpool FC,22,1584,0,18,7.07
+Chelsea,31,2537,0,45,7.07
+Everton,35,3117,0,44,7.07
+Brentford,29,2529,0,46,7.04
+Chelsea,27,1761,0,27,7.04
+Arsenal,38,3420,0,29,7.04
+Fulham,20,1627,0,25,7.02
+Nottingham Forest,20,1454,0,23,7.02
+Crystal Palace,38,3416,0,58,7.02
+Tottenham Hotspur,17,1093,0,21,7.02
+Newcastle United,36,3054,0,58,7.01
+Liverpool FC,10,783,0,9,7.01
+Liverpool FC,17,1189,0,15,7.01
+Chelsea,23,1798,0,26,7.0
+Liverpool FC,13,701,0,7,7.0
+Brentford,5,402,0,5,7.0
+Chelsea,1,12,0,0,7.0
+Tottenham Hotspur,1,76,0,2,7.0
+Manchester City,1,11,0,0,7.0
+Tottenham Hotspur,27,2342,0,38,7.0
+Chelsea,21,1784,0,33,7.0
+Bournemouth,31,2268,0,44,6.99
+Manchester City,16,806,0,9,6.99
+Fulham,37,3270,0,60,6.98
+Wolverhampton,38,3420,0,65,6.98
+Everton,28,2471,0,37,6.96
+Newcastle United,33,2732,0,45,6.95
+Manchester United,22,1781,0,34,6.95
+Arsenal,20,971,0,8,6.95
+Manchester United,12,962,0,13,6.95
+Aston Villa,35,3073,0,54,6.94
+Manchester City,16,1064,0,9,6.94
+Nottingham Forest,5,417,0,6,6.94
+West Ham United,36,3142,0,67,6.93
+Chelsea,10,429,0,11,6.93
+Luton Town,14,1171,0,23,6.93
+Fulham,18,1426,0,25,6.92
+Burnley,15,1238,0,23,6.91
+Manchester United,22,1377,0,23,6.91
+Brentford,32,2649,0,51,6.91
+Chelsea,13,950,0,14,6.9
+Wolverhampton,33,2344,0,43,6.9
+Liverpool FC,32,1793,0,19,6.89
+Aston Villa,29,2142,0,36,6.89
+Tottenham Hotspur,28,2398,0,40,6.89
+Brentford,25,1551,0,28,6.89
+Brentford,28,1861,0,33,6.89
+Brentford,14,1091,0,24,6.88
+Crystal Palace,26,2097,0,38,6.88
+Newcastle United,17,1385,0,29,6.88
+Burnley,33,2894,0,71,6.88
+Brighton & Hove Albion,15,1143,0,22,6.88
+Arsenal,22,1143,0,10,6.88
+Fulham,34,2633,0,40,6.87
+Aston Villa,33,2417,0,41,6.87
+Crystal Palace,25,2022,0,32,6.87
+Everton,15,1129,0,13,6.87
+Brighton & Hove Albion,24,1636,0,26,6.87
+Chelsea,13,756,0,14,6.87
+Manchester United,19,1338,0,16,6.87
+Manchester United,23,1418,0,24,6.86
+Luton Town,8,399,0,6,6.85
+Nottingham Forest,32,2793,0,56,6.85
+Chelsea,31,2590,0,50,6.85
+Aston Villa,29,2463,0,37,6.84
+Brentford,16,1276,0,26,6.84
+Tottenham Hotspur,22,1192,0,31,6.84
+Bournemouth,5,88,0,1,6.83
+Luton Town,22,1663,0,37,6.83
+Nottingham Forest,12,834,0,15,6.82
+Newcastle United,16,1080,0,15,6.81
+Brighton & Hove Albion,27,1591,0,32,6.81
+Newcastle United,26,1311,0,27,6.81
+Fulham,18,1504,0,29,6.81
+Nottingham Forest,26,1665,0,33,6.8
+Luton Town,21,1848,0,47,6.8
+West Ham United,19,1501,0,27,6.8
+Fulham,14,891,0,21,6.8
+Luton Town,30,2470,0,59,6.8
+Manchester City,19,841,0,13,6.8
+Chelsea,18,1337,0,31,6.8
+Crystal Palace,19,1337,0,16,6.8
+West Ham United,21,1859,0,44,6.79
+Wolverhampton,30,1192,0,21,6.79
+Aston Villa,14,1155,0,27,6.79
+Wolverhampton,35,2781,0,49,6.78
+Nottingham Forest,23,1485,0,29,6.77
+Nottingham Forest,14,809,0,11,6.77
+Newcastle United,18,799,0,12,6.77
+Bournemouth,37,3330,0,67,6.76
+Aston Villa,21,1046,0,20,6.76
+Nottingham Forest,22,1719,0,39,6.75
+Fulham,29,2301,0,42,6.75
+West Ham United,33,2838,0,63,6.75
+West Ham United,36,3137,0,69,6.75
+Newcastle United,17,926,0,15,6.74
+Bournemouth,28,1983,0,37,6.73
+Bournemouth,23,1564,0,32,6.73
+Nottingham Forest,8,462,0,9,6.73
+Nottingham Forest,21,1465,0,35,6.72
+Burnley,28,2332,0,46,6.72
+Manchester City,6,54,0,2,6.72
+Burnley,16,1312,0,28,6.72
+Bournemouth,10,626,0,16,6.71
+Manchester United,11,656,0,12,6.71
+Brentford,30,1441,0,29,6.71
+Wolverhampton,36,3092,0,60,6.7
+Arsenal,2,71,0,0,6.7
+Luton Town,21,1722,0,41,6.7
+Bournemouth,28,2175,0,33,6.69
+Tottenham Hotspur,9,449,0,7,6.69
+Sheffield United,34,2885,0,83,6.69
+Everton,31,2299,0,32,6.68
+Crystal Palace,26,1990,0,34,6.68
+Everton,12,670,0,10,6.68
+West Ham United,11,633,0,14,6.67
+Everton,20,1012,0,21,6.66
+Nottingham Forest,11,782,0,15,6.66
+Aston Villa,27,1827,0,36,6.66
+Chelsea,11,223,0,6,6.66
+Brentford,34,2009,0,40,6.66
+Sheffield United,13,970,0,21,6.65
+Sheffield United,34,2792,0,79,6.65
+Sheffield United,12,918,0,29,6.65
+Nottingham Forest,7,439,0,8,6.65
+Brighton & Hove Albion,19,919,0,20,6.65
+Brentford,9,720,0,12,6.64
+Burnley,15,1237,0,30,6.64
+Burnley,8,441,0,8,6.64
+Sheffield United,11,533,0,11,6.63
+Wolverhampton,12,820,0,18,6.63
+Sheffield United,8,318,0,6,6.63
+Liverpool FC,1,16,0,0,6.6
+Wolverhampton,1,11,0,0,6.6
+Newcastle United,2,16,0,0,6.6
+Luton Town,11,519,0,14,6.6
+Aston Villa,1,31,0,2,6.6
+Sheffield United,32,2604,0,81,6.6
+Burnley,32,2323,0,44,6.59
+Nottingham Forest,7,373,0,10,6.59
+Fulham,6,80,0,1,6.58
+Aston Villa,5,159,0,6,6.58
+West Ham United,11,453,0,11,6.58
+Wolverhampton,22,793,0,16,6.58
+Brighton & Hove Albion,4,146,0,3,6.58
+Everton,9,438,0,13,6.57
+Sheffield United,31,2650,0,89,6.56
+Bournemouth,20,1249,0,34,6.54
+Burnley,13,1055,0,26,6.54
+West Ham United,4,33,0,1,6.53
+Sheffield United,10,508,0,12,6.53
+Burnley,12,602,0,25,6.52
+Newcastle United,1,24,0,1,6.5
+Burnley,14,819,0,22,6.48
+Tottenham Hotspur,4,199,0,8,6.48
+West Ham United,14,550,0,16,6.47
+Crystal Palace,4,32,0,2,6.43
+Luton Town,10,595,0,21,6.43
+Chelsea,12,222,0,5,6.43
+Manchester United,8,336,0,10,6.41
+Sheffield United,1,27,0,0,6.4
+Aston Villa,3,10,0,0,6.4
+Sheffield United,6,484,0,17,6.38
+Newcastle United,3,85,0,4,6.2
+Sheffield United,5,111,0,6,6.17
+Sheffield United,10,713,0,22,6.09
+Newcastle United,5,23,0,1,5.9
+Luton Town,2,75,0,5,5.8
+West Ham United,1,1,0,0,0.0
+Manchester City,34,2938,0,26,8.01
+Manchester City,18,1235,0,8,7.93
+Manchester City,35,2873,0,27,7.79
+Manchester United,35,3119,0,52,7.75
+Crystal Palace,19,1277,0,19,7.74
+Chelsea,34,2624,0,46,7.7
+Arsenal,35,3098,0,23,7.67
+Tottenham Hotspur,28,2152,0,31,7.59
+Liverpool FC,32,2535,0,30,7.58
+Crystal Palace,27,2065,0,28,7.58
+Brighton & Hove Albion,36,3114,0,50,7.55
+Manchester City,33,2581,0,26,7.53
+Newcastle United,37,3268,0,60,7.49
+Arsenal,38,3230,0,28,7.43
+Manchester City,29,1599,0,19,7.42
+Brighton & Hove Albion,7,558,0,11,7.37
+Chelsea,37,3135,0,55,7.31
+West Ham United,37,3019,0,65,7.29
+Aston Villa,35,3001,0,57,7.27
+Tottenham Hotspur,5,208,0,2,7.26
+Nottingham Forest,37,3160,0,59,7.26
+Everton,35,2897,0,39,7.24
+Liverpool FC,33,2609,0,34,7.24
+Manchester City,20,1022,0,13,7.24
+West Ham United,31,2634,0,52,7.21
+Chelsea,28,2214,0,47,7.2
+Wolverhampton,20,1518,0,27,7.2
+Liverpool FC,37,2664,0,33,7.19
+Brighton & Hove Albion,19,1488,0,27,7.17
+Manchester United,25,1985,0,34,7.17
+Luton Town,32,2622,0,66,7.17
+Crystal Palace,16,1439,0,22,7.16
+Liverpool FC,33,2123,0,23,7.15
+Fulham,33,2709,0,46,7.14
+West Ham United,34,3020,0,63,7.14
+Aston Villa,35,2072,0,32,7.13
+Liverpool FC,34,1367,0,13,7.13
+Fulham,31,2054,0,28,7.13
+Chelsea,35,2872,0,50,7.13
+Manchester City,14,303,0,5,7.12
+Liverpool FC,35,1651,0,20,7.11
+Burnley,25,2068,0,48,7.11
+Luton Town,17,1308,0,31,7.11
+Aston Villa,35,3009,0,52,7.11
+Tottenham Hotspur,36,2763,0,46,7.1
+West Ham United,33,2483,0,61,7.1
+Everton,37,3005,0,47,7.09
+Crystal Palace,16,1305,0,16,7.09
+Wolverhampton,30,1757,0,27,7.09
+Chelsea,23,1079,0,19,7.08
+Bournemouth,37,2918,0,56,7.08
+Nottingham Forest,29,1863,0,41,7.08
+Everton,30,2090,0,38,7.06
+Fulham,37,2637,0,40,7.06
+Fulham,32,2342,0,41,7.06
+Crystal Palace,28,2403,0,46,7.05
+Crystal Palace,11,921,0,12,7.05
+Everton,25,1892,0,25,7.04
+Sheffield United,14,1110,0,37,7.04
+Brentford,31,2513,0,51,7.04
+Wolverhampton,35,2975,0,55,7.04
+Brighton & Hove Albion,19,1244,0,26,7.04
+Bournemouth,30,2129,0,38,7.03
+Brighton & Hove Albion,31,2239,0,38,7.03
+Tottenham Hotspur,22,547,0,12,7.03
+Tottenham Hotspur,28,2085,0,35,7.03
+Luton Town,37,2937,0,74,7.03
+Luton Town,30,1993,0,47,7.03
+Tottenham Hotspur,5,98,0,1,7.02
+Manchester City,30,1581,0,14,7.02
+Arsenal,14,788,0,5,7.02
+Newcastle United,20,1282,0,23,6.99
+Brighton & Hove Albion,12,482,0,12,6.99
+Bournemouth,33,2792,0,50,6.99
+Fulham,35,1622,0,30,6.98
+Tottenham Hotspur,34,2091,0,27,6.98
+Fulham,34,1500,0,27,6.97
+Aston Villa,20,1660,0,22,6.97
+Brentford,32,2217,0,45,6.97
+Aston Villa,38,2197,0,40,6.96
+Arsenal,24,934,0,11,6.96
+Brighton & Hove Albion,30,2125,0,37,6.95
+West Ham United,37,2881,0,64,6.95
+Burnley,37,3005,0,69,6.95
+Burnley,33,2265,0,53,6.95
+Brentford,38,3069,0,52,6.95
+Newcastle United,33,1955,0,40,6.95
+Manchester United,24,1939,0,31,6.94
+Brighton & Hove Albion,12,870,0,17,6.94
+Nottingham Forest,26,1518,0,27,6.94
+Aston Villa,32,1642,0,27,6.94
+Manchester United,32,1919,0,30,6.93
+Crystal Palace,37,3208,0,55,6.92
+Arsenal,11,292,0,2,6.92
+Sheffield United,36,2923,0,83,6.92
+Chelsea,31,1586,0,28,6.92
+Everton,32,2637,0,36,6.91
+West Ham United,31,2383,0,45,6.9
+Arsenal,1,13,0,0,6.9
+Bournemouth,3,118,0,3,6.9
+Arsenal,3,36,0,0,6.9
+Newcastle United,21,1022,0,14,6.89
+Bournemouth,33,2119,0,33,6.89
+Manchester United,29,1347,0,26,6.89
+Brighton & Hove Albion,15,778,0,12,6.89
+Newcastle United,35,2753,0,50,6.88
+Bournemouth,30,1234,0,24,6.88
+Wolverhampton,34,2667,0,51,6.88
+Newcastle United,17,1205,0,29,6.88
+Manchester United,5,138,0,1,6.88
+Manchester United,22,1160,0,27,6.86
+Nottingham Forest,35,2000,0,38,6.86
+Nottingham Forest,29,1796,0,42,6.85
+Burnley,26,1197,0,25,6.85
+Sheffield United,12,946,0,28,6.85
+Bournemouth,29,1411,0,36,6.85
+Crystal Palace,30,1904,0,38,6.84
+Newcastle United,8,439,0,5,6.84
+Fulham,33,1440,0,29,6.83
+Aston Villa,11,640,0,13,6.82
+Wolverhampton,26,1246,0,24,6.82
+Tottenham Hotspur,23,1019,0,25,6.81
+Bournemouth,23,1017,0,25,6.8
+Liverpool FC,26,1138,0,17,6.8
+Liverpool FC,29,1742,0,16,6.8
+Brentford,23,860,0,9,6.8
+Aston Villa,2,31,0,1,6.8
+Tottenham Hotspur,36,1343,0,28,6.8
+Luton Town,24,1732,0,39,6.8
+Arsenal,13,363,0,3,6.79
+Sheffield United,36,2679,0,80,6.79
+Brentford,26,1176,0,27,6.79
+Aston Villa,16,856,0,12,6.79
+West Ham United,3,33,0,0,6.77
+Nottingham Forest,17,1043,0,16,6.76
+Nottingham Forest,9,230,0,3,6.76
+Luton Town,33,1993,0,51,6.75
+Luton Town,13,1134,0,24,6.75
+Crystal Palace,29,1376,0,25,6.75
+Crystal Palace,6,140,0,3,6.75
+Brighton & Hove Albion,27,1377,0,19,6.74
+Newcastle United,9,418,0,9,6.74
+Manchester United,9,175,0,2,6.74
+Fulham,27,1324,0,23,6.74
+Brentford,10,241,0,5,6.73
+Manchester United,13,461,0,6,6.73
+West Ham United,13,616,0,8,6.73
+Liverpool FC,23,1167,0,17,6.72
+Brighton & Hove Albion,27,1362,0,28,6.72
+West Ham United,15,452,0,9,6.71
+Wolverhampton,22,964,0,23,6.71
+Fulham,24,1133,0,20,6.71
+Sheffield United,27,1481,0,47,6.71
+Nottingham Forest,20,1580,0,31,6.71
+Bournemouth,13,289,0,7,6.7
+Aston Villa,8,155,0,3,6.7
+Chelsea,12,311,0,6,6.7
+Bournemouth,32,1942,0,23,6.7
+Everton,12,503,0,7,6.69
+Brentford,11,339,0,5,6.69
+Newcastle United,13,153,0,5,6.69
+Brentford,19,792,0,20,6.69
+Brighton & Hove Albion,25,860,0,13,6.68
+Brighton & Hove Albion,9,454,0,5,6.68
+Chelsea,9,223,0,5,6.67
+Tottenham Hotspur,21,736,0,17,6.67
+Luton Town,17,380,0,8,6.66
+Arsenal,15,276,0,1,6.66
+Luton Town,23,1315,0,41,6.66
+Brentford,27,716,0,9,6.66
+Brighton & Hove Albion,17,639,0,13,6.65
+Sheffield United,31,1843,0,66,6.64
+Manchester United,21,944,0,15,6.64
+Arsenal,3,59,0,0,6.63
+Chelsea,11,102,0,3,6.63
+Bournemouth,3,51,0,1,6.63
+Crystal Palace,9,241,0,3,6.63
+Tottenham Hotspur,11,236,0,11,6.63
+Brighton & Hove Albion,6,308,0,9,6.63
+Chelsea,1,32,0,0,6.6
+Burnley,3,20,0,0,6.6
+Burnley,8,133,0,5,6.6
+Manchester United,3,76,0,1,6.6
+Nottingham Forest,12,238,0,6,6.59
+Burnley,16,436,0,10,6.59
+Sheffield United,24,1369,0,39,6.58
+Burnley,12,145,0,5,6.58
+Wolverhampton,24,840,0,23,6.57
+Newcastle United,4,21,0,0,6.55
+Bournemouth,11,388,0,12,6.55
+Brighton & Hove Albion,5,65,0,1,6.55
+Wolverhampton,8,165,0,2,6.54
+Sheffield United,4,89,0,5,6.53
+Crystal Palace,9,168,0,5,6.53
+Sheffield United,20,948,0,29,6.53
+Burnley,14,524,0,17,6.52
+Liverpool FC,1,26,0,2,6.5
+Sheffield United,1,9,0,0,6.5
+Aston Villa,1,8,0,0,6.5
+Luton Town,2,12,0,1,6.5
+Liverpool FC,3,11,0,0,6.5
+Luton Town,27,1119,0,29,6.5
+Bournemouth,5,61,0,1,6.5
+Nottingham Forest,1,12,0,0,6.5
+Liverpool FC,1,13,0,0,6.5
+Brentford,3,33,0,0,6.5
+Burnley,4,41,0,0,6.5
+Crystal Palace,20,376,0,14,6.5
+Aston Villa,9,178,0,7,6.46
+Brentford,3,24,0,0,6.45
+West Ham United,12,403,0,12,6.43
+Liverpool FC,5,103,0,0,6.43
+Liverpool FC,1,13,0,1,6.4
+Sheffield United,15,434,0,14,6.4
+Aston Villa,2,35,0,1,6.4
+Aston Villa,1,10,0,1,6.4
+Bournemouth,3,153,0,5,6.37
+Sheffield United,8,392,0,13,6.36
+Luton Town,8,414,0,14,6.35
+Sheffield United,9,214,0,11,6.34
+Nottingham Forest,1,15,0,0,6.3
+Fulham,1,74,0,5,5.8
+Manchester United,1,1,0,0,0.0
+Chelsea,1,1,0,0,0.0
+Bournemouth,1,1,0,0,0.0
+Everton,1,1,0,0,0.0
+Tottenham Hotspur,3,3,0,1,0.0
+Manchester United,1,2,0,0,0.0
+Chelsea,1,1,0,0,0.0
+Everton,1,1,0,0,0.0
+Arsenal,35,2933,0,27,7.72
+Tottenham Hotspur,35,2946,0,51,7.55
+Newcastle United,35,2899,0,48,7.41
+Manchester City,31,2556,0,25,7.36
+Manchester City,36,2657,0,24,7.36
+Aston Villa,37,3221,0,56,7.32
+Brentford,25,1959,0,31,7.27
+Liverpool FC,21,1156,0,10,7.26
+Wolverhampton,32,2453,0,46,7.26
+Arsenal,37,2639,0,22,7.23
+Brighton & Hove Albion,31,2043,0,38,7.21
+Newcastle United,21,1200,0,21,7.21
+Newcastle United,30,2265,0,41,7.17
+Arsenal,27,1499,0,11,7.17
+Fulham,26,1607,0,27,7.13
+Arsenal,35,2029,0,23,7.11
+Fulham,1,32,0,0,7.1
+Brentford,34,2508,0,40,7.09
+Tottenham Hotspur,28,1510,0,18,7.08
+Arsenal,34,1646,0,10,7.06
+Manchester United,36,2586,0,39,7.05
+Tottenham Hotspur,13,824,0,16,7.05
+Bournemouth,38,3331,0,61,7.04
+Bournemouth,20,700,0,18,7.04
+Luton Town,38,2867,0,72,7.03
+Crystal Palace,35,2305,0,44,7.03
+Liverpool FC,36,2053,0,25,7.03
+Chelsea,35,2804,0,48,7.01
+Crystal Palace,35,2555,0,37,7.0
+Newcastle United,21,794,0,10,7.0
+Brentford,17,1449,0,30,6.97
+Sheffield United,21,1295,0,40,6.96
+Wolverhampton,29,2124,0,37,6.96
+Chelsea,31,1981,0,38,6.96
+Manchester United,9,388,0,6,6.94
+Tottenham Hotspur,35,2330,0,42,6.94
+Nottingham Forest,31,1839,0,34,6.94
+Nottingham Forest,20,1055,0,21,6.91
+Burnley,29,2118,0,48,6.9
+Nottingham Forest,36,2434,0,47,6.9
+Everton,32,2185,0,27,6.9
+Manchester United,33,2291,0,37,6.9
+Newcastle United,20,993,0,15,6.89
+Arsenal,27,1082,0,10,6.89
+Chelsea,11,438,0,12,6.87
+Wolverhampton,11,176,0,2,6.87
+Manchester United,30,2169,0,35,6.86
+Crystal Palace,30,1583,0,24,6.85
+Aston Villa,23,505,0,12,6.85
+Fulham,24,1436,0,26,6.85
+Brighton & Hove Albion,29,1703,0,28,6.83
+Brighton & Hove Albion,27,1381,0,28,6.81
+Burnley,34,1999,0,41,6.81
+Burnley,32,1279,0,23,6.81
+Everton,29,2225,0,26,6.81
+Burnley,24,1920,0,43,6.8
+Brentford,31,1453,0,37,6.79
+Fulham,17,404,0,13,6.78
+Burnley,15,901,0,18,6.76
+West Ham United,7,128,0,3,6.76
+Manchester United,14,541,0,13,6.75
+Luton Town,24,470,0,11,6.75
+Burnley,2,30,0,0,6.75
+Luton Town,19,1020,0,26,6.74
+Luton Town,27,1228,0,27,6.74
+West Ham United,26,1710,0,34,6.74
+Everton,30,973,0,20,6.73
+Sheffield United,30,1871,0,50,6.72
+Brighton & Hove Albion,19,524,0,12,6.71
+Luton Town,27,1434,0,36,6.71
+Bournemouth,16,363,0,9,6.68
+Everton,14,595,0,10,6.67
+Fulham,13,320,0,5,6.67
+West Ham United,20,452,0,10,6.67
+Everton,12,263,0,3,6.67
+Bournemouth,8,131,0,2,6.66
+Nottingham Forest,20,607,0,6,6.64
+Everton,18,230,0,4,6.63
+Burnley,21,831,0,18,6.63
+Manchester United,4,87,0,2,6.63
+Fulham,21,579,0,9,6.61
+Wolverhampton,7,210,0,3,6.61
+Crystal Palace,10,238,0,7,6.61
+Tottenham Hotspur,8,70,0,2,6.6
+Wolverhampton,1,8,0,0,6.6
+Burnley,15,984,0,23,6.59
+Wolverhampton,3,175,0,4,6.57
+Liverpool FC,2,26,0,0,6.55
+Brighton & Hove Albion,3,69,0,1,6.53
+Brentford,8,100,0,0,6.53
+Aston Villa,25,845,0,13,6.52
+Sheffield United,21,803,0,23,6.51
+Sheffield United,1,20,0,0,6.5
+Manchester United,3,28,0,0,6.5
+Nottingham Forest,4,28,0,0,6.5
+West Ham United,5,90,0,2,6.5
+Chelsea,2,16,0,1,6.5
+Sheffield United,13,353,0,8,6.49
+Burnley,6,160,0,4,6.47
+Tottenham Hotspur,4,42,0,0,6.45
+Chelsea,2,19,0,1,6.45
+Tottenham Hotspur,2,20,0,0,6.4
+Aston Villa,2,10,0,0,6.4
+Sheffield United,2,17,0,1,6.4
+Wolverhampton,8,282,0,8,6.39
+Sheffield United,1,18,0,2,6.3
+Liverpool FC,1,1,0,0,0.0
+Newcastle United,1,1,0,0,0.0
+Newcastle United,1,1,0,0,0.0
+Everton,1,1,0,0,0.0
