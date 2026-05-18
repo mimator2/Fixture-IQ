@@ -168,7 +168,7 @@ class FixtureIQDynamicPipeline:
         print("\n[*] STEP 4: Engineering time-series fatigue workloads across all tournaments...")
         df_master = df_master.sort_values(by=[player_col, 'date']).reset_index(drop=True)
         
-        # Rest calculation now perfectly includes FA Cup, League Cup, and European nights
+        # 1. Variables Base de Fatiga Física e Indicadores Críticos
         df_master['rest_days'] = df_master.groupby(player_col)['date'].diff().dt.days
         df_master['rest_days'] = df_master['rest_days'].fillna(14).astype(int)
         df_master['high_congestion_flag'] = np.where(df_master['rest_days'] <= 3, 1, 0)
@@ -188,110 +188,186 @@ class FixtureIQDynamicPipeline:
             df_master['min_last_7d'] / (df_master['min_last_28d'] / 4.0), 
             0.0
         )
-        
-        if 'duelsWon' in df_master.columns and 'duelsLost' in df_master.columns:
-            t_duels = df_master['duelsWon'].fillna(0) + df_master['duelsLost'].fillna(0)
-            df_master['duel_success_pct'] = np.where(t_duels > 0, (df_master['duelsWon'] / t_duels) * 100, 0)
-            
-        if 'possessionLostCtrl' in df_master.columns and 'minutesPlayed' in df_master.columns:
-            df_master['turnovers_per_90min'] = np.where(df_master['minutesPlayed'] > 0, (df_master['possessionLostCtrl'] / df_master['minutesPlayed']) * 90, 0)
 
-        # --- STEP 5: SoccerData Context Matching ---
-        print("\n[*] STEP 5: Stitching contextual data via SoccerData...")
+        # 2. NUEVAS VARIABLES: Contexto Logístico, de Viaje y de Estilo Estructurado
+        print("    -> Calculating tactical stress and logistics features...")
+        
+        # Determinar si el jugador es visitante (is_away) comparando su equipo con el home_team
+        df_master['is_away'] = np.where(df_master['teamName'] == df_master['away_team_name'], 1, 0)
+        
+        # Contador de partidos seguidos como visitante (consecutive_away_games) por jugador
+        df_master['consecutive_away_games'] = df_master.groupby(player_col)['is_away'].transform(lambda x: x.groupby((x != x.shift()).cumsum()).cumsum())
+
+        # Proxy de intensidad del partido anterior del jugador (Volumen de duelos por minuto disputado)
+        if 'duelsWon' in df_master.columns and 'duelsLost' in df_master.columns:
+            total_duels = df_master['duelsWon'].fillna(0) + df_master['duelsLost'].fillna(0)
+            df_master['match_intensity_proxy'] = np.where(df_master['minutesPlayed'] > 0, total_duels / df_master['minutesPlayed'], 0.0)
+            # Pasarlo a rolling para medir la intensidad promedio del último mes (28 días) en las piernas del jugador
+            df_master.set_index('date', inplace=True)
+            df_master['player_historical_intensity_28d'] = df_master.groupby(player_col)['match_intensity_proxy'].rolling('28D', closed='left').mean().reset_index(0, drop=True)
+            df_master.reset_index(inplace=True)
+            df_master['player_historical_intensity_28d'] = df_master['player_historical_intensity_28d'].fillna(0)
+
+        # Edad media del once inicial del equipo en cada partido (Estructura de plantilla)
+        if 'age' in df_master.columns:
+            df_master['squad_age_average'] = df_master.groupby(['match_id', 'teamName'])['age'].transform('mean')
+
+        # Rotación del once titular (lineup_churn) respecto al partido anterior del equipo
+        # Creamos un registro único por partido y equipo para evaluar los cambios
+        match_lineups = df_master[df_master['minutesPlayed'] > 0].groupby(['teamName', 'match_id'])['name'].apply(set).reset_index()
+        match_lineups = match_lineups.merge(df_master[['match_id', 'match_date_str']].drop_duplicates(), on='match_id')
+        match_lineups = match_lineups.sort_values(by=['teamName', 'match_date_str'])
+        
+        match_lineups['prev_lineup'] = match_lineups.groupby('teamName')['name'].shift(1)
+        # El "churn" es cuántos jugadores del once actual NO estaban en el once anterior
+        match_lineups['lineup_churn'] = match_lineups.apply(
+            lambda r: len(r['name'] - r['prev_lineup']) if isinstance(r['prev_lineup'], set) else 0, axis=1
+        )
+        
+        # Unir la métrica de rotación estructural al dataset maestro
+        df_master = pd.merge(df_master, match_lineups[['match_id', 'teamName', 'lineup_churn']], on=['match_id', 'teamName'], how='left')
+        df_master['lineup_churn'] = df_master['lineup_churn'].fillna(0).astype(int)
+
+        # --- STEP 5: SoccerData Context Matching & Understat Integration ---
+        print("\n[*] STEP 5: Stitching contextual data via SoccerData & Understat...")
+        
+        # Mapeo unificado para ClubElo y Understat
+        team_map = {
+            "Brighton & Hove Albion": "Brighton",
+            "Newcastle United": "Newcastle",
+            "Liverpool FC": "Liverpool",
+            "Nottingham Forest": "Nottingham Forest",
+            "Brentford": "Brentford",
+            "West Ham United": "West Ham",
+            "Bournemouth": "Bournemouth",
+            "Leicester City": "Leicester",
+            "Chelsea": "Chelsea",
+            "Wolverhampton": "Wolves",
+            "Southampton": "Southampton",
+            "Crystal Palace": "Crystal Palace",
+            "Ipswich Town": "Ipswich",
+            "Manchester City": "Man City",
+            "Fulham": "Fulham",
+            "Everton": "Everton",
+            "Tottenham Hotspur": "Tottenham",
+            "Manchester United": "Man United",
+            "Aston Villa": "Aston Villa",
+            "Arsenal": "Arsenal"
+        }
+        df_master['teamName_standardized'] = df_master['teamName'].replace(team_map)
+        df_master['home_team_standardized'] = df_master['home_team_name'].replace(team_map)
+
+        # A. INTEGRACIÓN DE CLUB ELO (Límites Cronológicos)
         try:
             elo_client = sd.ClubElo()
-            df_elo = elo_client.read_by_date()
-            
-            # Flatten MultiIndex and standardize column names to lowercase
-            df_elo = df_elo.reset_index()
+            df_elo = elo_client.read_by_date().reset_index()
             df_elo.columns = [str(c).lower() for c in df_elo.columns]
             
-            # Map known naming variances between SofaScore strings and ClubELO records
-            team_map = {
-                "Brighton & Hove Albion": "Brighton",
-                "Newcastle United": "Newcastle",
-                "Liverpool FC": "Liverpool",
-                "Nottingham Forest": "Nottingham Forest",
-                "Brentford": "Brentford",
-                "West Ham United": "West Ham",
-                "Bournemouth": "Bournemouth",
-                "Leicester City": "Leicester",
-                "Chelsea": "Chelsea",
-                "Wolverhampton": "Wolves",
-                "Southampton": "Southampton",
-                "Crystal Palace": "Crystal Palace",
-                "Ipswich Town": "Ipswich",
-                "Manchester City": "Man City",
-                "Fulham": "Fulham",
-                "Everton": "Everton",
-                "Tottenham Hotspur": "Tottenham",
-                "Manchester United": "Man United",
-                "Aston Villa": "Aston Villa",
-                "Arsenal": "Arsenal"
-            }
-            df_master['teamName_elo'] = df_master['teamName'].replace(team_map)
-
-            # Ensure all timeline arrays are formatted as datetime types
             df_elo['from'] = pd.to_datetime(df_elo['from'])
             df_elo['to'] = pd.to_datetime(df_elo['to'])
-            
-            # Initialize the column with a default placeholder float value
             df_master['elo'] = np.nan
             
-            print("    -> Processing interval date alignment blocks...")
-            # Step through unique teams in your current batch to keep processing extremely efficient
-            for unique_team in df_master['teamName_elo'].unique():
-                # Isolate the ELO historical timeline maps for this specific club
+            for unique_team in df_master['teamName_standardized'].unique():
                 team_elo_hist = df_elo[df_elo['team'] == unique_team]
-                if team_elo_hist.empty:
-                    continue
-                    
-                # Filter down your master dataset rows belonging to this club
-                master_team_mask = df_master['teamName_elo'] == unique_team
-                team_match_dates = df_master.loc[master_team_mask, 'date']
+                if team_elo_hist.empty: continue
                 
-                # Align exact historical ELO intervals for each individual match date
+                master_team_mask = df_master['teamName_standardized'] == unique_team
+                team_match_dates = pd.to_datetime(df_master.loc[master_team_mask, 'match_date_str'])
+                
                 elo_values = []
                 for m_date in team_match_dates:
-                    # Find the row where the match date is between the 'from' and 'to' range
                     matched_row = team_elo_hist[(team_elo_hist['from'] <= m_date) & (team_elo_hist['to'] >= m_date)]
                     if not matched_row.empty:
                         elo_values.append(matched_row['elo'].values[0])
                     else:
-                        # Fallback to closest available record if there's a minor schedule gap
                         closest_row = team_elo_hist.iloc[(team_elo_hist['from'] - m_date).abs().argsort()[:1]]
                         elo_values.append(closest_row['elo'].values[0] if not closest_row.empty else np.nan)
                         
                 df_master.loc[master_team_mask, 'elo'] = elo_values
-                
-            print("    [✅] ClubELO chronological timeline boundaries stitched successfully!")
-            
+            print("    [✅] ClubELO data integrated via temporal windows.")
         except Exception as e:
-            print(f"    [⚠️] Context expansion skipped: {e}")
+            print(f"    [⚠️] ClubELO integration failed: {e}")
 
-        # Drop the temporary mapping helper column before final delivery
-        if 'teamName_elo' in df_master.columns:
-            df_master = df_master.drop(columns=['teamName_elo'])
+        # B. INTEGRACIÓN DE UNDERSTAT (xG, xGA, PPDA e Intensidad Táctica)
+        understat_file = Path("fixtureiq_understat_master.csv")
+        if understat_file.exists():
+            try:
+                print("    -> Merging multi-competition Understat tactictal load metrics...")
+                df_us = pd.read_csv(understat_file)
+                df_us['date'] = pd.to_datetime(df_us['date'])
+                df_master['date_dt'] = pd.to_datetime(df_master['match_date_str'])
+                
+                # Mapear los nombres de equipos de Understat al estándar si difieren
+                df_us['home_team'] = df_us['home_team'].replace({"Manchester Utd": "Man United", "Tottenham": "Tottenham"})
+                
+                # Columnas de interés de Understat (Variables explicativas y de objetivo colectivo sugeridas)
+                # Nota: Si calculaste PPDA en tu CSV de Understat, inclúyela aquí.
+                us_cols = ['date', 'home_team', 'home_xg', 'away_xg']
+                valid_us_cols = [c for c in us_cols if c in df_us.columns]
+                
+                df_master = pd.merge(
+                    df_master,
+                    df_us[valid_us_cols],
+                    left_on=['date_dt', 'home_team_standardized'],
+                    right_on=['date', 'home_team'],
+                    how='left',
+                    suffixes=('', '_us_raw')
+                )
+                
+                # Generar variables espejo basadas en si nuestro jugador es local o visitante
+                if 'home_xg' in df_master.columns and 'away_xg' in df_master.columns:
+                    df_master['team_xg'] = np.where(df_master['is_away'] == 0, df_master['home_xg'], df_master['away_xg'])
+                    df_master['team_xga'] = np.where(df_master['is_away'] == 0, df_master['away_xg'], df_master['home_xg'])
+                    df_master['xg_difference'] = df_master['team_xg'] - df_master['team_xga']
+                
+                print("    [✅] Understat target and load features stitched successfully.")
+            except Exception as e:
+                print(f"    [⚠️] Understat merge failed: {e}")
+        else:
+            print("    [⚠️] fixtureiq_understat_master.csv not found. Skipping tactical metrics.")
+
+        # Limpieza de columnas de mapeo temporal antes de retornar
+        drop_cols = ['teamName_standardized', 'home_team_standardized', 'date_dt', 'date_us_raw', 'home_team_us_raw']
+        df_master = df_master.drop(columns=[c for c in drop_cols if c in df_master.columns], errors='ignore')
 
         return df_master
 
     def export(self, df: pd.DataFrame):
         if df.empty: return
+        
+        # 1. Guardar la capa maestra analítica intacta (Capa de Bronce/Plata completa)
         df.to_csv(self.output_dir / "fixtureiq_dynamic_master.csv", index=False)
         
+        # 2. CAPA DE MODELADO GOLD: Filtrada y optimizada para XGBoost / Bayesianos Jerárquicos
         features = [
+            # Datos Identificativos y Jerárquicos (Grupos del Modelo Bayesiano)
             'match_date_str', 'match_id', 'competition', 'teamName', 'player_name', 'name', 'position', 'rating', 'elo',
-            'minutesPlayed', 'rest_days', 'high_congestion_flag', 'min_last_7d', 'acwr_ratio', 'duel_success_pct', 'turnovers_per_90min'
+            
+            # Variables de Control Logístico y de Viaje (Punto 3 del Feedback)
+            'is_away', 'consecutive_away_games',
+            
+            # Variables Estructurales de Carga de Trabajo y Plantilla (X - Stressors)
+            'minutesPlayed', 'rest_days', 'high_congestion_flag', 'min_last_7d', 'acwr_ratio',
+            'lineup_churn', 'squad_age_average', 'player_historical_intensity_28d',
+            
+            # Variables de Rendimiento Técnico/Neuromuscular Individual (Y - Target Opciones 1)
+            'duel_success_pct', 'turnovers_per_90min',
+            
+            # Variables Colectivas / Calidad del Partido de Understat (Y - Target Opciones 2 sugeridas en Punto 4)
+            'team_xg', 'team_xga', 'xg_difference'
         ]
+        
         valid_features = [f for f in features if f in df.columns]
         df_clean = df[valid_features]
+        
+        # Excluir Porteros (Para evitar sesgos en el desgaste por estilo de juego)
         if 'position' in df_clean.columns:
             df_clean = df_clean[df_clean['position'] != 'G']
             
         df_clean.to_csv(self.output_dir / "fixtureiq_dynamic_analytics_clean.csv", index=False)
-        print(f"\n[🚀] SUCCESSFUL DYNAMIC GENERATION!")
-        print(f"    -> Target Output Location: {self.output_dir / 'fixtureiq_dynamic_analytics_clean.csv'}")
-
+        print(f"\n[🚀] SUCCESSFUL DYNAMIC GENERATION WITH EXPANDED MODEL FEATURES!")
+        print(f"    -> Analytics Layer Location: {self.output_dir / 'fixtureiq_dynamic_analytics_clean.csv'}")
+        print(f"    -> Expanded Feature Matrix Shape: {df_clean.shape}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="FixtureIQ Fully Dynamic Season Mapper")
