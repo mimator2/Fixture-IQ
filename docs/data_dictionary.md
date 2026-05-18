@@ -71,16 +71,17 @@
 
 ### 4. Fixture Sequence Context
 
-**Source**: Derived from Match Calendar Data  
+**Source**: Derived from match schedule (SofaScore & FBref)  
 **Content**: Calculated relationships between consecutive matches  
 
 **Computed Indicators**:
 - **Days since previous match**: Rest period between fixtures
 - **Matches in rolling 7-day window**: Density of fixtures in one week
 - **Matches in rolling 14-day window**: Density of fixtures in two weeks
-- **Matches in rolling 21-day window**: Medium-term scheduling pressure
-- **Competition transition flags**: Whether match follows European competition
-- **Congestion categories**: Low (0-2 matches in 14 days), Medium (2-3), High (3+)
+- **Cumulative matches**: Season load running total
+- **Rest category**: `well_rested` (>6 d), `normal` (4–6 d), `congested` (≤3 d), `season_opener`
+- **Away leg sequence** *(new)*: Consecutive running count of consecutive away fixtures; resets to 0 on a home match (proxy for travel burden)
+- **Home-away alternation rate** *(new)*: Rolling 5-match fraction of H↔A switches (proxy for scheduling/travel stress)
 
 ---
 
@@ -88,47 +89,34 @@
 
 ### Dataset Files
 
-Location: `/EDA/DATA/`
+Location: `/data/` (gitignored; downloaded by the extraction pipelines)
 
-```
-├── arsenal_matches_2024_25.csv
-├── aston_villa_matches_2024_25.csv
-├── liverpool_matches_2024_25.csv
-└── manchester_city_matches_2024_25.csv
-```
+Extraction methods:
+| Script | Source | Status |
+|--------|--------|--------|
+| `football_data_pipeline.py` | FBref (Selenium) | ✅ Canonical |
+| `fbref_advanced_pipeline.py` | FBref (Selenium + 8-table merger) | ✅ Active |
+| `sofascore_direct.py` | SofaScore (direct API + Playwright bypass) | ✅ Canonical (replaces legacy ScraperFC scripts) |
+| `data_extraction/football_data_pipeline.py` | Fixture-IQ fork (cloudscraper + undetected-chromedriver) | ❌ Removed — use root `football_data_pipeline.py` |
 
-**File Format**: CSV (comma-separated values)
+Data files are organised per-team per-season by each pipeline under the `Data/` (gitignored) directory:
+- `Data/champions_league_{Y}_{Y+1}/` — SofaScore UCL data
+- `Data/premier_league_{Y}_{Y+1}/` — SofaScore EPL data
+- `{team_slug}_{season}/` — FBref per-team data (match logs, rosters, match reports)
 
-**Columns**:
-| Column | Type | Description |
-|--------|------|-------------|
-| `Date` | YYYY-MM-DD | Match date |
-| `Team` | String | Team name (Arsenal, Aston Villa, Liverpool, Manchester City) |
-| `Opponent` | String | Opposing team name |
-| `Competition` | String | League, Champions League, FA Cup, EFL Cup, Community Shield |
-| `Venue` | String | Home or Away |
-| `Goals_For` | Integer | Goals scored by team |
-| `Goals_Against` | Integer | Goals conceded by team |
-| `Result` | String | Win, Draw, or Loss |
-| `Points` | Integer | 3, 1, or 0 |
-
-**Coverage**:
-- **Period**: August 2024 - May 2025
-- **Teams**: Arsenal, Aston Villa, Liverpool, Manchester City
-- **Total Records**: ~220 team-match records
-  - Premier League: ~152 matches
-  - Champions League: ~25-30 matches
-  - FA Cup: ~15-20 matches
-  - EFL Cup: ~15-20 matches
-  - Community Shield: 4 matches
-
-**Data Quality**:
-- ✅ No duplicates
-- ✅ All required fields populated
-- ✅ Points calculations verified
-- ✅ Consistent date formatting
-- ✅ Standardized team and competition names
-
+Canonical column names used across extracted files:
+| Column | Description |
+|--------|-------------|
+| `date` / `Date` | Match date (UTC) |
+| `team` | Team name |
+| `opponent` | Opposing team |
+| `competition` | League, UCL, FA Cup, EFL Cup … |
+| `venue` | Home / Away |
+| `gf`, `ga` | Goals for / Goals against |
+| `result` | Win / Draw / Loss |
+| `days_since_last_match` | Days since previous fixture |
+| `away_leg_sequence` | Consecutive running count of away fixtures |
+| `home_away_alternation_rate` | Rolling(5) fraction of H↔A switches |
 ---
 
 ### Master Dataset (Generated)

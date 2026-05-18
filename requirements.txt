@@ -1,0 +1,27 @@
+# Data Handling & Analysis
+pandas
+numpy
+python-dateutil
+pytz
+
+# Web Scraping & APIs
+requests
+beautifulsoup4
+selenium
+webdriver-manager
+lxml
+
+# Cloudflare Bypass (SofaScore)
+playwright
+
+# Visualization
+matplotlib
+
+# Optional: contextual data (ClubElo / Understat)
+#   pip install soccerdata
+#
+# Optional: modeling / Bayesian analysis
+#   pip install scipy scikit-learn pymc
+#
+# Optional: notebooks / EDA
+#   pip install jupyterlab seaborn

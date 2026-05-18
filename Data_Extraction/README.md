@@ -1,6 +1,12 @@
-# FBref Football Data Pipeline
+# FBref Football Data Pipeline — FixtureIQ / tfp
+
+> Part of the **FixtureIQ** congestion-analysis project (`iAau199/tfp`).
+> This directory holds the **FBref extraction scripts** and season orchestrators.
 
 A comprehensive Python web scraper and data pipeline for extracting detailed football (soccer) match data from [FBref (Football Reference)](https://fbref.com). This tool automates data collection from FBref and organizes it into well-structured CSV files for analysis.
+
+**Current extractor**: `football_data_pipeline.py` (root-level, canonical version).
+The Fixture-IQ fork (`data_extraction/football_data_pipeline.py`) has been removed — the root version is the single source of truth.
 
 ## 📋 Features
 

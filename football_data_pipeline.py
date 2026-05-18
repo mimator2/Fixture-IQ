@@ -13,19 +13,13 @@ import re
 import time
 from pathlib import Path
 from typing import Dict, List, Optional
-from urllib.parse import unquote, urljoin, urlparse, quote
+from urllib.parse import unquote, urljoin, urlparse
 
 import pandas as pd
-import requests
-import cloudscraper
-import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 
@@ -124,7 +118,6 @@ class FbrefPipeline:
         headless: bool = False,
         shooting_url: Optional[str] = None,
         roster_url: Optional[str] = None,
-        scrape_do_token: Optional[str] = None,
     ) -> None:
         self.squad_id = squad_id
         self.season = season
@@ -134,7 +127,6 @@ class FbrefPipeline:
         self.headless = headless
         self.shooting_url = shooting_url
         self.roster_url = roster_url
-        self.scrape_do_token = scrape_do_token
         self.incomplete_matches: List[Dict[str, str]] = []
 
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -142,162 +134,51 @@ class FbrefPipeline:
         self.by_comp_dir.mkdir(parents=True, exist_ok=True)
 
     def _build_driver(self) -> webdriver.Chrome:
-        """Build undetected Chrome driver for Cloudflare bypass."""
-        options = uc.ChromeOptions()
+        options = Options()
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument(
-            "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
         )
         if self.headless:
             options.add_argument("--headless=new")
-        
-        try:
-            driver = uc.Chrome(options=options, version_main=None)
-            driver.set_page_load_timeout(45)
-            return driver
-        except Exception as e:
-            print(f"  WARNING: undetected-chromedriver failed ({e}), falling back to standard Selenium")
-            # Fallback to standard Chrome if undetected fails
-            options_std = Options()
-            options_std.add_argument("--no-sandbox")
-            options_std.add_argument("--disable-dev-shm-usage")
-            options_std.add_argument("--disable-blink-features=AutomationControlled")
-            options_std.add_argument(
-                "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
-            )
-            if self.headless:
-                options_std.add_argument("--headless=new")
-            driver = webdriver.Chrome(
-                service=ChromeService(ChromeDriverManager().install()),
-                options=options_std,
-            )
-            driver.set_page_load_timeout(45)
-            return driver
 
-    def _load_html(self, url: str, wait_seconds: int = 30, max_retries: int = 5) -> str:
-        """Load HTML using scrape.do if token provided, otherwise cloudscraper/Selenium."""
-        print(f"\nLoading: {url}")
-        
-        # Primary method: scrape.do (if token provided)
-        if self.scrape_do_token:
-            print("  Attempting to load with scrape.do (paid proxy service)...")
-            for attempt in range(1, max_retries + 1):
-                try:
-                    # Construct scrape.do API URL
-                    scrape_do_url = f"http://api.scrape.do/?url={quote(url, safe='')}&token={self.scrape_do_token}"
-                    
-                    print(f"  Attempt {attempt}/{max_retries}...")
-                    response = requests.get(scrape_do_url, timeout=60)
-                    
-                    if response.status_code == 200:
-                        html = response.text
-                        print(f"  ✓ Loaded via scrape.do ({len(html)} chars)")
-                        
-                        # Verify we have actual content
-                        if "<table" in html and len(html) > 5000:
-                            print(f"  ✓ HTML contains tables, returning")
-                            return html
-                        else:
-                            print(f"  ⚠ No tables or insufficient content, retrying...")
-                            if attempt < max_retries:
-                                time.sleep(2 ** attempt)
-                                continue
-                    else:
-                        print(f"  ✗ HTTP {response.status_code}, retrying...")
-                        if attempt < max_retries:
-                            time.sleep(2 ** attempt)
-                            continue
-                            
-                except Exception as e:
-                    print(f"  ✗ Error: {str(e)}")
-                    if attempt < max_retries:
-                        wait_time = 2 ** attempt
-                        print(f"  Retrying in {wait_time}s...")
-                        time.sleep(wait_time)
-                        continue
-            
-            print("  scrape.do exhausted, falling back to cloudscraper...")
-        
-        # Secondary method: cloudscraper (designed for Cloudflare)
-        print("  Attempting to load with cloudscraper...")
+        driver = webdriver.Chrome(
+            service=ChromeService(ChromeDriverManager().install()),
+            options=options,
+        )
+        driver.set_page_load_timeout(45)
+        return driver
+
+    def _load_html(self, url: str, wait_seconds: int = 5, max_retries: int = 3) -> str:
+        """Load HTML with retry logic for reliability."""
         for attempt in range(1, max_retries + 1):
             try:
-                # Create a new scraper for each attempt
-                scraper = cloudscraper.create_scraper(
-                    browser='chrome',
-                    delay=15 + (attempt * 5)  # Increasing delay per attempt
-                )
-                
-                headers = {
-                    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                    'Accept-Language': 'en-US,en;q=0.9',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                    'Referer': 'https://fbref.com/'
-                }
-                
-                print(f"  Attempt {attempt}/{max_retries}...")
-                response = scraper.get(url, headers=headers, timeout=60)
-                
-                if response.status_code == 200:
-                    html = response.text
-                    print(f"  ✓ Loaded ({len(html)} chars)")
-                    
-                    # Verify it's not a Cloudflare challenge page
-                    if "Un momento" in html or len(html) < 5000:
-                        print(f"  ⚠ Got Cloudflare challenge page, retrying...")
-                        if attempt < max_retries:
-                            wait_time = 2 ** attempt
-                            print(f"  Waiting {wait_time}s before retry...")
-                            time.sleep(wait_time)
-                            continue
-                    
-                    # Verify we have tables
-                    if "<table" in html:
-                        print(f"  ✓ HTML contains tables, returning")
+                print(f"\nLoading: {url}" + (f" (Attempt {attempt}/{max_retries})" if attempt > 1 else ""))
+                driver = self._build_driver()
+                try:
+                    driver.get(url)
+                    time.sleep(wait_seconds)
+                    for _ in range(8):
+                        driver.execute_script("window.scrollBy(0, window.innerHeight);")
+                        time.sleep(0.4)
+                    html = driver.page_source
+                    if html and len(html) > 1000:  # Ensure page loaded
                         return html
                     else:
-                        print(f"  ⚠ No tables found in HTML, retrying...")
-                        if attempt < max_retries:
-                            wait_time = 2 ** attempt
-                            print(f"  Waiting {wait_time}s before retry...")
-                            time.sleep(wait_time)
-                            continue
-                else:
-                    print(f"  ✗ HTTP {response.status_code}, retrying...")
-                    if attempt < max_retries:
-                        time.sleep(2 ** attempt)
-                        continue
-                        
+                        raise RuntimeError("Page HTML too small - likely failed to load")
+                finally:
+                    driver.quit()
             except Exception as e:
-                print(f"  ✗ Error: {str(e)}")
+                print(f"  ERROR (attempt {attempt}): {str(e)}")
                 if attempt < max_retries:
-                    wait_time = 2 ** attempt
-                    print(f"  Retrying in {wait_time}s...")
+                    wait_time = 2 ** attempt  # Exponential backoff
+                    print(f"  Retrying in {wait_time} seconds...")
                     time.sleep(wait_time)
-                    continue
                 else:
-                    raise RuntimeError(f"cloudscraper failed after {max_retries} attempts: {str(e)}")
-        
-        # Fallback: Selenium as last resort
-        print("  cloudscraper exhausted, trying Selenium fallback...")
-        try:
-            driver = self._build_driver()
-            try:
-                driver.get(url)
-                time.sleep(45)
-                for _ in range(20):
-                    driver.execute_script("window.scrollBy(0, window.innerHeight);")
-                    time.sleep(0.8)
-                html = driver.page_source
-                print(f"  ✓ Selenium loaded ({len(html)} chars)")
-                if html and len(html) > 5000:
-                    return html
-            finally:
-                driver.quit()
-        except Exception as e:
-            print(f"  Selenium failed: {str(e)}")
-            raise RuntimeError(f"All methods failed to load: {str(e)}")
+                    print(f"  Failed after {max_retries} attempts")
+                    raise
 
     def _extract_table_rows(self, html: str, table_id: str = "matchlogs") -> pd.DataFrame:
         soup = BeautifulSoup(html, "html.parser")
@@ -314,10 +195,6 @@ class FbrefPipeline:
             print("  WARNING: No suitable match log table found - checking for alternatives...")
             tables = soup.find_all("table")
             print(f"  Found {len(tables)} tables on page")
-            # Debug: save HTML to file for inspection
-            debug_file = self.output_dir / "debug_html.txt"
-            debug_file.write_text(html[:5000], encoding="utf-8")
-            print(f"  [DEBUG] Saved first 5000 chars of HTML to: {debug_file}")
             raise RuntimeError("No suitable match log table found in page HTML.")
 
         tbody = table.find("tbody")
@@ -1112,7 +989,7 @@ class FbrefPipeline:
     def run(self) -> None:
         all_matches_url = (
             f"https://fbref.com/en/squads/{self.squad_id}/{self.season}/"
-            f"all_comps/{self.team_slug}-Stats-All-Competitions"
+            f"{self.team_slug}-Stats#all_matchlogs"
         )
 
         html = self._load_html(all_matches_url)
@@ -1193,11 +1070,6 @@ def parse_args() -> argparse.Namespace:
         help="Optional direct FBref roster URL to extract player roster details.",
     )
     parser.add_argument(
-        "--scrape-do-token",
-        default=None,
-        help="Optional scrape.do API token for bypassing anti-bot protection (https://www.scrape.do)",
-    )
-    parser.add_argument(
         "--headless",
         action="store_true",
         help="Run Chrome in headless mode.",
@@ -1252,7 +1124,6 @@ def main() -> None:
             headless=args.headless,
             shooting_url=args.shooting_url,
             roster_url=args.roster_url,
-            scrape_do_token=args.scrape_do_token,
         )
         pipeline.run()
 
