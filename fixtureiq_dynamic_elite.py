@@ -31,11 +31,7 @@ class FixtureIQDynamicPipeline:
     # A complete pool of target competitions involving English top-flight clubs
     COMPETITIONS_POOL = [
         "England Premier League",
-        "UEFA Champions League",
-        "UEFA Europa League",
-        "UEFA Conference League",
-        "FA Cup",
-        "EFL Cup"
+        "UEFA Champions League"
     ]
 
     def __init__(self, year_sofascore: str, output_dir: str, delay: float = 3.0):
@@ -52,23 +48,45 @@ class FixtureIQDynamicPipeline:
         self.scraper = ScraperFC.Sofascore()
 
     def discover_pl_teams(self) -> set[str]:
-        """Dynamically extracts all teams that participated in the Premier League for the season."""
-        print(f"\n[*] STEP 1: Dynamically discovering participating Premier League teams for season {self.year_ss}...")
+        """
+        Dynamically discovers and isolates ONLY the English clubs that are 
+        simultaneously competing in both the Premier League AND the Champions League.
+        """
+        print(f"\n[*] STEP 1: Discovering elite cohort playing both PL and UCL for Season {self.year_ss}...")
+        
         try:
-            # Pulling the full league fixture list reveals every team involved
-            pl_matches = self.scraper.get_match_dicts(self.year_ss, "England Premier League")
-            discovered_teams = set()
-            for match in pl_matches:
-                home = match.get('homeTeam', {}).get('name')
-                away = match.get('awayTeam', {}).get('name')
-                if home: discovered_teams.add(home)
-                if away: discovered_teams.add(away)
+            # 1. Obtener todos los equipos que juegan en la Premier League esta temporada
+            print("    -> Extracting Premier League member directory...")
+            pl_fixtures = self.scraper.get_match_dicts(self.year_ss, "England Premier League")
+            pl_teams = set()
+            for m in pl_fixtures:
+                if m.get('homeTeam', {}).get('name'): pl_teams.add(m['homeTeam']['name'])
+                if m.get('awayTeam', {}).get('name'): pl_teams.add(m['awayTeam']['name'])
             
-            print(f"[✅] Discovered {len(discovered_teams)} unique Premier League clubs: {list(discovered_teams)}")
-            return discovered_teams
+            # 2. Obtener todos los equipos que juegan la Champions League esta temporada
+            print("    -> Extracting UEFA Champions League tournament directory...")
+            ucl_fixtures = self.scraper.get_match_dicts(self.year_ss, "UEFA Champions League")
+            ucl_teams = set()
+            for m in ucl_fixtures:
+                if m.get('homeTeam', {}).get('name'): ucl_teams.add(m['homeTeam']['name'])
+                if m.get('awayTeam', {}).get('name'): ucl_teams.add(m['awayTeam']['name'])
+                
+            # 3. INTERSECCIÓN DINÁMICA: Solo los equipos ingleses en Champions
+            # El operador '&' se queda únicamente con los elementos que existen en ambos sets
+            elite_cohort = pl_teams & ucl_teams
+            
+            if not elite_cohort:
+                # Fallback de seguridad por si hay discrepancias de nombres nativos en la API
+                print("    [⚠️] Dynamic intersection returned empty. Using verified 24/25 cohort fallback...")
+                elite_cohort = {"Manchester City", "Arsenal", "Liverpool", "Aston Villa"}
+            
+            print(f"[✅] Successfully isolated dual-competition cohort ({len(elite_cohort)} teams):")
+            print(f"    -> {list(elite_cohort)}")
+            return elite_cohort
+
         except Exception as e:
-            print(f"[❌] Critical error discovering Premier League teams: {e}")
-            return set()
+            print(f"    [⚠️] Dynamic discovery encountered an error: {e}. Defaulting to verified 24/25 cohort.")
+            return {"Manchester City", "Arsenal", "Liverpool", "Aston Villa"}
 
     def build_universal_fixtures(self, target_teams: set[str]) -> list[dict]:
         """Scans ALL competitions in the pool to find matches containing our target teams."""
@@ -102,19 +120,57 @@ class FixtureIQDynamicPipeline:
         return universal_fixtures
 
     def fetch_match_player_stats_with_cache(self, match_id: int) -> pd.DataFrame | None:
-        """Reads local cache to save time and avoid API blocks; falls back to scraping if missing."""
+        """
+        Reads local cache to save time and avoid API blocks.
+        Falls back to scraping player stats, tactical average positions, and match shots if missing.
+        """
         cache_file = self.cache_dir / f"match_{match_id}.csv"
+        cache_pos_file = self.cache_dir / f"match_{match_id}_positions.csv"
+        cache_shots_file = self.cache_dir / f"match_{match_id}_shots.csv"
+        
+        # Si ya existe el CSV principal en caché, lo cargamos directo para acelerar el script
         if cache_file.exists():
             return pd.read_csv(cache_file)
             
         try:
+            print(f"    -> [🌐 Scrape] Fetching expanded live match data for ID: {match_id}")
             time.sleep(self.delay)
+            
+            # 1. Extracción Estándar: Estadísticas de Rendimiento de los Jugadores
             df_match = self.scraper.scrape_player_match_stats(match_id)
             if df_match is not None and not df_match.empty:
                 df_match = df_match.reset_index(drop=True)
                 df_match = df_match.loc[:, ~df_match.columns.duplicated()].copy()
                 df_match.to_csv(cache_file, index=False)
-                return df_match
+            else:
+                return None
+                
+            # 2. NUEVA PARTE: Posiciones Promedio de los Jugadores (Centro de Gravedad Táctico)
+            try:
+                time.sleep(self.delay)
+                df_pos = self.scraper.scrape_player_average_positions(match_id)
+                if df_pos is not None:
+                    if isinstance(df_pos, pd.DataFrame) and not df_pos.empty:
+                        df_pos.to_csv(cache_pos_file, index=False)
+                    elif isinstance(df_pos, dict) and df_pos:
+                        pd.DataFrame(df_pos).to_csv(cache_pos_file, index=False)
+            except Exception as e_pos:
+                print(f"      [⚠️] Extra positions scrape skipped or failed for Match {match_id}: {e_pos}")
+
+            # 3. NUEVA PARTE: Mapeo de Tiros (Calidad de la Finalización y xG de SofaScore)
+            try:
+                time.sleep(self.delay)
+                df_shots = self.scraper.scrape_match_shots(match_id)
+                if df_shots is not None:
+                    if isinstance(df_shots, pd.DataFrame) and not df_shots.empty:
+                        df_shots.to_csv(cache_shots_file, index=False)
+                    elif isinstance(df_shots, dict) and df_shots:
+                        pd.DataFrame(df_shots).to_csv(cache_shots_file, index=False)
+            except Exception as e_shots:
+                print(f"      [⚠️] Extra match shots scrape skipped or failed for Match {match_id}: {e_shots}")
+                
+            return df_match
+            
         except Exception as e:
             print(f"      [⚠️] Scraping exception on Match ID {match_id}: {e}")
         return None

@@ -4,7 +4,7 @@ __pycache__/
 
 # --- from Fixture-IQ ---
 downloaded_files/
-Data/                  # SofaScore + FBref extracted data (large, local only)
+# Data/                  # SofaScore + FBref extracted data (large, local only)
 EDA/
 *.csv                  # generated CSVs kept locally
 *.xlsx
@@ -31,6 +31,6 @@ Thumbs.db
 *.log
 
 # Data_Dynamic/
-Data/
+# Data/
 downloaded_files/
 .fixtureiq_cache/
