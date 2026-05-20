@@ -1,0 +1,144 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-08-18,,161
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-08-24,,161
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-09-01,,266
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-09-01,,161
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-09-14,,266
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-09-14,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-09-14,,134
+2024-2025,19720,T. Chalobah,Crystal Palace,Missing Fixture,Injury,2024-09-14,,112
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Ankle Injury,2024-09-21,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-09-21,,266
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-09-21,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-09-21,,134
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Ankle Injury,2024-10-05,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-10-05,,266
+2024-2025,126949,C. Richards,Crystal Palace,Missing Fixture,Thigh Injury,2024-10-05,,200
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-10-05,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-10-05,,134
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-10-21,,266
+2024-2025,126949,C. Richards,Crystal Palace,Missing Fixture,Thigh Injury,2024-10-21,,200
+2024-2025,50999,M. Turner,Crystal Palace,Missing Fixture,Loan agreement,2024-10-21,,196
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-10-21,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-10-21,,134
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-10-27,,266
+2024-2025,126949,C. Richards,Crystal Palace,Missing Fixture,Thigh Injury,2024-10-27,,200
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-10-27,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-10-27,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-11-02,,203
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-11-02,,266
+2024-2025,126949,C. Richards,Crystal Palace,Missing Fixture,Thigh Injury,2024-11-02,,200
+2024-2025,19586,E. Eze,Crystal Palace,Missing Fixture,Thigh Injury,2024-11-02,,49
+2024-2025,2490,J. Lerma,Crystal Palace,Missing Fixture,Thigh Injury,2024-11-02,,76
+2024-2025,18847,J. Ward,Crystal Palace,Missing Fixture,Injury,2024-11-02,,125
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-11-02,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-11-02,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-11-09,,203
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-11-09,,266
+2024-2025,19586,E. Eze,Crystal Palace,Missing Fixture,Thigh Injury,2024-11-09,,49
+2024-2025,1468,E. Nketiah,Crystal Palace,Missing Fixture,Thigh Injury,2024-11-09,,153
+2024-2025,2490,J. Lerma,Crystal Palace,Missing Fixture,Thigh Injury,2024-11-09,,76
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-11-09,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-11-09,,134
+2024-2025,18806,W. Hughes,Crystal Palace,Missing Fixture,Yellow Cards,2024-11-09,,144
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-11-23,,203
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-11-23,,266
+2024-2025,2601,D. Kamada,Crystal Palace,Missing Fixture,Red Card,2024-11-23,,10
+2024-2025,1468,E. Nketiah,Crystal Palace,Missing Fixture,Thigh Injury,2024-11-23,,153
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-11-23,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-11-23,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-11-30,,203
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-11-30,,266
+2024-2025,2601,D. Kamada,Crystal Palace,Missing Fixture,Red Card,2024-11-30,,10
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-11-30,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-11-30,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-12-03,,203
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-12-03,,266
+2024-2025,2601,D. Kamada,Crystal Palace,Missing Fixture,Red Card,2024-12-03,,10
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-12-03,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-12-03,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-12-07,,203
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-12-07,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-12-07,,134
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2024-12-15,,266
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-12-15,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Lacking Match Fitness,2024-12-15,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-12-21,,203
+2024-2025,13736,D. Munoz,Crystal Palace,Missing Fixture,Yellow Cards,2024-12-21,,0
+2024-2025,19586,E. Eze,Crystal Palace,Missing Fixture,Leg Injury,2024-12-21,,49
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-12-21,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Coach's decision,2024-12-21,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-12-26,,203
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-12-26,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Coach's decision,2024-12-26,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2024-12-29,,203
+2024-2025,67971,M. Guehi,Crystal Palace,Missing Fixture,Yellow Cards,2024-12-29,,147
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2024-12-29,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Coach's decision,2024-12-29,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2025-01-04,,203
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2025-01-04,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Coach's decision,2025-01-04,,134
+2024-2025,19720,T. Chalobah,Crystal Palace,Missing Fixture,Loan agreement,2025-01-04,,112
+2024-2025,18806,W. Hughes,Crystal Palace,Missing Fixture,Ankle Injury,2025-01-04,,144
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2025-01-15,,203
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2025-01-15,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Coach's decision,2025-01-15,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2025-01-18,,203
+2024-2025,2490,J. Lerma,Crystal Palace,Missing Fixture,Illness,2025-01-18,,76
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2025-01-18,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Coach's decision,2025-01-18,,134
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Groin Injury,2025-01-26,,203
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-01-26,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-01-26,,266
+2024-2025,311157,Matheus Franca,Crystal Palace,Missing Fixture,Muscle Injury,2025-01-26,,161
+2024-2025,1440,R. Holding,Crystal Palace,Missing Fixture,Coach's decision,2025-01-26,,134
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-02-02,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-02-02,,266
+2024-2025,18847,J. Ward,Crystal Palace,Missing Fixture,Calf Injury,2025-02-02,,125
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-02-15,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-02-15,,266
+2024-2025,18847,J. Ward,Crystal Palace,Missing Fixture,Calf Injury,2025-02-15,,125
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-02-22,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-02-22,,266
+2024-2025,18847,J. Ward,Crystal Palace,Missing Fixture,Calf Injury,2025-02-22,,125
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-02-25,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-02-25,,266
+2024-2025,18847,J. Ward,Crystal Palace,Missing Fixture,Calf Injury,2025-02-25,,125
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-03-08,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-03-08,,266
+2024-2025,25927,J. Mateta,Crystal Palace,Missing Fixture,Injury,2025-03-08,,0
+2024-2025,18847,J. Ward,Crystal Palace,Missing Fixture,Calf Injury,2025-03-08,,125
+2024-2025,18806,W. Hughes,Crystal Palace,Missing Fixture,Yellow Cards,2025-03-08,,144
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-04-02,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-04-02,,266
+2024-2025,126949,C. Richards,Crystal Palace,Missing Fixture,Calf Injury,2025-04-02,,200
+2024-2025,18806,W. Hughes,Crystal Palace,Missing Fixture,Yellow Cards,2025-04-02,,144
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-04-05,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-04-05,,266
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-04-12,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-04-12,,266
+2024-2025,1468,E. Nketiah,Crystal Palace,Missing Fixture,Red Card,2025-04-12,,153
+2024-2025,67971,M. Guehi,Crystal Palace,Missing Fixture,Red Card,2025-04-12,,147
+2024-2025,50999,M. Turner,Crystal Palace,Missing Fixture,Illness,2025-04-12,,196
+2024-2025,402640,R. Esse,Crystal Palace,Missing Fixture,Illness,2025-04-12,,0
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-04-16,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-04-16,,266
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-04-19,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-04-19,,266
+2024-2025,2933,B. Chilwell,Crystal Palace,Missing Fixture,Illness,2025-04-23,,0
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-04-23,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-04-23,,266
+2024-2025,126949,C. Richards,Crystal Palace,Missing Fixture,Red Card,2025-04-23,,200
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-05-05,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-05-05,,266
+2024-2025,50999,M. Turner,Crystal Palace,Missing Fixture,Loan agreement,2025-05-05,,196
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-05-11,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-05-11,,266
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Head Injury,2025-05-20,,203
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-05-20,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-05-20,,266
+2024-2025,67971,M. Guehi,Crystal Palace,Missing Fixture,Concussion,2025-05-20,,147
+2024-2025,288102,A. Wharton,Crystal Palace,Missing Fixture,Head Injury,2025-05-25,,203
+2024-2025,3339,C. Doucoure,Crystal Palace,Missing Fixture,Knee Injury,2025-05-25,,245
+2024-2025,278898,C. Riad,Crystal Palace,Missing Fixture,Knee Injury,2025-05-25,,266
+2024-2025,67971,M. Guehi,Crystal Palace,Missing Fixture,Concussion,2025-05-25,,147

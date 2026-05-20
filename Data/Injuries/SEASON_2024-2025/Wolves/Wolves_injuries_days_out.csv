@@ -1,0 +1,195 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-08-17,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-08-17,,281
+2024-2025,130,N. Semedo,Wolves,Missing Fixture,Red Card,2024-08-17,,109
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-08-17,,281
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-08-25,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-08-25,,281
+2024-2025,130,N. Semedo,Wolves,Missing Fixture,Suspended,2024-08-25,,109
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-08-25,,281
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-08-31,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-08-31,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-08-31,,281
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-09-15,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-09-15,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-09-15,,281
+2024-2025,388777,B. Meupiyou,Wolves,Missing Fixture,Injury,2024-09-21,,63
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-09-21,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-09-21,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-09-21,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-09-21,,281
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-10-05,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-10-05,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-10-05,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-10-05,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-10-05,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-10-20,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-10-20,,281
+2024-2025,24888,Hwang Hee-Chan,Wolves,Missing Fixture,Ankle Injury,2024-10-20,,128
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-10-20,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-10-20,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-10-20,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-10-26,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-10-26,,281
+2024-2025,24888,Hwang Hee-Chan,Wolves,Missing Fixture,Ankle Injury,2024-10-26,,128
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-10-26,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-10-26,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-10-26,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-11-02,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-11-02,,281
+2024-2025,24888,Hwang Hee-Chan,Wolves,Missing Fixture,Ankle Injury,2024-11-02,,128
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-11-02,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-11-02,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-11-02,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-11-09,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-11-09,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-11-09,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-11-09,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-11-09,,232
+2024-2025,388777,B. Meupiyou,Wolves,Missing Fixture,Injury,2024-11-23,,63
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-11-23,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-11-23,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-11-23,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-11-23,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-11-23,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-11-30,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-11-30,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-11-30,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-11-30,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-11-30,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-12-04,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-12-04,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-12-04,,281
+2024-2025,130,N. Semedo,Wolves,Missing Fixture,Yellow Cards,2024-12-04,,109
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-12-04,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-12-04,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-12-09,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-12-09,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-12-09,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-12-09,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-12-09,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-12-14,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-12-14,,281
+2024-2025,195103,J. Gomes,Wolves,Missing Fixture,Yellow Cards,2024-12-14,,0
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Ankle Injury,2024-12-14,,281
+2024-2025,2056,P. Sarabia,Wolves,Missing Fixture,Muscle Injury,2024-12-14,,15
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-12-14,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-12-14,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-12-22,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-12-22,,281
+2024-2025,2056,P. Sarabia,Wolves,Missing Fixture,Muscle Injury,2024-12-22,,15
+2024-2025,21138,R. Ait-Nouri,Wolves,Missing Fixture,Red Card,2024-12-22,,0
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-12-22,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-12-22,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-12-26,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-12-26,,281
+2024-2025,2056,P. Sarabia,Wolves,Missing Fixture,Calf Injury,2024-12-26,,15
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-12-26,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-12-26,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2024-12-29,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2024-12-29,,281
+2024-2025,2056,P. Sarabia,Wolves,Missing Fixture,Calf Injury,2024-12-29,,15
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2024-12-29,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2024-12-29,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2025-01-06,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-01-06,,281
+2024-2025,1165,M. Cunha,Wolves,Missing Fixture,Suspended,2025-01-06,,88
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-01-06,,281
+2024-2025,41606,Toti,Wolves,Missing Fixture,Thigh Injury,2025-01-06,,14
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-01-06,,232
+2024-2025,157912,B. Traore,Wolves,Missing Fixture,Knee Injury,2025-01-15,,116
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-01-15,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-01-15,,281
+2024-2025,41606,Toti,Wolves,Missing Fixture,Thigh Injury,2025-01-15,,14
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-01-15,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-01-20,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-01-20,,281
+2024-2025,41606,Toti,Wolves,Missing Fixture,Thigh Injury,2025-01-20,,14
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-01-20,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-01-25,,281
+2024-2025,18947,M. Lemina,Wolves,Missing Fixture,Illness,2025-01-25,,7
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-01-25,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-01-25,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-02-01,,281
+2024-2025,2032,J. S. Larsen,Wolves,Missing Fixture,Thigh Injury,2025-02-01,,14
+2024-2025,195103,Joao Gomes,Wolves,Missing Fixture,Red Card,2025-02-01,,0
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-02-01,,281
+2024-2025,18947,M. Lemina,Wolves,Missing Fixture,Illness,2025-02-01,,7
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-02-01,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-02-01,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-02-16,,281
+2024-2025,24888,Hwang Hee-Chan,Wolves,Missing Fixture,Thigh Injury,2025-02-16,,128
+2024-2025,2032,J. S. Larsen,Wolves,Missing Fixture,Thigh Injury,2025-02-16,,14
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-02-16,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-02-16,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-02-16,,232
+2024-2025,135068,E. Agbadou,Wolves,Missing Fixture,Injury,2025-02-22,,3
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-02-22,,281
+2024-2025,24888,Hwang Hee-Chan,Wolves,Missing Fixture,Thigh Injury,2025-02-22,,128
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-02-22,,281
+2024-2025,282770,R. Gomes,Wolves,Missing Fixture,Injury,2025-02-22,,3
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-02-22,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-02-22,,232
+2024-2025,135068,E. Agbadou,Wolves,Missing Fixture,Thigh Injury,2025-02-25,,3
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-02-25,,281
+2024-2025,925,G. Guedes,Wolves,Missing Fixture,Knee Injury,2025-02-25,,0
+2024-2025,24888,Hwang Hee-Chan,Wolves,Missing Fixture,Thigh Injury,2025-02-25,,128
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-02-25,,281
+2024-2025,282770,R. Gomes,Wolves,Missing Fixture,Groin Injury,2025-02-25,,3
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-02-25,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-02-25,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-03-08,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-03-08,,281
+2024-2025,1165,M. Cunha,Wolves,Missing Fixture,Red Card,2025-03-08,,88
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-03-08,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-03-08,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-03-15,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-03-15,,281
+2024-2025,1165,M. Cunha,Wolves,Missing Fixture,Red Card,2025-03-15,,88
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-03-15,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-03-15,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-04-01,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-04-01,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-04-01,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-04-01,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-04-05,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-04-05,,281
+2024-2025,1165,M. Cunha,Wolves,Missing Fixture,Red Card,2025-04-05,,88
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-04-05,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-04-05,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-04-13,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-04-13,,281
+2024-2025,449245,Pedro Lima,Wolves,Missing Fixture,Ankle Injury,2025-04-13,,0
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-04-13,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-04-13,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-04-20,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-04-20,,281
+2024-2025,19143,S. Johnstone,Wolves,Missing Fixture,Injury,2025-04-20,,35
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-04-20,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-04-20,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-04-26,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-04-26,,281
+2024-2025,19143,S. Johnstone,Wolves,Missing Fixture,Injury,2025-04-26,,35
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-04-26,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-04-26,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-05-02,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-05-02,,281
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-05-02,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-05-02,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-05-10,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-05-10,,281
+2024-2025,19143,S. Johnstone,Wolves,Missing Fixture,Injury,2025-05-10,,35
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-05-10,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-05-10,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-05-20,,281
+2024-2025,1590,J. Sa,Wolves,Missing Fixture,Coach's decision,2025-05-20,,0
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-05-20,,281
+2024-2025,19143,S. Johnstone,Wolves,Missing Fixture,Injury,2025-05-20,,35
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-05-20,,281
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-05-20,,232
+2024-2025,385726,E. Gonzalez,Wolves,Missing Fixture,Knee Injury,2025-05-25,,281
+2024-2025,380653,L. Chiwome,Wolves,Missing Fixture,Knee Injury,2025-05-25,,281
+2024-2025,19143,S. Johnstone,Wolves,Missing Fixture,Injury,2025-05-25,,35
+2024-2025,7722,S. Kalajdzic,Wolves,Missing Fixture,Knee Injury,2025-05-25,,281
+2024-2025,144732,T. Doyle,Wolves,Missing Fixture,Knock,2025-05-25,,0
+2024-2025,195717,Y. Mosquera,Wolves,Missing Fixture,Knee Injury,2025-05-25,,232

@@ -1,7 +1,11 @@
 # Data files and directories
 Data/
+!Data/Injuries/
+!Data/Injuries/**
 EDA/DATA/
 *.csv
+!Data/Injuries/*.csv
+!Data/Injuries/**/*.csv
 *.xlsx
 *.xls
 *.json

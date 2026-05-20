@@ -1,0 +1,94 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2024-2025,104,Carlos Vinicius,Fulham,Missing Fixture,Injury,2024-09-14,,35
+2024-2025,104,Carlos Vinicius,Fulham,Missing Fixture,Injury,2024-09-21,,35
+2024-2025,104,Carlos Vinicius,Fulham,Missing Fixture,Calf Injury,2024-10-05,,35
+2024-2025,131,J. Cuenca,Fulham,Missing Fixture,Ankle Injury,2024-10-05,,56
+2024-2025,104,Carlos Vinicius,Fulham,Missing Fixture,Calf Injury,2024-10-19,,35
+2024-2025,131,J. Cuenca,Fulham,Missing Fixture,Ankle Injury,2024-10-19,,56
+2024-2025,2823,S. Lukic,Fulham,Missing Fixture,Shoulder Injury,2024-10-19,,203
+2024-2025,2920,T. Castagne,Fulham,Missing Fixture,Thigh Injury,2024-10-19,,218
+2024-2025,2729,J. Andersen,Fulham,Missing Fixture,Red Card,2024-10-26,,48
+2024-2025,2823,S. Lukic,Fulham,Missing Fixture,Shoulder Injury,2024-10-26,,203
+2024-2025,2920,T. Castagne,Fulham,Missing Fixture,Thigh Injury,2024-10-26,,218
+2024-2025,2823,S. Lukic,Fulham,Missing Fixture,Shoulder Injury,2024-11-04,,203
+2024-2025,2823,S. Lukic,Fulham,Missing Fixture,Shoulder Injury,2024-11-09,,203
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2024-11-23,,183
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2024-12-01,,183
+2024-2025,2729,J. Andersen,Fulham,Missing Fixture,Calf Injury,2024-12-01,,48
+2024-2025,131,J. Cuenca,Fulham,Missing Fixture,Knock,2024-12-01,,56
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2024-12-05,,183
+2024-2025,2729,J. Andersen,Fulham,Missing Fixture,Calf Injury,2024-12-05,,48
+2024-2025,2823,S. Lukic,Fulham,Missing Fixture,Yellow Cards,2024-12-05,,203
+2024-2025,19025,T. Cairney,Fulham,Missing Fixture,Red Card,2024-12-05,,8
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2024-12-08,,183
+2024-2025,2729,J. Andersen,Fulham,Missing Fixture,Calf Injury,2024-12-08,,48
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2024-12-08,,168
+2024-2025,19025,T. Cairney,Fulham,Missing Fixture,Red Card,2024-12-08,,8
+2024-2025,152967,C. Bassey,Fulham,Missing Fixture,Yellow Cards,2024-12-14,,0
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2024-12-14,,183
+2024-2025,2729,J. Andersen,Fulham,Missing Fixture,Calf Injury,2024-12-14,,48
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2024-12-14,,168
+2024-2025,19025,T. Cairney,Fulham,Missing Fixture,Red Card,2024-12-14,,8
+2024-2025,899,A. Pereira,Fulham,Missing Fixture,Yellow Cards,2024-12-22,,0
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2024-12-22,,183
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2024-12-22,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2024-12-22,,168
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2024-12-26,,183
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2024-12-26,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2024-12-26,,168
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2024-12-29,,183
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2024-12-29,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2024-12-29,,168
+2024-2025,1934,S. Berge,Fulham,Missing Fixture,Ankle Injury,2024-12-29,,6
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Knee Injury,2025-01-05,,183
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-01-05,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-01-05,,168
+2024-2025,1934,S. Berge,Fulham,Missing Fixture,Ankle Injury,2025-01-05,,6
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-01-14,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-01-14,,168
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-01-18,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-01-18,,168
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-01-26,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-01-26,,168
+2024-2025,19221,H. Wilson,Fulham,Missing Fixture,Injury,2025-02-01,,63
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-02-01,,100
+2024-2025,19221,H. Wilson,Fulham,Missing Fixture,Injury,2025-02-15,,63
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-02-15,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-02-15,,168
+2024-2025,19221,H. Wilson,Fulham,Missing Fixture,Injury,2025-02-22,,63
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-02-22,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-02-22,,168
+2024-2025,19221,H. Wilson,Fulham,Missing Fixture,Injury,2025-02-25,,63
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-02-25,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-02-25,,168
+2024-2025,19221,H. Wilson,Fulham,Missing Fixture,Injury,2025-03-08,,63
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-03-08,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-03-08,,168
+2024-2025,19221,H. Wilson,Fulham,Missing Fixture,Injury,2025-03-16,,63
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-03-16,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Thigh Injury,2025-03-16,,168
+2024-2025,2823,S. Lukic,Fulham,Missing Fixture,Yellow Cards,2025-03-16,,203
+2024-2025,19221,H. Wilson,Fulham,Missing Fixture,Ankle Injury,2025-04-01,,63
+2024-2025,657,K. Tete,Fulham,Missing Fixture,Knee Injury,2025-04-01,,100
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-04-01,,168
+2024-2025,19221,H. Wilson,Fulham,Missing Fixture,Ankle Injury,2025-04-06,,63
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-04-06,,168
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-04-14,,168
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-04-20,,168
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-04-26,,168
+2024-2025,195106,Rodrigo Muniz,Fulham,Missing Fixture,Inactive,2025-04-26,,29
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-05-03,,168
+2024-2025,195106,Rodrigo Muniz,Fulham,Missing Fixture,Achilles Tendon Injury,2025-05-03,,29
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Calf Injury,2025-05-10,,183
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-05-10,,168
+2024-2025,195106,Rodrigo Muniz,Fulham,Missing Fixture,Achilles Tendon Injury,2025-05-10,,29
+2024-2025,2823,S. Lukic,Fulham,Missing Fixture,Injury,2025-05-10,,203
+2024-2025,2920,T. Castagne,Fulham,Missing Fixture,Ankle Injury,2025-05-10,,218
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Calf Injury,2025-05-18,,183
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-05-18,,168
+2024-2025,195106,Rodrigo Muniz,Fulham,Missing Fixture,Achilles Tendon Injury,2025-05-18,,29
+2024-2025,2920,T. Castagne,Fulham,Missing Fixture,Ankle Injury,2025-05-18,,218
+2024-2025,19480,H. Reed,Fulham,Missing Fixture,Calf Injury,2025-05-25,,183
+2024-2025,727,R. Nelson,Fulham,Missing Fixture,Hamstring Injury,2025-05-25,,168
+2024-2025,195106,Rodrigo Muniz,Fulham,Missing Fixture,Achilles Tendon Injury,2025-05-25,,29
+2024-2025,2920,T. Castagne,Fulham,Missing Fixture,Ankle Injury,2025-05-25,,218

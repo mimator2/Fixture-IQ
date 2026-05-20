@@ -1,0 +1,70 @@
+================================================================================
+PREMIER LEAGUE INJURIES DATABASE - EXTRACTION SUMMARY
+================================================================================
+
+STRUCTURE:
+Data/Injuries/
+├── SEASON_2022-2023/
+│   ├── Arsenal/Arsenal_injuries_days_out.csv
+│   ├── Aston_Villa/Aston_Villa_injuries_days_out.csv
+│   ├── ... (12 teams total)
+│   └── ALL_TEAMS_2022-2023_injuries_days_out.csv (combined)
+└── SEASON_2023-2024/
+    ├── Arsenal/Arsenal_injuries_days_out.csv
+    ├── ... (8 teams total)
+    └── ALL_TEAMS_2023-2024_injuries_days_out.csv (combined)
+
+================================================================================
+EXTRACTION RESULTS
+================================================================================
+
+SEASON 2022-2023:
+  - Teams: 12 (Arsenal, Aston Villa, Bournemouth, Brentford, Brighton, Chelsea, 
+    Crystal Palace, Everton, Fulham, Leeds, Leicester, Wolves)
+  - Total injury records: 1,842
+  - Unique players: 228
+  - Records with days_out > 0: 1,393 (75.6%)
+  - Average days_out: 127.1 days
+
+SEASON 2023-2024:
+  - Teams: 8 (Arsenal, Aston Villa, Bournemouth, Brentford, Brighton, Burnley, 
+    Chelsea, Crystal Palace)
+  - Total injury records: 1,790
+  - Unique players: 176
+  - Records with days_out > 0: 1,462 (81.6%)
+  - Average days_out: 136.3 days
+
+SEASON 2024-2025:
+  - API data unavailable (rate limit exceeded)
+
+================================================================================
+DATA FIELDS IN EACH CSV
+================================================================================
+
+season:       Season name (e.g., "2022-2023")
+player_id:    Unique player identifier
+player_name:  Player name
+team_name:    Team name
+injury_type:  "Missing Fixture" (confirmed out) OR "Questionable" (doubtful)
+reason:       Injury type (e.g., "Thigh Injury", "Knock", "Suspension")
+fixture_date: Date injury was reported (YYYY-MM-DD)
+days_out:     Number of days player was injured (0 if "Questionable" only)
+
+================================================================================
+USAGE FOR YOUR RESEARCH
+================================================================================
+
+This data enables:
+✓ Calendar visualization: See which players missed how many matches
+✓ Fixture congestion analysis: Correlate injuries with match scheduling
+✓ Team injury patterns: Compare injury frequency across PL teams
+✓ Rest periods: Analyze recovery times between consecutive injuries
+✓ Injury type distribution: Understand common injury reasons
+
+Next steps:
+1. Load ANY_TEAMS_SEASON.csv files into your analysis
+2. Use days_out to calculate matches missed per player
+3. Correlate with fixture density (games per week)
+4. Analyze by team to assess fixture congestion impact
+
+================================================================================

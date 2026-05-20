@@ -1,0 +1,222 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-08-06,,71
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Calf Injury,2022-08-06,,146
+2022-2023,281,C. Kelleher,Liverpool,Missing Fixture,Muscle Injury,2022-08-06,,32
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Muscle Injury,2022-08-06,,182
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Injury,2022-08-06,,199
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-08-15,,71
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Calf Injury,2022-08-15,,146
+2022-2023,281,C. Kelleher,Liverpool,Missing Fixture,Muscle Injury,2022-08-15,,32
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Injury,2022-08-15,,199
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Hamstring Injury,2022-08-15,,285
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-08-22,,71
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Calf Injury,2022-08-22,,146
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Injury,2022-08-22,,278
+2022-2023,51617,D. Nunez,Liverpool,Missing Fixture,Red Card,2022-08-22,,270
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Muscle Injury,2022-08-22,,182
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Injury,2022-08-22,,199
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Groin Injury,2022-08-22,,81
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Hamstring Injury,2022-08-22,,285
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-08-27,,71
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Injury,2022-08-27,,278
+2022-2023,51617,D. Nunez,Liverpool,Missing Fixture,Red Card,2022-08-27,,270
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Muscle Injury,2022-08-27,,182
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Injury,2022-08-27,,199
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Groin Injury,2022-08-27,,81
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-08-27,,274
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-08-31,,71
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Injury,2022-08-31,,278
+2022-2023,51617,D. Nunez,Liverpool,Missing Fixture,Red Card,2022-08-31,,270
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Muscle Injury,2022-08-31,,182
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Injury,2022-08-31,,199
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-08-31,,274
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-09-03,,71
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Injury,2022-09-03,,278
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Injury,2022-09-03,,199
+2022-2023,292,J. Henderson,Liverpool,Missing Fixture,Thigh Injury,2022-09-03,,193
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-09-03,,274
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-09-07,,71
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Leg Injury,2022-09-07,,146
+2022-2023,281,C. Kelleher,Liverpool,Missing Fixture,Muscle Injury,2022-09-07,,32
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Injury,2022-09-07,,278
+2022-2023,153066,F. Carvalho,Liverpool,Missing Fixture,Thigh Injury,2022-09-07,,0
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Knee Injury,2022-09-07,,199
+2022-2023,292,J. Henderson,Liverpool,Missing Fixture,Thigh Injury,2022-09-07,,193
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-09-07,,274
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-09-13,,71
+2022-2023,289,A. Robertson,Liverpool,Missing Fixture,Knee Injury,2022-09-13,,0
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Leg Injury,2022-09-13,,146
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Injury,2022-09-13,,278
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Knee Injury,2022-09-13,,199
+2022-2023,292,J. Henderson,Liverpool,Missing Fixture,Thigh Injury,2022-09-13,,193
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-09-13,,274
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-10-01,,71
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Leg Injury,2022-10-01,,146
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Injury,2022-10-01,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-01,,274
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-10-04,,71
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Leg Injury,2022-10-04,,146
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-04,,274
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-10-09,,71
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-10-09,,139
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-09,,274
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-10-12,,71
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-10-12,,139
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-10-12,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-10-12,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-12,,274
+2022-2023,283,T. Alexander-Arnold,Liverpool,Missing Fixture,Ankle Injury,2022-10-12,,0
+2022-2023,297,A. Oxlade-Chamberlain,Liverpool,Missing Fixture,Muscle Injury,2022-10-16,,71
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-10-16,,139
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-10-16,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-10-16,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-16,,274
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-10-19,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-10-19,,182
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-10-19,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-10-19,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-19,,274
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-10-22,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-10-22,,182
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-10-22,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-10-22,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-22,,274
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Illness,2022-10-22,,285
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-10-26,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-10-26,,182
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-10-26,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-10-26,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-26,,274
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Illness,2022-10-26,,285
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-10-29,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-10-29,,182
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-10-29,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-10-29,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-10-29,,274
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-11-01,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-11-01,,182
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-11-01,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-11-01,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-11-01,,274
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-11-06,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-11-06,,182
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-11-06,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-11-06,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-11-06,,274
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-11-12,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-11-12,,182
+2022-2023,286,J. Matip,Liverpool,Missing Fixture,Calf Injury,2022-11-12,,81
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-11-12,,154
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Lacking Match Fitness,2022-11-12,,274
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-12-26,,139
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Calf Injury,2022-12-26,,146
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-12-26,,182
+2022-2023,296,J. Milner,Liverpool,Missing Fixture,Thigh Injury,2022-12-26,,4
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-12-26,,154
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Calf Injury,2022-12-26,,130
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2022-12-30,,139
+2022-2023,293,C. Jones,Liverpool,Missing Fixture,Calf Injury,2022-12-30,,146
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2022-12-30,,182
+2022-2023,296,J. Milner,Liverpool,Missing Fixture,Thigh Injury,2022-12-30,,4
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2022-12-30,,154
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Calf Injury,2022-12-30,,130
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2023-01-02,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2023-01-02,,182
+2022-2023,292,J. Henderson,Liverpool,Missing Fixture,Concussion,2023-01-02,,193
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-01-02,,154
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2023-01-14,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2023-01-14,,182
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-01-14,,154
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Calf Injury,2023-01-14,,130
+2022-2023,290,V. van Dijk,Liverpool,Missing Fixture,Thigh Injury,2023-01-14,,21
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2023-01-21,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2023-01-21,,182
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-01-21,,154
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Calf Injury,2023-01-21,,130
+2022-2023,290,V. van Dijk,Liverpool,Missing Fixture,Thigh Injury,2023-01-21,,21
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2023-02-04,,139
+2022-2023,2678,Diogo Jota,Liverpool,Missing Fixture,Calf Injury,2023-02-04,,182
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Thigh Injury,2023-02-04,,199
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-02-04,,154
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Calf Injury,2023-02-04,,130
+2022-2023,290,V. van Dijk,Liverpool,Missing Fixture,Thigh Injury,2023-02-04,,21
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2023-02-13,,139
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Thigh Injury,2023-02-13,,199
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-02-13,,154
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2023-02-18,,139
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-02-18,,278
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-02-18,,154
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-02-18,,285
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2023-02-21,,139
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-02-21,,278
+2022-2023,1145,I. Konate,Liverpool,Missing Fixture,Thigh Injury,2023-02-21,,199
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-02-21,,154
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-02-21,,285
+2022-2023,150,Arthur,Liverpool,Missing Fixture,Muscle Injury,2023-02-25,,139
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-02-25,,278
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-02-25,,154
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-02-25,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-03-01,,278
+2022-2023,284,J. Gomez,Liverpool,Missing Fixture,Muscle Injury,2023-03-01,,9
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-03-01,,154
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-03-01,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-03-05,,278
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-03-05,,154
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-03-05,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-03-11,,278
+2022-2023,284,J. Gomez,Liverpool,Missing Fixture,Muscle Injury,2023-03-11,,9
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-03-11,,154
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-03-11,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-03-15,,278
+2022-2023,292,J. Henderson,Liverpool,Missing Fixture,Illness,2023-03-15,,193
+2022-2023,2489,L. Diaz,Liverpool,Missing Fixture,Knee Injury,2023-03-15,,154
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-03-15,,73
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-03-15,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-04-01,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-04-01,,274
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-04-01,,73
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-04-01,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-04-04,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-04-04,,274
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-04-04,,73
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Muscle Injury,2023-04-04,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-04-09,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-04-09,,274
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-04-09,,73
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-04-17,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-04-17,,274
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-04-17,,73
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-04-22,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-04-22,,274
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Muscle Injury,2023-04-22,,130
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-04-22,,73
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-04-26,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-04-26,,274
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Muscle Injury,2023-04-26,,130
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-04-26,,73
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-04-30,,278
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Muscle Injury,2023-04-30,,130
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-04-30,,73
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-05-03,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-05-03,,274
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Muscle Injury,2023-05-03,,130
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-05-03,,73
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Hip Injury,2023-05-03,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-05-06,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-05-06,,274
+2022-2023,302,R. Firmino,Liverpool,Missing Fixture,Muscle Injury,2023-05-06,,130
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-05-06,,73
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Hip Injury,2023-05-06,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-05-15,,278
+2022-2023,51617,D. Nunez,Liverpool,Missing Fixture,Toe Injury,2023-05-15,,270
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-05-15,,73
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Hip Injury,2023-05-15,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-05-20,,278
+2022-2023,51617,D. Nunez,Liverpool,Missing Fixture,Toe Injury,2023-05-20,,270
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-05-20,,274
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-05-20,,73
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Hip Injury,2023-05-20,,285
+2022-2023,135525,C. Ramsay,Liverpool,Missing Fixture,Knee Injury,2023-05-28,,278
+2022-2023,294,N. Keita,Liverpool,Missing Fixture,Muscle Injury,2023-05-28,,274
+2022-2023,310187,S. Bajcetic,Liverpool,Missing Fixture,Muscle Injury,2023-05-28,,73
+2022-2023,507,Thiago,Liverpool,Missing Fixture,Hip Injury,2023-05-28,,285
