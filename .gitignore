@@ -6,6 +6,8 @@ EDA/DATA/
 *.csv
 !Data/Injuries/*.csv
 !Data/Injuries/**/*.csv
+# Allow CSVs in models directory
+!models/**/*.csv
 *.xlsx
 *.xls
 *.json

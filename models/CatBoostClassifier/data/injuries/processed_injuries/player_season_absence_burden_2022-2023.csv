@@ -1,0 +1,352 @@
+Season,Season_Label,Team,Player,Player_ID,Matches_Missed_Total,Matches_Missed_Injury,First_Missed_Fixture,Last_Missed_Fixture,Main_Reason,Main_Injury_Category,Max_Reported_Days_Out
+2022-2023,2022/23,Arsenal,R. Nelson,727,14,14,2022-08-13,2023-02-11,Thigh Injury,Thigh,182
+2022-2023,2022/23,Arsenal,N. Pepe,3246,1,1,2022-08-20,2022-08-20,Inactive,Other,0
+2022-2023,2022/23,Arsenal,O. Zinchenko,641,8,8,2022-08-27,2023-05-28,Muscle Injury,Muscle,273
+2022-2023,2022/23,Arsenal,T. Partey,49,4,4,2022-08-27,2022-09-08,Thigh Injury,Thigh,12
+2022-2023,2022/23,Arsenal,M. Elneny,1452,34,34,2022-08-31,2023-05-28,Knock,Knock,269
+2022-2023,2022/23,Arsenal,Cedric,190,1,1,2022-09-08,2022-09-08,Injury,Generic injury,0
+2022-2023,2022/23,Arsenal,E. Smith Rowe,1161,18,18,2022-09-08,2023-02-11,Groin Injury,Groin,155
+2022-2023,2022/23,Arsenal,M. Odegaard,37127,1,1,2022-09-18,2022-09-18,Injury,Generic injury,0
+2022-2023,2022/23,Arsenal,G. Jesus,643,12,12,2022-10-13,2023-03-04,Knee Injury,Knee,141
+2022-2023,2022/23,Arsenal,Marquinhos,311520,1,1,2022-10-27,2022-10-27,Illness,Other,0
+2022-2023,2022/23,Arsenal,G. Xhaka,1464,2,1,2022-11-03,2023-04-21,Yellow Cards,Other,168
+2022-2023,2022/23,Arsenal,T. Tomiyasu,2597,12,12,2022-11-12,2023-05-28,Knee Injury,Knee,196
+2022-2023,2022/23,Arsenal,E. Nketiah,1468,5,5,2023-03-04,2023-04-09,Injury,Generic injury,36
+2022-2023,2022/23,Arsenal,K. Tierney,1117,1,1,2023-03-09,2023-03-09,Illness,Other,0
+2022-2023,2022/23,Arsenal,L. Trossard,1946,1,1,2023-03-09,2023-03-09,Muscle Injury,Muscle,0
+2022-2023,2022/23,Arsenal,W. Saliba,22090,10,10,2023-03-19,2023-05-28,Back Injury,Generic injury,70
+2022-2023,2022/23,Arsenal,G. Martinelli,127769,2,2,2023-05-20,2023-05-28,Ankle Injury,Ankle,7
+2022-2023,2022/23,Aston Villa,K. Hause,19177,2,2,2022-08-06,2022-08-13,Knee Injury,Knee,6
+2022-2023,2022/23,Aston Villa,Diego Carlos,21090,21,21,2022-08-20,2023-03-04,Achilles Tendon Injury,Generic injury,196
+2022-2023,2022/23,Aston Villa,J. Bednarek,2999,1,0,2022-09-16,2022-09-16,Loan agreement,Other,0
+2022-2023,2022/23,Aston Villa,M. Cash,19298,6,6,2022-09-16,2023-04-25,Calf Injury,Calf,220
+2022-2023,2022/23,Aston Villa,B. Kamara,1904,11,11,2022-10-02,2023-04-30,Knee Injury,Knee,209
+2022-2023,2022/23,Aston Villa,L. Digne,2724,5,5,2022-10-02,2022-10-23,Ankle Injury,Ankle,20
+2022-2023,2022/23,Aston Villa,L. Augustinsson,2852,5,5,2022-10-10,2022-10-29,Thigh Injury,Thigh,18
+2022-2023,2022/23,Aston Villa,Coutinho,147,11,11,2022-11-13,2023-05-28,Thigh Injury,Thigh,196
+2022-2023,2022/23,Aston Villa,J. Ramsey,19192,3,3,2022-12-26,2023-01-04,Thigh Injury,Thigh,9
+2022-2023,2022/23,Aston Villa,J. McGinn,19191,2,2,2023-01-13,2023-01-21,Thigh Injury,Thigh,7
+2022-2023,2022/23,Aston Villa,J. Steer,19174,20,20,2023-01-13,2023-05-28,Muscle Injury,Muscle,134
+2022-2023,2022/23,Aston Villa,L. Dendoncker,2922,2,1,2023-01-13,2023-03-04,Red Card,Other,49
+2022-2023,2022/23,Aston Villa,L. Bailey,983,2,2,2023-04-15,2023-04-25,Thigh Injury,Thigh,10
+2022-2023,2022/23,Aston Villa,A. Moreno,47547,1,1,2023-05-28,2023-05-28,Thigh Injury,Thigh,0
+2022-2023,2022/23,Bournemouth,D. Brooks,18870,25,25,2022-08-06,2023-03-04,Thigh Injury,Thigh,210
+2022-2023,2022/23,Bournemouth,J. Rothwell,19482,6,6,2022-08-06,2022-09-17,Thigh Injury,Thigh,42
+2022-2023,2022/23,Bournemouth,R. Fredericks,18815,16,16,2022-08-13,2023-05-28,Calf Injury,Calf,288
+2022-2023,2022/23,Bournemouth,B. Pearson,19454,3,3,2022-08-31,2022-09-17,Injury,Generic injury,16
+2022-2023,2022/23,Bournemouth,L. Kelly,19263,11,11,2022-10-01,2023-03-04,Ankle Injury,Ankle,154
+2022-2023,2022/23,Bournemouth,J. Stanislas,18878,19,19,2022-10-08,2023-05-28,Injury,Generic injury,232
+2022-2023,2022/23,Bournemouth,Neto,912,6,6,2022-10-29,2023-01-03,Thigh Injury,Thigh,66
+2022-2023,2022/23,Bournemouth,C. Mepham,18866,1,0,2022-11-12,2022-11-12,Yellow Cards,Other,0
+2022-2023,2022/23,Bournemouth,A. Smith,18869,1,0,2023-01-14,2023-01-14,Yellow Cards,Other,0
+2022-2023,2022/23,Bournemouth,M. Tavernier,19245,9,9,2023-01-14,2023-05-28,Thigh Injury,Thigh,133
+2022-2023,2022/23,Bournemouth,D. Solanke,18883,1,1,2023-01-21,2023-01-21,Knee Injury,Knee,0
+2022-2023,2022/23,Bournemouth,L. Cook,18872,3,3,2023-01-21,2023-02-25,Knee Injury,Knee,35
+2022-2023,2022/23,Bournemouth,I. Zabarnyi,161671,1,1,2023-03-04,2023-03-04,Ankle Injury,Ankle,0
+2022-2023,2022/23,Bournemouth,M. Vina,51572,1,1,2023-03-04,2023-03-04,Knee Injury,Knee,0
+2022-2023,2022/23,Bournemouth,J. Stephens,18940,1,0,2023-04-27,2023-04-27,Loan agreement,Other,0
+2022-2023,2022/23,Bournemouth,H. J. Traore,31057,2,2,2023-05-06,2023-05-13,Ankle Injury,Ankle,7
+2022-2023,2022/23,Bournemouth,K. Moore,19804,1,1,2023-05-06,2023-05-06,Head Injury,Generic injury,0
+2022-2023,2022/23,Bournemouth,A. Semenyo,19281,2,2,2023-05-20,2023-05-28,Leg Injury,Generic injury,8
+2022-2023,2022/23,Brentford,E. Pinnock,19789,6,6,2022-08-07,2022-09-03,Muscle Injury,Muscle,27
+2022-2023,2022/23,Brentford,K. Ajer,1119,13,13,2022-08-07,2023-04-22,Calf Injury,Calf,258
+2022-2023,2022/23,Brentford,S. Canos,19352,6,6,2022-08-07,2022-09-03,Thigh Injury,Thigh,27
+2022-2023,2022/23,Brentford,C. Norgaard,30407,12,12,2022-09-18,2023-05-28,Knock,Knock,252
+2022-2023,2022/23,Brentford,K. Lewis-Potter,106725,16,16,2022-10-01,2023-05-28,Knee Injury,Knee,239
+2022-2023,2022/23,Brentford,P. Jansson,19124,17,17,2022-10-08,2023-05-28,Thigh Injury,Thigh,232
+2022-2023,2022/23,Brentford,T. Strakosha,1835,14,14,2022-10-14,2023-05-14,Ankle Injury,Ankle,211
+2022-2023,2022/23,Brentford,A. Hickey,44871,8,8,2022-10-19,2023-01-02,Ankle Injury,Ankle,74
+2022-2023,2022/23,Brentford,C. Goode,17772,2,2,2022-11-05,2022-11-12,Knee Injury,Knee,6
+2022-2023,2022/23,Brentford,I. Toney,19974,3,0,2022-11-05,2023-05-28,Suspended,Other,204
+2022-2023,2022/23,Brentford,S. Baptiste,20110,5,4,2022-11-12,2023-04-01,Muscle Injury,Muscle,140
+2022-2023,2022/23,Brentford,F. Onyeka,15799,3,3,2023-01-14,2023-02-04,Thigh Injury,Thigh,20
+2022-2023,2022/23,Brentford,V. Janelt,25073,1,1,2023-03-18,2023-03-18,Knee Injury,Knee,0
+2022-2023,2022/23,Brighton,J. Moder,40911,29,29,2022-08-07,2023-04-15,Knee Injury,Knee,251
+2022-2023,2022/23,Brighton,A. Lallana,295,19,19,2022-08-30,2023-05-28,Thigh Injury,Thigh,270
+2022-2023,2022/23,Brighton,E. Mwepu,1093,1,1,2022-10-01,2022-10-01,Illness,Other,0
+2022-2023,2022/23,Brighton,K. Mitoma,106835,2,2,2022-10-18,2022-10-22,Ankle Injury,Ankle,3
+2022-2023,2022/23,Brighton,A. Mac Allister,6716,3,2,2022-12-26,2023-02-04,Rest,Other,40
+2022-2023,2022/23,Brighton,A. Webster,19265,5,5,2022-12-26,2023-05-18,Knock,Knock,143
+2022-2023,2022/23,Brighton,M. Caicedo,116117,1,0,2022-12-31,2022-12-31,Suspended,Other,0
+2022-2023,2022/23,Brighton,L. Trossard,1946,1,1,2023-01-14,2023-01-14,Coach's decision,Other,0
+2022-2023,2022/23,Brighton,E. Ferguson,129643,1,1,2023-02-04,2023-02-04,Knee Injury,Knee,0
+2022-2023,2022/23,Brighton,L. Colwill,152953,5,4,2023-02-04,2023-04-15,Muscle Injury,Muscle,69
+2022-2023,2022/23,Brighton,B. Gilmour,130423,1,1,2023-02-18,2023-02-18,Knock,Knock,0
+2022-2023,2022/23,Brighton,D. Welbeck,1469,1,1,2023-02-18,2023-02-18,Calf Injury,Calf,0
+2022-2023,2022/23,Brighton,J. Sarmiento,202086,13,13,2023-04-01,2023-05-28,Ankle Injury,Ankle,57
+2022-2023,2022/23,Brighton,T. Lamptey,138815,10,10,2023-04-15,2023-05-28,Knee Injury,Knee,43
+2022-2023,2022/23,Brighton,J. Veltman,537,2,2,2023-05-04,2023-05-08,Muscle Injury,Muscle,3
+2022-2023,2022/23,Brighton,S. March,18973,5,5,2023-05-14,2023-05-28,Thigh Injury,Thigh,14
+2022-2023,2022/23,Brighton,R. Sanchez,18959,3,3,2023-05-21,2023-05-28,Injury,Generic injury,7
+2022-2023,2022/23,Chelsea,M. Alonso,2278,4,4,2022-08-14,2022-08-30,Coach's decision,Other,16
+2022-2023,2022/23,Chelsea,M. Kovacic,2291,3,3,2022-08-14,2023-02-03,Knee Injury,Knee,173
+2022-2023,2022/23,Chelsea,A. Broja,138822,29,29,2022-08-21,2023-05-28,Knee Injury,Knee,280
+2022-2023,2022/23,Chelsea,N. Kante,2290,34,34,2022-08-21,2023-05-28,Hamstring Injury,Hamstring,280
+2022-2023,2022/23,Chelsea,K. Koulibaly,318,8,7,2022-08-27,2023-05-13,Thigh Injury,Thigh,259
+2022-2023,2022/23,Chelsea,C. Gallagher,67972,1,0,2022-08-30,2022-08-30,Red Card,Other,0
+2022-2023,2022/23,Chelsea,D. Zakaria,2810,4,4,2022-09-03,2023-02-03,Muscle Injury,Muscle,153
+2022-2023,2022/23,Chelsea,P. Aubameyang,1465,5,5,2022-09-03,2023-04-18,Inactive,Other,227
+2022-2023,2022/23,Chelsea,T. Silva,259,8,8,2022-09-06,2023-04-08,Knee Injury,Knee,213
+2022-2023,2022/23,Chelsea,E. Mendy,2986,12,12,2022-09-14,2023-03-11,Finger Injury,Generic injury,177
+2022-2023,2022/23,Chelsea,C. Chukwuemeka,138935,5,5,2022-10-01,2023-04-15,Thigh Injury,Thigh,196
+2022-2023,2022/23,Chelsea,M. Cucurella,47380,7,7,2022-10-01,2023-05-28,Thigh Injury,Thigh,239
+2022-2023,2022/23,Chelsea,W. Fofana,22094,17,17,2022-10-08,2023-02-03,Knee Injury,Knee,118
+2022-2023,2022/23,Chelsea,H. Ziyech,548,1,1,2022-10-11,2022-10-11,Illness,Other,0
+2022-2023,2022/23,Chelsea,R. James,19545,21,21,2022-10-16,2023-05-28,Knee Injury,Knee,224
+2022-2023,2022/23,Chelsea,K. Arrizabalaga,2273,3,3,2022-11-02,2022-11-12,Injury,Generic injury,9
+2022-2023,2022/23,Chelsea,B. Chilwell,2933,9,8,2022-11-06,2023-05-25,Thigh Injury,Thigh,200
+2022-2023,2022/23,Chelsea,M. Mount,19220,11,10,2023-01-05,2023-05-25,Pelvis Injury,Generic injury,139
+2022-2023,2022/23,Chelsea,C. Pulisic,17,9,9,2023-01-12,2023-03-04,Knee Injury,Knee,50
+2022-2023,2022/23,Chelsea,R. Loftus-Cheek,2292,1,1,2023-01-12,2023-01-12,Calf Injury,Calf,0
+2022-2023,2022/23,Chelsea,R. Sterling,645,4,4,2023-01-12,2023-02-15,Thigh Injury,Thigh,34
+2022-2023,2022/23,Chelsea,Joao Felix,583,3,0,2023-01-15,2023-02-03,Red Card,Other,19
+2022-2023,2022/23,Chelsea,B. Badiashile,95,7,7,2023-02-15,2023-05-28,Inactive,Other,101
+2022-2023,2022/23,Chelsea,N. Madueke,136723,4,4,2023-02-15,2023-04-18,Inactive,Other,61
+2022-2023,2022/23,Chelsea,C. Azpilicueta,2280,7,7,2023-02-26,2023-04-08,Head Injury,Generic injury,41
+2022-2023,2022/23,Chelsea,M. Bettinelli,19012,6,6,2023-05-02,2023-05-28,Injury,Generic injury,25
+2022-2023,2022/23,Crystal Palace,J. Butland,2930,14,14,2022-08-05,2022-11-12,Wrist Injury,Generic injury,98
+2022-2023,2022/23,Crystal Palace,J. McArthur,18849,23,23,2022-08-05,2023-05-06,Groin Injury,Groin,273
+2022-2023,2022/23,Crystal Palace,J. Tomkins,18844,11,10,2022-08-05,2023-05-28,Muscle Injury,Muscle,295
+2022-2023,2022/23,Crystal Palace,M. Olise,19617,1,1,2022-08-05,2022-08-05,Foot Injury,Generic injury,0
+2022-2023,2022/23,Crystal Palace,N. Ferguson,127605,23,23,2022-08-15,2023-05-28,Injury,Generic injury,285
+2022-2023,2022/23,Crystal Palace,N. Clyne,18862,5,5,2022-10-09,2023-04-15,Ankle Injury,Ankle,188
+2022-2023,2022/23,Crystal Palace,C. Richards,126949,6,6,2022-10-15,2022-11-12,Leg Injury,Generic injury,28
+2022-2023,2022/23,Crystal Palace,M. Guehi,67971,1,0,2022-12-26,2022-12-26,Yellow Cards,Other,0
+2022-2023,2022/23,Crystal Palace,S. Johnstone,19143,7,7,2022-12-26,2023-03-19,Calf Injury,Calf,82
+2022-2023,2022/23,Crystal Palace,T. Mitchell,182201,2,0,2022-12-31,2023-01-04,Red Card,Other,4
+2022-2023,2022/23,Crystal Palace,J. Andersen,2729,2,2,2023-01-21,2023-02-04,Calf Injury,Calf,13
+2022-2023,2022/23,Crystal Palace,W. Zaha,3247,7,7,2023-02-04,2023-05-28,Hamstring Injury,Hamstring,113
+2022-2023,2022/23,Crystal Palace,C. Doucoure,3339,1,0,2023-03-11,2023-03-11,Red Card,Other,0
+2022-2023,2022/23,Crystal Palace,A. S. Lokonga,1427,1,0,2023-03-19,2023-03-19,Loan agreement,Other,0
+2022-2023,2022/23,Crystal Palace,V. Guaita,18835,3,3,2023-03-19,2023-04-15,Calf Injury,Calf,27
+2022-2023,2022/23,Crystal Palace,N. Ahamada,152418,1,1,2023-05-06,2023-05-06,Ankle Injury,Ankle,0
+2022-2023,2022/23,Crystal Palace,L. Milivojevic,18852,3,3,2023-05-13,2023-05-28,Injury,Generic injury,15
+2022-2023,2022/23,Crystal Palace,J. Schlupp,18843,2,2,2023-05-20,2023-05-28,Knock,Knock,8
+2022-2023,2022/23,Everton,A. Gomes,18765,4,4,2022-08-06,2022-08-27,Injury,Generic injury,20
+2022-2023,2022/23,Everton,A. Townsend,18854,38,38,2022-08-06,2023-05-28,Knee Injury,Knee,294
+2022-2023,2022/23,Everton,D. Calvert-Lewin,18766,14,14,2022-08-06,2023-05-28,Thigh Injury,Thigh,294
+2022-2023,2022/23,Everton,S. Rondon,2461,1,0,2022-08-06,2022-08-06,Red Card,Other,0
+2022-2023,2022/23,Everton,B. Godfrey,19073,17,17,2022-08-13,2023-05-28,Ankle Injury,Ankle,288
+2022-2023,2022/23,Everton,Y. Mina,2484,11,11,2022-08-13,2022-11-05,Ankle Injury,Ankle,84
+2022-2023,2022/23,Everton,A. Doucoure,18805,6,3,2022-08-20,2023-04-22,Thigh Injury,Thigh,245
+2022-2023,2022/23,Everton,M. Holgate,19150,5,4,2022-08-30,2023-04-27,Knee Injury,Knee,239
+2022-2023,2022/23,Everton,N. Patterson,138417,10,10,2022-10-01,2023-05-28,Knee Injury,Knee,239
+2022-2023,2022/23,Everton,A. Gordon,138787,1,0,2022-10-15,2022-10-15,Yellow Cards,Other,0
+2022-2023,2022/23,Everton,C. Coady,18741,2,0,2022-12-26,2023-05-20,Loan agreement,Other,144
+2022-2023,2022/23,Everton,J. Garner,895,6,6,2022-12-26,2023-02-04,Back Injury,Generic injury,39
+2022-2023,2022/23,Everton,A. Onana,162714,1,0,2023-01-03,2023-01-03,Yellow Cards,Other,0
+2022-2023,2022/23,Everton,M. Keane,2934,3,3,2023-01-03,2023-01-21,Knee Injury,Knee,17
+2022-2023,2022/23,Everton,S. Coleman,18758,6,6,2023-04-15,2023-05-28,Knee Injury,Knee,43
+2022-2023,2022/23,Everton,R. Vinagre,18745,6,6,2023-04-27,2023-05-28,Calf Injury,Calf,30
+2022-2023,2022/23,Everton,V. Mykolenko,2165,1,1,2023-05-14,2023-05-14,Thigh Injury,Thigh,0
+2022-2023,2022/23,Fulham,H. Wilson,19221,8,8,2022-08-06,2022-10-01,Knee Injury,Knee,56
+2022-2023,2022/23,Fulham,N. Chalobah,18803,4,1,2022-08-06,2022-10-20,Red Card,Other,75
+2022-2023,2022/23,Fulham,M. Solomon,697,16,16,2022-08-13,2022-12-31,Knee Injury,Knee,140
+2022-2023,2022/23,Fulham,S. Duffy,18962,1,0,2022-08-30,2022-08-30,Loan agreement,Other,0
+2022-2023,2022/23,Fulham,J. Palhinha,41104,3,0,2022-10-01,2023-03-12,Yellow Cards,Other,162
+2022-2023,2022/23,Fulham,L. Kurzawa,263,18,18,2022-10-09,2023-05-28,Knee Injury,Knee,231
+2022-2023,2022/23,Fulham,D. James,19329,3,1,2022-10-23,2023-05-13,Loan agreement,Other,202
+2022-2023,2022/23,Fulham,A. Mitrovic,2825,11,2,2022-11-05,2023-05-08,Red Card,Other,183
+2022-2023,2022/23,Fulham,B. Reid,19004,1,0,2022-11-05,2022-11-05,Yellow Cards,Other,0
+2022-2023,2022/23,Fulham,N. Kebano,19027,17,17,2022-11-05,2023-04-15,Achilles Tendon Injury,Generic injury,160
+2022-2023,2022/23,Fulham,H. Reed,19480,1,0,2022-11-13,2022-11-13,Yellow Cards,Other,0
+2022-2023,2022/23,Fulham,K. Tete,657,1,0,2022-11-13,2022-11-13,Yellow Cards,Other,0
+2022-2023,2022/23,Fulham,A. Robinson,19549,1,0,2023-01-15,2023-01-15,Yellow Cards,Other,0
+2022-2023,2022/23,Fulham,T. Cairney,19025,5,5,2023-02-11,2023-03-12,Ankle Injury,Ankle,28
+2022-2023,2022/23,Fulham,C. Soares,190,1,0,2023-03-12,2023-03-12,Loan agreement,Other,0
+2022-2023,2022/23,Fulham,Willian,2294,2,1,2023-04-01,2023-04-25,Red Card,Other,24
+2022-2023,2022/23,Fulham,A. Pereira,899,5,5,2023-05-03,2023-05-28,Ankle Injury,Ankle,24
+2022-2023,2022/23,Fulham,T. Ream,19023,5,5,2023-05-03,2023-05-28,Arm Injury,Generic injury,24
+2022-2023,2022/23,Leeds,A. Forshaw,19127,21,21,2022-08-06,2023-04-04,Muscle Injury,Muscle,72
+2022-2023,2022/23,Leeds,D. James,19329,1,0,2022-08-06,2022-08-06,Red Card,Other,0
+2022-2023,2022/23,Leeds,J. Firpo,1564,7,6,2022-08-06,2023-05-21,Knee Injury,Knee,14
+2022-2023,2022/23,Leeds,L. Ayling,19116,5,5,2022-08-06,2022-08-30,Knee Injury,Knee,14
+2022-2023,2022/23,Leeds,L. Cooper,19118,8,8,2022-08-06,2023-05-13,Muscle Injury,Muscle,0
+2022-2023,2022/23,Leeds,L. Sinisterra,37161,18,17,2022-08-06,2023-05-28,Thigh Injury,Thigh,69
+2022-2023,2022/23,Leeds,M. Bogusz,19125,5,5,2022-08-06,2022-08-30,Knee Injury,Knee,24
+2022-2023,2022/23,Leeds,S. Dallas,19126,38,38,2022-08-06,2023-05-28,Broken Leg,Other,295
+2022-2023,2022/23,Leeds,P. Bamford,19134,7,7,2022-08-21,2023-05-28,Muscle Injury,Muscle,0
+2022-2023,2022/23,Leeds,Rodrigo,935,7,7,2022-09-03,2023-03-04,Knee Injury,Knee,182
+2022-2023,2022/23,Leeds,A. Gray,328089,18,18,2022-10-02,2023-02-25,Foot Injury,Generic injury,20
+2022-2023,2022/23,Leeds,P. Struijk,64003,2,2,2022-10-20,2023-02-12,Injury,Generic injury,114
+2022-2023,2022/23,Leeds,J. Harrison,19128,1,1,2022-11-12,2022-11-12,Muscle Injury,Muscle,0
+2022-2023,2022/23,Leeds,M. Klich,3008,1,1,2022-11-12,2022-11-12,Knee Injury,Knee,0
+2022-2023,2022/23,Leeds,T. Adams,1150,13,12,2022-12-28,2023-05-28,Thigh Injury,Thigh,150
+2022-2023,2022/23,Leeds,C. Summerville,37724,2,2,2023-01-13,2023-01-22,Ankle Injury,Ankle,8
+2022-2023,2022/23,Leeds,R. Koch,26238,1,0,2023-02-05,2023-02-05,Yellow Cards,Other,0
+2022-2023,2022/23,Leeds,S. Perkins,284408,4,4,2023-02-05,2023-02-18,Ankle Injury,Ankle,0
+2022-2023,2022/23,Leeds,M. Roca,47341,2,2,2023-02-12,2023-02-18,Injury,Generic injury,0
+2022-2023,2022/23,Leeds,M. Wober,2048,3,3,2023-04-01,2023-04-09,Muscle Injury,Muscle,7
+2022-2023,2022/23,Leeds,W. Gnonto,162128,1,1,2023-04-01,2023-04-01,Ankle Injury,Ankle,0
+2022-2023,2022/23,Leicester,H. Barnes,18778,4,4,2022-08-07,2023-04-22,Knee Injury,Knee,6
+2022-2023,2022/23,Leicester,R. Bertrand,18936,38,38,2022-08-07,2023-05-28,Knee Injury,Knee,237
+2022-2023,2022/23,Leicester,R. Pereira,18771,25,25,2022-08-07,2023-05-01,Achilles Tendon Injury,Generic injury,167
+2022-2023,2022/23,Leicester,J. Maddison,18784,7,6,2022-08-27,2023-02-25,Knee Injury,Knee,14
+2022-2023,2022/23,Leicester,W. Fofana,22094,1,1,2022-08-27,2022-08-27,Personal Reasons,Other,0
+2022-2023,2022/23,Leicester,N. Mendy,18785,1,1,2022-10-08,2022-10-08,Injury,Generic injury,0
+2022-2023,2022/23,Leicester,W. Ndidi,18786,6,6,2022-10-08,2023-05-28,Thigh Injury,Thigh,232
+2022-2023,2022/23,Leicester,J. Evans,18772,21,21,2022-10-15,2023-05-01,Muscle Injury,Muscle,26
+2022-2023,2022/23,Leicester,C. Soyuncu,18776,4,4,2022-10-20,2023-05-28,Thigh Injury,Thigh,0
+2022-2023,2022/23,Leicester,J. Justin,19760,24,24,2022-11-12,2023-05-28,Knee Injury,Knee,197
+2022-2023,2022/23,Leicester,D. Praet,2925,2,2,2022-12-30,2023-01-03,Back Injury,Generic injury,3
+2022-2023,2022/23,Leicester,P. Daka,1098,1,1,2023-01-03,2023-01-03,Muscle Injury,Muscle,0
+2022-2023,2022/23,Leicester,A. Perez,18906,2,2,2023-01-14,2023-01-21,Injury,Generic injury,0
+2022-2023,2022/23,Leicester,B. Soumare,22233,4,4,2023-01-14,2023-02-11,Thigh Injury,Thigh,7
+2022-2023,2022/23,Leicester,K. Dewsbury-Hall,148099,3,2,2023-01-14,2023-05-22,Injury,Generic injury,0
+2022-2023,2022/23,Leicester,Y. Tielemans,2926,6,6,2023-03-04,2023-04-08,Ankle Injury,Ankle,31
+2022-2023,2022/23,Leicester,V. Kristiansen,158710,2,2,2023-03-11,2023-03-18,Ankle Injury,Ankle,0
+2022-2023,2022/23,Leicester,J. Vestergaard,18943,11,11,2023-03-18,2023-05-28,Calf Injury,Calf,71
+2022-2023,2022/23,Leicester,W. Faes,8694,1,0,2023-03-18,2023-03-18,Red Card,Other,0
+2022-2023,2022/23,Leicester,K. Iheanacho,2778,3,3,2023-05-01,2023-05-15,Muscle Injury,Muscle,6
+2022-2023,2022/23,Leicester,D. Ward,18146,2,2,2023-05-22,2023-05-28,Finger Injury,Generic injury,5
+2022-2023,2022/23,Liverpool,A. Oxlade-Chamberlain,297,13,13,2022-08-06,2022-10-16,Muscle Injury,Muscle,71
+2022-2023,2022/23,Liverpool,C. Jones,293,9,9,2022-08-06,2022-12-30,Calf Injury,Calf,146
+2022-2023,2022/23,Liverpool,C. Kelleher,281,3,3,2022-08-06,2022-09-07,Muscle Injury,Muscle,32
+2022-2023,2022/23,Liverpool,Diogo Jota,2678,17,17,2022-08-06,2023-02-04,Calf Injury,Calf,182
+2022-2023,2022/23,Liverpool,I. Konate,1145,11,11,2022-08-06,2023-02-21,Injury,Generic injury,199
+2022-2023,2022/23,Liverpool,Thiago,507,18,18,2022-08-15,2023-05-28,Muscle Injury,Muscle,285
+2022-2023,2022/23,Liverpool,C. Ramsay,135525,26,26,2022-08-22,2023-05-28,Knee Injury,Knee,278
+2022-2023,2022/23,Liverpool,D. Nunez,51617,5,2,2022-08-22,2023-05-20,Red Card,Other,270
+2022-2023,2022/23,Liverpool,J. Matip,286,11,11,2022-08-22,2022-11-12,Calf Injury,Calf,81
+2022-2023,2022/23,Liverpool,N. Keita,294,27,27,2022-08-27,2023-05-28,Lacking Match Fitness,Other,274
+2022-2023,2022/23,Liverpool,J. Henderson,292,5,5,2022-09-03,2023-03-15,Thigh Injury,Thigh,193
+2022-2023,2022/23,Liverpool,F. Carvalho,153066,1,1,2022-09-07,2022-09-07,Thigh Injury,Thigh,0
+2022-2023,2022/23,Liverpool,A. Robertson,289,1,1,2022-09-13,2022-09-13,Knee Injury,Knee,0
+2022-2023,2022/23,Liverpool,Arthur,150,20,20,2022-10-09,2023-02-25,Muscle Injury,Muscle,139
+2022-2023,2022/23,Liverpool,L. Diaz,2489,23,23,2022-10-12,2023-03-15,Knee Injury,Knee,154
+2022-2023,2022/23,Liverpool,T. Alexander-Arnold,283,1,1,2022-10-12,2022-10-12,Ankle Injury,Ankle,0
+2022-2023,2022/23,Liverpool,J. Milner,296,2,2,2022-12-26,2022-12-30,Thigh Injury,Thigh,4
+2022-2023,2022/23,Liverpool,R. Firmino,302,10,10,2022-12-26,2023-05-06,Calf Injury,Calf,130
+2022-2023,2022/23,Liverpool,V. van Dijk,290,3,3,2023-01-14,2023-02-04,Thigh Injury,Thigh,21
+2022-2023,2022/23,Liverpool,J. Gomez,284,2,2,2023-03-01,2023-03-11,Muscle Injury,Muscle,9
+2022-2023,2022/23,Liverpool,S. Bajcetic,310187,13,13,2023-03-15,2023-05-28,Muscle Injury,Muscle,73
+2022-2023,2022/23,Manchester City,A. Laporte,622,8,8,2022-08-07,2023-02-22,Knee Injury,Knee,199
+2022-2023,2022/23,Manchester City,B. Mendy,623,51,0,2022-08-07,2023-06-10,Suspended,Other,307
+2022-2023,2022/23,Manchester City,J. Stones,626,13,13,2022-09-06,2023-02-25,Thigh Injury,Thigh,171
+2022-2023,2022/23,Manchester City,K. Walker,627,11,11,2022-09-06,2022-11-12,Muscle Injury,Muscle,66
+2022-2023,2022/23,Manchester City,K. Phillips,19130,10,10,2022-10-02,2022-11-05,Shoulder Injury,Generic injury,34
+2022-2023,2022/23,Manchester City,S. Gomez,23,1,0,2022-10-25,2022-10-25,Red Card,Other,0
+2022-2023,2022/23,Manchester City,E. Haaland,1100,1,1,2022-11-02,2022-11-02,Foot Injury,Generic injury,0
+2022-2023,2022/23,Manchester City,N. Ake,18861,7,7,2022-11-12,2023-05-24,Muscle Injury,Muscle,193
+2022-2023,2022/23,Manchester City,J. Alvarez,6009,1,1,2022-12-28,2022-12-28,Rest,Other,0
+2022-2023,2022/23,Manchester City,R. Dias,567,4,4,2022-12-28,2023-01-14,Thigh Injury,Thigh,16
+2022-2023,2022/23,Manchester City,K. De Bruyne,629,2,2,2023-02-22,2023-04-30,Illness,Other,66
+2022-2023,2022/23,Manchester City,P. Foden,631,4,4,2023-04-01,2023-04-15,Health problems,Other,14
+2022-2023,2022/23,Manchester United,A. Martial,908,18,18,2022-08-07,2023-03-16,Achilles Tendon Injury,Generic injury,221
+2022-2023,2022/23,Manchester United,B. Williams,138806,20,20,2022-08-07,2022-11-13,Injury,Generic injury,98
+2022-2023,2022/23,Manchester United,M. Greenwood,897,50,50,2022-08-07,2023-05-28,Inactive,Other,294
+2022-2023,2022/23,Manchester United,F. Pellistri,70078,7,7,2022-08-13,2022-09-15,Ankle Injury,Ankle,33
+2022-2023,2022/23,Manchester United,V. Lindelof,889,4,4,2022-08-13,2022-12-27,Knock,Knock,136
+2022-2023,2022/23,Manchester United,Casemiro,747,8,1,2022-08-22,2023-04-08,Red Card,Other,228
+2022-2023,2022/23,Manchester United,A. Wan-Bissaka,18846,7,7,2022-09-15,2022-10-22,Injury,Generic injury,36
+2022-2023,2022/23,Manchester United,D. van de Beek,547,34,34,2022-09-15,2023-05-28,Knee Injury,Knee,254
+2022-2023,2022/23,Manchester United,M. Rashford,909,3,3,2022-09-15,2023-04-16,Muscle Injury,Muscle,212
+2022-2023,2022/23,Manchester United,H. Maguire,2935,4,4,2022-10-02,2022-10-13,Muscle Injury,Muscle,11
+2022-2023,2022/23,Manchester United,R. Varane,742,12,12,2022-10-06,2023-05-07,Muscle Injury,Muscle,213
+2022-2023,2022/23,Manchester United,M. Dubravka,18886,1,0,2022-10-16,2022-10-16,Loan agreement,Other,0
+2022-2023,2022/23,Manchester United,S. McTominay,903,9,8,2022-10-16,2023-05-13,Health problems,Other,209
+2022-2023,2022/23,Manchester United,A. Tuanzebe,19182,13,13,2022-10-19,2023-01-22,Lacking Match Fitness,Other,94
+2022-2023,2022/23,Manchester United,C. Ronaldo,874,2,2,2022-10-22,2022-11-13,Coach's decision,Other,22
+2022-2023,2022/23,Manchester United,Antony,9971,6,6,2022-11-03,2023-05-28,Injury,Generic injury,205
+2022-2023,2022/23,Manchester United,J. Sancho,18,7,7,2022-11-03,2023-01-22,Lacking Match Fitness,Other,79
+2022-2023,2022/23,Manchester United,B. Fernandes,1485,2,0,2022-11-06,2023-04-20,Yellow Cards,Other,165
+2022-2023,2022/23,Manchester United,D. Dalot,886,3,2,2022-11-13,2023-01-22,Thigh Injury,Thigh,70
+2022-2023,2022/23,Manchester United,L. Martinez,2467,12,11,2022-12-27,2023-05-28,Leg Injury,Generic injury,151
+2022-2023,2022/23,Manchester United,J. Butland,2930,2,0,2023-01-18,2023-02-04,Loan agreement,Other,16
+2022-2023,2022/23,Manchester United,C. Eriksen,174,10,10,2023-02-04,2023-03-16,Ankle Injury,Ankle,40
+2022-2023,2022/23,Manchester United,M. Sabitzer,1159,5,4,2023-02-16,2023-05-28,Knee Injury,Knee,100
+2022-2023,2022/23,Manchester United,A. Garnacho,284324,10,10,2023-03-16,2023-05-04,Foot Injury,Generic injury,49
+2022-2023,2022/23,Manchester United,T. Heaton,2931,11,11,2023-04-02,2023-05-13,Ankle Injury,Ankle,40
+2022-2023,2022/23,Manchester United,L. Shaw,891,2,2,2023-04-08,2023-04-13,Thigh Injury,Thigh,5
+2022-2023,2022/23,Manchester United,P. Jones,888,8,8,2023-04-27,2023-05-28,Knee Injury,Knee,30
+2022-2023,2022/23,Newcastle,F. Fernandez,18893,1,1,2022-08-06,2022-08-06,Calf Injury,Calf,0
+2022-2023,2022/23,Newcastle,J. Lewis,19076,1,1,2022-08-06,2022-08-06,Calf Injury,Calf,0
+2022-2023,2022/23,Newcastle,J. Manquillo,18896,4,4,2022-08-06,2023-05-28,Injury,Generic injury,295
+2022-2023,2022/23,Newcastle,J. Shelvey,18904,13,13,2022-08-06,2023-01-21,Thigh Injury,Thigh,168
+2022-2023,2022/23,Newcastle,C. Wilson,2939,3,3,2022-08-28,2022-09-03,Thigh Injury,Thigh,6
+2022-2023,2022/23,Newcastle,E. Krafth,2855,35,35,2022-08-28,2023-05-28,Knee Injury,Knee,273
+2022-2023,2022/23,Newcastle,K. Darlow,18885,7,7,2022-09-17,2022-10-29,Ankle Injury,Ankle,42
+2022-2023,2022/23,Newcastle,A. Isak,2864,9,9,2022-10-01,2023-01-03,Injury,Generic injury,94
+2022-2023,2022/23,Newcastle,M. Ritchie,18903,12,12,2022-10-01,2023-05-28,Calf Injury,Calf,239
+2022-2023,2022/23,Newcastle,A. Saint-Maximin,22173,4,4,2022-10-16,2023-04-30,Thigh Injury,Thigh,196
+2022-2023,2022/23,Newcastle,P. Dummett,18892,6,6,2022-10-29,2023-01-03,Calf Injury,Calf,66
+2022-2023,2022/23,Newcastle,Joelinton,723,4,1,2022-11-06,2023-05-28,Yellow Cards,Other,203
+2022-2023,2022/23,Newcastle,M. Targett,18941,5,5,2023-01-03,2023-02-11,Heel Injury,Generic injury,38
+2022-2023,2022/23,Newcastle,B. Guimaraes,10135,3,0,2023-02-04,2023-02-18,Red Card,Other,14
+2022-2023,2022/23,Newcastle,R. Fraser,18873,15,15,2023-03-04,2023-05-28,Lacking Match Fitness,Other,85
+2022-2023,2022/23,Newcastle,A. Gordon,138787,1,1,2023-03-17,2023-03-17,Ankle Injury,Ankle,0
+2022-2023,2022/23,Newcastle,M. Almiron,2507,3,3,2023-04-02,2023-04-08,Thigh Injury,Thigh,5
+2022-2023,2022/23,Newcastle,J. Lascelles,18894,5,5,2023-05-07,2023-05-28,Calf Injury,Calf,21
+2022-2023,2022/23,Newcastle,S. Longstaff,18901,2,2,2023-05-13,2023-05-18,Foot Injury,Generic injury,5
+2022-2023,2022/23,Newcastle,J. Willock,1463,2,2,2023-05-22,2023-05-28,Muscle Injury,Muscle,5
+2022-2023,2022/23,Newcastle,N. Pope,18911,1,1,2023-05-28,2023-05-28,Hand Injury,Generic injury,0
+2022-2023,2022/23,Nottingham Forest,O. Richards,19610,38,38,2022-08-06,2023-05-28,Calf Injury,Calf,295
+2022-2023,2022/23,Nottingham Forest,J. Colback,19299,8,8,2022-08-20,2023-05-28,Back Injury,Generic injury,281
+2022-2023,2022/23,Nottingham Forest,M. Niakhate,25916,21,21,2022-08-28,2023-02-25,Thigh Injury,Thigh,180
+2022-2023,2022/23,Nottingham Forest,O. Mangala,24882,4,3,2022-08-31,2022-11-12,Muscle Injury,Muscle,72
+2022-2023,2022/23,Nottingham Forest,L. O'Brien,20503,1,1,2022-10-22,2022-10-22,Illness,Other,0
+2022-2023,2022/23,Nottingham Forest,H. Toffolo,17365,3,3,2022-10-30,2022-11-12,Thigh Injury,Thigh,13
+2022-2023,2022/23,Nottingham Forest,G. Biancone,84081,25,25,2022-11-05,2023-05-28,Knee Injury,Knee,204
+2022-2023,2022/23,Nottingham Forest,C. Kouyate,2991,12,12,2022-12-27,2023-04-22,Muscle Injury,Muscle,115
+2022-2023,2022/23,Nottingham Forest,D. Henderson,19088,20,20,2022-12-27,2023-05-28,Thigh Injury,Thigh,151
+2022-2023,2022/23,Nottingham Forest,J. Lingard,900,2,2,2023-01-04,2023-01-14,Thigh Injury,Thigh,9
+2022-2023,2022/23,Nottingham Forest,W. Boly,18739,13,13,2023-01-14,2023-04-29,Thigh Injury,Thigh,104
+2022-2023,2022/23,Nottingham Forest,T. Awoniyi,8598,8,8,2023-01-21,2023-03-17,Lacking Match Fitness,Other,55
+2022-2023,2022/23,Nottingham Forest,R. Yates,19305,4,4,2023-02-05,2023-04-26,Shoulder Injury,Generic injury,80
+2022-2023,2022/23,Nottingham Forest,S. McKenna,44811,11,11,2023-02-18,2023-05-28,Shoulder Injury,Generic injury,99
+2022-2023,2022/23,Nottingham Forest,S. Aurier,163,2,2,2023-02-25,2023-04-22,Calf Injury,Calf,55
+2022-2023,2022/23,Nottingham Forest,C. Wood,18931,12,12,2023-03-17,2023-05-28,Thigh Injury,Thigh,71
+2022-2023,2022/23,Nottingham Forest,N. Williams,138780,5,5,2023-04-29,2023-05-28,Concussion,Other,29
+2022-2023,2022/23,Nottingham Forest,E. Dennis,80,1,1,2023-05-13,2023-05-13,Knock,Knock,0
+2022-2023,2022/23,Nottingham Forest,J. Shelvey,18904,1,1,2023-05-20,2023-05-20,Calf Injury,Calf,0
+2022-2023,2022/23,Southampton,T. Walcott,18769,6,6,2022-08-06,2023-01-14,Calf Injury,Calf,161
+2022-2023,2022/23,Southampton,V. Livramento,158694,31,31,2022-08-06,2023-05-13,Knee Injury,Knee,280
+2022-2023,2022/23,Southampton,R. Lavia,282125,4,4,2022-09-03,2022-10-08,Muscle Injury,Muscle,35
+2022-2023,2022/23,Southampton,A. Bella-Kotchap,25061,7,7,2022-10-19,2023-05-28,Shoulder Injury,Generic injury,220
+2022-2023,2022/23,Southampton,A. Maitland-Niles,1456,2,0,2022-10-23,2023-04-21,Loan agreement,Other,180
+2022-2023,2022/23,Southampton,K. Walker-Peters,171,4,4,2022-10-23,2022-11-12,Muscle Injury,Muscle,20
+2022-2023,2022/23,Southampton,J. Larios,284264,23,23,2022-12-26,2023-05-28,Muscle Injury,Muscle,153
+2022-2023,2022/23,Southampton,M. Orsic,1330,2,2,2023-02-25,2023-04-15,Concussion,Other,48
+2022-2023,2022/23,Southampton,M. Salisu,47480,8,8,2023-04-15,2023-05-28,Muscle Injury,Muscle,43
+2022-2023,2022/23,Southampton,R. Perraud,20600,4,4,2023-05-08,2023-05-28,Knock,Knock,19
+2022-2023,2022/23,Southampton,C. Adams,19524,1,1,2023-05-28,2023-05-28,Calf Injury,Calf,0
+2022-2023,2022/23,Tottenham,O. Skipp,180,3,3,2022-08-06,2022-08-20,Leg Injury,Generic injury,13
+2022-2023,2022/23,Tottenham,Richarlison,2413,10,9,2022-08-06,2023-01-04,Calf Injury,Calf,151
+2022-2023,2022/23,Tottenham,C. Lenglet,133,1,1,2022-08-14,2022-08-14,Groin Injury,Groin,0
+2022-2023,2022/23,Tottenham,C. Romero,30776,6,5,2022-08-20,2023-05-28,Muscle Injury,Muscle,281
+2022-2023,2022/23,Tottenham,Lucas Moura,178,15,12,2022-08-31,2023-04-23,Calf Injury,Calf,234
+2022-2023,2022/23,Tottenham,D. Kulusevski,30435,8,8,2022-10-04,2022-11-01,Thigh Injury,Thigh,28
+2022-2023,2022/23,Tottenham,Emerson Royal,1566,9,6,2022-10-08,2023-04-30,Knee Injury,Knee,203
+2022-2023,2022/23,Tottenham,J. Tanganga,149550,3,3,2022-10-08,2022-10-15,Knock,Knock,7
+2022-2023,2022/23,Tottenham,Son Heung-Min,186,2,2,2022-11-06,2022-11-12,Face Injury,Generic injury,5
+2022-2023,2022/23,Tottenham,R. Sessegnon,19032,18,18,2022-11-12,2023-05-28,Thigh Injury,Thigh,197
+2022-2023,2022/23,Tottenham,R. Bentancur,863,19,19,2023-01-01,2023-05-28,Knee Injury,Knee,147
+2022-2023,2022/23,Tottenham,Y. Bissouma,18968,15,14,2023-01-04,2023-04-30,Ankle Injury,Ankle,115
+2022-2023,2022/23,Tottenham,H. Lloris,159,13,13,2023-02-11,2023-05-28,Knee Injury,Knee,106
+2022-2023,2022/23,Tottenham,P. Hojbjerg,2735,1,0,2023-02-14,2023-02-14,Yellow Cards,Other,0
+2022-2023,2022/23,Tottenham,E. Dier,175,2,1,2023-03-08,2023-05-28,Yellow Cards,Other,80
+2022-2023,2022/23,Tottenham,B. Davies,164,3,3,2023-04-03,2023-04-15,Muscle Injury,Muscle,11
+2022-2023,2022/23,West Ham,N. Aguerd,21694,13,13,2022-08-07,2023-05-03,Ankle Injury,Ankle,269
+2022-2023,2022/23,West Ham,B. Johnson,18823,2,2,2022-09-03,2022-09-18,Thigh Injury,Thigh,14
+2022-2023,2022/23,West Ham,L. Paqueta,1646,3,3,2022-10-24,2023-02-19,Shoulder Injury,Generic injury,117
+2022-2023,2022/23,West Ham,M. Cornet,665,9,9,2022-11-12,2023-02-25,Calf Injury,Calf,105
+2022-2023,2022/23,West Ham,K. Zouma,2726,8,8,2022-12-26,2023-05-07,Knee Injury,Knee,131
+2022-2023,2022/23,West Ham,G. Scamacca,30544,14,14,2023-01-21,2023-05-28,Knee Injury,Knee,127
+2022-2023,2022/23,West Ham,A. Areola,253,1,1,2023-02-11,2023-02-11,Thigh Injury,Thigh,0
+2022-2023,2022/23,West Ham,L. Fabianski,2997,2,2,2023-03-04,2023-03-12,Eye injury,Generic injury,7
+2022-2023,2022/23,West Ham,V. Coufal,1231,2,2,2023-03-12,2023-05-07,Heel Injury,Generic injury,56
+2022-2023,2022/23,West Ham,D. Rice,2937,1,1,2023-05-03,2023-05-03,Illness,Other,0
+2022-2023,2022/23,West Ham,T. Soucek,1243,1,1,2023-05-03,2023-05-03,Illness,Other,0
+2022-2023,2022/23,Wolves,Chiquinho,195962,38,38,2022-08-06,2023-05-28,Knee Injury,Knee,295
+2022-2023,2022/23,Wolves,R. Jimenez,2887,11,11,2022-08-06,2022-11-12,Muscle Injury,Muscle,98
+2022-2023,2022/23,Wolves,W. Boly,18739,1,0,2022-08-31,2022-08-31,Suspended,Other,0
+2022-2023,2022/23,Wolves,B. Traore,157912,8,8,2022-09-03,2023-05-06,Injury,Generic injury,245
+2022-2023,2022/23,Wolves,S. Kalajdzic,7722,32,32,2022-09-17,2023-05-28,Knee Injury,Knee,253
+2022-2023,2022/23,Wolves,Hwang Hee-Chan,24888,7,7,2022-10-01,2023-03-18,Thigh Injury,Thigh,167
+2022-2023,2022/23,Wolves,N. Collins,19495,3,0,2022-10-01,2022-10-15,Red Card,Other,13
+2022-2023,2022/23,Wolves,P. Neto,1864,13,13,2022-10-08,2023-02-04,Ankle Injury,Ankle,119
+2022-2023,2022/23,Wolves,R. Neves,2676,3,0,2022-10-08,2023-04-15,Yellow Cards,Other,189
+2022-2023,2022/23,Wolves,D. Costa,54,3,1,2022-11-05,2023-03-12,Red Card,Other,127
+2022-2023,2022/23,Wolves,M. Lemina,18947,1,0,2023-02-18,2023-02-18,Red Card,Other,0
+2022-2023,2022/23,Wolves,H. Bueno,280687,3,3,2023-03-04,2023-03-18,Muscle Injury,Muscle,14
+2022-2023,2022/23,Wolves,Jonny,18740,3,0,2023-04-01,2023-04-15,Red Card,Other,14
