@@ -8,6 +8,8 @@ EDA/DATA/
 !Data/Injuries/**/*.csv
 # Allow CSVs in models directory
 !models/**/*.csv
+# Allow CSVs in XgBoost_model data directory
+!XgBoost_model/data/**/*.csv
 *.xlsx
 *.xls
 *.json
