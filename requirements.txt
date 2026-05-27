@@ -3,6 +3,7 @@ pandas
 numpy
 python-dateutil
 pytz
+scipy
 
 # Web Scraping & APIs
 requests
@@ -11,17 +12,31 @@ selenium
 webdriver-manager
 lxml
 
-# Cloudflare Bypass (SofaScore)
+# Cloudflare Bypass
 playwright
+cloudscraper
+undetected-chromedriver
 
 # Visualization
 matplotlib
+seaborn
+plotly
 
-# Optional: contextual data (ClubElo / Understat)
-#   pip install soccerdata
-#
-# Optional: modeling / Bayesian analysis
-#   pip install scipy scikit-learn pymc
-#
-# Optional: notebooks / EDA
-#   pip install jupyterlab seaborn
+# Modeling
+xgboost
+scikit-learn
+shap
+
+# Dashboard
+streamlit>=1.28
+
+# Contextual Data
+soccerdata
+ScraperFC
+
+# Configuration
+python-dotenv>=1.0
+
+# Utilities
+tqdm
+joblib

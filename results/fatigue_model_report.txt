@@ -1,0 +1,20 @@
+FIXTURE IQ - FATIGUE RISK MODEL REPORT
+==================================================
+
+AUC-ROC: 0.9772
+AUC-PR:  0.9456
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Low Risk       0.98      0.91      0.94      4321
+Fatigue Risk       0.80      0.94      0.86      1610
+
+    accuracy                           0.92      5931
+   macro avg       0.89      0.92      0.90      5931
+weighted avg       0.93      0.92      0.92      5931
+
+
+Confusion Matrix:
+TN=3938  FP=383
+FN=100  TP=1510

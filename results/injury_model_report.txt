@@ -1,0 +1,20 @@
+FIXTURE IQ - INJURY RISK MODEL REPORT
+==================================================
+
+AUC-ROC: 0.7115
+AUC-PR:  0.0369
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Low Risk       0.99      0.76      0.86      5833
+ Injury Risk       0.04      0.57      0.07        98
+
+    accuracy                           0.75      5931
+   macro avg       0.51      0.66      0.46      5931
+weighted avg       0.97      0.75      0.84      5931
+
+
+Confusion Matrix:
+TN=4404  FP=1429
+FN=42  TP=56
