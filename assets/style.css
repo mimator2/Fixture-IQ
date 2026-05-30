@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #0e1117;
+    color: #e0e0e0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.kpi-card {
+    background: linear-gradient(135deg, #1a1d27 0%, #222736 100%);
+    border: 1px solid #2a2e3a;
+    border-radius: 14px;
+    padding: 20px 24px;
+    min-width: 160px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+.kpi-card:hover {
+    transform: translateY(-2px);
+}
+.kpi-card .kpi-title {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8a8f9d;
+    margin-bottom: 8px;
+}
+.kpi-card .kpi-value {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.kpi-card .kpi-subtitle {
+    font-size: 12px;
+    color: #5a5f6d;
+    margin-top: 4px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 24px 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2a2e3a;
+}
+
+.chart-container {
+    background: #1a1d27;
+    border: 1px solid #2a2e3a;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.risk-badge-high {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.risk-badge-moderate {
+    display: inline-block;
+    background: #f39c12;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.risk-badge-low {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#sidebar {
+    box-shadow: 2px 0px 15px rgba(0,0,0,0.5);
+    z-index: 100;
+    overflow-y: auto;
+}
+#sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+#sidebar::-webkit-scrollbar-track {
+    background: #111111;
+}
+#sidebar::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 2px;
+}
+
+.dash-dropdown .Select-control {
+    background-color: #1e2128 !important;
+    border-color: #333 !important;
+    color: white !important;
+}
+.dash-dropdown .Select-placeholder {
+    color: #888 !important;
+}
+.dash-dropdown .Select-menu-outer {
+    background-color: #1e2128 !important;
+    border-color: #333 !important;
+}
+.dash-dropdown .Select-option {
+    color: #e0e0e0 !important;
+    background-color: #1e2128 !important;
+}
+.dash-dropdown .Select-option.is-focused {
+    background-color: #2a2e3a !important;
+}
+.dash-dropdown .Select-value-label {
+    color: white !important;
+}
+
+.Select-value-icon {
+    color: #888 !important;
+}
+.Select--multi .Select-value {
+    background-color: #2a2e3a !important;
+    border-color: #444 !important;
+}
+
+.dbc-nav-link {
+    color: #8a8f9d !important;
+    border-radius: 8px !important;
+    margin: 2px 0;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    padding: 10px 16px !important;
+}
+.dbc-nav-link:hover {
+    background-color: #1e2128 !important;
+    color: #ffffff !important;
+}
+.dbc-nav-link.active {
+    background-color: #2a2e3a !important;
+    color: #00BC8C !important;
+    font-weight: 600;
+}
+
+.sidebar-filter-label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #6a6f7d;
+    margin-bottom: 4px;
+    margin-top: 12px;
+    display: block;
+}
+
+.page-content {
+    padding: 28px 32px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.kpi-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .kpi-row { flex-direction: column; }
+    .page-content { padding: 16px; }
+}
