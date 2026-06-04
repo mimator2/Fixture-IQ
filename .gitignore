@@ -59,6 +59,8 @@ Thumbs.db
 *.pkl
 *.pickle
 *.joblib
+!fatigue_monitor/models/**/*.pkl
+!fatigue_monitor/models/**/*.joblib
 .cache/
 *.npy
 *.npz

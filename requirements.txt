@@ -8,6 +8,8 @@ seaborn>=0.12.0
 
 # Machine Learning & Evaluation Metrics
 scikit-learn>=1.2.0
+shap>=0.41.0
+eli5>=0.13.0
 
 # Gradient Boosting Frameworks
 catboost>=1.2.0
@@ -17,3 +19,10 @@ dash
 dash-bootstrap-components
 plotly
 # "dash[cloud]"
+
+# Dashboard v4
+streamlit>=1.28
+joblib>=1.2
+
+streamlit>=1.28
+joblib>=1.2
