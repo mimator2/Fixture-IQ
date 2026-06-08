@@ -82,18 +82,31 @@ dashboard risk scores
 ## Features
 
 ✅ **Multi-season extraction** - Extracts API seasons `2022`, `2023`, and `2024`
+
 ✅ **Dynamic Premier League team discovery** - Fetches Premier League teams from API-Football instead of hard-coding them
+
 ✅ **Multi-competition support** - Extracts Premier League, FA Cup, League Cup, Champions League, and Community Shield data
+
 ✅ **FA Cup filtering** - Keeps only FA Cup fixtures involving at least one Premier League team
+
 ✅ **Champions League filtering** - Keeps only Champions League fixtures involving at least one Premier League team
+
 ✅ **Player-level statistics** - Produces one row per player per fixture
+
 ✅ **Team-level match results** - Produces two rows per fixture, one for each team
+
 ✅ **Force re-extraction mode** - Ignores old checkpoint files, season-complete markers, and existing fixture IDs
+
 ✅ **Backup before overwrite** - Existing CSVs are copied with timestamped backup names before replacement
+
 ✅ **Validation logs** - Checks that FA Cup and Champions League filtering worked correctly
+
 ✅ **Rate-limit handling** - Retries API requests and waits on HTTP `429` responses
+
 ✅ **Season-specific output folders** - Saves files into organized `API_SEASON_<season>` directories
+
 ✅ **Dashboard-ready foundation** - Produces the raw files used before Fixture IQ feature engineering and model training
+
 
 ---
 
