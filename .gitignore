@@ -16,7 +16,7 @@ fatigue_monitor/ideas
 #!XgBoost_model/data/**/*.csv
 *.xlsx
 *.xls
-*.json
+#*.json
 *.parquet
 *.feather
 

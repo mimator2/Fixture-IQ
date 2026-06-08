@@ -1,0 +1,18 @@
+{
+  "training_date": "2026-06-03T10:44:03.595514",
+  "model": "Model B v4b_no_competition",
+  "test_auc_roc": 0.6274223599721331,
+  "test_auc_pr": 0.3899649481779545,
+  "test_base_rate": 0.2855664004732328,
+  "num_features": 77,
+  "cat_features": [
+    "player_position"
+  ],
+  "policy": {
+    "name": "balanced_monitoring",
+    "core_starter_threshold": 0.45,
+    "rotation_player_threshold": 0.5,
+    "intent": "monitoring_support",
+    "message": "Flag indicates workload-associated risk for monitoring, not definitive fatigue diagnosis."
+  }
+}
