@@ -1,12 +1,13 @@
 from pathlib import Path
 
-MODEL_DIR = Path(__file__).resolve().parent.parent / "models" / "model_b_v4b"
+MODELS_DIR = Path(__file__).resolve().parent.parent / "models" 
 
-MODEL_PATH = MODEL_DIR / "xgb_model.pkl"
-PREPROCESSOR_PATH = MODEL_DIR / "preprocessor.pkl"
-NUM_FEATURES_PATH = MODEL_DIR / "num_features.pkl"
-CAT_FEATURES_PATH = MODEL_DIR / "cat_features.pkl"
-POLICY_PATH = MODEL_DIR / "policy.pkl"
+V4B_MODEL_DIR = MODELS_DIR / "model_b_v4b"
+V4B_MODEL_PATH = V4B_MODEL_DIR / "xgb_model.pkl"
+V4B_PREPROCESSOR_PATH = V4B_MODEL_DIR / "preprocessor.pkl"
+V4B_NUM_FEATURES_PATH = V4B_MODEL_DIR / "num_features.pkl"
+V4B_CAT_FEATURES_PATH = V4B_MODEL_DIR / "cat_features.pkl"
+V4B_POLICY_PATH = V4B_MODEL_DIR / "policy.pkl"
 
 OPERATING_POLICY = {
     "name": "balanced_monitoring",
@@ -33,13 +34,13 @@ ROLE_COLORS = {
     "rare_player": "#AB63FA",
 }
 
-MASTER_CSV_PATH = Path(__file__).resolve().parent.parent.parent / "XgBoost_model" / "Fixture_IQ_Data_Seasons_2022-2025.csv"
+MASTER_CSV_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "Fixture_IQ_Data_Seasons_2022-2025.csv"
 
 # --------------------------------------------------
 # V6 CatBoost paths and constants
 # --------------------------------------------------
 
-V6_BASE_DIR = MODEL_DIR.parent / "catboost_v6"
+V6_BASE_DIR = MODELS_DIR / "catboost_v6"
 V6_NO_COMP_DIR = V6_BASE_DIR / "v6_no_competition"
 V6_NO_RATING_DIR = V6_BASE_DIR / "v6_no_rating_baseline"
 

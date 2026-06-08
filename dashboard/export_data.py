@@ -40,6 +40,29 @@ from fatigue_monitor.src.feature_engineering_v6 import (
 
 DATA_DIR = Path(__file__).parent / "public" / "data"
 
+SHIELD_MAP = {
+    "Arsenal": "Arsenal.png",
+    "Aston Villa": "Aston Villa.png",
+    "Bournemouth": "Bournemouth.png",
+    "Brentford": "Brentford.png",
+    "Brighton": "Brighton & Hove Albion.png",
+    "Chelsea": "Chelsea.png",
+    "Crystal Palace": "Crystal Palace.png",
+    "Everton": "Everton.png",
+    "Fulham": "Fulham.png",
+    "Ipswich": "Ipswich Town.png",
+    "Leicester": "Leicester City.png",
+    "Liverpool": "Liverpool.png",
+    "Manchester City": "Manchester City.png",
+    "Manchester United": "Manchester United.png",
+    "Newcastle": "Newcastle United.png",
+    "Nottingham Forest": "Nottingham Forest.png",
+    "Southampton": "southampton.png",
+    "Tottenham": "Tottenham Hotspur.png",
+    "West Ham": "West Ham United.png",
+    "Wolves": "Wolves.png",
+}
+
 
 # ---------------------------------------------------------------------------
 # HELPERS
@@ -271,7 +294,7 @@ def main():
             "id": team_id,
             "name": team_name,
             "short_name": team_name[:3].upper(),
-            "logo_url": "",
+            "logo_url": f"/shields/{SHIELD_MAP.get(team_name, '')}",
             "european_competition": euro_comp,
             "season": season,
             "total_matches": int(total_matches),
