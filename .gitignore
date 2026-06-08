@@ -4,12 +4,16 @@ Data/
 !Data/Injuries/**
 EDA/DATA/
 *.csv
+models/CatBoostClassifier/catboost_info/
+models/CatBoostClassifier/outputs/
+models/CatBoostClassifier/data/
+fatigue_monitor/ideas
 !Data/Injuries/*.csv
 !Data/Injuries/**/*.csv
 # Allow CSVs in models directory
-!models/**/*.csv
+#!models/**/*.csv
 # Allow CSVs in XgBoost_model data directory
-!XgBoost_model/data/**/*.csv
+#!XgBoost_model/data/**/*.csv
 *.xlsx
 *.xls
 *.json

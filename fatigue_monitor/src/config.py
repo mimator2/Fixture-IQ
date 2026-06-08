@@ -34,3 +34,36 @@ ROLE_COLORS = {
 }
 
 MASTER_CSV_PATH = Path(__file__).resolve().parent.parent.parent / "XgBoost_model" / "Fixture_IQ_Data_Seasons_2022-2025.csv"
+
+# --------------------------------------------------
+# V6 CatBoost paths and constants
+# --------------------------------------------------
+
+V6_BASE_DIR = MODEL_DIR.parent / "catboost_v6"
+V6_NO_COMP_DIR = V6_BASE_DIR / "v6_no_competition"
+V6_NO_RATING_DIR = V6_BASE_DIR / "v6_no_rating_baseline"
+
+V6_MODEL_PATH = V6_NO_COMP_DIR / "model.cbm"
+V6_METADATA_PATH = V6_NO_COMP_DIR / "metadata.joblib"
+V6_NR_MODEL_PATH = V6_NO_RATING_DIR / "model.cbm"
+V6_NR_METADATA_PATH = V6_NO_RATING_DIR / "metadata.joblib"
+
+V6_OPERATING_POLICY = {
+    "name": "v6_balanced_role_aware_monitoring",
+    "core_starter_threshold": 0.5,
+    "rotation_player_threshold": 0.5,
+    "intent": "monitoring_support",
+    "message": (
+        "V6 flag indicates workload-associated risk for review, "
+        "not definitive fatigue diagnosis."
+    ),
+}
+
+V6_RISK_BANDS = [0, 0.25, 0.45, 0.65, 1.01]
+V6_RISK_LABELS = ["Low", "Medium", "High", "Very High"]
+V6_RISK_COLORS = {"Low": "#27ae60", "Medium": "#f39c12", "High": "#e74c3c", "Very High": "#8e44ad"}
+
+V6_ROLE_COLORS = {
+    "core_starter": "#00BC8C",
+    "rotation_player": "#636EFA",
+}
