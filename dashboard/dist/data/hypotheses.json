@@ -1,0 +1,46 @@
+[
+  {
+    "id": "h1",
+    "hypothesis_id": "H1",
+    "title": "Lower rest periods reduce performance.",
+    "description": "Correlation between \u22644d rest and lower player ratings. Players with 3 or more short-rest windows in the last 30 days show a statistically significant decline in performance scores.",
+    "status": "Supported",
+    "evidence_summary": "Correlation between \u22644d rest and lower ratings (p<0.01). Rolling regression confirms negative coefficient for short-rest windows across all positions.",
+    "key_metric": "Rating decline under \u22644d rest",
+    "key_value": "-0.31 avg rating drop",
+    "detail": "Analysis of 68,000+ player-match observations across 4 seasons confirms that rest periods of 4 days or fewer correlate with a measurable decline in player ratings. The effect is most pronounced in midfielders and forwards."
+  },
+  {
+    "id": "h2",
+    "hypothesis_id": "H2",
+    "title": "Higher congestion increases squad rotation.",
+    "description": "Squad rotation index increases by 38% during high-congestion periods as managers balance workloads across their squads.",
+    "status": "Supported",
+    "evidence_summary": "Rotation index +38% during congested periods. Teams with deeper squads rotate more aggressively.",
+    "key_metric": "Rotation index change",
+    "key_value": "+38% during high congestion",
+    "detail": "Under low congestion (\u22655d rest), the average rotation index sits at ~0.45. Under high congestion (\u22643d rest), this rises to ~0.62, representing a 38% increase in squad rotation as managers cycle players."
+  },
+  {
+    "id": "h3",
+    "hypothesis_id": "H3",
+    "title": "Clubs respond differently to congestion based on European involvement and squad depth.",
+    "description": "Response to congestion varies significantly by European competition type, squad size, and managerial approach.",
+    "status": "Partially Supported",
+    "evidence_summary": "Varies by European involvement and squad depth. Champions League clubs show different rotation patterns than Europa League participants.",
+    "key_metric": "Rotation variance across competitions",
+    "key_value": "CL clubs rotate 15% more",
+    "detail": "The data shows partial support \u2014 clubs in the Champions League tend to rotate more aggressively during congested periods, but the pattern is not uniform. Squad depth (measured by total minutes by 15th+ player) explains ~40% of the variance."
+  },
+  {
+    "id": "h4",
+    "hypothesis_id": "H4",
+    "title": "Analytics dashboards improve coaching decisions on player workload management.",
+    "description": "Interactive analytics tools for workload and fatigue monitoring can enhance evidence-based decision-making in elite football environments.",
+    "status": "Pending",
+    "evidence_summary": "Requires longitudinal staff feedback study. Initial qualitative feedback from analysts is positive but not yet measured.",
+    "key_metric": "Staff adoption and decision accuracy",
+    "key_value": "Pending evaluation",
+    "detail": "This hypothesis requires a controlled longitudinal study with coaching and medical staff to measure whether data-driven workload insights translate to measurable improvements in injury prevention and performance management."
+  }
+]

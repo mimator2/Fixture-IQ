@@ -31,11 +31,11 @@ venv/
 ENV/
 build/
 develop-eggs/
-dist/
+#dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/
 lib64/
 parts/
 sdist/
