@@ -38,12 +38,19 @@ export default function RotationChart() {
     "High": +(levels["High"] || 0).toFixed(2),
   }));
 
+  const allZero = chartData.every((d) => d.Low === 0 && d.Medium === 0 && d.High === 0);
+
   return (
     <div className="bg-card border border-border rounded-xl p-5 md:p-6">
       <h3 className="text-lg font-semibold mb-1">Squad Rotation by Team</h3>
       <p className="text-sm text-muted-foreground mb-5">
         Rotation index (0–1) under different congestion levels
       </p>
+      {allZero ? (
+        <div className="h-72 md:h-80 flex items-center justify-center">
+          <p className="text-muted-foreground text-sm">No rotation data available for this period.</p>
+        </div>
+      ) : (
       <div className="h-72 md:h-80">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData} barGap={2}>
@@ -58,6 +65,7 @@ export default function RotationChart() {
           </BarChart>
         </ResponsiveContainer>
       </div>
+      )}
     </div>
   );
 }

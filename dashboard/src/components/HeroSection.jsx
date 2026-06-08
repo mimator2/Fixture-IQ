@@ -1,8 +1,12 @@
 import { TrendingUp, Calendar, BarChart3 } from "lucide-react";
+import { useTeams } from "@/hooks/useTeams";
 
 const HERO_IMAGE = '/home_base_image.png';
 
 export default function HeroSection() {
+  const { data: teams = [] } = useTeams();
+  const season = teams.length > 0 && teams[0].season ? teams[0].season : "Current";
+
   return (
     <div className="relative overflow-hidden rounded-2xl mb-8 bg-gradient-to-br from-card to-muted border border-border">
       <div className="absolute inset-0">
@@ -26,7 +30,7 @@ export default function HeroSection() {
         <div className="flex flex-wrap gap-4">
           <div className="flex items-center gap-2 text-sm">
             <Calendar className="w-4 h-4 text-accent" />
-            <span className="text-muted-foreground">Season 2023-24</span>
+            <span className="text-muted-foreground">Season {season}</span>
           </div>
           <div className="flex items-center gap-2 text-sm">
             <TrendingUp className="w-4 h-4 text-accent" />

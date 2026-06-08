@@ -55,13 +55,27 @@ export default function TeamDetail() {
     "Win Rate %": m.win_rate,
   }));
 
-  const radarData = sorted.map((m) => ({
+  // Min-max normalize each metric across available congestion levels (0–100)
+  const radarRaw = sorted.map((m) => ({
     level: m.congestion_level,
-    "Pts/Match": m.points_per_match ? m.points_per_match / 3 * 100 : 0,
-    "xG": m.xg_for ? m.xg_for / 3 * 100 : 0,
-    "Win %": m.win_rate || 0,
-    "Rotation": m.rotation_index ? m.rotation_index * 100 : 0,
+    pts: m.points_per_match || 0,
+    xg: m.xg_for || 0,
+    win: m.win_rate || 0,
+    rot: m.rotation_index || 0,
   }));
+  const normalize = (arr) => {
+    const min = Math.min(...arr), max = Math.max(...arr);
+    if (max === min) return arr.map(() => 50);
+    return arr.map((v) => ((v - min) / (max - min)) * 100);
+  };
+  const ptsN = normalize(radarRaw.map((d) => d.pts));
+  const xgN = normalize(radarRaw.map((d) => d.xg));
+  const winN = normalize(radarRaw.map((d) => d.win));
+  const rotN = normalize(radarRaw.map((d) => d.rot));
+  const valAt = (norm, level) => {
+    const i = radarRaw.findIndex((d) => d.level === level);
+    return i >= 0 ? +norm[i].toFixed(1) : 0;
+  };
 
   return (
     <div>
@@ -118,12 +132,13 @@ export default function TeamDetail() {
                 <BarChart data={barData} barGap={4}>
                   <CartesianGrid strokeDasharray="3 3" stroke="hsl(215 28% 20%)" />
                   <XAxis dataKey="name" tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} />
-                  <YAxis tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} />
+                  <YAxis yAxisId="left" tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} domain={[0, "auto"]} />
+                  <YAxis yAxisId="right" orientation="right" tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} domain={[0, 100]} label={{ value: "Win Rate %", angle: 90, position: "insideRight", offset: -5, style: { fill: "hsl(215 20% 55%)", fontSize: 11 } }} />
                   <Tooltip content={<CustomTooltip />} />
                   <Legend wrapperStyle={{ fontSize: 12 }} />
-                  <Bar dataKey="Points/Match" fill="hsl(217 91% 60%)" radius={[4, 4, 0, 0]} />
-                  <Bar dataKey="xG For" fill="hsl(187 72% 50%)" radius={[4, 4, 0, 0]} />
-                  <Bar dataKey="Win Rate %" fill="hsl(142 71% 45%)" radius={[4, 4, 0, 0]} />
+                  <Bar yAxisId="left" dataKey="Points/Match" fill="hsl(217 91% 60%)" radius={[4, 4, 0, 0]} />
+                  <Bar yAxisId="left" dataKey="xG For" fill="hsl(187 72% 50%)" radius={[4, 4, 0, 0]} />
+                  <Bar yAxisId="right" dataKey="Win Rate %" fill="hsl(142 71% 45%)" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -135,10 +150,10 @@ export default function TeamDetail() {
             <div className="h-72">
               <ResponsiveContainer width="100%" height="100%">
                 <RadarChart data={[
-                  { metric: "Pts/Match", Low: radarData.find(d => d.level === "Low")?.["Pts/Match"] || 0, Medium: radarData.find(d => d.level === "Medium")?.["Pts/Match"] || 0, High: radarData.find(d => d.level === "High")?.["Pts/Match"] || 0 },
-                  { metric: "xG", Low: radarData.find(d => d.level === "Low")?.xG || 0, Medium: radarData.find(d => d.level === "Medium")?.xG || 0, High: radarData.find(d => d.level === "High")?.xG || 0 },
-                  { metric: "Win %", Low: radarData.find(d => d.level === "Low")?.["Win %"] || 0, Medium: radarData.find(d => d.level === "Medium")?.["Win %"] || 0, High: radarData.find(d => d.level === "High")?.["Win %"] || 0 },
-                  { metric: "Rotation", Low: radarData.find(d => d.level === "Low")?.Rotation || 0, Medium: radarData.find(d => d.level === "Medium")?.Rotation || 0, High: radarData.find(d => d.level === "High")?.Rotation || 0 },
+                  { metric: "Pts/Match", Low: valAt(ptsN, "Low"), Medium: valAt(ptsN, "Medium"), High: valAt(ptsN, "High") },
+                  { metric: "xG", Low: valAt(xgN, "Low"), Medium: valAt(xgN, "Medium"), High: valAt(xgN, "High") },
+                  { metric: "Win %", Low: valAt(winN, "Low"), Medium: valAt(winN, "Medium"), High: valAt(winN, "High") },
+                  { metric: "Rotation", Low: valAt(rotN, "Low"), Medium: valAt(rotN, "Medium"), High: valAt(rotN, "High") },
                 ]}>
                   <PolarGrid stroke="hsl(215 28% 20%)" />
                   <PolarAngleAxis dataKey="metric" tick={{ fill: "hsl(215 20% 55%)", fontSize: 11 }} />

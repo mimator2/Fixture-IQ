@@ -1,5 +1,7 @@
 import sys
 import json
+import math
+from collections.abc import Mapping, Sequence
 from pathlib import Path
 
 import numpy as np
@@ -7,6 +9,17 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+
+def _clean_nan(obj):
+    """Recursively replace NaN/Inf with None for valid JSON output."""
+    if isinstance(obj, float):
+        return None if (math.isnan(obj) or math.isinf(obj)) else obj
+    if isinstance(obj, dict):
+        return {k: _clean_nan(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [_clean_nan(v) for v in obj]
+    return obj
+
 
 from fatigue_monitor.src.config import (
     MASTER_CSV_PATH,
@@ -236,6 +249,18 @@ def main():
         avg_rest = grp["rest_days"].mean()
         avg_pts = grp["points"].mean() if "points" in grp.columns else 0
 
+        # Overall rotation index per team (all congestion levels)
+        if "is_substitute" in grp.columns:
+            team_match_starters = grp[grp["is_substitute"].astype(str) == "False"].groupby("fixture_id")["player_id"].nunique()
+            if len(team_match_starters) > 1:
+                rot_mean = team_match_starters.mean()
+                rot_std = team_match_starters.std()
+                overall_rotation = round(float(rot_std / rot_mean), 4) if rot_mean > 0 and not pd.isna(rot_std) else 0.0
+            else:
+                overall_rotation = 0.0
+        else:
+            overall_rotation = 0.0
+
         season = str(grp["season"].iloc[0]) if "season" in grp.columns else ""
         if season:
             season = f"{season}-{str(int(season) + 1)[-2:]}"
@@ -252,7 +277,7 @@ def main():
             "total_matches": int(total_matches),
             "avg_rest_days": round(float(avg_rest), 1) if not pd.isna(avg_rest) else 0,
             "overall_points_per_match": round(float(avg_pts), 2) if not pd.isna(avg_pts) else 0,
-            "overall_rotation_index": 0.0,
+            "overall_rotation_index": overall_rotation,
         })
 
     print(f"  {len(teams)} teams written.")
@@ -261,8 +286,7 @@ def main():
     print("Building congestion_metrics.json...")
     df_cong = merged.copy()
     df_cong["congestion_level"] = df_cong.apply(compute_congestion_level, axis=1)
-    df_cong["rotation_index"] = 0.0
-    df_cong["win"] = (df_cong["result"] == "W").astype(int) if "result" in df_cong.columns else 0
+    df_cong["win"] = (df_cong["result"] == "Win").astype(int) if "result" in df_cong.columns else 0
 
     cong_list = []
     for (team_name, level), grp in df_cong.groupby(["player_team", "congestion_level"]):
@@ -272,6 +296,23 @@ def main():
         avg_xgf = grp["goals_for"].mean() if "goals_for" in grp.columns else 0
         avg_xga = grp["goals_against"].mean() if "goals_against" in grp.columns else 0
         win_rate = grp["win"].mean() * 100 if "win" in grp.columns else 0
+
+        # Rotation index: coefficient of variation of starters per match
+        if "is_substitute" in grp.columns:
+            match_starters = grp[grp["is_substitute"].astype(str) == "False"].groupby("fixture_id")["player_id"].nunique()
+            if len(match_starters) > 1:
+                rot_mean = match_starters.mean()
+                rot_std = match_starters.std()
+                rotation_index = round(float(rot_std / rot_mean), 4) if rot_mean > 0 and not pd.isna(rot_std) else 0.0
+            else:
+                rotation_index = 0.0
+        else:
+            rotation_index = 0.0
+
+        # Season per group
+        grp_season = str(grp["season"].iloc[0]) if "season" in grp.columns else ""
+        if grp_season:
+            grp_season = f"{grp_season}-{str(int(grp_season) + 1)[-2:]}"
 
         cong_list.append({
             "id": f"{team_name.lower().replace(' ', '_')}_{level.lower()}",
@@ -283,9 +324,9 @@ def main():
             "xg_for": round(float(avg_xgf), 2) if not pd.isna(avg_xgf) else 0,
             "xg_against": round(float(avg_xga), 2) if not pd.isna(avg_xga) else 0,
             "goal_diff_per_match": round(float(avg_xgf - avg_xga), 2),
-            "rotation_index": 0.0,
+            "rotation_index": rotation_index,
             "win_rate": round(float(win_rate), 1),
-            "season": season,
+            "season": grp_season,
         })
 
     print(f"  {len(cong_list)} metrics written.")
@@ -340,10 +381,10 @@ def main():
 
     # --- Write output ---
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    (DATA_DIR / "player_risks.json").write_text(json.dumps(final_risks, indent=2, default=str), encoding="utf-8")
-    (DATA_DIR / "teams.json").write_text(json.dumps(teams, indent=2, default=str), encoding="utf-8")
-    (DATA_DIR / "congestion_metrics.json").write_text(json.dumps(cong_list, indent=2, default=str), encoding="utf-8")
-    (DATA_DIR / "hypotheses.json").write_text(json.dumps(hypotheses, indent=2), encoding="utf-8")
+    (DATA_DIR / "player_risks.json").write_text(json.dumps(_clean_nan(final_risks), indent=2), encoding="utf-8")
+    (DATA_DIR / "teams.json").write_text(json.dumps(_clean_nan(teams), indent=2), encoding="utf-8")
+    (DATA_DIR / "congestion_metrics.json").write_text(json.dumps(_clean_nan(cong_list), indent=2), encoding="utf-8")
+    (DATA_DIR / "hypotheses.json").write_text(json.dumps(_clean_nan(hypotheses), indent=2), encoding="utf-8")
 
     print()
     print("=== Done ===")

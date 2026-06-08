@@ -32,9 +32,9 @@ export default function CongestionChart() {
     if (!grouped[m.congestion_level]) {
       grouped[m.congestion_level] = { level: m.congestion_level, ppm: [], xgf: [], winRate: [] };
     }
-    if (m.points_per_match) grouped[m.congestion_level].ppm.push(m.points_per_match);
-    if (m.xg_for) grouped[m.congestion_level].xgf.push(m.xg_for);
-    if (m.win_rate) grouped[m.congestion_level].winRate.push(m.win_rate);
+    if (m.points_per_match != null) grouped[m.congestion_level].ppm.push(m.points_per_match);
+    if (m.xg_for != null) grouped[m.congestion_level].xgf.push(m.xg_for);
+    if (m.win_rate != null) grouped[m.congestion_level].winRate.push(m.win_rate);
   });
 
   const avg = (arr) => arr.length ? +(arr.reduce((a, b) => a + b, 0) / arr.length).toFixed(2) : 0;
@@ -59,12 +59,13 @@ export default function CongestionChart() {
           <BarChart data={chartData} barGap={4}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(215 28% 20%)" />
             <XAxis dataKey="name" tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} />
-            <YAxis tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} />
+            <YAxis yAxisId="left" tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} domain={[0, "auto"]} />
+            <YAxis yAxisId="right" orientation="right" tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} domain={[0, 100]} label={{ value: "Win Rate %", angle: 90, position: "insideRight", offset: -5, style: { fill: "hsl(215 20% 55%)", fontSize: 11 } }} />
             <Tooltip content={<CustomTooltip />} />
             <Legend wrapperStyle={{ fontSize: 12, color: "hsl(215 20% 55%)" }} />
-            <Bar dataKey="Points/Match" fill="hsl(217 91% 60%)" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="xG For" fill="hsl(187 72% 50%)" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="Win Rate %" fill="hsl(142 71% 45%)" radius={[4, 4, 0, 0]} />
+            <Bar yAxisId="left" dataKey="Points/Match" fill="hsl(217 91% 60%)" radius={[4, 4, 0, 0]} />
+            <Bar yAxisId="left" dataKey="xG For" fill="hsl(187 72% 50%)" radius={[4, 4, 0, 0]} />
+            <Bar yAxisId="right" dataKey="Win Rate %" fill="hsl(142 71% 45%)" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>

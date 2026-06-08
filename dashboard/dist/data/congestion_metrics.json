@@ -9,8 +9,8 @@
     "xg_for": 2.1,
     "xg_against": 0.98,
     "goal_diff_per_match": 1.13,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.3676,
+    "win_rate": 65.0,
     "season": "2022-23"
   },
   {
@@ -23,9 +23,9 @@
     "xg_for": 2.15,
     "xg_against": 0.88,
     "goal_diff_per_match": 1.27,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
-    "season": "2022-23"
+    "rotation_index": 0.0901,
+    "win_rate": 55.7,
+    "season": "2023-24"
   },
   {
     "id": "aston_villa_low",
@@ -37,8 +37,8 @@
     "xg_for": 1.61,
     "xg_against": 1.37,
     "goal_diff_per_match": 0.25,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.2304,
+    "win_rate": 51.4,
     "season": "2022-23"
   },
   {
@@ -51,8 +51,8 @@
     "xg_for": 1.73,
     "xg_against": 1.33,
     "goal_diff_per_match": 0.4,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.049,
+    "win_rate": 51.5,
     "season": "2022-23"
   },
   {
@@ -65,8 +65,8 @@
     "xg_for": 1.36,
     "xg_against": 1.63,
     "goal_diff_per_match": -0.28,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.2276,
+    "win_rate": 33.3,
     "season": "2022-23"
   },
   {
@@ -79,9 +79,9 @@
     "xg_for": 2.02,
     "xg_against": 0.74,
     "goal_diff_per_match": 1.27,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
-    "season": "2022-23"
+    "rotation_index": 0.0398,
+    "win_rate": 75.8,
+    "season": "2023-24"
   },
   {
     "id": "brentford_low",
@@ -93,8 +93,8 @@
     "xg_for": 1.57,
     "xg_against": 1.41,
     "goal_diff_per_match": 0.16,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.0831,
+    "win_rate": 37.2,
     "season": "2022-23"
   },
   {
@@ -107,9 +107,9 @@
     "xg_for": 0.73,
     "xg_against": 1.71,
     "goal_diff_per_match": -0.98,
-    "rotation_index": 0.0,
+    "rotation_index": 0.0383,
     "win_rate": 0.0,
-    "season": "2022-23"
+    "season": "2023-24"
   },
   {
     "id": "brighton_low",
@@ -122,7 +122,7 @@
     "xg_against": 1.43,
     "goal_diff_per_match": 0.36,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 44.3,
     "season": "2022-23"
   },
   {
@@ -135,8 +135,8 @@
     "xg_for": 1.68,
     "xg_against": 1.28,
     "goal_diff_per_match": 0.4,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.3566,
+    "win_rate": 46.2,
     "season": "2022-23"
   },
   {
@@ -149,8 +149,8 @@
     "xg_for": 1.22,
     "xg_against": 1.29,
     "goal_diff_per_match": -0.07,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.1098,
+    "win_rate": 37.9,
     "season": "2022-23"
   },
   {
@@ -163,8 +163,8 @@
     "xg_for": 1.36,
     "xg_against": 1.28,
     "goal_diff_per_match": 0.09,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.1146,
+    "win_rate": 37.1,
     "season": "2022-23"
   },
   {
@@ -177,9 +177,9 @@
     "xg_for": 1.29,
     "xg_against": 1.98,
     "goal_diff_per_match": -0.69,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
-    "season": "2022-23"
+    "rotation_index": 0.0502,
+    "win_rate": 28.8,
+    "season": "2023-24"
   },
   {
     "id": "everton_low",
@@ -191,8 +191,8 @@
     "xg_for": 1.05,
     "xg_against": 1.3,
     "goal_diff_per_match": -0.25,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.1547,
+    "win_rate": 30.5,
     "season": "2022-23"
   },
   {
@@ -205,9 +205,9 @@
     "xg_for": 1.12,
     "xg_against": 1.47,
     "goal_diff_per_match": -0.35,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
-    "season": "2022-23"
+    "rotation_index": 0.0984,
+    "win_rate": 27.4,
+    "season": "2023-24"
   },
   {
     "id": "fulham_low",
@@ -219,8 +219,8 @@
     "xg_for": 1.42,
     "xg_against": 1.43,
     "goal_diff_per_match": -0.01,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.1385,
+    "win_rate": 39.3,
     "season": "2022-23"
   },
   {
@@ -233,8 +233,8 @@
     "xg_for": 1.88,
     "xg_against": 1.44,
     "goal_diff_per_match": 0.44,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.0558,
+    "win_rate": 29.5,
     "season": "2022-23"
   },
   {
@@ -248,7 +248,7 @@
     "xg_against": 1.88,
     "goal_diff_per_match": -0.67,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 19.5,
     "season": "2022-23"
   },
   {
@@ -262,7 +262,7 @@
     "xg_against": 1.79,
     "goal_diff_per_match": -0.54,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 26.6,
     "season": "2022-23"
   },
   {
@@ -276,7 +276,7 @@
     "xg_against": 1.12,
     "goal_diff_per_match": 1.05,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 61.5,
     "season": "2022-23"
   },
   {
@@ -289,8 +289,8 @@
     "xg_for": 2.41,
     "xg_against": 1.0,
     "goal_diff_per_match": 1.41,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.327,
+    "win_rate": 69.7,
     "season": "2022-23"
   },
   {
@@ -303,8 +303,8 @@
     "xg_for": 2.22,
     "xg_against": 0.97,
     "goal_diff_per_match": 1.26,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.0548,
+    "win_rate": 60.8,
     "season": "2022-23"
   },
   {
@@ -317,8 +317,8 @@
     "xg_for": 1.62,
     "xg_against": 1.32,
     "goal_diff_per_match": 0.3,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.1058,
+    "win_rate": 50.0,
     "season": "2022-23"
   },
   {
@@ -331,8 +331,8 @@
     "xg_for": 1.44,
     "xg_against": 1.18,
     "goal_diff_per_match": 0.25,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.0665,
+    "win_rate": 54.2,
     "season": "2022-23"
   },
   {
@@ -346,7 +346,7 @@
     "xg_against": 1.15,
     "goal_diff_per_match": 0.73,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 53.3,
     "season": "2022-23"
   },
   {
@@ -359,8 +359,8 @@
     "xg_for": 1.26,
     "xg_against": 1.5,
     "goal_diff_per_match": -0.25,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.1753,
+    "win_rate": 31.1,
     "season": "2022-23"
   },
   {
@@ -373,8 +373,8 @@
     "xg_for": 1.45,
     "xg_against": 2.59,
     "goal_diff_per_match": -1.14,
-    "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "rotation_index": 0.0703,
+    "win_rate": 47.9,
     "season": "2022-23"
   },
   {
@@ -388,7 +388,7 @@
     "xg_against": 1.96,
     "goal_diff_per_match": -0.99,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 17.0,
     "season": "2022-23"
   },
   {
@@ -402,7 +402,7 @@
     "xg_against": 1.55,
     "goal_diff_per_match": 0.17,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 44.2,
     "season": "2022-23"
   },
   {
@@ -416,7 +416,7 @@
     "xg_against": 1.67,
     "goal_diff_per_match": -0.37,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 32.8,
     "season": "2022-23"
   },
   {
@@ -430,7 +430,7 @@
     "xg_against": 1.59,
     "goal_diff_per_match": -0.33,
     "rotation_index": 0.0,
-    "win_rate": 0.0,
+    "win_rate": 34.4,
     "season": "2022-23"
   }
 ]
