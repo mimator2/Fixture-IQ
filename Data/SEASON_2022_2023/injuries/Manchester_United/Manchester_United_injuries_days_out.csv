@@ -1,0 +1,271 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Thigh Injury,2022-08-07,,221
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-08-07,,98
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-08-07,,294
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-08-13,,98
+2022-2023,70078,F. Pellistri,Manchester United,Missing Fixture,Ankle Injury,2022-08-13,,33
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-08-13,,294
+2022-2023,889,V. Lindelof,Manchester United,Missing Fixture,Knock,2022-08-13,,136
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-08-22,,98
+2022-2023,747,Casemiro,Manchester United,Missing Fixture,Inactive,2022-08-22,,228
+2022-2023,70078,F. Pellistri,Manchester United,Missing Fixture,Ankle Injury,2022-08-22,,33
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-08-22,,294
+2022-2023,889,V. Lindelof,Manchester United,Missing Fixture,Knock,2022-08-22,,136
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Achilles Tendon Injury,2022-08-27,,221
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-08-27,,98
+2022-2023,70078,F. Pellistri,Manchester United,Missing Fixture,Ankle Injury,2022-08-27,,33
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-08-27,,294
+2022-2023,889,V. Lindelof,Manchester United,Missing Fixture,Knock,2022-08-27,,136
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Achilles Tendon Injury,2022-09-01,,221
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-09-01,,98
+2022-2023,70078,F. Pellistri,Manchester United,Missing Fixture,Ankle Injury,2022-09-01,,33
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-09-01,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Achilles Tendon Injury,2022-09-04,,221
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-09-04,,98
+2022-2023,70078,F. Pellistri,Manchester United,Missing Fixture,Ankle Injury,2022-09-04,,33
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-09-04,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Achilles Tendon Injury,2022-09-08,,221
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-09-08,,98
+2022-2023,70078,F. Pellistri,Manchester United,Missing Fixture,Ankle Injury,2022-09-08,,33
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-09-08,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Achilles Tendon Injury,2022-09-15,,221
+2022-2023,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Knock,2022-09-15,,36
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-09-15,,98
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knock,2022-09-15,,254
+2022-2023,70078,F. Pellistri,Manchester United,Missing Fixture,Ankle Injury,2022-09-15,,33
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-09-15,,294
+2022-2023,909,M. Rashford,Manchester United,Missing Fixture,Injury,2022-09-15,,212
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-02,,98
+2022-2023,2935,H. Maguire,Manchester United,Missing Fixture,Muscle Injury,2022-10-02,,11
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-02,,294
+2022-2023,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2022-10-06,,36
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-06,,98
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knock,2022-10-06,,254
+2022-2023,2935,H. Maguire,Manchester United,Missing Fixture,Muscle Injury,2022-10-06,,11
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-06,,294
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Ankle Injury,2022-10-06,,213
+2022-2023,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2022-10-09,,36
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-09,,98
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Muscle Injury,2022-10-09,,254
+2022-2023,2935,H. Maguire,Manchester United,Missing Fixture,Muscle Injury,2022-10-09,,11
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-09,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Back Injury,2022-10-13,,221
+2022-2023,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2022-10-13,,36
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-13,,98
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Muscle Injury,2022-10-13,,254
+2022-2023,2935,H. Maguire,Manchester United,Missing Fixture,Muscle Injury,2022-10-13,,11
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-13,,294
+2022-2023,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2022-10-16,,36
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-16,,98
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Muscle Injury,2022-10-16,,254
+2022-2023,18886,M. Dubravka,Manchester United,Missing Fixture,Loan agreement,2022-10-16,,0
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-16,,294
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Yellow Cards,2022-10-16,,209
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Back Injury,2022-10-19,,221
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-10-19,,94
+2022-2023,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2022-10-19,,36
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-19,,98
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Muscle Injury,2022-10-19,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-19,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Back Injury,2022-10-22,,221
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-10-22,,94
+2022-2023,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2022-10-22,,36
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-22,,98
+2022-2023,874,C. Ronaldo,Manchester United,Missing Fixture,Coach's decision,2022-10-22,,22
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Muscle Injury,2022-10-22,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-22,,294
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-10-27,,94
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-27,,98
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-27,,294
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2022-10-27,,213
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-10-30,,94
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-10-30,,98
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-10-30,,294
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2022-10-30,,213
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Back Injury,2022-11-03,,221
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-11-03,,94
+2022-2023,9971,Antony,Manchester United,Missing Fixture,Injury,2022-11-03,,205
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-11-03,,98
+2022-2023,18,J. Sancho,Manchester United,Missing Fixture,Illness,2022-11-03,,79
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-11-03,,294
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2022-11-03,,213
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-11-06,,94
+2022-2023,1485,B. Fernandes,Manchester United,Missing Fixture,Yellow Cards,2022-11-06,,165
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-11-06,,98
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-11-06,,294
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2022-11-06,,213
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-11-13,,94
+2022-2023,138806,B. Williams,Manchester United,Missing Fixture,Injury,2022-11-13,,98
+2022-2023,874,C. Ronaldo,Manchester United,Missing Fixture,Illness,2022-11-13,,22
+2022-2023,886,D. Dalot,Manchester United,Missing Fixture,Yellow Cards,2022-11-13,,70
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-11-13,,294
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2022-11-13,,213
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-12-27,,94
+2022-2023,18,J. Sancho,Manchester United,Missing Fixture,Lacking Match Fitness,2022-12-27,,79
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Rest,2022-12-27,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-12-27,,294
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Illness,2022-12-27,,209
+2022-2023,889,V. Lindelof,Manchester United,Missing Fixture,Illness,2022-12-27,,136
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2022-12-31,,94
+2022-2023,18,J. Sancho,Manchester United,Missing Fixture,Lacking Match Fitness,2022-12-31,,79
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2022-12-31,,294
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2023-01-03,,94
+2022-2023,18,J. Sancho,Manchester United,Missing Fixture,Lacking Match Fitness,2023-01-03,,79
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-01-03,,294
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2023-01-14,,94
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-01-14,,254
+2022-2023,18,J. Sancho,Manchester United,Missing Fixture,Lacking Match Fitness,2023-01-14,,79
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-01-14,,294
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2023-01-18,,94
+2022-2023,886,D. Dalot,Manchester United,Missing Fixture,Thigh Injury,2023-01-18,,70
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-01-18,,254
+2022-2023,2930,J. Butland,Manchester United,Missing Fixture,Loan agreement,2023-01-18,,16
+2022-2023,18,J. Sancho,Manchester United,Missing Fixture,Lacking Match Fitness,2023-01-18,,79
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-01-18,,294
+2022-2023,19182,A. Tuanzebe,Manchester United,Missing Fixture,Lacking Match Fitness,2023-01-22,,94
+2022-2023,747,Casemiro,Manchester United,Missing Fixture,Yellow Cards,2023-01-22,,228
+2022-2023,886,D. Dalot,Manchester United,Missing Fixture,Thigh Injury,2023-01-22,,70
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-01-22,,254
+2022-2023,18,J. Sancho,Manchester United,Missing Fixture,Lacking Match Fitness,2023-01-22,,79
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-01-22,,294
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-02-04,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-02-04,,254
+2022-2023,2930,J. Butland,Manchester United,Missing Fixture,Loan agreement,2023-02-04,,16
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-02-04,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Injury,2023-02-08,,221
+2022-2023,9971,Antony,Manchester United,Missing Fixture,Injury,2023-02-08,,205
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-02-08,,40
+2022-2023,747,Casemiro,Manchester United,Missing Fixture,Red Card,2023-02-08,,228
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-02-08,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-02-08,,294
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Injury,2023-02-08,,209
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Injury,2023-02-12,,221
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-02-12,,40
+2022-2023,747,Casemiro,Manchester United,Missing Fixture,Red Card,2023-02-12,,228
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-02-12,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-02-12,,294
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Injury,2023-02-12,,209
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Injury,2023-02-16,,221
+2022-2023,9971,Antony,Manchester United,Missing Fixture,Injury,2023-02-16,,205
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-02-16,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-02-16,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Yellow Cards,2023-02-16,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-02-16,,294
+2022-2023,1159,M. Sabitzer,Manchester United,Missing Fixture,Yellow Cards,2023-02-16,,100
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Injury,2023-02-16,,209
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Injury,2023-02-19,,221
+2022-2023,9971,Antony,Manchester United,Missing Fixture,Injury,2023-02-19,,205
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-02-19,,40
+2022-2023,747,Casemiro,Manchester United,Missing Fixture,Red Card,2023-02-19,,228
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-02-19,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-02-19,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Injury,2023-02-23,,221
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-02-23,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-02-23,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-02-23,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Muscle Injury,2023-03-05,,221
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-03-05,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-03-05,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-03-05,,294
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Muscle Injury,2023-03-09,,221
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-03-09,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-03-09,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-03-09,,294
+2022-2023,1159,M. Sabitzer,Manchester United,Missing Fixture,Knock,2023-03-09,,100
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-03-12,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-03-12,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-03-12,,294
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Foot Injury,2023-03-16,,49
+2022-2023,908,A. Martial,Manchester United,Missing Fixture,Muscle Injury,2023-03-16,,221
+2022-2023,9971,Antony,Manchester United,Missing Fixture,Illness,2023-03-16,,205
+2022-2023,174,C. Eriksen,Manchester United,Missing Fixture,Ankle Injury,2023-03-16,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-03-16,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-03-16,,294
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Foot Injury,2023-04-02,,49
+2022-2023,747,Casemiro,Manchester United,Missing Fixture,Red Card,2023-04-02,,228
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-04-02,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-04-02,,294
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-04-02,,40
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Foot Injury,2023-04-05,,49
+2022-2023,747,Casemiro,Manchester United,Missing Fixture,Red Card,2023-04-05,,228
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-04-05,,254
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-04-05,,294
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-04-05,,40
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Foot Injury,2023-04-08,,49
+2022-2023,747,Casemiro,Manchester United,Missing Fixture,Red Card,2023-04-08,,228
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-04-08,,254
+2022-2023,891,L. Shaw,Manchester United,Missing Fixture,Thigh Injury,2023-04-08,,5
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-04-08,,294
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-04-08,,40
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Foot Injury,2023-04-13,,49
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-04-13,,254
+2022-2023,891,L. Shaw,Manchester United,Missing Fixture,Thigh Injury,2023-04-13,,5
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-04-13,,294
+2022-2023,909,M. Rashford,Manchester United,Missing Fixture,Muscle Injury,2023-04-13,,212
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Health problems,2023-04-13,,209
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-04-13,,40
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Foot Injury,2023-04-16,,49
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-04-16,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-04-16,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-04-16,,294
+2022-2023,909,M. Rashford,Manchester United,Missing Fixture,Muscle Injury,2023-04-16,,212
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2023-04-16,,213
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-04-16,,40
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Ankle Injury,2023-04-20,,49
+2022-2023,1485,B. Fernandes,Manchester United,Missing Fixture,Yellow Cards,2023-04-20,,165
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-04-20,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-04-20,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-04-20,,294
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2023-04-20,,213
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-04-20,,40
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Ankle Injury,2023-04-27,,49
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-04-27,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-04-27,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-04-27,,294
+2022-2023,888,P. Jones,Manchester United,Missing Fixture,Knee Injury,2023-04-27,,30
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2023-04-27,,213
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-04-27,,40
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Ankle Injury,2023-04-30,,49
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-04-30,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-04-30,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-04-30,,294
+2022-2023,888,P. Jones,Manchester United,Missing Fixture,Knee Injury,2023-04-30,,30
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2023-04-30,,213
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-04-30,,40
+2022-2023,284324,A. Garnacho,Manchester United,Missing Fixture,Ankle Injury,2023-05-04,,49
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-05-04,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-05-04,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-05-04,,294
+2022-2023,888,P. Jones,Manchester United,Missing Fixture,Knee Injury,2023-05-04,,30
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2023-05-04,,213
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Health problems,2023-05-04,,209
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-05-04,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-05-07,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-05-07,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-05-07,,294
+2022-2023,888,P. Jones,Manchester United,Missing Fixture,Knee Injury,2023-05-07,,30
+2022-2023,742,R. Varane,Manchester United,Missing Fixture,Muscle Injury,2023-05-07,,213
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Health problems,2023-05-07,,209
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-05-07,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-05-13,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-05-13,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-05-13,,294
+2022-2023,888,P. Jones,Manchester United,Missing Fixture,Knee Injury,2023-05-13,,30
+2022-2023,903,S. McTominay,Manchester United,Missing Fixture,Health problems,2023-05-13,,209
+2022-2023,2931,T. Heaton,Manchester United,Missing Fixture,Ankle Injury,2023-05-13,,40
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-05-20,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-05-20,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-05-20,,294
+2022-2023,1159,M. Sabitzer,Manchester United,Missing Fixture,Knee Injury,2023-05-20,,100
+2022-2023,888,P. Jones,Manchester United,Missing Fixture,Knee Injury,2023-05-20,,30
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-05-25,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-05-25,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-05-25,,294
+2022-2023,1159,M. Sabitzer,Manchester United,Missing Fixture,Knee Injury,2023-05-25,,100
+2022-2023,888,P. Jones,Manchester United,Missing Fixture,Knee Injury,2023-05-25,,30
+2022-2023,9971,Antony,Manchester United,Missing Fixture,Ankle Injury,2023-05-28,,205
+2022-2023,547,D. van de Beek,Manchester United,Missing Fixture,Knee Injury,2023-05-28,,254
+2022-2023,2467,L. Martinez,Manchester United,Missing Fixture,Leg Injury,2023-05-28,,151
+2022-2023,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-05-28,,294
+2022-2023,1159,M. Sabitzer,Manchester United,Missing Fixture,Knee Injury,2023-05-28,,100
+2022-2023,888,P. Jones,Manchester United,Missing Fixture,Knee Injury,2023-05-28,,30

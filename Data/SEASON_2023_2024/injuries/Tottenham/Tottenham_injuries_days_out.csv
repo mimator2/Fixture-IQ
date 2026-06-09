@@ -1,0 +1,215 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-08-13,,137
+2023-2024,2061,B. Gil,Tottenham,Missing Fixture,Muscle Injury,2023-08-13,,48
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-08-13,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-08-13,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-08-19,,137
+2023-2024,2061,B. Gil,Tottenham,Missing Fixture,Muscle Injury,2023-08-19,,48
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-08-19,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-08-19,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-08-26,,137
+2023-2024,2061,B. Gil,Tottenham,Missing Fixture,Muscle Injury,2023-08-26,,48
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-08-26,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-08-26,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-09-02,,137
+2023-2024,2061,B. Gil,Tottenham,Missing Fixture,Muscle Injury,2023-09-02,,48
+2023-2024,1578,G. Lo Celso,Tottenham,Missing Fixture,Thigh Injury,2023-09-02,,134
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-09-02,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-09-02,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-09-16,,137
+2023-2024,2061,B. Gil,Tottenham,Missing Fixture,Muscle Injury,2023-09-16,,48
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-09-16,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-09-16,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-09-24,,137
+2023-2024,2061,B. Gil,Tottenham,Missing Fixture,Muscle Injury,2023-09-24,,48
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-09-24,,112
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-09-24,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-09-24,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-09-30,,137
+2023-2024,2061,B. Gil,Tottenham,Missing Fixture,Muscle Injury,2023-09-30,,48
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-09-30,,112
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-09-30,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-09-30,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-10-07,,137
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-10-07,,112
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-10-07,,225
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-10-07,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-10-07,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-10-23,,137
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-10-23,,112
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-10-23,,225
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Knee Injury,2023-10-23,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-10-23,,280
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,Red Card,2023-10-23,,208
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-10-27,,137
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-10-27,,112
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-10-27,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-10-27,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-11-06,,137
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-11-06,,112
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-11-06,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-11-06,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-11-11,,137
+2023-2024,30776,C. Romero,Tottenham,Missing Fixture,Red Card,2023-11-11,,50
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Red Card,2023-11-11,,190
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-11-11,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-11-11,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-11-11,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-11-11,,126
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-11-11,,280
+2023-2024,2413,Richarlison,Tottenham,Missing Fixture,Pelvis Injury,2023-11-11,,190
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-11-26,,137
+2023-2024,30776,C. Romero,Tottenham,Missing Fixture,Red Card,2023-11-26,,50
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-11-26,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-11-26,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-11-26,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-11-26,,126
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-11-26,,280
+2023-2024,2413,Richarlison,Tottenham,Missing Fixture,Pelvis Injury,2023-11-26,,190
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,Yellow Cards,2023-11-26,,208
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-12-03,,137
+2023-2024,30776,C. Romero,Tottenham,Missing Fixture,Red Card,2023-12-03,,50
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-12-03,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-12-03,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-12-03,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-12-03,,126
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Ankle Injury,2023-12-03,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-12-03,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-12-07,,137
+2023-2024,175,E. Dier,Tottenham,Missing Fixture,Muscle Injury,2023-12-07,,2
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-12-07,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-12-07,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-12-07,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-12-07,,126
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Ankle Injury,2023-12-07,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-12-07,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-12-10,,137
+2023-2024,175,E. Dier,Tottenham,Missing Fixture,Muscle Injury,2023-12-10,,2
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-12-10,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-12-10,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-12-10,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-12-10,,126
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Ankle Injury,2023-12-10,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-12-10,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-12-15,,137
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-12-15,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-12-15,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-12-15,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-12-15,,126
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Ankle Injury,2023-12-15,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-12-15,,280
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-12-23,,137
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Yellow Cards,2023-12-23,,190
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-12-23,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-12-23,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-12-23,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-12-23,,126
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Ankle Injury,2023-12-23,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-12-23,,280
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,Red Card,2023-12-23,,208
+2023-2024,161,A. Whiteman,Tottenham,Missing Fixture,Ankle Injury,2023-12-28,,137
+2023-2024,30776,C. Romero,Tottenham,Missing Fixture,Thigh Injury,2023-12-28,,50
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-12-28,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-12-28,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-12-28,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-12-28,,126
+2023-2024,863,R. Bentancur,Tottenham,Missing Fixture,Ankle Injury,2023-12-28,,137
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-12-28,,280
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,Red Card,2023-12-28,,208
+2023-2024,30776,C. Romero,Tottenham,Missing Fixture,Thigh Injury,2023-12-31,,50
+2023-2024,30435,D. Kulusevski,Tottenham,Missing Fixture,Yellow Cards,2023-12-31,,0
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2023-12-31,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2023-12-31,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2023-12-31,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Thigh Injury,2023-12-31,,126
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2023-12-31,,280
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,Red Card,2023-12-31,,208
+2023-2024,311344,A. Veliz,Tottenham,Missing Fixture,Knee Injury,2024-01-14,,17
+2023-2024,164,B. Davies,Tottenham,Missing Fixture,Thigh Injury,2024-01-14,,125
+2023-2024,1578,G. Lo Celso,Tottenham,Missing Fixture,Thigh Injury,2024-01-14,,134
+2023-2024,207,I. Perisic,Tottenham,Missing Fixture,Knee Injury,2024-01-14,,112
+2023-2024,18784,J. Maddison,Tottenham,Missing Fixture,Ankle Injury,2024-01-14,,64
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-01-14,,225
+2023-2024,237129,P. M. Sarr,Tottenham,Missing Fixture,National selection,2024-01-14,,17
+2023-2024,186,Son Heung-Min,Tottenham,Missing Fixture,National selection,2024-01-14,,19
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,National selection,2024-01-14,,208
+2023-2024,311344,A. Veliz,Tottenham,Missing Fixture,Knee Injury,2024-01-31,,17
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-01-31,,225
+2023-2024,237129,P. M. Sarr,Tottenham,Missing Fixture,International duty,2024-01-31,,17
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-01-31,,280
+2023-2024,186,Son Heung-Min,Tottenham,Missing Fixture,International duty,2024-01-31,,19
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,International duty,2024-01-31,,208
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-02-03,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-02-03,,280
+2023-2024,186,Son Heung-Min,Tottenham,Missing Fixture,International duty,2024-02-03,,19
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,International duty,2024-02-03,,208
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-02-10,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-02-10,,280
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Knock,2024-02-17,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-02-17,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-02-17,,225
+2023-2024,47519,P. Porro,Tottenham,Missing Fixture,Muscle Injury,2024-02-17,,0
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-02-17,,280
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-03-02,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-03-02,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-03-02,,280
+2023-2024,2413,Richarlison,Tottenham,Missing Fixture,Knee Injury,2024-03-02,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-03-10,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-03-10,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-03-10,,280
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-03-16,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-03-16,,225
+2023-2024,152849,M. van de Ven,Tottenham,Missing Fixture,Hamstring Injury,2024-03-16,,126
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-03-16,,280
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-03-30,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-03-30,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-03-30,,280
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-04-02,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-04-02,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-04-02,,280
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-04-07,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-04-07,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-04-07,,280
+2023-2024,2413,Richarlison,Tottenham,Missing Fixture,Knee Injury,2024-04-07,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-04-13,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-04-13,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-04-13,,280
+2023-2024,2413,Richarlison,Tottenham,Missing Fixture,Knee Injury,2024-04-13,,190
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Thigh Injury,2024-04-28,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-04-28,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-04-28,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-04-28,,280
+2023-2024,164,B. Davies,Tottenham,Missing Fixture,Calf Injury,2024-05-02,,125
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Thigh Injury,2024-05-02,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-05-02,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-05-02,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-05-02,,280
+2023-2024,1166,T. Werner,Tottenham,Missing Fixture,Thigh Injury,2024-05-02,,16
+2023-2024,164,B. Davies,Tottenham,Missing Fixture,Calf Injury,2024-05-05,,125
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Thigh Injury,2024-05-05,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-05-05,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-05-05,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-05-05,,280
+2023-2024,1166,T. Werner,Tottenham,Missing Fixture,Thigh Injury,2024-05-05,,16
+2023-2024,164,B. Davies,Tottenham,Missing Fixture,Calf Injury,2024-05-11,,125
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Thigh Injury,2024-05-11,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-05-11,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-05-11,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-05-11,,280
+2023-2024,1166,T. Werner,Tottenham,Missing Fixture,Thigh Injury,2024-05-11,,16
+2023-2024,164,B. Davies,Tottenham,Missing Fixture,Calf Injury,2024-05-14,,125
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Thigh Injury,2024-05-14,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-05-14,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-05-14,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-05-14,,280
+2023-2024,2413,Richarlison,Tottenham,Missing Fixture,Calf Injury,2024-05-14,,190
+2023-2024,1166,T. Werner,Tottenham,Missing Fixture,Thigh Injury,2024-05-14,,16
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,Knee Injury,2024-05-14,,208
+2023-2024,164,B. Davies,Tottenham,Missing Fixture,Calf Injury,2024-05-19,,125
+2023-2024,204039,D. Udogie,Tottenham,Missing Fixture,Thigh Injury,2024-05-19,,190
+2023-2024,18932,F. Forster,Tottenham,Missing Fixture,Ankle Injury,2024-05-19,,92
+2023-2024,697,M. Solomon,Tottenham,Missing Fixture,Knee Injury,2024-05-19,,225
+2023-2024,19032,R. Sessegnon,Tottenham,Missing Fixture,Thigh Injury,2024-05-19,,280
+2023-2024,2413,Richarlison,Tottenham,Missing Fixture,Calf Injury,2024-05-19,,190
+2023-2024,1166,T. Werner,Tottenham,Missing Fixture,Thigh Injury,2024-05-19,,16
+2023-2024,18968,Y. Bissouma,Tottenham,Missing Fixture,Knee Injury,2024-05-19,,208

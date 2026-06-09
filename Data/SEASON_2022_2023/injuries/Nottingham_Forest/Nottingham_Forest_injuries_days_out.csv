@@ -1,0 +1,192 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-08-06,,295
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-08-14,,295
+2022-2023,19299,J. Colback,Nottingham Forest,Missing Fixture,Illness,2022-08-20,,281
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-08-20,,295
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-08-28,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-08-28,,295
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-08-31,,180
+2022-2023,24882,O. Mangala,Nottingham Forest,Missing Fixture,Muscle Injury,2022-08-31,,72
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-08-31,,295
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-09-03,,180
+2022-2023,24882,O. Mangala,Nottingham Forest,Missing Fixture,Muscle Injury,2022-09-03,,72
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-09-03,,295
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-09-16,,180
+2022-2023,24882,O. Mangala,Nottingham Forest,Missing Fixture,Muscle Injury,2022-09-16,,72
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-09-16,,295
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-10-03,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-10-03,,295
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-10-10,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-10-10,,295
+2022-2023,19299,J. Colback,Nottingham Forest,Missing Fixture,Back Injury,2022-10-15,,281
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-10-15,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-10-15,,295
+2022-2023,19299,J. Colback,Nottingham Forest,Missing Fixture,Back Injury,2022-10-18,,281
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-10-18,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-10-18,,295
+2022-2023,19299,J. Colback,Nottingham Forest,Missing Fixture,Back Injury,2022-10-22,,281
+2022-2023,20503,L. O'Brien,Nottingham Forest,Missing Fixture,Illness,2022-10-22,,0
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-10-22,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-10-22,,295
+2022-2023,17365,H. Toffolo,Nottingham Forest,Missing Fixture,Thigh Injury,2022-10-30,,13
+2022-2023,19299,J. Colback,Nottingham Forest,Missing Fixture,Back Injury,2022-10-30,,281
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-10-30,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-10-30,,295
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2022-11-05,,204
+2022-2023,17365,H. Toffolo,Nottingham Forest,Missing Fixture,Thigh Injury,2022-11-05,,13
+2022-2023,19299,J. Colback,Nottingham Forest,Missing Fixture,Back Injury,2022-11-05,,281
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-11-05,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-11-05,,295
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2022-11-12,,204
+2022-2023,17365,H. Toffolo,Nottingham Forest,Missing Fixture,Thigh Injury,2022-11-12,,13
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-11-12,,180
+2022-2023,24882,O. Mangala,Nottingham Forest,Missing Fixture,Red Card,2022-11-12,,72
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-11-12,,295
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2022-12-27,,115
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Injury,2022-12-27,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2022-12-27,,204
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2022-12-27,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2022-12-27,,295
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-01-01,,115
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-01-01,,204
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-01-01,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-01-01,,295
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-01-04,,115
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-01-04,,204
+2022-2023,900,J. Lingard,Nottingham Forest,Missing Fixture,Thigh Injury,2023-01-04,,9
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-01-04,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-01-04,,295
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-01-14,,115
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-01-14,,204
+2022-2023,900,J. Lingard,Nottingham Forest,Missing Fixture,Thigh Injury,2023-01-14,,9
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-01-14,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-01-14,,295
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Ankle Injury,2023-01-14,,104
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-01-21,,115
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-01-21,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-01-21,,204
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-01-21,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-01-21,,295
+2022-2023,8598,T. Awoniyi,Nottingham Forest,Missing Fixture,Lacking Match Fitness,2023-01-21,,55
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-02-05,,115
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-05,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-02-05,,204
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-05,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-02-05,,295
+2022-2023,19305,R. Yates,Nottingham Forest,Missing Fixture,Illness,2023-02-05,,80
+2022-2023,8598,T. Awoniyi,Nottingham Forest,Missing Fixture,Lacking Match Fitness,2023-02-05,,55
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-02-11,,115
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-11,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-02-11,,204
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-11,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-02-11,,295
+2022-2023,8598,T. Awoniyi,Nottingham Forest,Missing Fixture,Lacking Match Fitness,2023-02-11,,55
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-02-18,,115
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-18,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-02-18,,204
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-18,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-02-18,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-18,,99
+2022-2023,8598,T. Awoniyi,Nottingham Forest,Missing Fixture,Lacking Match Fitness,2023-02-18,,55
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-18,,104
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-02-25,,115
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-25,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-02-25,,204
+2022-2023,25916,M. Niakhate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-25,,180
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-02-25,,295
+2022-2023,163,S. Aurier,Nottingham Forest,Missing Fixture,Calf Injury,2023-02-25,,55
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-25,,99
+2022-2023,8598,T. Awoniyi,Nottingham Forest,Missing Fixture,Lacking Match Fitness,2023-02-25,,55
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-02-25,,104
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Muscle Injury,2023-03-05,,115
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-05,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-03-05,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-03-05,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-05,,99
+2022-2023,8598,T. Awoniyi,Nottingham Forest,Missing Fixture,Lacking Match Fitness,2023-03-05,,55
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-05,,104
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-11,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-03-11,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-03-11,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-11,,99
+2022-2023,8598,T. Awoniyi,Nottingham Forest,Missing Fixture,Lacking Match Fitness,2023-03-11,,55
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-11,,104
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-17,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-17,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-03-17,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-03-17,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-17,,99
+2022-2023,8598,T. Awoniyi,Nottingham Forest,Missing Fixture,Lacking Match Fitness,2023-03-17,,55
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-03-17,,104
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-01,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-01,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-04-01,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-04-01,,295
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-01,,104
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-04,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-04,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-04-04,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-04-04,,295
+2022-2023,19305,R. Yates,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-04-04,,80
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-04,,104
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-08,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-08,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-04-08,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-04-08,,295
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-08,,104
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-16,,115
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-16,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-16,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-04-16,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-04-16,,295
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-16,,104
+2022-2023,2991,C. Kouyate,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-22,,115
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-22,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-22,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-04-22,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-04-22,,295
+2022-2023,19305,R. Yates,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-04-22,,80
+2022-2023,163,S. Aurier,Nottingham Forest,Missing Fixture,Knock,2023-04-22,,55
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-22,,104
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-26,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-26,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-04-26,,204
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-04-26,,295
+2022-2023,19305,R. Yates,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-04-26,,80
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-04-26,,99
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-26,,104
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-29,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-29,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-04-29,,204
+2022-2023,138780,N. Williams,Nottingham Forest,Missing Fixture,Concussion,2023-04-29,,29
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-04-29,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-04-29,,99
+2022-2023,18739,W. Boly,Nottingham Forest,Missing Fixture,Thigh Injury,2023-04-29,,104
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-05-08,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-05-08,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-05-08,,204
+2022-2023,138780,N. Williams,Nottingham Forest,Missing Fixture,Concussion,2023-05-08,,29
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-05-08,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-05-08,,99
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-05-13,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-05-13,,151
+2022-2023,80,E. Dennis,Nottingham Forest,Missing Fixture,Knock,2023-05-13,,0
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-05-13,,204
+2022-2023,138780,N. Williams,Nottingham Forest,Missing Fixture,Concussion,2023-05-13,,29
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-05-13,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-05-13,,99
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-05-20,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-05-20,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-05-20,,204
+2022-2023,19299,J. Colback,Nottingham Forest,Missing Fixture,Head Injury,2023-05-20,,281
+2022-2023,18904,J. Shelvey,Nottingham Forest,Missing Fixture,Calf Injury,2023-05-20,,0
+2022-2023,138780,N. Williams,Nottingham Forest,Missing Fixture,Concussion,2023-05-20,,29
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-05-20,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-05-20,,99
+2022-2023,18931,C. Wood,Nottingham Forest,Missing Fixture,Thigh Injury,2023-05-28,,71
+2022-2023,19088,D. Henderson,Nottingham Forest,Missing Fixture,Thigh Injury,2023-05-28,,151
+2022-2023,84081,G. Biancone,Nottingham Forest,Missing Fixture,Knee Injury,2023-05-28,,204
+2022-2023,19299,J. Colback,Nottingham Forest,Missing Fixture,Head Injury,2023-05-28,,281
+2022-2023,138780,N. Williams,Nottingham Forest,Missing Fixture,Concussion,2023-05-28,,29
+2022-2023,19610,O. Richards,Nottingham Forest,Missing Fixture,Calf Injury,2023-05-28,,295
+2022-2023,44811,S. McKenna,Nottingham Forest,Missing Fixture,Shoulder Injury,2023-05-28,,99

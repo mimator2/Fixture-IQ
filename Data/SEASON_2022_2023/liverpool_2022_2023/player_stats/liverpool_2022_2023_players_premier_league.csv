@@ -1,0 +1,36 @@
+Player,Nation,Pos,Age,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,Gls_90,Ast_90,G+A_90,G-PK_90,G+A-PK_90,Matches
+Alisson,brBRA,GK,29,37,37,"3,330",37.0,0,1,1,0,0,0,1,0,0.00,0.03,0.03,0.00,0.03,Matches
+Mohamed Salah,egEGY,FW,30,38,37,"3,290",36.6,19,12,31,17,2,4,2,0,0.52,0.33,0.85,0.47,0.79,Matches
+Trent Alexander-Arnold,engENG,DF,23,37,34,"2,923",32.5,2,9,11,2,0,0,5,0,0.06,0.28,0.34,0.06,0.34,Matches
+Virgil van Dijk,nlNED,DF,31,32,32,"2,835",31.5,3,1,4,3,0,0,3,0,0.10,0.03,0.13,0.10,0.13,Matches
+Fabinho,brBRA,MF,28,36,31,"2,671",29.7,0,2,2,0,0,0,11,0,0.00,0.07,0.07,0.00,0.07,Matches
+Andrew Robertson,sctSCO,DF,28,34,29,"2,583",28.7,0,8,8,0,0,0,3,0,0.00,0.28,0.28,0.00,0.28,Matches
+Jordan Henderson,engENG,MF,32,35,23,"2,074",23.0,0,2,2,0,0,0,2,0,0.00,0.09,0.09,0.00,0.09,Matches
+Darwin Núñez,uyURU,FW,23,29,19,"1,695",18.8,9,3,12,9,0,0,1,1,0.48,0.16,0.64,0.48,0.64,Matches
+Harvey Elliott,engENG,MF,19,32,18,"1,613",17.9,1,2,3,1,0,0,2,0,0.06,0.11,0.17,0.06,0.17,Matches
+Ibrahima Konaté,frFRA,DF,23,18,17,"1,552",17.2,0,0,0,0,0,0,5,0,0.00,0.00,0.00,0.00,0.00,Matches
+Cody Gakpo,nlNED,FW,23,21,17,"1,458",16.2,7,2,9,7,0,0,0,0,0.43,0.12,0.56,0.43,0.56,Matches
+Joe Gomez,engENG,DF,25,21,15,"1,466",16.3,0,0,0,0,0,0,3,0,0.00,0.00,0.00,0.00,0.00,Matches
+Thiago Alcántara,esESP,MF,31,18,14,"1,254",13.9,0,0,0,0,0,0,2,0,0.00,0.00,0.00,0.00,0.00,Matches
+Roberto Firmino,brBRA,FW,30,25,13,"1,213",13.5,11,4,15,11,0,0,0,0,0.82,0.30,1.11,0.82,1.11,Matches
+Diogo Jota,ptPOR,"FW,MF",25,22,12,"1,131",12.6,7,4,11,7,0,0,2,0,0.56,0.32,0.88,0.56,0.88,Matches
+Joël Matip,cmCMR,DF,30,14,12,"1,092",12.1,1,0,1,1,0,0,3,0,0.08,0.00,0.08,0.08,0.08,Matches
+Curtis Jones,engENG,MF,21,18,12,"1,035",11.5,3,1,4,3,0,0,2,0,0.26,0.09,0.35,0.26,0.35,Matches
+Luis Díaz,coCOL,FW,25,17,11,996,11.1,4,2,6,4,0,0,2,0,0.36,0.18,0.54,0.36,0.54,Matches
+Kostas Tsimikas,grGRE,DF,26,20,9,771,8.6,0,4,4,0,0,0,3,0,0.00,0.47,0.47,0.00,0.47,Matches
+James Milner,engENG,"MF,DF",36,31,7,913,10.1,0,1,1,0,0,0,2,0,0.00,0.10,0.10,0.00,0.10,Matches
+Stefan Bajcetic,esESP,MF,17,11,6,526,5.8,1,0,1,1,0,0,2,0,0.17,0.00,0.17,0.17,0.17,Matches
+Fabio Carvalho,ptPOR,"MF,FW",19,13,4,347,3.9,2,0,2,2,0,0,0,0,0.52,0.00,0.52,0.52,0.52,Matches
+Alex Oxlade-Chamberlain,engENG,FW,28,9,4,335,3.7,1,0,1,1,0,0,0,0,0.27,0.00,0.27,0.27,0.27,Matches
+Naby Keïta,gnGUI,MF,27,8,3,293,3.3,0,0,0,0,0,0,1,0,0.00,0.00,0.00,0.00,0.00,Matches
+Caoimhín Kelleher,ieIRL,GK,23,1,1,90,1.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Nathaniel Phillips,engENG,DF,25,2,1,66,0.7,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Ben Gannon-Doak,sctSCO,MF,16,2,0,26,0.3,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Bobby Clark,engENG,MF,17,1,0,8,0.1,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Adrián,esESP,GK,35,0,0,,,,,,,,,,,,,,,,Matches
+Luke Chambers,engENG,"DF,MF",18,0,0,,,,,,,,,,,,,,,,Matches
+Harvey Davies,engENG,GK,18,0,0,,,,,,,,,,,,,,,,Matches
+Sepp van den Berg,nlNED,"DF,MF",20,0,0,,,,,,,,,,,,,,,,Matches
+Arthur Melo,brBRA,MF,25,0,0,,,,,,,,,,,,,,,,Matches
+Calvin Ramsay,sctSCO,DF,19,0,0,,,,,,,,,,,,,,,,Matches
+Rhys Williams,engENG,DF,21,0,0,,,,,,,,,,,,,,,,Matches

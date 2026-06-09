@@ -1,0 +1,104 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2022-2023,19221,H. Wilson,Fulham,Missing Fixture,Knee Injury,2022-08-06,,56
+2022-2023,18803,N. Chalobah,Fulham,Missing Fixture,Injury,2022-08-06,,75
+2022-2023,19221,H. Wilson,Fulham,Missing Fixture,Knee Injury,2022-08-13,,56
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-08-13,,140
+2022-2023,19221,H. Wilson,Fulham,Missing Fixture,Knee Injury,2022-08-20,,56
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-08-20,,140
+2022-2023,19221,H. Wilson,Fulham,Missing Fixture,Knee Injury,2022-08-27,,56
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-08-27,,140
+2022-2023,19221,H. Wilson,Fulham,Missing Fixture,Knee Injury,2022-08-30,,56
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-08-30,,140
+2022-2023,18962,S. Duffy,Fulham,Missing Fixture,Loan agreement,2022-08-30,,0
+2022-2023,19221,H. Wilson,Fulham,Missing Fixture,Knee Injury,2022-09-03,,56
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-09-03,,140
+2022-2023,19221,H. Wilson,Fulham,Missing Fixture,Knee Injury,2022-09-16,,56
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-09-16,,140
+2022-2023,19221,H. Wilson,Fulham,Missing Fixture,Knee Injury,2022-10-01,,56
+2022-2023,41104,J. Palhinha,Fulham,Missing Fixture,Yellow Cards,2022-10-01,,162
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-10-01,,140
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knock,2022-10-09,,231
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-10-09,,140
+2022-2023,18803,N. Chalobah,Fulham,Missing Fixture,Red Card,2022-10-09,,75
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knock,2022-10-15,,231
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-10-15,,140
+2022-2023,18803,N. Chalobah,Fulham,Missing Fixture,Red Card,2022-10-15,,75
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knock,2022-10-20,,231
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-10-20,,140
+2022-2023,18803,N. Chalobah,Fulham,Missing Fixture,Red Card,2022-10-20,,75
+2022-2023,19329,D. James,Fulham,Missing Fixture,Loan agreement,2022-10-23,,202
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knock,2022-10-23,,231
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-10-23,,140
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knock,2022-10-29,,231
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-10-29,,140
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Ankle Injury,2022-11-05,,183
+2022-2023,19004,B. Reid,Fulham,Missing Fixture,Yellow Cards,2022-11-05,,0
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-11-05,,140
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2022-11-05,,160
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Ankle Injury,2022-11-13,,183
+2022-2023,19480,H. Reed,Fulham,Missing Fixture,Yellow Cards,2022-11-13,,0
+2022-2023,657,K. Tete,Fulham,Missing Fixture,Yellow Cards,2022-11-13,,0
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-11-13,,140
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2022-11-13,,160
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-12-26,,140
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2022-12-26,,160
+2022-2023,697,M. Solomon,Fulham,Missing Fixture,Knee Injury,2022-12-31,,140
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2022-12-31,,160
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-01-03,,160
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Yellow Cards,2023-01-12,,183
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-01-12,,160
+2022-2023,19549,A. Robinson,Fulham,Missing Fixture,Yellow Cards,2023-01-15,,0
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-01-15,,160
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-01-23,,160
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-02-03,,160
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-02-11,,160
+2022-2023,19025,T. Cairney,Fulham,Missing Fixture,Ankle Injury,2023-02-11,,28
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-02-18,,160
+2022-2023,19025,T. Cairney,Fulham,Missing Fixture,Ankle Injury,2023-02-18,,28
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-02-24,,160
+2022-2023,19025,T. Cairney,Fulham,Missing Fixture,Ankle Injury,2023-02-24,,28
+2022-2023,41104,J. Palhinha,Fulham,Missing Fixture,Yellow Cards,2023-03-06,,162
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-03-06,,231
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-03-06,,160
+2022-2023,19025,T. Cairney,Fulham,Missing Fixture,Ankle Injury,2023-03-06,,28
+2022-2023,190,C. Soares,Fulham,Missing Fixture,Loan agreement,2023-03-12,,0
+2022-2023,41104,J. Palhinha,Fulham,Missing Fixture,Yellow Cards,2023-03-12,,162
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-03-12,,231
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-03-12,,160
+2022-2023,19025,T. Cairney,Fulham,Missing Fixture,Ankle Injury,2023-03-12,,28
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Red Card,2023-04-01,,183
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-04-01,,231
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-04-01,,160
+2022-2023,2294,Willian,Fulham,Missing Fixture,Red Card,2023-04-01,,24
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Red Card,2023-04-08,,183
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-04-08,,231
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-04-08,,160
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Red Card,2023-04-15,,183
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-04-15,,231
+2022-2023,19027,N. Kebano,Fulham,Missing Fixture,Achilles Tendon Injury,2023-04-15,,160
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Red Card,2023-04-22,,183
+2022-2023,19329,D. James,Fulham,Missing Fixture,Loan agreement,2023-04-22,,202
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-04-22,,231
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Red Card,2023-04-25,,183
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-04-25,,231
+2022-2023,2294,Willian,Fulham,Missing Fixture,Injury,2023-04-25,,24
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Red Card,2023-04-30,,183
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-04-30,,231
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Red Card,2023-05-03,,183
+2022-2023,899,A. Pereira,Fulham,Missing Fixture,Ankle Injury,2023-05-03,,24
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-05-03,,231
+2022-2023,19023,T. Ream,Fulham,Missing Fixture,Arm Injury,2023-05-03,,24
+2022-2023,2825,A. Mitrovic,Fulham,Missing Fixture,Red Card,2023-05-08,,183
+2022-2023,899,A. Pereira,Fulham,Missing Fixture,Ankle Injury,2023-05-08,,24
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-05-08,,231
+2022-2023,19023,T. Ream,Fulham,Missing Fixture,Arm Injury,2023-05-08,,24
+2022-2023,899,A. Pereira,Fulham,Missing Fixture,Ankle Injury,2023-05-13,,24
+2022-2023,19329,D. James,Fulham,Missing Fixture,Thigh Injury,2023-05-13,,202
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-05-13,,231
+2022-2023,19023,T. Ream,Fulham,Missing Fixture,Arm Injury,2023-05-13,,24
+2022-2023,899,A. Pereira,Fulham,Missing Fixture,Ankle Injury,2023-05-20,,24
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-05-20,,231
+2022-2023,19023,T. Ream,Fulham,Missing Fixture,Arm Injury,2023-05-20,,24
+2022-2023,899,A. Pereira,Fulham,Missing Fixture,Ankle Injury,2023-05-28,,24
+2022-2023,263,L. Kurzawa,Fulham,Missing Fixture,Knee Injury,2023-05-28,,231
+2022-2023,19023,T. Ream,Fulham,Missing Fixture,Arm Injury,2023-05-28,,24

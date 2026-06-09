@@ -1,0 +1,291 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-08-14,,229
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-08-14,,53
+2023-2024,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-08-14,,4
+2023-2024,2931,T. Heaton,Manchester United,Missing Fixture,Calf Injury,2023-08-14,,32
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-08-14,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-08-19,,229
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-08-19,,53
+2023-2024,897,M. Greenwood,Manchester United,Missing Fixture,Inactive,2023-08-19,,4
+2023-2024,288006,R. Hojlund,Manchester United,Missing Fixture,Lower Back Injury,2023-08-19,,196
+2023-2024,2931,T. Heaton,Manchester United,Missing Fixture,Calf Injury,2023-08-19,,32
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-08-19,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-08-26,,229
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-08-26,,53
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-08-26,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Hamstring Injury,2023-08-26,,267
+2023-2024,2931,T. Heaton,Manchester United,Missing Fixture,Calf Injury,2023-08-26,,32
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-08-26,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-09-03,,229
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-09-03,,53
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-09-03,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Hamstring Injury,2023-09-03,,267
+2023-2024,742,R. Varane,Manchester United,Missing Fixture,Injury,2023-09-03,,252
+2023-2024,2931,T. Heaton,Manchester United,Missing Fixture,Calf Injury,2023-09-03,,32
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-09-03,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-09-16,,229
+2023-2024,9971,Antony,Manchester United,Missing Fixture,Inactive,2023-09-16,,14
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-09-16,,105
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-09-16,,53
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-09-16,,267
+2023-2024,74,S. Amrabat,Manchester United,Missing Fixture,Back Injury,2023-09-16,,138
+2023-2024,2931,T. Heaton,Manchester United,Missing Fixture,Calf Injury,2023-09-16,,32
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-09-16,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-09-20,,229
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2023-09-20,,164
+2023-2024,9971,Antony,Manchester United,Missing Fixture,Inactive,2023-09-20,,14
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Injury,2023-09-20,,241
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-09-20,,105
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-09-20,,53
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-09-20,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Hamstring Injury,2023-09-20,,267
+2023-2024,742,R. Varane,Manchester United,Missing Fixture,Injury,2023-09-20,,252
+2023-2024,74,S. Amrabat,Manchester United,Missing Fixture,Back Injury,2023-09-20,,138
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-09-20,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-09-23,,229
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2023-09-23,,164
+2023-2024,9971,Antony,Manchester United,Missing Fixture,Inactive,2023-09-23,,14
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-09-23,,105
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-09-23,,53
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-09-23,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-09-23,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-09-30,,229
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2023-09-30,,164
+2023-2024,9971,Antony,Manchester United,Missing Fixture,Inactive,2023-09-30,,14
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-09-30,,105
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-09-30,,53
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-09-30,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-09-30,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-09-30,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-10-03,,229
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2023-10-03,,164
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-10-03,,105
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-10-03,,53
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-10-03,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-10-03,,267
+2023-2024,739,S. Reguilon,Manchester United,Missing Fixture,Injury,2023-10-03,,3
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-10-03,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-10-07,,229
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Injury,2023-10-07,,164
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-10-07,,105
+2023-2024,284322,K. Mainoo,Manchester United,Missing Fixture,Ankle Injury,2023-10-07,,53
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-10-07,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-10-07,,267
+2023-2024,739,S. Reguilon,Manchester United,Missing Fixture,Injury,2023-10-07,,3
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-10-07,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-10-21,,229
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Ankle Injury,2023-10-21,,69
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-10-21,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-10-21,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-10-21,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-10-21,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-10-24,,229
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Red Card,2023-10-24,,69
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-10-24,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-10-24,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-10-24,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-10-24,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-10-29,,229
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-10-29,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-10-29,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-10-29,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-10-29,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-11-04,,229
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-11-04,,69
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-11-04,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-11-04,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-11-04,,267
+2023-2024,909,M. Rashford,Manchester United,Missing Fixture,Leg Injury,2023-11-04,,25
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-11-04,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-11-08,,229
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-11-08,,69
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-11-08,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-11-08,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-11-08,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-11-08,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-11-11,,229
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-11-11,,69
+2023-2024,18772,J. Evans,Manchester United,Missing Fixture,Injury,2023-11-11,,167
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-11-11,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-11-11,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Muscle Injury,2023-11-11,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-11-11,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-11-26,,229
+2023-2024,174,C. Eriksen,Manchester United,Missing Fixture,Knee Injury,2023-11-26,,21
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-11-26,,69
+2023-2024,18772,J. Evans,Manchester United,Missing Fixture,Injury,2023-11-26,,167
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-11-26,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-11-26,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-11-26,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-11-26,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-11-29,,229
+2023-2024,174,C. Eriksen,Manchester United,Missing Fixture,Knee Injury,2023-11-29,,21
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-11-29,,69
+2023-2024,18772,J. Evans,Manchester United,Missing Fixture,Injury,2023-11-29,,167
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-11-29,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-11-29,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-11-29,,267
+2023-2024,909,M. Rashford,Manchester United,Missing Fixture,Red Card,2023-11-29,,25
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-11-29,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-12-02,,229
+2023-2024,174,C. Eriksen,Manchester United,Missing Fixture,Knee Injury,2023-12-02,,21
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-12-02,,69
+2023-2024,18772,J. Evans,Manchester United,Missing Fixture,Injury,2023-12-02,,167
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-12-02,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-12-02,,219
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-12-02,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-12-06,,229
+2023-2024,174,C. Eriksen,Manchester United,Missing Fixture,Knee Injury,2023-12-06,,21
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-12-06,,69
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-12-06,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-12-06,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-12-06,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-12-06,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-12-09,,229
+2023-2024,174,C. Eriksen,Manchester United,Missing Fixture,Knee Injury,2023-12-09,,21
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-12-09,,69
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-12-09,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-12-09,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-12-09,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-12-09,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Knock,2023-12-09,,158
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-12-12,,229
+2023-2024,174,C. Eriksen,Manchester United,Missing Fixture,Knee Injury,2023-12-12,,21
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-12-12,,69
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Suspended,2023-12-12,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-12-12,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-12-12,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-12-12,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Knock,2023-12-12,,158
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-12-17,,229
+2023-2024,1485,B. Fernandes,Manchester United,Missing Fixture,Yellow Cards,2023-12-17,,0
+2023-2024,174,C. Eriksen,Manchester United,Missing Fixture,Knee Injury,2023-12-17,,21
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-12-17,,69
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Groin Injury,2023-12-17,,241
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Coach's decision,2023-12-17,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-12-17,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-12-17,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-12-17,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-12-23,,229
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-12-23,,69
+2023-2024,886,D. Dalot,Manchester United,Missing Fixture,Red Card,2023-12-23,,0
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Groin Injury,2023-12-23,,241
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Coach's decision,2023-12-23,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-12-23,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-12-23,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-12-23,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Knock,2023-12-23,,158
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Knee Injury,2023-12-26,,229
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Illness,2023-12-26,,122
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-12-26,,69
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Groin Injury,2023-12-26,,241
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Coach's decision,2023-12-26,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-12-26,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-12-26,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-12-26,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Knock,2023-12-26,,158
+2023-2024,747,Casemiro,Manchester United,Missing Fixture,Hamstring Injury,2023-12-30,,69
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Groin Injury,2023-12-30,,241
+2023-2024,18,J. Sancho,Manchester United,Missing Fixture,Coach's decision,2023-12-30,,105
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Foot Injury,2023-12-30,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Injury,2023-12-30,,267
+2023-2024,288006,R. Hojlund,Manchester United,Missing Fixture,Illness,2023-12-30,,196
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Muscle Injury,2023-12-30,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Groin Injury,2023-12-30,,158
+2023-2024,74,S. Amrabat,Manchester United,Missing Fixture,National selection,2024-01-14,,138
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Groin Injury,2024-01-14,,158
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-02-01,,122
+2023-2024,74,S. Amrabat,Manchester United,Missing Fixture,International duty,2024-02-01,,138
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-02-01,,278
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-02-04,,122
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-02-04,,278
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-02-11,,122
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Knock,2024-02-11,,164
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Knee Injury,2024-02-11,,219
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-02-11,,278
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-02-18,,122
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Knock,2024-02-18,,164
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Knee Injury,2024-02-18,,219
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Muscle Injury,2024-02-18,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-02-18,,278
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-02-24,,122
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Knock,2024-02-24,,164
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Knee Injury,2024-02-24,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-02-24,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Muscle Injury,2024-02-24,,267
+2023-2024,288006,R. Hojlund,Manchester United,Missing Fixture,Muscle Injury,2024-02-24,,196
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-02-24,,278
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-03-03,,122
+2023-2024,18846,A. Wan-Bissaka,Manchester United,Missing Fixture,Knock,2024-03-03,,164
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Knee Injury,2024-03-03,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-03-03,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Muscle Injury,2024-03-03,,267
+2023-2024,288006,R. Hojlund,Manchester United,Missing Fixture,Muscle Injury,2024-03-03,,196
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-03-03,,278
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-03-09,,122
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Knee Injury,2024-03-09,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-03-09,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Muscle Injury,2024-03-09,,267
+2023-2024,284242,O. Forson,Manchester United,Missing Fixture,Injury,2024-03-09,,0
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-03-09,,278
+2023-2024,157997,A. Diallo,Manchester United,Missing Fixture,Red Card,2024-03-30,,229
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-03-30,,122
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-03-30,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-03-30,,278
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-04-04,,122
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Calf Injury,2024-04-04,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-04-04,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-04-04,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Hamstring Injury,2024-04-04,,158
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-04-07,,122
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Calf Injury,2024-04-07,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-04-07,,267
+2023-2024,742,R. Varane,Manchester United,Missing Fixture,Injury,2024-04-07,,252
+2023-2024,903,S. McTominay,Manchester United,Missing Fixture,Injury,2024-04-07,,6
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-04-07,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Hamstring Injury,2024-04-07,,158
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-04-13,,122
+2023-2024,18772,J. Evans,Manchester United,Missing Fixture,Injury,2024-04-13,,167
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Calf Injury,2024-04-13,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-04-13,,267
+2023-2024,742,R. Varane,Manchester United,Missing Fixture,Injury,2024-04-13,,252
+2023-2024,903,S. McTominay,Manchester United,Missing Fixture,Injury,2024-04-13,,6
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-04-13,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Hamstring Injury,2024-04-13,,158
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-04-24,,122
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Calf Injury,2024-04-24,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-04-24,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Muscle Injury,2024-04-24,,267
+2023-2024,742,R. Varane,Manchester United,Missing Fixture,Injury,2024-04-24,,252
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-04-24,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Hamstring Injury,2024-04-24,,158
+2023-2024,908,A. Martial,Manchester United,Missing Fixture,Surgery,2024-04-27,,122
+2023-2024,18772,J. Evans,Manchester United,Missing Fixture,Injury,2024-04-27,,167
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Calf Injury,2024-04-27,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-04-27,,267
+2023-2024,742,R. Varane,Manchester United,Missing Fixture,Injury,2024-04-27,,252
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-04-27,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Hamstring Injury,2024-04-27,,158
+2023-2024,288112,W. Kambwala,Manchester United,Missing Fixture,Injury,2024-04-27,,9
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Muscle Injury,2024-05-06,,241
+2023-2024,2467,L. Martinez,Manchester United,Missing Fixture,Calf Injury,2024-05-06,,219
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-05-06,,267
+2023-2024,742,R. Varane,Manchester United,Missing Fixture,Injury,2024-05-06,,252
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-05-06,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Hamstring Injury,2024-05-06,,158
+2023-2024,288112,W. Kambwala,Manchester United,Missing Fixture,Injury,2024-05-06,,9
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Muscle Injury,2024-05-12,,241
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-05-12,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Muscle Injury,2024-05-12,,267
+2023-2024,742,R. Varane,Manchester United,Missing Fixture,Injury,2024-05-12,,252
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-05-12,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Hamstring Injury,2024-05-12,,158
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Muscle Injury,2024-05-15,,241
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-05-15,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Muscle Injury,2024-05-15,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-05-15,,278
+2023-2024,889,V. Lindelof,Manchester United,Missing Fixture,Hamstring Injury,2024-05-15,,158
+2023-2024,2935,H. Maguire,Manchester United,Missing Fixture,Muscle Injury,2024-05-19,,241
+2023-2024,891,L. Shaw,Manchester United,Missing Fixture,Leg Injury,2024-05-19,,267
+2023-2024,19220,M. Mount,Manchester United,Missing Fixture,Muscle Injury,2024-05-19,,267
+2023-2024,37145,T. Malacia,Manchester United,Missing Fixture,Knee Injury,2024-05-19,,278

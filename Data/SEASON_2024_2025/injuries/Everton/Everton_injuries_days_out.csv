@@ -1,0 +1,155 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-08-17,,188
+2024-2025,895,J. Garner,Everton,Missing Fixture,Calf Injury,2024-08-17,,155
+2024-2025,138417,N. Patterson,Everton,Missing Fixture,Thigh Injury,2024-08-17,,188
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2024-08-17,,281
+2024-2025,894,A. Young,Everton,Missing Fixture,Red Card,2024-08-24,,123
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-08-24,,188
+2024-2025,17661,J. Branthwaite,Everton,Missing Fixture,Groin Injury,2024-08-24,,274
+2024-2025,895,J. Garner,Everton,Missing Fixture,Calf Injury,2024-08-24,,155
+2024-2025,138417,N. Patterson,Everton,Missing Fixture,Thigh Injury,2024-08-24,,188
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2024-08-24,,281
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-08-31,,188
+2024-2025,17661,J. Branthwaite,Everton,Missing Fixture,Groin Injury,2024-08-31,,274
+2024-2025,138417,N. Patterson,Everton,Missing Fixture,Thigh Injury,2024-08-31,,188
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Calf Injury,2024-09-14,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-09-14,,188
+2024-2025,17661,J. Branthwaite,Everton,Missing Fixture,Groin Injury,2024-09-14,,274
+2024-2025,138417,N. Patterson,Everton,Missing Fixture,Thigh Injury,2024-09-14,,188
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Calf Injury,2024-09-21,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-09-21,,188
+2024-2025,2990,I. Gueye,Everton,Missing Fixture,Injury,2024-09-21,,0
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Calf Injury,2024-10-05,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-10-05,,188
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Calf Injury,2024-10-19,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-10-19,,188
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-10-19,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-10-19,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Calf Injury,2024-10-26,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-10-26,,188
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-10-26,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-10-26,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Calf Injury,2024-11-02,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-11-02,,188
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-11-02,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-11-02,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Calf Injury,2024-11-09,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-11-09,,188
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-11-09,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-11-09,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Calf Injury,2024-11-23,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-11-23,,188
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-11-23,,155
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Thigh Injury,2024-11-23,,281
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-11-23,,98
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-12-01,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-12-01,,98
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Ankle Injury,2024-12-04,,188
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-12-04,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-12-04,,98
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-12-14,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-12-14,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Loan agreement,2024-12-22,,223
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-12-22,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-12-22,,98
+2024-2025,894,A. Young,Everton,Missing Fixture,Yellow Cards,2024-12-26,,123
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-12-26,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-12-26,,98
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2024-12-29,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2024-12-29,,98
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-01-04,,70
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2025-01-04,,155
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2025-01-04,,281
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2025-01-04,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-01-15,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Thigh Injury,2025-01-15,,188
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-01-15,,70
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2025-01-15,,155
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2025-01-15,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-01-19,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Thigh Injury,2025-01-19,,188
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-01-19,,70
+2024-2025,895,J. Garner,Everton,Missing Fixture,Lower Back Injury,2025-01-19,,155
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2025-01-19,,281
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2025-01-19,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-01-25,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Thigh Injury,2025-01-25,,188
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-01-25,,70
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2025-01-25,,281
+2024-2025,284500,T. Iroegbunam,Everton,Missing Fixture,Ankle Injury,2025-01-25,,98
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-02-01,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Thigh Injury,2025-02-01,,188
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-02-01,,83
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-02-01,,70
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-02-01,,113
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2025-02-01,,281
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-02-12,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Thigh Injury,2025-02-12,,188
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-02-12,,83
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-02-12,,70
+2024-2025,138417,N. Patterson,Everton,Missing Fixture,Muscle Injury,2025-02-12,,188
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-02-12,,113
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2025-02-12,,281
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-02-15,,223
+2024-2025,18805,A. Doucoure,Everton,Missing Fixture,Red Card,2025-02-15,,0
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Thigh Injury,2025-02-15,,188
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-02-15,,83
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-02-15,,70
+2024-2025,18592,I. Ndiaye,Everton,Missing Fixture,Knee Injury,2025-02-15,,27
+2024-2025,138417,N. Patterson,Everton,Missing Fixture,Muscle Injury,2025-02-15,,188
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-02-15,,113
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2025-02-15,,281
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-02-22,,223
+2024-2025,330412,Chermiti,Everton,Missing Fixture,Thigh Injury,2025-02-22,,188
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-02-22,,83
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-02-22,,70
+2024-2025,18592,I. Ndiaye,Everton,Missing Fixture,Knee Injury,2025-02-22,,27
+2024-2025,138417,N. Patterson,Everton,Missing Fixture,Muscle Injury,2025-02-22,,188
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-02-22,,113
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2025-02-22,,281
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-02-26,,223
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-02-26,,83
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-02-26,,70
+2024-2025,18592,I. Ndiaye,Everton,Missing Fixture,Knee Injury,2025-02-26,,27
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-02-26,,113
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Calf Injury,2025-02-26,,281
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Ankle Injury,2025-03-08,,223
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-03-08,,83
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-03-08,,70
+2024-2025,18592,I. Ndiaye,Everton,Missing Fixture,Knee Injury,2025-03-08,,27
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-03-08,,113
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-03-15,,83
+2024-2025,18929,D. McNeil,Everton,Missing Fixture,Knee Injury,2025-03-15,,70
+2024-2025,18592,I. Ndiaye,Everton,Missing Fixture,Knee Injury,2025-03-15,,27
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-03-15,,113
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-04-02,,83
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-04-02,,52
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-04-02,,113
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-04-05,,83
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-04-05,,52
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-04-05,,113
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-04-12,,83
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-04-12,,52
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-04-12,,113
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-04-19,,83
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-04-19,,52
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-04-19,,113
+2024-2025,138822,A. Broja,Everton,Missing Fixture,Loan agreement,2025-04-26,,223
+2024-2025,18766,D. Calvert-Lewin,Everton,Missing Fixture,Muscle Injury,2025-04-26,,83
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-04-26,,52
+2024-2025,2936,J. Tarkowski,Everton,Missing Fixture,Thigh Injury,2025-04-26,,29
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-04-26,,113
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-05-03,,52
+2024-2025,2936,J. Tarkowski,Everton,Missing Fixture,Thigh Injury,2025-05-03,,29
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-05-03,,113
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-05-10,,52
+2024-2025,2936,J. Tarkowski,Everton,Missing Fixture,Hamstring Injury,2025-05-10,,29
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-05-10,,113
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-05-18,,52
+2024-2025,2936,J. Tarkowski,Everton,Missing Fixture,Hamstring Injury,2025-05-18,,29
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-05-18,,113
+2024-2025,17661,J. Branthwaite,Everton,Missing Fixture,Hamstring Injury,2025-05-25,,274
+2024-2025,15884,J. Lindstrom,Everton,Missing Fixture,Groin Injury,2025-05-25,,52
+2024-2025,2936,J. Tarkowski,Everton,Missing Fixture,Hamstring Injury,2025-05-25,,29
+2024-2025,24882,O. Mangala,Everton,Missing Fixture,Knee Injury,2025-05-25,,113
+2024-2025,18758,S. Coleman,Everton,Missing Fixture,Thigh Injury,2025-05-25,,281

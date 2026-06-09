@@ -1,0 +1,107 @@
+season,player_id,player_name,team_name,injury_type,reason,fixture_date,end_date,days_out
+2022-2023,19789,E. Pinnock,Brentford,Missing Fixture,Muscle Injury,2022-08-07,,27
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Thigh Injury,2022-08-07,,258
+2022-2023,19352,S. Canos,Brentford,Missing Fixture,Thigh Injury,2022-08-07,,27
+2022-2023,19789,E. Pinnock,Brentford,Missing Fixture,Muscle Injury,2022-08-13,,27
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Thigh Injury,2022-08-13,,258
+2022-2023,19352,S. Canos,Brentford,Missing Fixture,Thigh Injury,2022-08-13,,27
+2022-2023,19789,E. Pinnock,Brentford,Missing Fixture,Muscle Injury,2022-08-20,,27
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Thigh Injury,2022-08-20,,258
+2022-2023,19352,S. Canos,Brentford,Missing Fixture,Thigh Injury,2022-08-20,,27
+2022-2023,19789,E. Pinnock,Brentford,Missing Fixture,Muscle Injury,2022-08-27,,27
+2022-2023,19352,S. Canos,Brentford,Missing Fixture,Thigh Injury,2022-08-27,,27
+2022-2023,19789,E. Pinnock,Brentford,Missing Fixture,Muscle Injury,2022-08-30,,27
+2022-2023,19352,S. Canos,Brentford,Missing Fixture,Thigh Injury,2022-08-30,,27
+2022-2023,19789,E. Pinnock,Brentford,Missing Fixture,Muscle Injury,2022-09-03,,27
+2022-2023,19352,S. Canos,Brentford,Missing Fixture,Thigh Injury,2022-09-03,,27
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2022-09-18,,252
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2022-10-01,,252
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Ankle Injury,2022-10-01,,239
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2022-10-08,,252
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Ankle Injury,2022-10-08,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2022-10-08,,232
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2022-10-14,,252
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Ankle Injury,2022-10-14,,211
+2022-2023,44871,A. Hickey,Brentford,Missing Fixture,Ankle Injury,2022-10-19,,74
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2022-10-19,,252
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2022-10-19,,232
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Ankle Injury,2022-10-19,,211
+2022-2023,44871,A. Hickey,Brentford,Missing Fixture,Ankle Injury,2022-10-23,,74
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2022-10-23,,252
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2022-10-23,,232
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Ankle Injury,2022-10-23,,211
+2022-2023,44871,A. Hickey,Brentford,Missing Fixture,Ankle Injury,2022-10-29,,74
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2022-10-29,,232
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Ankle Injury,2022-10-29,,211
+2022-2023,44871,A. Hickey,Brentford,Missing Fixture,Ankle Injury,2022-11-05,,74
+2022-2023,17772,C. Goode,Brentford,Missing Fixture,Knee Injury,2022-11-05,,6
+2022-2023,19974,I. Toney,Brentford,Missing Fixture,Yellow Cards,2022-11-05,,204
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2022-11-05,,232
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Ankle Injury,2022-11-05,,211
+2022-2023,44871,A. Hickey,Brentford,Missing Fixture,Ankle Injury,2022-11-12,,74
+2022-2023,17772,C. Goode,Brentford,Missing Fixture,Knee Injury,2022-11-12,,6
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Knee Injury,2022-11-12,,258
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2022-11-12,,232
+2022-2023,20110,S. Baptiste,Brentford,Missing Fixture,Muscle Injury,2022-11-12,,140
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Ankle Injury,2022-11-12,,211
+2022-2023,44871,A. Hickey,Brentford,Missing Fixture,Ankle Injury,2022-12-26,,74
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Knee Injury,2022-12-26,,258
+2022-2023,20110,S. Baptiste,Brentford,Missing Fixture,Muscle Injury,2022-12-26,,140
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Ankle Injury,2022-12-26,,211
+2022-2023,44871,A. Hickey,Brentford,Missing Fixture,Ankle Injury,2022-12-30,,74
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Knee Injury,2022-12-30,,258
+2022-2023,20110,S. Baptiste,Brentford,Missing Fixture,Muscle Injury,2022-12-30,,140
+2022-2023,44871,A. Hickey,Brentford,Missing Fixture,Ankle Injury,2023-01-02,,74
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Knee Injury,2023-01-02,,258
+2022-2023,20110,S. Baptiste,Brentford,Missing Fixture,Muscle Injury,2023-01-02,,140
+2022-2023,15799,F. Onyeka,Brentford,Missing Fixture,Thigh Injury,2023-01-14,,20
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-01-14,,232
+2022-2023,15799,F. Onyeka,Brentford,Missing Fixture,Thigh Injury,2023-01-22,,20
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-01-22,,232
+2022-2023,15799,F. Onyeka,Brentford,Missing Fixture,Thigh Injury,2023-02-04,,20
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-02-04,,232
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Thigh Injury,2023-02-11,,211
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Thigh Injury,2023-03-06,,211
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-03-11,,239
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Thigh Injury,2023-03-11,,211
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-03-15,,239
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Thigh Injury,2023-03-15,,211
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Calf Injury,2023-03-18,,258
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-03-18,,239
+2022-2023,25073,V. Janelt,Brentford,Missing Fixture,Knee Injury,2023-03-18,,0
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Calf Injury,2023-04-01,,258
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-04-01,,239
+2022-2023,20110,S. Baptiste,Brentford,Missing Fixture,Red Card,2023-04-01,,140
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Calf Injury,2023-04-05,,258
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-04-05,,239
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Calf Injury,2023-04-08,,258
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-04-08,,239
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Calf Injury,2023-04-15,,258
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-04-15,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-04-15,,232
+2022-2023,1119,K. Ajer,Brentford,Missing Fixture,Calf Injury,2023-04-22,,258
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-04-22,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-04-22,,232
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2023-04-26,,252
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-04-26,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-04-26,,232
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Calf Injury,2023-04-26,,211
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2023-04-29,,252
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-04-29,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-04-29,,232
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Calf Injury,2023-04-29,,211
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2023-05-06,,252
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-05-06,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-05-06,,232
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2023-05-14,,252
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-05-14,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-05-14,,232
+2022-2023,1835,T. Strakosha,Brentford,Missing Fixture,Calf Injury,2023-05-14,,211
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2023-05-20,,252
+2022-2023,19974,I. Toney,Brentford,Missing Fixture,Suspended,2023-05-20,,204
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-05-20,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-05-20,,232
+2022-2023,30407,C. Norgaard,Brentford,Missing Fixture,Knock,2023-05-28,,252
+2022-2023,19974,I. Toney,Brentford,Missing Fixture,Suspended,2023-05-28,,204
+2022-2023,106725,K. Lewis-Potter,Brentford,Missing Fixture,Knee Injury,2023-05-28,,239
+2022-2023,19124,P. Jansson,Brentford,Missing Fixture,Thigh Injury,2023-05-28,,232
