@@ -116,7 +116,7 @@ export default function TeamDetail() {
           </div>
           <div className="bg-muted/50 rounded-lg p-3">
             <RotateCcw className="w-4 h-4 text-chart-4 mb-1" />
-            <div className="text-xl font-bold">{team.overall_rotation_index ? `${(team.overall_rotation_index * 100).toFixed(0)}%` : "—"}</div>
+            <div className="text-xl font-bold">{team.overall_rotation_index != null ? `${(team.overall_rotation_index * 100).toFixed(0)}%` : "—"}</div>
             <div className="text-xs text-muted-foreground">Avg Rotation</div>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function TeamDetail() {
 
           <div className="bg-card border border-border rounded-xl p-5">
             <h3 className="font-semibold mb-1">Congestion Impact Radar</h3>
-            <p className="text-xs text-muted-foreground mb-4">Normalized metrics across congestion levels</p>
+            <p className="text-xs text-muted-foreground mb-4">Shows how performance (points, xG, win rate) changes across Low/Medium/High fixture congestion, alongside squad rotation rate — values are min-max normalized (0–100) per metric for comparison across levels</p>
             <div className="h-72">
               <ResponsiveContainer width="100%" height="100%">
                 <RadarChart data={[

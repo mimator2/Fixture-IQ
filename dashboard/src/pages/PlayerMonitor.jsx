@@ -1,7 +1,8 @@
 import { usePlayerRisks } from "@/hooks/usePlayerRisks";
 import PlayerRiskTable from "@/components/risk/PlayerRiskTable";
 import TeamRiskSummary from "@/components/risk/TeamRiskSummary";
-import { Activity, AlertTriangle, Users, ShieldCheck } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Activity, AlertTriangle, Users, ShieldCheck, BarChart3 } from "lucide-react";
 
 export default function PlayerMonitor() {
   const { data: players = [] } = usePlayerRisks();
@@ -51,6 +52,11 @@ export default function PlayerMonitor() {
             CatBoost V6 dual-score system — Workload/Fatigue Score (V6 No Rating Baseline) + Performance Risk Score (V6 Full).
             Players are flagged for monitoring, not diagnosed with fatigue.
           </p>
+          <div className="mt-2">
+            <Link to="/model-explanation" className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline">
+              <BarChart3 className="w-3.5 h-3.5" /> View model explanation &amp; feature drivers
+            </Link>
+          </div>
         </div>
 
         {/* Stats Bar */}

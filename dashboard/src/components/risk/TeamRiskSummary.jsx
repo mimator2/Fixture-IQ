@@ -45,7 +45,7 @@ export default function TeamRiskSummary({ teamFilter }) {
                 contentStyle={{ background: "hsl(var(--card))", border: "1px solid hsl(var(--border))", borderRadius: 8 }}
                 labelStyle={{ color: "hsl(var(--foreground))" }}
               />
-              <Legend wrapperStyle={{ fontSize: 12 }} />
+              <Legend wrapperStyle={{ fontSize: 12, color: "hsl(var(--foreground))" }} />
             </PieChart>
           </ResponsiveContainer>
         </div>

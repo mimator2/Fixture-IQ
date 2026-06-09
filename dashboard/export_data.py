@@ -103,6 +103,12 @@ def derive_risk_flags(row, reasons_str):
         flags.add("high_squad_injury_pressure")
     if row.get("returning_from_injury", 0) == 1 or "returning from injury" in reasons_lower:
         flags.add("returning_from_injury")
+    if "post-european" in reasons_lower or "post_ucl_short_rest" in reasons_lower:
+        flags.add("post_european_short_rest")
+    if "competition switch" in reasons_lower:
+        flags.add("frequent_competition_switches")
+    if "rotation player exceeding" in reasons_lower:
+        flags.add("rotation_risk_exceeds_threshold")
 
     return sorted(flags)
 
@@ -129,6 +135,38 @@ def compute_congestion_level(row):
         return "Medium"
     else:
         return "High"
+
+
+def compute_lineup_rotation(grp):
+    """
+    Compute rotation index for a team (or team+congestion group).
+    Returns average Jaccard distance (1 - overlap/union) between
+    consecutive starting lineups. 0 = identical XI every match,
+    higher = more rotation.
+    """
+    sub = grp[["fixture_id", "date", "player_id", "is_substitute"]].drop_duplicates(
+        subset=["fixture_id", "player_id"]
+    )
+    fixture_order = (
+        sub[["fixture_id", "date"]].drop_duplicates("fixture_id").sort_values("date")["fixture_id"].tolist()
+    )
+    if len(fixture_order) < 2:
+        return 0.0
+    starter_sets = {}
+    for fid in fixture_order:
+        s = set(sub[(sub["fixture_id"] == fid) & (sub["is_substitute"] == "False")]["player_id"])
+        starter_sets[fid] = s
+    distances = []
+    for i in range(len(fixture_order) - 1):
+        s1 = starter_sets[fixture_order[i]]
+        s2 = starter_sets[fixture_order[i + 1]]
+        union = s1 | s2
+        if union:
+            jaccard = len(s1 & s2) / len(union)
+        else:
+            jaccard = 1.0
+        distances.append(1.0 - jaccard)
+    return round(float(np.mean(distances)), 4) if distances else 0.0
 
 
 # ---------------------------------------------------------------------------
@@ -187,7 +225,6 @@ def main():
         player_role_raw = row.get("player_role_v6", "rotation_player")
         player_role = map_player_role(player_role_raw)
 
-        # Position mapping
         pos_map = {"G": "Goalkeeper", "D": "Defender", "M": "Midfielder", "F": "Forward"}
         position = pos_map.get(str(row.get("player_position", "")), "Unknown")
 
@@ -206,50 +243,95 @@ def main():
             "player_role": player_role,
             "season": str(row.get("season", "")),
             "gameweek": None,
+
+            # A. Current risk
             "fatigue_score": round(float(row.get("risk_score_fatigue", 0) or 0), 4),
             "performance_risk_score": round(float(row.get("risk_score_perf", 0) or 0), 4),
             "risk_band": risk_band,
+            "monitoring_threshold": round(float(row.get("monitoring_threshold_perf", 0.5) or 0.5), 4),
             "recommended_action": action,
             "risk_flags": flags,
+            "main_risk_reasons": reasons,
+
+            # B. Workload context
             "minutes_last_7": int(row.get("min_last_7d", 0) or 0),
             "minutes_last_14": int(row.get("min_last_14d", 0) or 0),
             "minutes_last_21": int(row.get("min_last_21d", 0) or 0),
             "minutes_last_28": int(row.get("min_last_28d", 0) or 0),
+            "starts_last_14": int(row.get("starts_last_14d", 0) or 0),
             "starts_last_5": int(row.get("starts_last_5", 0) or 0),
+            "full_90s_last_14": int(row.get("full_90s_last_14d", 0) or 0),
+            "full_90s_last_28": int(row.get("full_90s_last_28d", 0) or 0),
             "full_90s_last_5": int(row.get("full_match_exposure_last_5", 0) or 0),
+            "rest_days": int(row.get("rest_days", -1) or -1),
             "avg_rest_days_last_5": round(float(row.get("avg_rest_last_3_matches", 0) or 0), 1),
+            "short_rest_matches_30d": int(row.get("matches_with_rest_le_4d_last_30d", 0) or 0),
+            "matches_with_rest_le_3d_last_30d": int(row.get("matches_with_rest_le_3d_last_30d", 0) or 0),
+            "matches_with_rest_le_6d_last_30d": int(row.get("matches_with_rest_le_6d_last_30d", 0) or 0),
+
+            # C. Multi-competition context
+            "ucl_minutes_last_14": int(row.get("ucl_minutes_last_14d", 0) or 0),
             "ucl_minutes_last_21": int(row.get("ucl_minutes_last_21d", 0) or 0),
+            "ucl_matches_last_30": int(row.get("ucl_matches_last_30d", 0) or 0),
+            "cup_minutes_last_14": int(row.get("cup_minutes_last_14d", 0) or 0),
             "cup_minutes_last_21": int(row.get("cup_minutes_last_14d", 0) or 0),
             "days_since_last_european": int(row.get("days_since_european_match", -1) or -1),
+            "post_ucl_short_rest": int(row.get("post_ucl_short_rest", 0) or 0),
+            "pl_after_ucl_short_rest": int(row.get("pl_after_ucl_with_short_rest", 0) or 0),
+            "ucl_full90_then_pl_short_rest": int(row.get("ucl_full90_then_pl_short_rest", 0) or 0),
+            "competition_switches_last_30": int(row.get("competition_switches_last_30d", 0) or 0),
+
+            # D. Physical effort
             "shots_last_5": int(row.get("shots_last_5", 0) or 0),
             "key_passes_last_5": int(row.get("key_passes_last_5", 0) or 0),
             "tackles_last_5": int(row.get("tackles_last_5", 0) or 0),
             "interceptions_last_5": int(row.get("interceptions_last_5", 0) or 0),
             "dribbles_last_5": int(row.get("dribbles_attempts_last_5", 0) or 0),
             "duels_last_5": int(row.get("duels_total_last_5", 0) or 0),
+            "fouls_last_5": int(row.get("fouls_committed_last_5", 0) or 0),
+            "duels_last_14": int(row.get("duels_last_14d", 0) or 0),
+            "tackles_last_14": int(row.get("tackles_last_14d", 0) or 0),
+            "fouls_last_14": int(row.get("fouls_last_14d", 0) or 0),
+            "dribbles_last_14": int(row.get("dribbles_last_14d", 0) or 0),
+            "physical_load_index": round(float(row.get("physical_load_index", 0) or 0), 4),
+            "recent_action_load_per90": round(float(row.get("recent_action_load_per90", 0) or 0), 2),
+            "recent_action_load_per90_pos_z": round(float(row.get("recent_action_load_per90_pos_z", 0) or 0), 2),
+            "minutes_last_5_matches_pos_z": round(float(row.get("minutes_last_5_matches_pos_z", 0) or 0), 2),
+
+            # E. Squad context
             "squad_injured_count": int(row.get("squad_injured_count", 0) or 0),
             "squad_soft_tissue_count": int(row.get("squad_soft_tissue_count", 0) or 0),
             "squad_avg_days_out": int(row.get("squad_avg_days_out", 0) or 0),
             "returning_from_injury": bool(row.get("returning_from_injury", False)),
-            "days_since_last_injury": int(row.get("days_since_last_injury", -1) or -1),
+            "days_since_last_injury": int(row.get("days_since_last_injury")) if pd.notna(row.get("days_since_last_injury")) else None,
             "injury_context_score": int(row.get("injury_context_score", 0) or 0),
+            "fixtures_missed_last_30": int(row.get("fixtures_missed_last_30d", 0) or 0),
+            "fixtures_missed_last_90": int(row.get("fixtures_missed_last_90d", 0) or 0),
+
+            # Rating context
             "avg_rating_last_3": round(float(row.get("avg_rating_last_3", 0) or 0), 2) if not pd.isna(row.get("avg_rating_last_3")) else None,
             "avg_rating_last_5": round(float(row.get("avg_rating_last_5", 0) or 0), 2) if not pd.isna(row.get("avg_rating_last_5")) else None,
+
+            # G. SHAP driver data (from CatBoost model)
+            "shap_drivers_perf": row.get("shap_drivers_perf", []),
+            "shap_drivers_fatigue": row.get("shap_drivers_fatigue", []),
+
             "workload_timeline": [],
         }
 
-        # Add reason summary as a synthetic field for traceability
-        obj["_reasons_perf"] = reasons
-
         player_risks.append(obj)
 
-    # Remove _reasons_perf from final output (internal only)
-    final_risks = []
-    for p in player_risks:
-        p.pop("_reasons_perf", None)
-        final_risks.append(p)
+    # Deduplicate by uid (player_name__team_name) keeping last occurrence
+    seen = set()
+    deduped = []
+    for p in reversed(player_risks):
+        key = p["id"]
+        if key not in seen:
+            seen.add(key)
+            deduped.append(p)
+    player_risks = list(reversed(deduped))
 
-    print(f"  {len(final_risks)} players written.")
+    print(f"  {len(player_risks)} players written (after dedup).")
 
     # --- Build teams.json ---
     print("Building teams.json...")
@@ -272,21 +354,10 @@ def main():
         avg_rest = grp["rest_days"].mean()
         avg_pts = grp["points"].mean() if "points" in grp.columns else 0
 
-        # Overall rotation index per team (all congestion levels)
-        if "is_substitute" in grp.columns:
-            team_match_starters = grp[grp["is_substitute"].astype(str) == "False"].groupby("fixture_id")["player_id"].nunique()
-            if len(team_match_starters) > 1:
-                rot_mean = team_match_starters.mean()
-                rot_std = team_match_starters.std()
-                overall_rotation = round(float(rot_std / rot_mean), 4) if rot_mean > 0 and not pd.isna(rot_std) else 0.0
-            else:
-                overall_rotation = 0.0
-        else:
-            overall_rotation = 0.0
+        # Rotation index: average Jaccard distance between consecutive starting XIs
+        overall_rotation = compute_lineup_rotation(grp) if "is_substitute" in grp.columns else 0.0
 
-        season = str(grp["season"].iloc[0]) if "season" in grp.columns else ""
-        if season:
-            season = f"{season}-{str(int(season) + 1)[-2:]}"
+        season = f"{latest_season}-{str(int(latest_season) + 1)[-2:]}"
 
         team_id = team_name.lower().replace(" ", "_")
 
@@ -320,17 +391,8 @@ def main():
         avg_xga = grp["goals_against"].mean() if "goals_against" in grp.columns else 0
         win_rate = grp["win"].mean() * 100 if "win" in grp.columns else 0
 
-        # Rotation index: coefficient of variation of starters per match
-        if "is_substitute" in grp.columns:
-            match_starters = grp[grp["is_substitute"].astype(str) == "False"].groupby("fixture_id")["player_id"].nunique()
-            if len(match_starters) > 1:
-                rot_mean = match_starters.mean()
-                rot_std = match_starters.std()
-                rotation_index = round(float(rot_std / rot_mean), 4) if rot_mean > 0 and not pd.isna(rot_std) else 0.0
-            else:
-                rotation_index = 0.0
-        else:
-            rotation_index = 0.0
+        # Rotation index: average Jaccard distance between consecutive starting XIs
+        rotation_index = compute_lineup_rotation(grp) if "is_substitute" in grp.columns else 0.0
 
         # Season per group
         grp_season = str(grp["season"].iloc[0]) if "season" in grp.columns else ""
@@ -402,19 +464,83 @@ def main():
         },
     ]
 
+    # --- Build model_metadata.json ---
+    print("Building model_metadata.json...")
+    feature_importances = []
+    model = m_perf
+    try:
+        fi = model.get_feature_importance()
+        fn = model.feature_names_
+        total = fi.sum()
+        for name, imp in sorted(zip(fn, fi), key=lambda x: x[1], reverse=True):
+            feature_importances.append({
+                "feature": name,
+                "importance": round(float(imp), 4),
+                "importance_pct": round(float(imp) / total * 100, 2) if total > 0 else 0,
+            })
+    except Exception as e:
+        print(f"  Warning: could not extract feature importances: {e}")
+
+    model_metadata = {
+        "model_name": meta_perf.get("model_name", "V6 No Competition"),
+        "target": meta_perf.get("target", ""),
+        "test_auc_roc": meta_perf.get("auc", None),
+        "test_pr_auc": meta_perf.get("pr_auc", None),
+        "feature_importances": feature_importances,
+        "feature_groups": meta_perf.get("feature_groups", {}),
+        "threshold_policy": meta_perf.get("operating_policy", {}),
+        "feature_count": len(feature_importances),
+        "risk_bands": V6_RISK_BANDS,
+        "risk_labels": V6_RISK_LABELS,
+        "interpretation": (
+            "V6 is a staff-support monitoring model. A positive flag indicates that the player "
+            "should be reviewed because their workload, rest pattern, competition sequence, "
+            "role context, and injury context resemble situations historically associated with "
+            "underperformance or managed minutes."
+        ),
+    }
+
+    # --- Build player timelines ---
+    print("Building player timelines...")
+    timeline_dir = DATA_DIR / "player_timelines"
+    timeline_dir.mkdir(parents=True, exist_ok=True)
+    timeline_count = 0
+    merged_sorted = merged.sort_values(["player_key", "date"])
+    for player_key, grp in merged_sorted.groupby("player_key"):
+        grp = grp.sort_values("date").tail(20)
+        timeline = []
+        for _, mr in grp.iterrows():
+            timeline.append({
+                "date": str(mr.get("date", pd.NaT)),
+                "minutes": int(mr.get("min_last_14d", 0) or 0),
+                "rest_days": float(mr.get("rest_days", 0) or 0),
+                "fatigue_score": round(float(mr.get("risk_score_fatigue", 0) or 0), 4),
+                "performance_risk_score": round(float(mr.get("risk_score_perf", 0) or 0), 4),
+                "starts_last_14": int(mr.get("starts_last_14d", 0) or 0),
+                "full_90s_last_14": int(mr.get("full_90s_last_14d", 0) or 0),
+                "ucl_minutes": int(mr.get("ucl_minutes_last_14d", 0) or 0),
+            })
+        pid = player_key.lower().replace(" ", "_")
+        (timeline_dir / f"{pid}.json").write_text(json.dumps(_clean_nan(timeline), indent=2), encoding="utf-8")
+        timeline_count += 1
+    print(f"  {timeline_count} player timelines written.")
+
     # --- Write output ---
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    (DATA_DIR / "player_risks.json").write_text(json.dumps(_clean_nan(final_risks), indent=2), encoding="utf-8")
+    (DATA_DIR / "player_risks.json").write_text(json.dumps(_clean_nan(player_risks), indent=2), encoding="utf-8")
     (DATA_DIR / "teams.json").write_text(json.dumps(_clean_nan(teams), indent=2), encoding="utf-8")
     (DATA_DIR / "congestion_metrics.json").write_text(json.dumps(_clean_nan(cong_list), indent=2), encoding="utf-8")
     (DATA_DIR / "hypotheses.json").write_text(json.dumps(_clean_nan(hypotheses), indent=2), encoding="utf-8")
+    (DATA_DIR / "model_metadata.json").write_text(json.dumps(_clean_nan(model_metadata), indent=2), encoding="utf-8")
 
     print()
     print("=== Done ===")
-    print(f"  player_risks.json      — {len(final_risks)} players")
-    print(f"  teams.json             — {len(teams)} teams")
-    print(f"  congestion_metrics.json — {len(cong_list)} metrics")
-    print(f"  hypotheses.json        — {len(hypotheses)} hypotheses")
+    print(f"  player_risks.json       — {len(player_risks)} players")
+    print(f"  teams.json              — {len(teams)} teams")
+    print(f"  congestion_metrics.json  — {len(cong_list)} metrics")
+    print(f"  hypotheses.json         — {len(hypotheses)} hypotheses")
+    print(f"  model_metadata.json     — {len(feature_importances)} features")
+    print(f"  player timelines dir    — {timeline_count} files")
     print(f"  Output: {DATA_DIR}")
 
 

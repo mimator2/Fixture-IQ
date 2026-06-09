@@ -1,11 +1,14 @@
 import { flagLabels } from "./RiskBadge";
 
 const flagColors = {
-  short_recovery:             "bg-chart-5/10 text-chart-5 border-chart-5/20",
-  high_action_load:           "bg-chart-4/10 text-chart-4 border-chart-4/20",
-  recent_ucl_minutes:         "bg-primary/10 text-primary border-primary/20",
-  high_squad_injury_pressure: "bg-red-400/10 text-red-400 border-red-400/20",
-  returning_from_injury:      "bg-accent/10 text-accent border-accent/20",
+  short_recovery:                "bg-chart-5/10 text-chart-5 border-chart-5/20",
+  high_action_load:              "bg-chart-4/10 text-chart-4 border-chart-4/20",
+  recent_ucl_minutes:            "bg-primary/10 text-primary border-primary/20",
+  high_squad_injury_pressure:    "bg-red-400/10 text-red-400 border-red-400/20",
+  returning_from_injury:         "bg-accent/10 text-accent border-accent/20",
+  post_european_short_rest:      "bg-chart-5/10 text-chart-5 border-chart-5/20",
+  frequent_competition_switches: "bg-chart-4/10 text-chart-4 border-chart-4/20",
+  rotation_risk_exceeds_threshold: "bg-red-400/10 text-red-400 border-red-400/20",
 };
 
 export default function FlagBadge({ flag }) {

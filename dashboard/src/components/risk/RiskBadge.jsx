@@ -6,11 +6,14 @@ export const riskConfig = {
 };
 
 export const flagLabels = {
-  short_recovery:              "Short Recovery",
-  high_action_load:            "High Action Load",
-  recent_ucl_minutes:          "Recent UCL Minutes",
-  high_squad_injury_pressure:  "Squad Injury Pressure",
-  returning_from_injury:       "Returning from Injury",
+  short_recovery:                 "Short Recovery",
+  high_action_load:               "High Action Load",
+  recent_ucl_minutes:             "Recent UCL Minutes",
+  high_squad_injury_pressure:     "Squad Injury Pressure",
+  returning_from_injury:          "Returning from Injury",
+  post_european_short_rest:       "Post-European Short Rest",
+  frequent_competition_switches:  "Frequent Comp Switches",
+  rotation_risk_exceeds_threshold: "Rotation Threshold Exceeded",
 };
 
 export default function RiskBadge({ band, size = "sm" }) {

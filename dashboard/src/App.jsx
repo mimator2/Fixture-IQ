@@ -1,3 +1,4 @@
+import { TooltipProvider } from "@/components/ui/tooltip"
 import { Toaster } from "@/components/ui/toaster"
 import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClientInstance } from '@/lib/query-client'
@@ -11,11 +12,13 @@ import Hypothesis from './pages/Hypothesis';
 import DataSources from './pages/DataSources';
 import PlayerMonitor from './pages/PlayerMonitor';
 import PlayerDetail from './pages/PlayerDetail';
+import ModelExplanation from './pages/ModelExplanation';
 
 function App() {
   return (
     <QueryClientProvider client={queryClientInstance}>
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+        <TooltipProvider delayDuration={200}>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
@@ -25,9 +28,12 @@ function App() {
             <Route path="/data-sources" element={<DataSources />} />
             <Route path="/player-monitor" element={<PlayerMonitor />} />
             <Route path="/player/:playerId" element={<PlayerDetail />} />
+            <Route path="/model-explanation" element={<ModelExplanation />} />
+            <Route path="/model/:playerId" element={<ModelExplanation />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        </TooltipProvider>
         <Toaster />
       </Router>
     </QueryClientProvider>

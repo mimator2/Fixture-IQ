@@ -56,7 +56,7 @@ export default function TeamGrid() {
               <div className="text-xs text-muted-foreground mb-0.5">Rotation</div>
               <div className="text-sm font-semibold flex items-center gap-1">
                 <RotateCcw className="w-3 h-3 text-chart-4" />
-                {team.overall_rotation_index ? (team.overall_rotation_index * 100).toFixed(0) + "%" : "—"}
+                {team.overall_rotation_index != null ? (team.overall_rotation_index * 100).toFixed(0) + "%" : "—"}
               </div>
             </div>
           </div>

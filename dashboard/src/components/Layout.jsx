@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { BarChart3, Home, Users, FlaskConical, Database, Menu, X, Activity } from "lucide-react";
+import { BarChart3, Home, Users, FlaskConical, Database, Menu, X, Activity, BrainCircuit } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
@@ -7,6 +7,7 @@ const navItems = [
   { label: "Player Monitor", path: "/player-monitor", icon: Activity },
   { label: "Teams", path: "/teams", icon: Users },
   { label: "Hypotheses", path: "/hypotheses", icon: FlaskConical },
+  { label: "Model Explanation", path: "/model-explanation", icon: BrainCircuit },
   { label: "Data Sources", path: "/data-sources", icon: Database },
 ];
 

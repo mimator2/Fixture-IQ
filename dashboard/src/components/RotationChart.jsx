@@ -55,7 +55,7 @@ export default function RotationChart() {
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData} barGap={2}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(215 28% 20%)" />
-            <XAxis dataKey="name" tick={{ fill: "hsl(215 20% 55%)", fontSize: 11 }} axisLine={false} tickLine={false} />
+            <XAxis dataKey="name" tick={{ fill: "hsl(215 20% 55%)", fontSize: 10 }} angle={-45} textAnchor="end" interval={0} axisLine={false} tickLine={false} />
             <YAxis tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} domain={[0, 1]} />
             <Tooltip content={<CustomTooltip />} />
             <Legend wrapperStyle={{ fontSize: 12, color: "hsl(215 20% 55%)" }} />
