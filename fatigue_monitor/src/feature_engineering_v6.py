@@ -252,6 +252,24 @@ def assign_player_role_v6(df):
 
 
 def engineer_features_v6(df):
+    # Ensure player_position exists (may be mapped from newer CSV schema)
+    if "player_position" not in df.columns:
+        if "position_informative_raw" in df.columns:
+            _pos_map = {
+                "G": "G", "GK": "G",
+                "D": "D", "CB": "D", "RB": "D", "LB": "D",
+                "M": "M", "DM": "M", "CM": "M", "RM": "M", "LM": "M", "AM": "M",
+                "F": "F", "FW": "F", "CF": "F", "ST": "F",
+            }
+            df["player_position"] = df["position_informative_raw"].map(
+                lambda x: _pos_map.get(str(x).split(",")[0].strip(), "M")
+            )
+        elif "position_group" in df.columns:
+            _pg_map = {"Goalkeeper": "G", "Defender": "D", "Midfielder": "M", "Forward": "F"}
+            df["player_position"] = df["position_group"].map(_pg_map).fillna("M")
+        else:
+            df["player_position"] = "M"
+
     df = engineer_features(df)
     df = _add_player_key(df)
 
@@ -266,6 +284,14 @@ def engineer_features_v6(df):
 
     df = _add_v6_composite_scores(df)
     df = _add_position_z_scores(df)
+
+    if "days_since_last_injury" not in df.columns:
+        df["days_since_last_injury"] = 999
+    if "fixtures_missed_last_30d" not in df.columns:
+        df["fixtures_missed_last_30d"] = 0
+    if "fixtures_missed_last_90d" not in df.columns:
+        df["fixtures_missed_last_90d"] = 0
+
     df = _add_injury_context_flags(df)
 
     df["player_role_v6"] = assign_player_role_v6(df)
