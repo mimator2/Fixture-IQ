@@ -1,0 +1,35 @@
+Player,Nation,Pos,Age,MP,Starts,Min,90s,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR,Gls_90,Ast_90,G+A_90,G-PK_90,G+A-PK_90,Matches
+Harry Kane,engENG,FW,29,49,48,"4,299",47.8,32,5,37,26,6,8,7,0,0.67,0.10,0.77,0.54,0.65,Matches
+Pierre Højbjerg,dkDEN,MF,26,44,44,"3,890",43.2,5,7,12,5,0,0,8,0,0.12,0.16,0.28,0.12,0.28,Matches
+Son Heung-min,krKOR,"MF,FW",30,47,44,"3,770",41.9,14,6,20,14,0,0,3,0,0.33,0.14,0.48,0.33,0.48,Matches
+Eric Dier,engENG,DF,28,42,40,"3,615",40.2,2,1,3,2,0,0,7,0,0.05,0.02,0.07,0.05,0.07,Matches
+Cristian Romero,arARG,DF,24,34,33,"2,962",32.9,0,1,1,0,0,0,15,2,0.00,0.03,0.03,0.00,0.03,Matches
+Ivan Perišić,hrCRO,MF,33,44,33,"2,918",32.4,1,12,13,1,0,0,6,0,0.03,0.37,0.40,0.03,0.40,Matches
+Ben Davies,wlsWAL,DF,29,40,32,"2,860",31.8,2,2,4,2,0,0,5,0,0.06,0.06,0.13,0.06,0.13,Matches
+Hugo Lloris,frFRA,GK,35,31,31,"2,745",30.5,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Clément Lenglet,frFRA,DF,27,35,32,"2,707",30.1,1,2,3,1,0,0,7,0,0.03,0.07,0.10,0.03,0.10,Matches
+Dejan Kulusevski,seSWE,"MF,FW",22,37,26,"2,407",26.7,2,8,10,2,0,0,3,0,0.07,0.30,0.37,0.07,0.37,Matches
+Emerson,brBRA,MF,23,36,27,"2,388",26.5,2,1,3,2,0,0,3,1,0.08,0.04,0.11,0.08,0.11,Matches
+Rodrigo Bentancur,uyURU,MF,25,26,24,"2,118",23.5,6,2,8,6,0,0,11,0,0.25,0.08,0.34,0.25,0.34,Matches
+Oliver Skipp,engENG,MF,21,31,22,"1,887",21.0,1,0,1,1,0,0,8,0,0.05,0.00,0.05,0.05,0.05,Matches
+Fraser Forster,engENG,GK,34,20,19,"1,755",19.5,0,0,0,0,0,0,1,0,0.00,0.00,0.00,0.00,0.00,Matches
+Richarlison,brBRA,"MF,FW",25,35,17,"1,471",16.3,3,3,6,3,0,0,3,0,0.18,0.18,0.37,0.18,0.37,Matches
+Yves Bissouma,mlMLI,MF,25,28,12,"1,282",14.2,0,0,0,0,0,0,7,0,0.00,0.00,0.00,0.00,0.00,Matches
+Pedro Porro,esESP,"DF,MF",22,17,14,"1,250",13.9,3,3,6,3,0,0,0,0,0.22,0.22,0.43,0.22,0.43,Matches
+Davinson Sánchez,coCOL,DF,26,24,12,"1,239",13.8,0,0,0,0,0,0,1,0,0.00,0.00,0.00,0.00,0.00,Matches
+Ryan Sessegnon,engENG,MF,22,23,14,"1,204",13.4,2,1,3,2,0,0,5,0,0.15,0.07,0.22,0.15,0.22,Matches
+Matt Doherty,ieIRL,MF,30,16,10,877,9.7,1,0,1,1,0,0,0,0,0.10,0.00,0.10,0.10,0.10,Matches
+Pape Matar Sarr,snSEN,MF,19,14,5,471,5.2,0,1,1,0,0,0,2,0,0.00,0.19,0.19,0.00,0.19,Matches
+Lucas Moura,brBRA,"MF,FW",29,19,3,400,4.4,1,0,1,1,0,0,0,1,0.23,0.00,0.23,0.23,0.23,Matches
+Japhet Tanganga,engENG,DF,23,7,4,344,3.8,0,1,1,0,0,0,0,0,0.00,0.26,0.26,0.00,0.26,Matches
+Bryan Gil,esESP,"FW,MF",21,11,3,315,3.5,0,1,1,0,0,0,1,0,0.00,0.29,0.29,0.00,0.29,Matches
+Arnaut Danjuma,nlNED,"FW,MF",25,12,1,208,2.3,2,0,2,2,0,0,0,0,0.87,0.00,0.87,0.87,0.87,Matches
+Djed Spence,engENG,"DF,MF",21,6,0,47,0.5,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Matthew Craig,sctSCO,MF,19,1,0,14,0.2,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Harvey White,engENG,MF,20,1,0,5,0.1,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Alfie Devine,engENG,MF,17,1,0,1,0.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+George Abbott,engENG,MF,16,1,0,1,0.0,0,0,0,0,0,0,0,0,0.00,0.00,0.00,0.00,0.00,Matches
+Brandon Austin,engENG,GK,23,0,0,,,,,,,,,,,,,,,,Matches
+Alfie Whiteman,engENG,GK,23,0,0,,,,,,,,,,,,,,,,Matches
+Yago Santiago,esESP,"FW,MF",19,0,0,,,,,,,,,,,,,,,,Matches
+Romaine Mundle,engENG,MF,19,0,0,,,,,,,,,,,,,,,,Matches
