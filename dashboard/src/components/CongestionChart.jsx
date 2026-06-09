@@ -56,7 +56,7 @@ export default function CongestionChart() {
       </p>
       <div className="h-72 md:h-80">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={chartData} barGap={4}>
+          <BarChart data={chartData} barGap={4} margin={{ bottom: 0, left: 10, right: 10 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(215 28% 20%)" />
             <XAxis dataKey="name" tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} />
             <YAxis yAxisId="left" tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} domain={[0, "auto"]} />

@@ -53,12 +53,12 @@ export default function RotationChart() {
       ) : (
       <div className="h-72 md:h-80">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={chartData} barGap={2}>
+          <BarChart data={chartData} barGap={2} margin={{ bottom: 0, left: 0, right: 25 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(215 28% 20%)" />
             <XAxis dataKey="name" tick={{ fill: "hsl(215 20% 55%)", fontSize: 10 }} angle={-45} textAnchor="end" interval={0} axisLine={false} tickLine={false} />
             <YAxis tick={{ fill: "hsl(215 20% 55%)", fontSize: 12 }} axisLine={false} tickLine={false} domain={[0, 1]} />
             <Tooltip content={<CustomTooltip />} />
-            <Legend wrapperStyle={{ fontSize: 12, color: "hsl(215 20% 55%)" }} />
+            <Legend verticalAlign="bottom" wrapperStyle={{ fontSize: 12, paddingTop: 50 }} />
             <Bar dataKey="Low" fill="hsl(142 71% 45%)" radius={[4, 4, 0, 0]} />
             <Bar dataKey="Medium" fill="hsl(38 92% 50%)" radius={[4, 4, 0, 0]} />
             <Bar dataKey="High" fill="hsl(0 84% 60%)" radius={[4, 4, 0, 0]} />

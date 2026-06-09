@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { usePlayerRisks } from "@/hooks/usePlayerRisks";
 import { Link } from "react-router-dom";
 import RiskBadge from "./RiskBadge";
@@ -15,15 +15,22 @@ export default function PlayerRiskTable() {
   const [band, setBand] = useState("All");
   const [role, setRole] = useState("All Roles");
   const [position, setPosition] = useState("All Positions");
+  const [team, setTeam] = useState("All Teams");
 
   const { data: players = [], isLoading, error } = usePlayerRisks();
+
+  const teams = useMemo(() => {
+    const t = [...new Set(players.map(p => p.team_name).filter(Boolean))];
+    return t.sort();
+  }, [players]);
 
   const filtered = players.filter(p => {
     const matchSearch = !search || p.player_name?.toLowerCase().includes(search.toLowerCase()) || p.team_name?.toLowerCase().includes(search.toLowerCase());
     const matchBand = band === "All" || p.risk_band === band;
     const matchRole = role === "All Roles" || p.player_role === role;
     const matchPos = position === "All Positions" || p.position === position;
-    return matchSearch && matchBand && matchRole && matchPos;
+    const matchTeam = team === "All Teams" || p.team_name === team;
+    return matchSearch && matchBand && matchRole && matchPos && matchTeam;
   });
 
   const sorted = [...filtered].sort((a, b) => {
@@ -51,6 +58,7 @@ export default function PlayerRiskTable() {
           <Input placeholder="Search player or team..." value={search} onChange={e => setSearch(e.target.value)} className="pl-9" />
         </div>
         {[
+          { label: "Team", options: ["All Teams", ...teams], value: team, set: setTeam },
           { label: "Risk", options: BANDS, value: band, set: setBand },
           { label: "Role", options: ROLES, value: role, set: setRole },
           { label: "Position", options: POSITIONS, value: position, set: setPosition },

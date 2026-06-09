@@ -6,6 +6,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import shap
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -169,6 +170,44 @@ def compute_lineup_rotation(grp):
     return round(float(np.mean(distances)), 4) if distances else 0.0
 
 
+def compute_shap_drivers(latest_df, model, metadata, suffix=""):
+    feat_list = metadata["features"]
+    cat_feats = metadata["categorical_features"]
+    imp_vals = metadata["imputation_values"]
+
+    X = latest_df[feat_list].copy()
+
+    for f, imp in imp_vals.items():
+        if f not in feat_list:
+            continue
+        X[f] = X[f].fillna(imp["value"])
+
+    for f in cat_feats:
+        X[f] = X[f].astype(str)
+
+    explainer = shap.TreeExplainer(model)
+    shap_values = explainer.shap_values(X)
+
+    drivers_list = []
+    for i in range(len(X)):
+        row_shap = shap_values[i]
+        pos_idx = np.where(row_shap > 0)[0]
+        if len(pos_idx) > 0:
+            sorted_idx = pos_idx[np.argsort(row_shap[pos_idx])[-5:][::-1]]
+            drivers = []
+            for idx in sorted_idx:
+                val = X.iloc[i, idx]
+                drivers.append({
+                    "feature": feat_list[idx],
+                    "value": round(float(val), 4) if isinstance(val, (int, float, np.integer, np.floating)) else str(val),
+                    "contribution": round(float(row_shap[idx]), 4),
+                })
+        else:
+            drivers = []
+        drivers_list.append(drivers)
+    return drivers_list
+
+
 # ---------------------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------------------
@@ -212,10 +251,15 @@ def main():
     latest = merged.groupby(["player_id", "player_team"], as_index=False).last()
     print(f"  Latest snapshot: {len(latest):,} rows")
 
+    print("Computing SHAP drivers for snapshot rows...")
+    shap_drivers_perf = compute_shap_drivers(latest, m_perf, meta_perf, "_perf")
+    shap_drivers_fatigue = compute_shap_drivers(latest, m_fatigue, meta_fatigue, "_fatigue")
+    print("  SHAP drivers computed for all snapshot rows.")
+
     # --- Build player_risks.json ---
     print("Building player_risks.json...")
     player_risks = []
-    for _, row in latest.iterrows():
+    for i, (_, row) in enumerate(latest.iterrows()):
         reasons = row.get("main_risk_reasons_perf", "") or ""
 
         risk_band = row.get("risk_band_perf", None)
@@ -234,6 +278,7 @@ def main():
         team_name = str(row.get("player_team", "")).strip()
         player_name = str(row.get("player_name", "")).strip()
         uid = f"{player_name.lower().replace(' ', '_')}__{team_name.lower().replace(' ', '_')}"
+        _dsli = row.get("days_since_last_injury")
 
         obj = {
             "id": uid,
@@ -303,7 +348,7 @@ def main():
             "squad_soft_tissue_count": int(row.get("squad_soft_tissue_count", 0) or 0),
             "squad_avg_days_out": int(row.get("squad_avg_days_out", 0) or 0),
             "returning_from_injury": bool(row.get("returning_from_injury", False)),
-            "days_since_last_injury": int(row.get("days_since_last_injury")) if pd.notna(row.get("days_since_last_injury")) else None,
+            "days_since_last_injury": int(_dsli) if pd.notna(_dsli) and _dsli != 999 else None,
             "injury_context_score": int(row.get("injury_context_score", 0) or 0),
             "fixtures_missed_last_30": int(row.get("fixtures_missed_last_30d", 0) or 0),
             "fixtures_missed_last_90": int(row.get("fixtures_missed_last_90d", 0) or 0),
@@ -313,8 +358,8 @@ def main():
             "avg_rating_last_5": round(float(row.get("avg_rating_last_5", 0) or 0), 2) if not pd.isna(row.get("avg_rating_last_5")) else None,
 
             # G. SHAP driver data (from CatBoost model)
-            "shap_drivers_perf": row.get("shap_drivers_perf", []),
-            "shap_drivers_fatigue": row.get("shap_drivers_fatigue", []),
+            "shap_drivers_perf": shap_drivers_perf[i] if i < len(shap_drivers_perf) else [],
+            "shap_drivers_fatigue": shap_drivers_fatigue[i] if i < len(shap_drivers_fatigue) else [],
 
             "workload_timeline": [],
         }

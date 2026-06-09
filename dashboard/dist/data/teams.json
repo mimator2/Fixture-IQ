@@ -6,10 +6,10 @@
     "logo_url": "/shields/Arsenal.png",
     "european_competition": "Champions League",
     "season": "2024-25",
-    "total_matches": 141,
-    "avg_rest_days": 7.1,
-    "overall_points_per_match": 2.08,
-    "overall_rotation_index": 0.3671
+    "total_matches": 151,
+    "avg_rest_days": 6.7,
+    "overall_points_per_match": 2.05,
+    "overall_rotation_index": 0.3743
   },
   {
     "id": "aston_villa",
@@ -114,10 +114,10 @@
     "logo_url": "/shields/Ipswich Town.png",
     "european_competition": "League Cup",
     "season": "2024-25",
-    "total_matches": 51,
-    "avg_rest_days": 10.1,
-    "overall_points_per_match": 0.86,
-    "overall_rotation_index": 0.5309
+    "total_matches": 50,
+    "avg_rest_days": 9.9,
+    "overall_points_per_match": 0.88,
+    "overall_rotation_index": 0.5289
   },
   {
     "id": "leicester",
@@ -126,10 +126,10 @@
     "logo_url": "/shields/Leicester City.png",
     "european_competition": "Premier League",
     "season": "2024-25",
-    "total_matches": 94,
-    "avg_rest_days": 8.4,
-    "overall_points_per_match": 0.97,
-    "overall_rotation_index": 0.427
+    "total_matches": 93,
+    "avg_rest_days": 8.3,
+    "overall_points_per_match": 0.95,
+    "overall_rotation_index": 0.4266
   },
   {
     "id": "liverpool",
@@ -160,24 +160,24 @@
     "name": "Manchester United",
     "short_name": "MAN",
     "logo_url": "/shields/Manchester United.png",
-    "european_competition": "Premier League",
+    "european_competition": "Champions League",
     "season": "2024-25",
-    "total_matches": 141,
-    "avg_rest_days": 7.4,
-    "overall_points_per_match": 1.69,
-    "overall_rotation_index": 0.4031
+    "total_matches": 147,
+    "avg_rest_days": 7.1,
+    "overall_points_per_match": 1.65,
+    "overall_rotation_index": 0.4017
   },
   {
     "id": "newcastle",
     "name": "Newcastle",
     "short_name": "NEW",
     "logo_url": "/shields/Newcastle United.png",
-    "european_competition": "Premier League",
+    "european_competition": "Champions League",
     "season": "2024-25",
-    "total_matches": 139,
-    "avg_rest_days": 7.2,
-    "overall_points_per_match": 1.82,
-    "overall_rotation_index": 0.32
+    "total_matches": 145,
+    "avg_rest_days": 7.0,
+    "overall_points_per_match": 1.78,
+    "overall_rotation_index": 0.3198
   },
   {
     "id": "nottingham_forest",
@@ -198,10 +198,10 @@
     "logo_url": "/shields/southampton.png",
     "european_competition": "Premier League",
     "season": "2024-25",
-    "total_matches": 94,
-    "avg_rest_days": 8.2,
+    "total_matches": 93,
+    "avg_rest_days": 8.0,
     "overall_points_per_match": 0.68,
-    "overall_rotation_index": 0.4917
+    "overall_rotation_index": 0.4897
   },
   {
     "id": "tottenham",

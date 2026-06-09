@@ -120,10 +120,10 @@ export default function ModelExplanation() {
           </p>
           <div className="h-96">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={top20} layout="vertical" margin={{ left: 160, right: 80 }}>
+              <BarChart data={top20} layout="vertical" margin={{ left: 190, right: 100 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
                 <XAxis type="number" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} domain={[0, "auto"]} />
-                <YAxis type="category" dataKey="feature" interval={0} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} width={150} tickFormatter={(v) => v.replace(/_/g, " ")} />
+                <YAxis type="category" dataKey="feature" interval={0} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} width={180} tickFormatter={(v) => v.replace(/_/g, " ")} />
                 <Tooltip content={<CustomTooltip />} />
                 <Bar dataKey="importance_pct" fill="hsl(var(--primary))" radius={[0, 4, 4, 0]} />
               </BarChart>
@@ -171,17 +171,32 @@ export default function ModelExplanation() {
               : "Navigate to a player detail page to see their specific risk drivers. Below shows how the explanation system works."}
           </p>
 
-          {playerId && topFeaturesForPlayer.length > 0 ? (
+          {playerId && (player?.shap_drivers_perf?.length > 0 || topFeaturesForPlayer.length > 0) ? (
             <div className="space-y-3">
-              <p className="text-sm font-semibold">Main reasons for current risk level:</p>
-              {topFeaturesForPlayer.map((item) => (
-                <div key={item.rank} className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-chart-5/15 text-chart-5 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
-                    {item.rank}
+              <p className="text-sm font-semibold">Top features contributing to current risk level (SHAP):</p>
+              {(player.shap_drivers_perf || []).slice(0, 5).map((d, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <span className="w-6 h-6 rounded-full bg-primary/15 text-primary text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                    {i + 1}
                   </span>
-                  <span className="text-sm text-foreground">{item.reason}</span>
+                  <div className="flex-1 min-w-0">
+                    <span className="text-sm text-foreground/90">{d.feature} = {d.value}</span>
+                    <span className="text-xs text-muted-foreground ml-2">+{d.contribution?.toFixed(4)}</span>
+                  </div>
                 </div>
               ))}
+              {player.shap_drivers_perf?.length === 0 && topFeaturesForPlayer.length > 0 && (
+                <div className="space-y-2">
+                  {topFeaturesForPlayer.map((item) => (
+                    <div key={item.rank} className="flex items-start gap-3">
+                      <span className="w-6 h-6 rounded-full bg-chart-5/15 text-chart-5 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                        {item.rank}
+                      </span>
+                      <span className="text-sm text-foreground">{item.reason}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           ) : (
             <div className="bg-muted/30 rounded-lg p-4 text-sm text-muted-foreground">

@@ -100,7 +100,7 @@ export default function PlayerExplanation({ player }) {
                     Contribution: +{r.contribution?.toFixed(4) ?? "?"}
                   </span>
                 )}
-                <span className="text-xs text-muted-foreground ml-2 font-mono">({r.feature})</span>
+                {/* <span className="text-xs text-muted-foreground ml-2 font-mono">({r.feature})</span> */}
               </div>
               <div className="w-20 h-1.5 bg-muted rounded-full overflow-hidden self-center shrink-0">
                 <div className="h-full bg-primary/60 rounded-full" style={{ width: `${r.weight}%` }} />
