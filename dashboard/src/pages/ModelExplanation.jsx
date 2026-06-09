@@ -120,7 +120,7 @@ export default function ModelExplanation() {
           </p>
           <div className="h-96">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={top20} layout="vertical" margin={{ left: 190, right: 100 }}>
+              <BarChart data={top20} layout="vertical" margin={{ left: 50, right: 100 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
                 <XAxis type="number" tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} domain={[0, "auto"]} />
                 <YAxis type="category" dataKey="feature" interval={0} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} width={180} tickFormatter={(v) => v.replace(/_/g, " ")} />
