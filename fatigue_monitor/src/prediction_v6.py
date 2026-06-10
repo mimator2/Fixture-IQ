@@ -2,12 +2,12 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import catboost
 import joblib
+from xgboost import XGBClassifier
 
 from fatigue_monitor.src.config import (
-    V6_MODEL_PATH, V6_METADATA_PATH,
-    V6_NR_MODEL_PATH, V6_NR_METADATA_PATH,
+    V6_MODEL_PATH, V6_PREPROCESSOR_PATH, V6_METADATA_PATH,
+    V6_NR_MODEL_PATH, V6_NR_PREPROCESSOR_PATH, V6_NR_METADATA_PATH,
     V6_OPERATING_POLICY,
     V6_RISK_BANDS, V6_RISK_LABELS,
 )
@@ -19,20 +19,23 @@ from fatigue_monitor.src.feature_engineering_v6 import (
 def load_v6_artifacts(variant="no_competition"):
     if variant == "no_competition":
         model_path = V6_MODEL_PATH
+        preprocessor_path = V6_PREPROCESSOR_PATH
         meta_path = V6_METADATA_PATH
     elif variant == "no_rating_baseline":
         model_path = V6_NR_MODEL_PATH
+        preprocessor_path = V6_NR_PREPROCESSOR_PATH
         meta_path = V6_NR_METADATA_PATH
     else:
         raise ValueError(f"Unknown V6 variant: {variant}")
 
-    model = catboost.CatBoostClassifier()
+    model = XGBClassifier()
     model.load_model(str(model_path))
+    preprocessor = joblib.load(preprocessor_path)
     metadata = joblib.load(meta_path)
-    return model, metadata
+    return model, preprocessor, metadata
 
 
-def predict_v6(df_raw, model, metadata, suffix=""):
+def predict_v6(df_raw, model, preprocessor, metadata, suffix=""):
     df = engineer_features_v6(df_raw)
 
     df = df[df["player_position"] != "G"].copy()
@@ -60,8 +63,9 @@ def predict_v6(df_raw, model, metadata, suffix=""):
         df_model[f] = df_model[f].astype(str)
 
     X = df_model[feat_list]
+    X_t = preprocessor.transform(X)
     risk_col = f"risk_score{suffix}"
-    df_model[risk_col] = model.predict_proba(X)[:, 1]
+    df_model[risk_col] = model.predict_proba(X_t)[:, 1]
 
     policy = metadata.get("operating_policy", V6_OPERATING_POLICY)
     thresh_col = f"monitoring_threshold{suffix}"

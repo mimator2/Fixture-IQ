@@ -1,4 +1,21 @@
+import { useQuery } from "@tanstack/react-query";
 import { Database, BarChart3, Calendar, Users } from "lucide-react";
+
+const SEASON = "2024-25";
+
+const fetchJson = async (url) => {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to load ${url}`);
+  return res.json();
+};
+
+function useModelMetadata() {
+  return useQuery({
+    queryKey: ["model-metadata", "sources"],
+    queryFn: () => fetchJson("/data/model_metadata.json"),
+    staleTime: 300_000,
+  });
+}
 
 const sources = [
   {
@@ -28,7 +45,7 @@ const methodology = [
   {
     step: "1",
     title: "Data Collection",
-    desc: "Gathering match, performance, and squad data from multiple sources for the 2023-24 season.",
+    desc: `Gathering match, performance, and squad data from multiple sources for the season.`,
   },
   {
     step: "2",
@@ -48,6 +65,11 @@ const methodology = [
 ];
 
 export default function DataSources() {
+  const { data: metadata } = useModelMetadata();
+  const season = metadata?.current_season
+    ? `${metadata.current_season}-${String(Number(metadata.current_season) + 1).slice(-2)}`
+    : SEASON;
+
   return (
     <div>
       <div className="mb-8">
@@ -114,7 +136,7 @@ export default function DataSources() {
           Fixture IQ is a data-driven research project that analyses the impact of fixture congestion 
           on Premier League clubs competing in European competitions. The project combines match scheduling data, 
           performance metrics, and squad rotation indicators to provide evidence-based insights for 
-          football decision-makers. All data covers the 2023-24 season and focuses on clubs participating 
+           football decision-makers. All data covers the {season} season and focuses on clubs participating
           in the Champions League, Europa League, and Conference League alongside their domestic commitments.
         </p>
       </div>

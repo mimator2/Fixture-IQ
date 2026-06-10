@@ -7,6 +7,7 @@ import {
 import {
   Info, AlertTriangle, BarChart3, Layers, Shield, ArrowLeft,
 } from "lucide-react";
+import PlayerExplanation from "@/components/risk/PlayerExplanation";
 
 const fetchJson = async (url) => {
   const res = await fetch(url);
@@ -61,11 +62,6 @@ export default function ModelExplanation() {
   const top20 = fi.slice(0, 20);
   const featureGroups = metadata?.feature_groups || {};
   const policy = metadata?.threshold_policy || {};
-  const top5 = fi.slice(0, 5);
-
-  const topFeaturesForPlayer = player?.main_risk_reasons
-    ? player.main_risk_reasons.split(",").map((r, i) => ({ rank: i + 1, reason: r.trim() }))
-    : [];
 
   const groupImportance = {};
   for (const [group, feats] of Object.entries(featureGroups)) {
@@ -103,7 +99,7 @@ export default function ModelExplanation() {
             <h1 className="text-2xl font-bold">Model Explanation</h1>
           </div>
           <p className="text-muted-foreground text-sm max-w-2xl">
-            How the V6 CatBoost model assesses workload-associated risk — global feature drivers,
+            How the V6 XGBoost model assesses workload-associated risk — global feature drivers,
             player-specific contributors, threshold policy, and limitations.
           </p>
         </div>
@@ -115,7 +111,7 @@ export default function ModelExplanation() {
             <h3 className="font-semibold">Top Global Model Features</h3>
           </div>
           <p className="text-xs text-muted-foreground mb-4">
-            Feature importance measured by CatBoost built-in importance (gain-weighted contribution to splits).
+            Feature importance measured by XGBoost built-in importance (gain-weighted contribution to splits).
             The V4 profile is consistent with fatigue monitoring: workload and rest features dominate.
           </p>
           <div className="h-96">
@@ -158,63 +154,46 @@ export default function ModelExplanation() {
         </div>
 
         {/* C. Player-specific drivers */}
-        <div className="bg-card border border-border rounded-xl p-6">
-          <div className="flex items-center gap-2 mb-1">
-            <AlertTriangle className="w-4 h-4 text-chart-5" />
-            <h3 className="font-semibold">
-              {playerId ? `Feature Drivers for ${player?.player_name || "Selected Player"}` : "Player-Specific Feature Drivers"}
-            </h3>
-          </div>
-          <p className="text-xs text-muted-foreground mb-4">
-            {playerId
-              ? "Individual risk explanation based on the player's current feature values and the model's rule-based reasoning."
-              : "Navigate to a player detail page to see their specific risk drivers. Below shows how the explanation system works."}
-          </p>
-
-          {playerId && (player?.shap_drivers_perf?.length > 0 || topFeaturesForPlayer.length > 0) ? (
-            <div className="space-y-3">
-              <p className="text-sm font-semibold">Top features contributing to current risk level (SHAP):</p>
-              {(player.shap_drivers_perf || []).slice(0, 5).map((d, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-primary/15 text-primary text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
-                    {i + 1}
-                  </span>
-                  <div className="flex-1 min-w-0">
-                    <span className="text-sm text-foreground/90">{d.feature} = {d.value}</span>
-                    <span className="text-xs text-muted-foreground ml-2">+{d.contribution?.toFixed(4)}</span>
-                  </div>
-                </div>
-              ))}
-              {player.shap_drivers_perf?.length === 0 && topFeaturesForPlayer.length > 0 && (
-                <div className="space-y-2">
-                  {topFeaturesForPlayer.map((item) => (
-                    <div key={item.rank} className="flex items-start gap-3">
-                      <span className="w-6 h-6 rounded-full bg-chart-5/15 text-chart-5 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
-                        {item.rank}
+        {playerId ? (
+          <PlayerExplanation player={player} />
+        ) : (
+          <div className="bg-card border border-border rounded-xl p-5">
+            <div className="flex items-center gap-2 mb-3">
+              <AlertTriangle className="w-4 h-4 text-chart-5" />
+              <h3 className="font-semibold">Player-Specific Feature Drivers</h3>
+            </div>
+            <p className="text-xs text-muted-foreground mb-4">
+              Navigate to a player detail page to see their specific risk drivers. Example shown below.
+            </p>
+            <ol className="space-y-2">
+              {[
+                { text: "minutes_median_last_5 = 90", contribution: 0.5144 },
+                { text: "cup_minutes_last_14d = 90", contribution: 0.2209 },
+                { text: "avg_rating_last_3 = 6.52", contribution: 0.1829 },
+                { text: "injury_context_score = 4", contribution: 0.1011 },
+                { text: "matches_with_rest_le_4d_last_30d = 3", contribution: 0.0589 },
+              ].map((r, i) => {
+                const weight = Math.round(Math.min(100, Math.abs(r.contribution) * 500));
+                return (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="w-5 h-5 rounded-full bg-primary/15 text-primary text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                      {i + 1}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <span className="text-sm text-foreground/90">{r.text}</span>
+                      <span className="text-xs text-muted-foreground block">
+                        Contribution: +{r.contribution.toFixed(4)}
                       </span>
-                      <span className="text-sm text-foreground">{item.reason}</span>
                     </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          ) : (
-            <div className="bg-muted/30 rounded-lg p-4 text-sm text-muted-foreground">
-              {playerId ? "No risk reasons available for this player." : "Example: '4 matches with ≤4 days rest in the last 30 days' → '2 full-90 appearances in the last 14 days' → 'Elevated squad injury context'"}
-            </div>
-          )}
-
-          {!playerId && (
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              {top5.map((f, i) => (
-                <div key={f.feature} className="bg-muted/30 rounded-lg p-3 text-center">
-                  <div className="text-lg font-bold text-primary">{f.importance_pct}%</div>
-                  <div className="text-xs text-muted-foreground mt-1">{f.feature.replace(/_/g, " ")}</div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+                    <div className="w-20 h-1.5 bg-muted rounded-full overflow-hidden self-center shrink-0">
+                      <div className="h-full bg-primary/60 rounded-full" style={{ width: `${weight}%` }} />
+                    </div>
+                  </li>
+                );
+              })}
+            </ol>
+          </div>
+        )}
 
         {/* D. Threshold Policy */}
         <div className="bg-card border border-border rounded-xl p-6">

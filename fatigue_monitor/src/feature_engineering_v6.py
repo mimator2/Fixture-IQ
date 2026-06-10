@@ -291,6 +291,8 @@ def engineer_features_v6(df):
         df["fixtures_missed_last_30d"] = 0
     if "fixtures_missed_last_90d" not in df.columns:
         df["fixtures_missed_last_90d"] = 0
+    if "returning_from_injury" not in df.columns:
+        df["returning_from_injury"] = 0
 
     df = _add_injury_context_flags(df)
 

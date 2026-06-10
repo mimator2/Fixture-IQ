@@ -11,7 +11,7 @@ import PhysicalEffortSection from "@/components/risk/PhysicalEffortSection";
 import SquadContextSection from "@/components/risk/SquadContextSection";
 import WorkloadTimeline from "@/components/risk/WorkloadTimeline";
 import InfoTip, { METRIC_HELP } from "@/components/ui/InfoTip";
-import { ArrowLeft, Shield, Activity, AlertTriangle, Gauge, BrainCircuit, Calendar } from "lucide-react";
+import { ArrowLeft, Shield, Activity, AlertTriangle, Gauge, BrainCircuit } from "lucide-react";
 
 const ACTION_COLORS = {
   "Normal Monitoring":              "bg-chart-3/10 text-chart-3 border-chart-3/20",
@@ -24,17 +24,16 @@ const ACTION_COLORS = {
 export default function PlayerDetail() {
   const { playerId } = useParams();
   const { data: player, isLoading } = usePlayerRisk(playerId);
-  const [showTimeline, setShowTimeline] = useState(false);
   const [timelineData, setTimelineData] = useState([]);
 
   useEffect(() => {
-    if (showTimeline && timelineData.length === 0 && player) {
+    if (player) {
       fetch(`/data/player_timelines/${player.id}.json`)
         .then(r => r.ok ? r.json() : [])
         .then(setTimelineData)
         .catch(() => setTimelineData([]));
     }
-  }, [showTimeline, player?.id]);
+  }, [player?.id]);
 
   const playerExplanation = useMemo(
     () => player ? <PlayerExplanation player={player} /> : null,
@@ -160,25 +159,8 @@ export default function PlayerDetail() {
         {/* B–E: Section components */}
         {sectionsGrid}
 
-        {/* Workload Timeline — opt-in to avoid chart rendering slowdown */}
-        <div className="bg-card border border-border rounded-xl p-5">
-          <button
-            onClick={() => setShowTimeline(!showTimeline)}
-            className="flex items-center gap-2 w-full text-left"
-          >
-            <Calendar className="w-4 h-4 text-chart-4" />
-            <span className="font-semibold text-sm">Workload Timeline</span>
-            <span className="ml-auto text-xs text-muted-foreground">{showTimeline ? "▲" : "▼"}</span>
-          </button>
-          {showTimeline && (
-            <div className="mt-4 space-y-3">
-              <p className="text-xs text-muted-foreground bg-muted/30 rounded-lg px-3 py-2">
-                The timeline chart renders ~20 data points per player and may briefly impact page responsiveness.
-              </p>
-              <WorkloadTimeline data={timelineData} />
-            </div>
-          )}
-        </div>
+        {/* Workload Timeline */}
+        <WorkloadTimeline data={timelineData} />
 
         {/* Rating context */}
         {(player.avg_rating_last_3 || player.avg_rating_last_5) && (

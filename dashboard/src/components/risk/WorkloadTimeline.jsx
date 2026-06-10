@@ -1,11 +1,14 @@
 import { memo } from "react";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from "recharts";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 const formatDate = (d) => {
   if (!d) return "";
   const date = new Date(d.split(" ")[0]);
   return date.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
 };
+
+const PANEL_HEIGHT = 96;
+const SYNC_ID = "workload-timeline";
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null;
@@ -19,6 +22,20 @@ const CustomTooltip = ({ active, payload, label }) => {
   );
 };
 
+const Panel = memo(function Panel({ data, dataKey, name, color, domain, showXAxis }) {
+  return (
+    <ResponsiveContainer width="100%" height={PANEL_HEIGHT}>
+      <AreaChart data={data} syncId={SYNC_ID} margin={{ top: 2, right: 10, left: -20, bottom: 0 }}>
+        <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+        <XAxis dataKey="date" tickFormatter={formatDate} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} hide={!showXAxis} />
+        <YAxis domain={domain} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
+        <Tooltip content={<CustomTooltip />} cursor={{ stroke: "hsl(var(--muted-foreground))", strokeDasharray: "3 3" }} />
+        <Area type="monotone" dataKey={dataKey} name={name} stroke={color} fill={`${color}/.12`} strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: color }} />
+      </AreaChart>
+    </ResponsiveContainer>
+  );
+});
+
 const WorkloadTimeline = memo(function WorkloadTimeline({ data = [] }) {
   if (!data.length) return (
     <div className="bg-card border border-border rounded-xl p-6 text-center text-muted-foreground text-sm">
@@ -29,22 +46,31 @@ const WorkloadTimeline = memo(function WorkloadTimeline({ data = [] }) {
   return (
     <div className="bg-card border border-border rounded-xl p-6">
       <h3 className="font-semibold mb-4">Workload Timeline (Last 8 Weeks)</h3>
-      <div className="h-56">
-        <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={data} margin={{ top: 5, right: 10, left: -20, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-            <XAxis dataKey="date" tickFormatter={formatDate} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} />
-            <YAxis tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }} />
-            <Tooltip content={<CustomTooltip />} />
-            <Legend wrapperStyle={{ fontSize: 12 }} />
-            <Area type="monotone" dataKey="minutes" name="Minutes" stroke="hsl(var(--primary))" fill="hsl(var(--primary)/.15)" strokeWidth={2} />
-            <Area type="monotone" dataKey="fatigue_score" name="Fatigue Score" stroke="hsl(var(--chart-5))" fill="hsl(var(--chart-5)/.10)" strokeWidth={2} />
-            <Area type="monotone" dataKey="rest_days" name="Rest Days" stroke="hsl(var(--accent))" fill="hsl(var(--accent)/.10)" strokeWidth={2} />
-          </AreaChart>
-        </ResponsiveContainer>
+      <div className="space-y-0">
+        <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+          <span className="w-2.5 h-2.5 rounded-sm" style={{ background: "hsl(var(--primary))" }} />
+          <span>Minutes</span>
+        </div>
+        <div className="h-24">
+          <Panel data={data} dataKey="minutes" name="Minutes" color="hsl(var(--primary))" domain={["auto", "auto"]} showXAxis={false} />
+        </div>
+        <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1 mt-2">
+          <span className="w-2.5 h-2.5 rounded-sm" style={{ background: "hsl(var(--accent))" }} />
+          <span>Rest Days</span>
+        </div>
+        <div className="h-24">
+          <Panel data={data} dataKey="rest_days" name="Rest Days" color="hsl(var(--accent))" domain={["auto", "auto"]} showXAxis={false} />
+        </div>
+        <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1 mt-2">
+          <span className="w-2.5 h-2.5 rounded-sm" style={{ background: "hsl(var(--chart-5))" }} />
+          <span>Fatigue Score</span>
+        </div>
+        <div className="h-24">
+          <Panel data={data} dataKey="fatigue_score" name="Fatigue Score" color="hsl(var(--chart-5))" domain={["auto", "auto"]} showXAxis={true} />
+        </div>
       </div>
     </div>
-  )
+  );
 });
 
 export default WorkloadTimeline;

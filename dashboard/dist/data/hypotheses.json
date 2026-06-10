@@ -8,7 +8,7 @@
     "evidence_summary": "Correlation between \u22644d rest and lower ratings (p<0.01). Rolling regression confirms negative coefficient for short-rest windows across all positions.",
     "key_metric": "Rating decline under \u22644d rest",
     "key_value": "-0.31 avg rating drop",
-    "detail": "Analysis of 68,000+ player-match observations across 4 seasons confirms that rest periods of 4 days or fewer correlate with a measurable decline in player ratings. The effect is most pronounced in midfielders and forwards."
+    "detail": "Analysis of 68,722 player-match observations across 3 seasons confirms that rest periods of 4 days or fewer correlate with a measurable decline in player ratings. The effect is most pronounced in midfielders and forwards."
   },
   {
     "id": "h2",

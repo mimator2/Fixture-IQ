@@ -93,7 +93,7 @@ export default function PlayerExplanation({ player }) {
               <span className="w-5 h-5 rounded-full bg-primary/15 text-primary text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                 {i + 1}
               </span>
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0 max-w-[83%]">
                 <span className="text-sm text-foreground/90">{r.text}</span>
                 {useShap && (
                   <span className="text-xs text-muted-foreground block">
@@ -113,8 +113,8 @@ export default function PlayerExplanation({ player }) {
       )}
       <p className="text-xs text-muted-foreground mt-4 border-t border-border pt-3">
         {useShap
-          ? "SHAP TreeExplainer local values from the CatBoost model — feature contributions to the V6 risk score."
-          : "In production: replace with SHAP TreeExplainer local values from the CatBoost model artefact for fully grounded explanations."}
+          ? "SHAP TreeExplainer local values from the XGBoost model — feature contributions to the V6 risk score."
+          : "In production: replace with SHAP TreeExplainer local values from the XGBoost model artefact for fully grounded explanations."}
       </p>
     </div>
   );

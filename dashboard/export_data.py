@@ -13,8 +13,10 @@ sys.path.insert(0, str(ROOT))
 
 def _clean_nan(obj):
     """Recursively replace NaN/Inf with None for valid JSON output."""
-    if isinstance(obj, float):
-        return None if (math.isnan(obj) or math.isinf(obj)) else obj
+    if isinstance(obj, (float, np.floating)):
+        return None if (math.isnan(float(obj)) or math.isinf(float(obj))) else float(obj)
+    if isinstance(obj, np.integer):
+        return int(obj)
     if isinstance(obj, dict):
         return {k: _clean_nan(v) for k, v in obj.items()}
     if isinstance(obj, (list, tuple)):
@@ -170,7 +172,12 @@ def compute_lineup_rotation(grp):
     return round(float(np.mean(distances)), 4) if distances else 0.0
 
 
-def compute_shap_drivers(latest_df, model, metadata, suffix=""):
+def _get_ohe_feature_names(preprocessor, cat_feats):
+    ohe = preprocessor.named_transformers_["cat"].named_steps["ohe"]
+    return ohe.get_feature_names_out(cat_feats).tolist()
+
+
+def compute_shap_drivers(latest_df, model, preprocessor, metadata, suffix=""):
     feat_list = metadata["features"]
     cat_feats = metadata["categorical_features"]
     imp_vals = metadata["imputation_values"]
@@ -185,8 +192,13 @@ def compute_shap_drivers(latest_df, model, metadata, suffix=""):
     for f in cat_feats:
         X[f] = X[f].astype(str)
 
+    X_t = preprocessor.transform(X)
+    ohe_feature_names = _get_ohe_feature_names(preprocessor, cat_feats)
+    num_feats = [f for f in feat_list if f not in cat_feats]
+    shap_feature_names = num_feats + ohe_feature_names
+
     explainer = shap.TreeExplainer(model)
-    shap_values = explainer.shap_values(X)
+    shap_values = explainer.shap_values(X_t)
 
     drivers_list = []
     for i in range(len(X)):
@@ -196,9 +208,11 @@ def compute_shap_drivers(latest_df, model, metadata, suffix=""):
             sorted_idx = pos_idx[np.argsort(row_shap[pos_idx])[-5:][::-1]]
             drivers = []
             for idx in sorted_idx:
-                val = X.iloc[i, idx]
+                shap_fn = shap_feature_names[idx]
+                original_name = shap_fn.split("_")[0] if shap_fn in ohe_feature_names else shap_fn
+                val = X_t[i, idx]
                 drivers.append({
-                    "feature": feat_list[idx],
+                    "feature": shap_fn,
                     "value": round(float(val), 4) if isinstance(val, (int, float, np.integer, np.floating)) else str(val),
                     "contribution": round(float(row_shap[idx]), 4),
                 })
@@ -222,13 +236,13 @@ def main():
     print("Running predictions on all data (filtering after prediction)...")
 
     print("Loading V6 models...")
-    m_perf, meta_perf = load_v6_artifacts("no_competition")
-    m_fatigue, meta_fatigue = load_v6_artifacts("no_rating_baseline")
+    m_perf, preproc_perf, meta_perf = load_v6_artifacts("no_competition")
+    m_fatigue, preproc_fatigue, meta_fatigue = load_v6_artifacts("no_rating_baseline")
     print("  Both models loaded.")
 
     print("Running V6 predictions (performance risk + fatigue)...")
-    v6_perf = predict_v6(df, m_perf, meta_perf, suffix="_perf")
-    v6_fatigue = predict_v6(df, m_fatigue, meta_fatigue, suffix="_fatigue")
+    v6_perf = predict_v6(df, m_perf, preproc_perf, meta_perf, suffix="_perf")
+    v6_fatigue = predict_v6(df, m_fatigue, preproc_fatigue, meta_fatigue, suffix="_fatigue")
     print(f"  Perf: {len(v6_perf):,} rows, Fatigue: {len(v6_fatigue):,} rows")
 
     merge_cols = ["fixture_id", "player_id", "date", "player_name", "player_team", "player_position"]
@@ -252,8 +266,8 @@ def main():
     print(f"  Latest snapshot: {len(latest):,} rows")
 
     print("Computing SHAP drivers for snapshot rows...")
-    shap_drivers_perf = compute_shap_drivers(latest, m_perf, meta_perf, "_perf")
-    shap_drivers_fatigue = compute_shap_drivers(latest, m_fatigue, meta_fatigue, "_fatigue")
+    shap_drivers_perf = compute_shap_drivers(latest, m_perf, preproc_perf, meta_perf, "_perf")
+    shap_drivers_fatigue = compute_shap_drivers(latest, m_fatigue, preproc_fatigue, meta_fatigue, "_fatigue")
     print("  SHAP drivers computed for all snapshot rows.")
 
     # --- Build player_risks.json ---
@@ -472,7 +486,7 @@ def main():
             "evidence_summary": "Correlation between ≤4d rest and lower ratings (p<0.01). Rolling regression confirms negative coefficient for short-rest windows across all positions.",
             "key_metric": "Rating decline under ≤4d rest",
             "key_value": "-0.31 avg rating drop",
-            "detail": "Analysis of 68,000+ player-match observations across 4 seasons confirms that rest periods of 4 days or fewer correlate with a measurable decline in player ratings. The effect is most pronounced in midfielders and forwards."
+            "detail": f"Analysis of {len(df):,} player-match observations across {df['season'].nunique()} seasons confirms that rest periods of 4 days or fewer correlate with a measurable decline in player ratings. The effect is most pronounced in midfielders and forwards."
         },
         {
             "id": "h2",
@@ -514,14 +528,17 @@ def main():
     feature_importances = []
     model = m_perf
     try:
-        fi = model.get_feature_importance()
-        fn = model.feature_names_
+        ohe_feature_names = _get_ohe_feature_names(preproc_perf, meta_perf["categorical_features"])
+        num_feats = [f for f in meta_perf["features"] if f not in meta_perf["categorical_features"]]
+        shap_feature_names = num_feats + ohe_feature_names
+        fi = model.feature_importances_
         total = fi.sum()
-        for name, imp in sorted(zip(fn, fi), key=lambda x: x[1], reverse=True):
+        for name, imp_val in sorted(zip(shap_feature_names, fi), key=lambda x: x[1], reverse=True):
+            imp = float(imp_val)
             feature_importances.append({
                 "feature": name,
-                "importance": round(float(imp), 4),
-                "importance_pct": round(float(imp) / total * 100, 2) if total > 0 else 0,
+                "importance": round(imp, 4),
+                "importance_pct": round(imp / total * 100, 2) if total > 0 else 0,
             })
     except Exception as e:
         print(f"  Warning: could not extract feature importances: {e}")
@@ -535,6 +552,7 @@ def main():
         "feature_groups": meta_perf.get("feature_groups", {}),
         "threshold_policy": meta_perf.get("operating_policy", {}),
         "feature_count": len(feature_importances),
+        "current_season": str(latest_season),
         "risk_bands": V6_RISK_BANDS,
         "risk_labels": V6_RISK_LABELS,
         "interpretation": (

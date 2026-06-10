@@ -36,7 +36,7 @@ export default function StatsOverview() {
     {
       label: "Players Monitored",
       value: players.length,
-      sub: "CatBoost V6 dual risk scores",
+      sub: "XGBoost V6 dual risk scores",
       icon: Shield,
       color: "text-accent",
       bg: "bg-accent/10",

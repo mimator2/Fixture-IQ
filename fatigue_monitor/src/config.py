@@ -37,16 +37,18 @@ ROLE_COLORS = {
 MASTER_CSV_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "Fixture_IQ_Data_Seasons_2022-2025.csv"
 
 # --------------------------------------------------
-# V6 CatBoost paths and constants
+# V6 XGBoost paths and constants
 # --------------------------------------------------
 
-V6_BASE_DIR = MODELS_DIR / "catboost_v6"
+V6_BASE_DIR = MODELS_DIR / "xgboost_v6"
 V6_NO_COMP_DIR = V6_BASE_DIR / "v6_no_competition"
 V6_NO_RATING_DIR = V6_BASE_DIR / "v6_no_rating_baseline"
 
-V6_MODEL_PATH = V6_NO_COMP_DIR / "model.cbm"
+V6_MODEL_PATH = V6_NO_COMP_DIR / "model.json"
+V6_PREPROCESSOR_PATH = V6_NO_COMP_DIR / "preprocessor.pkl"
 V6_METADATA_PATH = V6_NO_COMP_DIR / "metadata.joblib"
-V6_NR_MODEL_PATH = V6_NO_RATING_DIR / "model.cbm"
+V6_NR_MODEL_PATH = V6_NO_RATING_DIR / "model.json"
+V6_NR_PREPROCESSOR_PATH = V6_NO_RATING_DIR / "preprocessor.pkl"
 V6_NR_METADATA_PATH = V6_NO_RATING_DIR / "metadata.joblib"
 
 V6_OPERATING_POLICY = {

@@ -49,7 +49,7 @@ export default function PlayerMonitor() {
             <h1 className="text-2xl font-bold">Player Risk Monitor</h1>
           </div>
           <p className="text-muted-foreground text-sm max-w-2xl">
-            CatBoost V6 dual-score system — Workload/Fatigue Score (V6 No Rating Baseline) + Performance Risk Score (V6 Full).
+            XGBoost V6 dual-score system — Workload/Fatigue Score (V6 No Rating Baseline) + Performance Risk Score (V6 Full).
             Players are flagged for monitoring, not diagnosed with fatigue.
           </p>
           <div className="mt-2">
