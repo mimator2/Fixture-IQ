@@ -1,0 +1,17 @@
+{
+    "policy": {
+        "name": "balanced_monitoring",
+        "core_starter_threshold": 0.45,
+        "rotation_player_threshold": 0.5,
+        "intent": "monitoring_support",
+        "message": "Flag indicates workload-associated risk for monitoring, not definitive fatigue diagnosis."
+    },
+    "policy_metrics_test_set": {
+        "precision": 0.3644230769230769,
+        "recall": 0.7348521570528357,
+        "f1": 0.48722481118431626,
+        "false_positive_rate": 0.5615972812234494,
+        "false_negative_rate": 0.2651478429471643,
+        "number_of_alerts": 4160.0
+    }
+}

@@ -1,0 +1,16 @@
+feature_group,sum_mean_abs_shap
+Squad injury context,0.00840845299535431
+Position-adjusted physical burden,0.003752852004254237
+Competition sequence,0.0031094993464648724
+Position context,0.0025491868145763874
+Short-rest sequences,0.0023220593575388193
+Physical Load Index,0.0009145920048467815
+Rolling minutes,0.0005149116477696225
+Competition context,0.0002531665959395468
+Rolling matches,0.00019155470363330096
+Schedule/recovery,4.493842425290495e-05
+Other,0.0
+Player injury history,0.0
+Rolling starts,0.0
+Full 90s burden,0.0
+Player injury category,0.0

@@ -1,0 +1,30 @@
+{
+    "model_name": "XGBoost Model A",
+    "target": "api_rating_decline_flag",
+    "purpose": "Predict whether a player's next meaningful rated appearance declines by more than 0.5 API-rating points.",
+    "framing": "post-current-match / pre-next-appearance performance decline model",
+    "objective": "binary:logistic",
+    "scale_pos_weight": 3.0,
+    "best_iteration": 421,
+    "best_validation_pr_auc": 0.586861626526555,
+    "n_train": 9340,
+    "n_val": 9183,
+    "n_test": 8760,
+    "n_raw_numeric_features": 53,
+    "n_raw_categorical_features": 8,
+    "n_transformed_features": 503,
+    "n_estimators": 1000,
+    "max_depth": 4,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "eval_metric": "aucpr",
+    "random_state": 42,
+    "notes": [
+        "api_rating_clean is removed from X because it is used to define the target.",
+        "next_* columns are removed to prevent temporal leakage.",
+        "preprocessor is fitted only on the 2022 training split."
+    ]
+}
