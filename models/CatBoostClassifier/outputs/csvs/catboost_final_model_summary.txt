@@ -1,0 +1,57 @@
+CatBoost Three-Model Comparison Summary
+================================================================================
+
+Temporal validation setup
+--------------------------------------------------------------------------------
+Train seasons: 2022-2023 and 2023-2024
+Test season: 2024-2025
+Train rows: 4,315
+Test rows: 2,508
+
+Saved models
+--------------------------------------------------------------------------------
+Model A - Baseline
+  Target: performance_decrease
+  Features: 49
+  Recommended threshold: 0.47
+  Model path: /home/vant/Documentos/FOOTBALL_ANALYTICS/MASTER/PROYECT/models/CatBoostClassifier/outputs/models/model_a_baseline.cbm
+  AUC-ROC: 0.7499002579993085
+  PR-AUC: 0.5742209780146761
+  F1: 0.5776135163674763
+  Precision: 0.4936823104693141
+  Recall: 0.6959287531806616
+  Balanced accuracy: 0.685072390527613
+
+Model B - Context
+  Target: performance_decrease
+  Features: 64
+  Recommended threshold: 0.45
+  Model path: /home/vant/Documentos/FOOTBALL_ANALYTICS/MASTER/PROYECT/models/CatBoostClassifier/outputs/models/model_b_context.cbm
+  AUC-ROC: 0.7506154450857487
+  PR-AUC: 0.5724016865562334
+  F1: 0.5683494044242768
+  Precision: 0.5127942681678608
+  Recall: 0.6374045801526718
+  Balanced accuracy: 0.6804909079625148
+
+Model C - Context Adjusted Target
+  Target: context_adjusted_performance_decrease
+  Features: 64
+  Recommended threshold: 0.55
+  Scientific threshold: 0.47
+  Model path: /home/vant/Documentos/FOOTBALL_ANALYTICS/MASTER/PROYECT/models/CatBoostClassifier/outputs/models/model_c_context_adjusted.cbm
+  AUC-ROC: 0.7602522340160124
+  PR-AUC: 0.6274171222047498
+  F1: 0.6052366565961732
+  Precision: 0.5299823633156967
+  Recall: 0.7053990610328639
+  Balanced accuracy: 0.6917695788256106
+
+Final recommendation
+--------------------------------------------------------------------------------
+Recommended final model: Model C - Context Adjusted Target
+Recommended operational threshold: 0.55
+Recommended scientific threshold: 0.47
+
+Model C is preferred because it predicts context-adjusted performance decrease,
+which is more interpretable and fairer than raw rating decline.
