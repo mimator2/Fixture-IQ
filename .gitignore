@@ -4,6 +4,7 @@ Data/
 !Data/Injuries/**
 EDA/DATA/
 *.csv
+models/XgBoost/artifacts/
 models/CatBoostClassifier/catboost_info/
 models/CatBoostClassifier/outputs/
 models/CatBoostClassifier/data/
@@ -65,9 +66,12 @@ Thumbs.db
 *.joblib
 !fatigue_monitor/models/**/*.pkl
 !fatigue_monitor/models/**/*.joblib
+!fatigue_monitor/models/**/*.csv
 .cache/
 *.npy
 *.npz
+*.png
+*.md
 
 # Temporary files
 *.tmp
@@ -78,6 +82,7 @@ Thumbs.db
 venv/
 env/
 .venv/
+.venv311/
 
 # OS specific
 .DS_Store
@@ -85,3 +90,5 @@ env/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+
+
