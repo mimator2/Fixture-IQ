@@ -82,7 +82,7 @@ export default function ModelExplanation() {
         <p className="font-semibold text-foreground mb-1">{label}</p>
         {payload.map(e => (
           <p key={e.name} className="text-muted-foreground">
-            {e.name}: <span className="font-medium text-foreground">{e.value.toFixed(4)}%</span>
+            {e.name}: <span className="font-medium text-foreground">{e.value.toFixed(2)}%</span>
           </p>
         ))}
       </div>
