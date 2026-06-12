@@ -24,6 +24,12 @@ export default function PlayerRiskTable() {
     return t.sort();
   }, [players]);
 
+  const bandCounts = useMemo(() => {
+    const counts = { All: players.length, Low: 0, Medium: 0, High: 0, "Very High": 0 };
+    players.forEach(p => { if (counts[p.risk_band] !== undefined) counts[p.risk_band]++; });
+    return counts;
+  }, [players]);
+
   const filtered = players.filter(p => {
     const matchSearch = !search || p.player_name?.toLowerCase().includes(search.toLowerCase()) || p.team_name?.toLowerCase().includes(search.toLowerCase());
     const matchBand = band === "All" || p.risk_band === band;
@@ -59,13 +65,13 @@ export default function PlayerRiskTable() {
         </div>
         {[
           { label: "Team", options: ["All Teams", ...teams], value: team, set: setTeam },
-          { label: "Risk", options: BANDS, value: band, set: setBand },
+          { label: "Risk", options: BANDS, value: band, set: setBand, counts: bandCounts },
           { label: "Role", options: ROLES, value: role, set: setRole },
           { label: "Position", options: POSITIONS, value: position, set: setPosition },
         ].map(f => (
           <select key={f.label} value={f.value} onChange={e => f.set(e.target.value)}
             className="bg-card border border-border rounded-md px-3 py-2 text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-ring">
-            {f.options.map(o => <option key={o} value={o}>{o}</option>)}
+            {f.options.map(o => <option key={o} value={o}>{o}{f.counts ? ` (${f.counts[o] ?? 0})` : ""}</option>)}
           </select>
         ))}
       </div>
@@ -92,16 +98,12 @@ export default function PlayerRiskTable() {
             </div>
 
             <div className="flex items-center gap-4 shrink-0">
-              <div className="text-right hidden sm:block">
-                <div className="text-xs text-muted-foreground">Fatigue</div>
-                <div className="text-sm font-semibold text-accent">{player.fatigue_score?.toFixed(3) ?? "—"}</div>
-              </div>
-              <div className="text-right hidden sm:block">
-                <div className="text-xs text-muted-foreground">Perf Risk</div>
-                <div className="text-sm font-semibold text-primary">{player.performance_risk_score?.toFixed(3) ?? "—"}</div>
+              <div className="text-left hidden sm:block min-w-[5rem]">
+                <div className="text-xs text-muted-foreground">Risk Score</div>
+                <div className="text-sm font-semibold text-primary">{player.fatigue_score?.toFixed(3) ?? "—"}</div>
               </div>
               <RiskBadge band={player.risk_band} />
-              <div className="text-right hidden lg:block max-w-48">
+              <div className="text-left hidden lg:block max-w-48">
                 <div className="text-xs text-muted-foreground">{player.recommended_action}</div>
               </div>
               <ChevronRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />

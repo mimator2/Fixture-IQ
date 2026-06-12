@@ -7,7 +7,7 @@ import ScoreGauge from "@/components/risk/ScoreGauge";
 import PlayerExplanation from "@/components/risk/PlayerExplanation";
 import WorkloadSection from "@/components/risk/WorkloadSection";
 import CompetitionSection from "@/components/risk/CompetitionSection";
-import PhysicalEffortSection from "@/components/risk/PhysicalEffortSection";
+import MatchActionsSection from "@/components/risk/MatchActionsSection";
 import SquadContextSection from "@/components/risk/SquadContextSection";
 import WorkloadTimeline from "@/components/risk/WorkloadTimeline";
 import InfoTip, { METRIC_HELP } from "@/components/ui/InfoTip";
@@ -44,7 +44,7 @@ export default function PlayerDetail() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <WorkloadSection player={player} />
         <CompetitionSection player={player} />
-        <PhysicalEffortSection player={player} />
+        <MatchActionsSection player={player} />
         <SquadContextSection player={player} />
       </div>
     ) : null,
@@ -114,16 +114,10 @@ export default function PlayerDetail() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <ScoreGauge
-              label="Workload / Fatigue Score"
-              description="V6 No Rating Baseline — coach-facing"
+              label="Risk Score"
+              description="V4B — workload-associated monitoring risk"
               score={player.fatigue_score}
-              color="amber"
-            />
-            <ScoreGauge
-              label="Performance Risk Score"
-              description="V6 Full model — analyst-facing"
-              score={player.performance_risk_score}
-              color="primary"
+              color={player.risk_band === "Very High" ? "red" : player.risk_band === "High" ? "amber" : player.risk_band === "Medium" ? "amber" : "teal"}
             />
           </div>
           <div className="grid grid-cols-3 gap-3 mt-3">
@@ -132,7 +126,7 @@ export default function PlayerDetail() {
                 <AlertTriangle className="w-3.5 h-3.5 text-chart-5" />
                 <span className="text-xs text-muted-foreground">Risk Band</span>
               </div>
-              <div className={`text-lg font-bold ${player.risk_band === "High" || player.risk_band === "Very High" ? "text-chart-5" : "text-chart-3"}`}>{player.risk_band}</div>
+              <div className={`text-lg font-bold ${player.risk_band === "Very High" ? "text-red-400" : player.risk_band === "High" ? "text-chart-5" : player.risk_band === "Medium" ? "text-chart-4" : "text-chart-3"}`}>{player.risk_band}</div>
             </div>
             <div className="bg-muted/30 rounded-lg p-3 text-center">
               <div className="flex items-center justify-center gap-1.5 mb-1">
@@ -162,25 +156,7 @@ export default function PlayerDetail() {
         {/* Workload Timeline */}
         <WorkloadTimeline data={timelineData} />
 
-        {/* Rating context */}
-        {(player.avg_rating_last_3 || player.avg_rating_last_5) && (
-          <div className="bg-card border border-border rounded-xl p-6">
-            <h3 className="font-semibold mb-4">Recent Rating Baseline</h3>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-muted/30 rounded-lg p-3 text-center">
-                <div className="text-xs text-muted-foreground mb-1">Avg Rating (Last 3)</div>
-                <div className="text-lg font-bold text-chart-4">{player.avg_rating_last_3?.toFixed(2) ?? "—"}</div>
-              </div>
-              <div className="bg-muted/30 rounded-lg p-3 text-center">
-                <div className="text-xs text-muted-foreground mb-1">Avg Rating (Last 5)</div>
-                <div className="text-lg font-bold text-chart-4">{player.avg_rating_last_5?.toFixed(2) ?? "—"}</div>
-              </div>
-            </div>
-            <p className="text-xs text-muted-foreground mt-3">
-              Note: Rating baseline influences the Performance Risk Score only. The Workload/Fatigue Score excludes these to remain a pure load-based signal.
-            </p>
-          </div>
-        )}
+
 
       </div>
     </div>

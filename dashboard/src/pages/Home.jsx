@@ -23,7 +23,7 @@ export default function Home() {
         <div className="flex items-center justify-between mb-4">
           <div>
             <h2 className="text-xl font-bold">Player Risk Overview</h2>
-            <p className="text-sm text-muted-foreground">XGBoost V6 — Squad risk distribution across all monitored teams</p>
+            <p className="text-sm text-muted-foreground">XGBoost V4B — Squad risk distribution across all monitored teams</p>
           </div>
           <Link to="/player-monitor" className="text-sm text-primary hover:underline flex items-center gap-1">
             Full monitor <ArrowRight className="w-3.5 h-3.5" />

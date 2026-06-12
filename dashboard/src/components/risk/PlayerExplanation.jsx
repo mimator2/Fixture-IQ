@@ -1,7 +1,7 @@
 import { Lightbulb } from "lucide-react";
 
 function buildShapDrivers(player) {
-  const raw = player.shap_drivers_perf || player.shap_drivers_fatigue || [];
+  const raw = player.shap_drivers || [];
   return raw.slice(0, 5).map((d) => ({
     feature: d.feature,
     value: d.value,
@@ -19,8 +19,8 @@ function buildExplanations(player) {
   if (shortRest4 >= 2) reasons.push({ weight: 100, text: `${shortRest4} match${shortRest4 > 1 ? "es" : ""} with ≤4 days rest in the last 30 days`, feature: "matches_with_rest_le_4d_last_30d" });
   else if (shortRest6 >= 3) reasons.push({ weight: 88, text: `${shortRest6} matches with ≤6 days rest in the last 30 days`, feature: "matches_with_rest_le_6d_last_30d" });
 
-  if ((player.full_90s_last_5 ?? 0) >= 4)
-    reasons.push({ weight: 79, text: `${player.full_90s_last_5} full-90 appearances in recent matches`, feature: "full_90s_last_14d" });
+  if ((player.full_90s_last_14 ?? 0) >= 4)
+    reasons.push({ weight: 79, text: `${player.full_90s_last_14} full-90 appearances in recent matches`, feature: "full_90s_last_14d" });
 
   if ((player.ucl_minutes_last_21 ?? 0) >= 90)
     reasons.push({ weight: 52, text: `${player.ucl_minutes_last_21} UCL minutes in the last 21 days`, feature: "ucl_matches_last_30d" });
@@ -31,14 +31,14 @@ function buildExplanations(player) {
   if (player.days_since_last_european != null && player.days_since_last_european <= 4 && (player.ucl_minutes_last_21 ?? 0) > 0)
     reasons.push({ weight: 52, text: "Next match follows UCL fixture with short recovery window", feature: "ucl_matches_last_30d" });
 
-  if ((player.starts_last_5 ?? 0) === 5)
-    reasons.push({ weight: 58, text: "5 consecutive starts — no rotation in recent run", feature: "starts_last_14d" });
+  if ((player.starts_last_14 ?? 0) >= 5)
+    reasons.push({ weight: 58, text: `${player.starts_last_14} starts in last 14 days — minimal rotation`, feature: "starts_last_14d" });
 
   if ((player.squad_soft_tissue_count ?? 0) >= 2)
     reasons.push({ weight: 44, text: `${player.squad_soft_tissue_count} soft-tissue injuries in squad — elevated cover pressure`, feature: "squad_soft_tissue_count" });
 
   if (player.returning_from_injury)
-    reasons.push({ weight: 31, text: `Returning from injury (${player.days_since_last_injury ?? "?"} days ago) — post-injury vulnerability window`, feature: "returning_from_injury" });
+    reasons.push({ weight: 31, text: "Returning from injury — post-injury vulnerability window", feature: "returning_from_injury" });
 
   if ((player.physical_load_index ?? 0) > 15)
     reasons.push({ weight: 35, text: `High physical action load (PLI ${player.physical_load_index?.toFixed(1)}) — duels, tackles, dribbles above threshold`, feature: "physical_load_index" });
@@ -113,7 +113,7 @@ export default function PlayerExplanation({ player }) {
       )}
       <p className="text-xs text-muted-foreground mt-4 border-t border-border pt-3">
         {useShap
-          ? "SHAP TreeExplainer local values from the XGBoost model — feature contributions to the V6 risk score."
+          ? "SHAP TreeExplainer local values from the XGBoost model — feature contributions to the V4B risk score."
           : "In production: replace with SHAP TreeExplainer local values from the XGBoost model artefact for fully grounded explanations."}
       </p>
     </div>

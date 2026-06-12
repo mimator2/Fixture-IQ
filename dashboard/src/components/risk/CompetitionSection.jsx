@@ -16,7 +16,7 @@ export default function CompetitionSection({ player }) {
   const compSwitches = (() => {
     let count = 0;
     if ((player.ucl_minutes_last_21 ?? 0) > 0) count += 1;
-    if ((player.cup_minutes_last_21 ?? 0) > 0) count += 1;
+    if ((player.cup_minutes_last_14 ?? 0) > 0) count += 1;
     return count;
   })();
 
@@ -28,7 +28,9 @@ export default function CompetitionSection({ player }) {
       </div>
       <div>
         <Row label="UCL minutes (21d)"        value={player.ucl_minutes_last_21}                              highlight={(player.ucl_minutes_last_21 ?? 0) >= 90} />
-        <Row label="Cup minutes (21d)"        value={player.cup_minutes_last_21}                              highlight={(player.cup_minutes_last_21 ?? 0) >= 90} />
+        <Row label="UCL matches (30d)"        value={player.ucl_matches_last_30}                              highlight={(player.ucl_matches_last_30 ?? 0) >= 2} />
+        <Row label="Cup minutes (14d)"        value={player.cup_minutes_last_14}                              highlight={(player.cup_minutes_last_14 ?? 0) >= 90} />
+        <Row label="Cup matches (30d)"        value={player.cup_matches_last_30}                              highlight={(player.cup_matches_last_30 ?? 0) >= 2} />
         <Row label="PL after UCL short rest"  value={shortRestAfterUCL}                                       highlight={shortRestAfterUCL === "Yes"} />
         <Row label="Days since European"      value={player.days_since_last_european != null ? `${player.days_since_last_european}d` : null} highlight={(player.days_since_last_european ?? 99) <= 4} />
         <Row label="Comp switches (21d)"      value={compSwitches}                                            highlight={compSwitches >= 2} help={METRIC_HELP.competition_switches} />

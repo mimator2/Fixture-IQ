@@ -36,7 +36,7 @@ export default function StatsOverview() {
     {
       label: "Players Monitored",
       value: players.length,
-      sub: "XGBoost V6 dual risk scores",
+      sub: "XGBoost V4B risk score",
       icon: Shield,
       color: "text-accent",
       bg: "bg-accent/10",
@@ -50,9 +50,9 @@ export default function StatsOverview() {
       bg: "bg-destructive/10",
     },
     {
-      label: "Avg. Rest Drop",
+      label: "Rest Drop (Congestion)",
       value: `-${restDrop.toFixed(1)}d`,
-      sub: "Low vs Medium congestion",
+      sub: "Avg rest: Low → Medium congestion",
       icon: TrendingDown,
       color: "text-chart-3",
       bg: "bg-chart-3/10",

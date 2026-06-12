@@ -21,8 +21,12 @@ export default function WorkloadSection({ player }) {
       <div>
         <Row label="Minutes last 14d"          value={player.minutes_last_14}                highlight={(player.minutes_last_14 ?? 0) > 180} />
         <Row label="Minutes last 21d"          value={player.minutes_last_21}                highlight={(player.minutes_last_21 ?? 0) > 270} />
-        <Row label="Starts (last 5)"           value={player.starts_last_5}                  highlight={(player.starts_last_5 ?? 0) >= 5} />
-        <Row label="Full 90s (last 5)"         value={player.full_90s_last_5}                highlight={(player.full_90s_last_5 ?? 0) >= 4} />
+        <Row label="Minutes last 28d"          value={player.minutes_last_28}                highlight={(player.minutes_last_28 ?? 0) > 360} />
+        <Row label="Starts (last 14d)"          value={player.starts_last_14}                 highlight={(player.starts_last_14 ?? 0) >= 5} />
+        <Row label="Starts (last 28d)"          value={player.starts_last_28}                 highlight={(player.starts_last_28 ?? 0) >= 8} />
+        <Row label="Full 90s (last 14d)"       value={player.full_90s_last_14}               highlight={(player.full_90s_last_14 ?? 0) >= 4} />
+        <Row label="Full 90s (last 28d)"       value={player.full_90s_last_28}               highlight={(player.full_90s_last_28 ?? 0) >= 6} />
+        <Row label="Rest days"                 value={player.rest_days != null ? `${player.rest_days}d` : null} highlight={(player.rest_days ?? 99) < 3} />
         <Row label="Avg rest days (last 5)"    value={player.avg_rest_days_last_5 != null ? `${player.avg_rest_days_last_5}d` : null} highlight={(player.avg_rest_days_last_5 ?? 99) < 3.5} />
         <Row label="Short-rest matches (30d)"  value={player.short_rest_matches_30d}          highlight={(player.short_rest_matches_30d ?? 0) >= 3} help={METRIC_HELP.short_rest_matches} />
       </div>

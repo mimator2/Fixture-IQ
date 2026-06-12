@@ -14,6 +14,7 @@ export const flagLabels = {
   post_european_short_rest:       "Post-European Short Rest",
   frequent_competition_switches:  "Frequent Comp Switches",
   rotation_risk_exceeds_threshold: "Rotation Threshold Exceeded",
+  high_risk:                      "High Risk",
 };
 
 export default function RiskBadge({ band, size = "sm" }) {

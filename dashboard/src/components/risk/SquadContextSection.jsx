@@ -23,8 +23,6 @@ export default function SquadContextSection({ player }) {
         <Row label="Soft tissue injuries"    value={player.squad_soft_tissue_count} highlight={(player.squad_soft_tissue_count ?? 0) >= 2} />
         <Row label="Avg days out"            value={player.squad_avg_days_out != null ? `${player.squad_avg_days_out}d` : null} highlight={(player.squad_avg_days_out ?? 0) > 14} />
         <Row label="Returning from injury"   value={player.returning_from_injury ? "Yes" : "No"} highlight={player.returning_from_injury} />
-        <Row label="Days since last injury"  value={player.days_since_last_injury != null ? `${player.days_since_last_injury}d` : null} highlight={player.days_since_last_injury != null && player.days_since_last_injury < 21} />
-        <Row label="Injury context score"    value={player.injury_context_score?.toFixed(1)} highlight={(player.injury_context_score ?? 0) > 4} help={METRIC_HELP.injury_context_score} />
       </div>
     </div>
   );

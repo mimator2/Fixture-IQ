@@ -26,20 +26,11 @@ def _clean_nan(obj):
 
 from fatigue_monitor.src.config import (
     MASTER_CSV_PATH,
-    V6_RISK_BANDS,
-    V6_RISK_LABELS,
+    V4B_RISK_BANDS,
+    V4B_RISK_LABELS,
 )
-from fatigue_monitor.src.prediction_v6 import load_v6_artifacts, predict_v6
-from fatigue_monitor.src.feature_engineering_v6 import (
-    engineer_features_v6,
-    assign_player_role_v6,
-    _add_v6_rolling_features,
-    _add_v6_composite_scores,
-    _add_position_z_scores,
-    _add_injury_context_flags,
-    _add_missingness_indicators,
-    _add_competition_flags,
-)
+from fatigue_monitor.src.prediction_v4b import load_v4b_artifacts, predict_v4b
+from fatigue_monitor.src.feature_engineering_v4b import assign_player_role_v4b
 
 DATA_DIR = Path(__file__).parent / "public" / "data"
 
@@ -74,17 +65,23 @@ SHIELD_MAP = {
 def map_risk_band(score):
     if pd.isna(score):
         return "Low"
-    for i in range(len(V6_RISK_BANDS) - 1):
-        if V6_RISK_BANDS[i] <= score < V6_RISK_BANDS[i + 1]:
-            return V6_RISK_LABELS[i]
+    for i in range(len(V4B_RISK_BANDS) - 1):
+        if V4B_RISK_BANDS[i] <= score < V4B_RISK_BANDS[i + 1]:
+            return V4B_RISK_LABELS[i]
     return "Very High"
 
 
 def map_player_role(role):
-    return "Core Starter" if role == "core_starter" else "Rotation Player"
+    mapping = {
+        "core_starter": "Core Starter",
+        "rotation_player": "Rotation Player",
+        "impact_sub": "Impact Substitute",
+        "rare_player": "Rare Player",
+    }
+    return mapping.get(role, "Rotation Player")
 
 
-def derive_risk_flags(row, reasons_str):
+def derive_risk_flags(row, reasons_str, risk_band=None):
     flags = set()
 
     reasons_lower = reasons_str.lower() if reasons_str else ""
@@ -100,7 +97,7 @@ def derive_risk_flags(row, reasons_str):
         flags.add("high_action_load")
     if "high action load" in reasons_lower or "high minutes" in reasons_lower:
         flags.add("high_action_load")
-    if (row.get("recent_action_load_per90", 0) or 0) > 50:
+    if "accumulated load" in reasons_lower:
         flags.add("high_action_load")
     if row.get("squad_injured_count", 0) >= 4 or "high squad injury pressure" in reasons_lower:
         flags.add("high_squad_injury_pressure")
@@ -112,6 +109,8 @@ def derive_risk_flags(row, reasons_str):
         flags.add("frequent_competition_switches")
     if "rotation player exceeding" in reasons_lower:
         flags.add("rotation_risk_exceeds_threshold")
+    if risk_band in ("High", "Very High") and not flags:
+        flags.add("high_risk")
 
     return sorted(flags)
 
@@ -140,6 +139,12 @@ def compute_congestion_level(row):
         return "High"
 
 
+def _parse_sub_bool(val):
+    if isinstance(val, str):
+        return val.lower() in ("true", "1")
+    return bool(val)
+
+
 def compute_lineup_rotation(grp):
     """
     Compute rotation index for a team (or team+congestion group).
@@ -150,6 +155,7 @@ def compute_lineup_rotation(grp):
     sub = grp[["fixture_id", "date", "player_id", "is_substitute"]].drop_duplicates(
         subset=["fixture_id", "player_id"]
     )
+    sub["is_substitute"] = sub["is_substitute"].apply(_parse_sub_bool)
     fixture_order = (
         sub[["fixture_id", "date"]].drop_duplicates("fixture_id").sort_values("date")["fixture_id"].tolist()
     )
@@ -157,7 +163,7 @@ def compute_lineup_rotation(grp):
         return 0.0
     starter_sets = {}
     for fid in fixture_order:
-        s = set(sub[(sub["fixture_id"] == fid) & (sub["is_substitute"] == "False")]["player_id"])
+        s = set(sub[(sub["fixture_id"] == fid) & (~sub["is_substitute"])]["player_id"])
         starter_sets[fid] = s
     distances = []
     for i in range(len(fixture_order) - 1):
@@ -233,30 +239,18 @@ def main():
     df["date"] = pd.to_datetime(df["date"])
     print(f"  Rows: {len(df):,}, Columns: {len(df.columns)}, Players: {df['player_id'].nunique():,}")
 
-    print("Running predictions on all data (filtering after prediction)...")
+    print("Loading V4B model...")
+    model, preprocessor, metadata = load_v4b_artifacts()
+    print("  Single V4B model loaded.")
 
-    print("Loading V6 models...")
-    m_perf, preproc_perf, meta_perf = load_v6_artifacts("no_competition")
-    m_fatigue, preproc_fatigue, meta_fatigue = load_v6_artifacts("no_rating_baseline")
-    print("  Both models loaded.")
-
-    print("Running V6 predictions (performance risk + fatigue)...")
-    v6_perf = predict_v6(df, m_perf, preproc_perf, meta_perf, suffix="_perf")
-    v6_fatigue = predict_v6(df, m_fatigue, preproc_fatigue, meta_fatigue, suffix="_fatigue")
-    print(f"  Perf: {len(v6_perf):,} rows, Fatigue: {len(v6_fatigue):,} rows")
-
-    merge_cols = ["fixture_id", "player_id", "date", "player_name", "player_team", "player_position"]
-    keep_perf = merge_cols + [c for c in v6_perf.columns if c not in merge_cols]
-    keep_fatigue = merge_cols + [c for c in v6_fatigue.columns if c not in merge_cols]
-    merged = v6_perf[keep_perf].merge(
-        v6_fatigue[keep_fatigue], on=merge_cols, how="outer", suffixes=("", "_nr")
-    )
-    print(f"  Merged: {len(merged):,} rows")
+    print("Running V4B prediction...")
+    df_pred = predict_v4b(df, model, preprocessor, metadata)
+    print(f"  Predicted: {len(df_pred):,} rows")
 
     # Filter to Premier League teams only for the dashboard
     latest_season = df["season"].max()
     pl_teams = df[(df["competition"] == "Premier League") & (df["season"] == latest_season)]["player_team"].unique()
-    merged = merged[merged["player_team"].isin(pl_teams)].copy()
+    merged = df_pred[df_pred["player_team"].isin(pl_teams)].copy()
     merged = merged[merged["player_id"] != 0].copy()
     print(f"  PL filter (season {latest_season}): {merged['player_team'].nunique()} teams")
 
@@ -266,33 +260,43 @@ def main():
     print(f"  Latest snapshot: {len(latest):,} rows")
 
     print("Computing SHAP drivers for snapshot rows...")
-    shap_drivers_perf = compute_shap_drivers(latest, m_perf, preproc_perf, meta_perf, "_perf")
-    shap_drivers_fatigue = compute_shap_drivers(latest, m_fatigue, preproc_fatigue, meta_fatigue, "_fatigue")
+    shap_drivers = compute_shap_drivers(latest, model, preprocessor, metadata)
     print("  SHAP drivers computed for all snapshot rows.")
+
+    # Fill NaN in numeric columns to prevent int() crashes downstream
+    for col in latest.select_dtypes(include="float").columns:
+        latest[col] = latest[col].fillna(0)
 
     # --- Build player_risks.json ---
     print("Building player_risks.json...")
     player_risks = []
     for i, (_, row) in enumerate(latest.iterrows()):
-        reasons = row.get("main_risk_reasons_perf", "") or ""
+        reasons = row.get("main_risk_reasons", "") or ""
 
-        risk_band = row.get("risk_band_perf", None)
+        # Append SHAP top-3 drivers as data-driven reasons
+        shap_top3 = shap_drivers[i][:3] if i < len(shap_drivers) else []
+        if shap_top3:
+            shap_parts = [
+                "{}={} ({:+.4f})".format(d["feature"], d["value"], d["contribution"])
+                for d in shap_top3
+            ]
+            reasons += " | SHAP: " + "; ".join(shap_parts)
+
+        risk_band = row.get("risk_band", None)
         if pd.isna(risk_band) or risk_band is None:
-            risk_band = map_risk_band(row.get("risk_score_perf", 0))
+            risk_band = map_risk_band(row.get("risk_score", 0))
 
-        player_role_raw = row.get("player_role_v6", "rotation_player")
+        player_role_raw = row.get("player_role_v4b", "rotation_player")
         player_role = map_player_role(player_role_raw)
 
         pos_map = {"G": "Goalkeeper", "D": "Defender", "M": "Midfielder", "F": "Forward"}
         position = pos_map.get(str(row.get("player_position", "")), "Unknown")
 
-        flags = derive_risk_flags(row, reasons)
+        flags = derive_risk_flags(row, reasons, risk_band)
         action = derive_recommended_action(risk_band, player_role)
-        player_id_str = str(row.get("player_id", "")).strip()
         team_name = str(row.get("player_team", "")).strip()
         player_name = str(row.get("player_name", "")).strip()
         uid = f"{player_name.lower().replace(' ', '_')}__{team_name.lower().replace(' ', '_')}"
-        _dsli = row.get("days_since_last_injury")
 
         obj = {
             "id": uid,
@@ -303,11 +307,11 @@ def main():
             "season": str(row.get("season", "")),
             "gameweek": None,
 
-            # A. Current risk
-            "fatigue_score": round(float(row.get("risk_score_fatigue", 0) or 0), 4),
-            "performance_risk_score": round(float(row.get("risk_score_perf", 0) or 0), 4),
+            # A. Current risk (single V4B score)
+            "fatigue_score": round(float(row.get("risk_score", 0) or 0), 4),
+            "risk_score": round(float(row.get("risk_score", 0) or 0), 4),
             "risk_band": risk_band,
-            "monitoring_threshold": round(float(row.get("monitoring_threshold_perf", 0.5) or 0.5), 4),
+            "monitoring_threshold": round(float(row.get("monitoring_threshold", 0.5) or 0.5), 4),
             "recommended_action": action,
             "risk_flags": flags,
             "main_risk_reasons": reasons,
@@ -318,10 +322,9 @@ def main():
             "minutes_last_21": int(row.get("min_last_21d", 0) or 0),
             "minutes_last_28": int(row.get("min_last_28d", 0) or 0),
             "starts_last_14": int(row.get("starts_last_14d", 0) or 0),
-            "starts_last_5": int(row.get("starts_last_5", 0) or 0),
+            "starts_last_28": int(row.get("starts_last_28d", 0) or 0),
             "full_90s_last_14": int(row.get("full_90s_last_14d", 0) or 0),
             "full_90s_last_28": int(row.get("full_90s_last_28d", 0) or 0),
-            "full_90s_last_5": int(row.get("full_match_exposure_last_5", 0) or 0),
             "rest_days": int(row.get("rest_days", -1) or -1),
             "avg_rest_days_last_5": round(float(row.get("avg_rest_last_3_matches", 0) or 0), 1),
             "short_rest_matches_30d": int(row.get("matches_with_rest_le_4d_last_30d", 0) or 0),
@@ -333,47 +336,39 @@ def main():
             "ucl_minutes_last_21": int(row.get("ucl_minutes_last_21d", 0) or 0),
             "ucl_matches_last_30": int(row.get("ucl_matches_last_30d", 0) or 0),
             "cup_minutes_last_14": int(row.get("cup_minutes_last_14d", 0) or 0),
-            "cup_minutes_last_21": int(row.get("cup_minutes_last_14d", 0) or 0),
-            "days_since_last_european": int(row.get("days_since_european_match", -1) or -1),
+            "cup_matches_last_30": int(row.get("cup_matches_last_30d", 0) or 0),
+            "days_since_last_european": int(row.get("days_since_european_match", 0)),
             "post_ucl_short_rest": int(row.get("post_ucl_short_rest", 0) or 0),
             "pl_after_ucl_short_rest": int(row.get("pl_after_ucl_with_short_rest", 0) or 0),
             "ucl_full90_then_pl_short_rest": int(row.get("ucl_full90_then_pl_short_rest", 0) or 0),
             "competition_switches_last_30": int(row.get("competition_switches_last_30d", 0) or 0),
 
-            # D. Physical effort
-            "shots_last_5": int(row.get("shots_last_5", 0) or 0),
-            "key_passes_last_5": int(row.get("key_passes_last_5", 0) or 0),
-            "tackles_last_5": int(row.get("tackles_last_5", 0) or 0),
-            "interceptions_last_5": int(row.get("interceptions_last_5", 0) or 0),
-            "dribbles_last_5": int(row.get("dribbles_attempts_last_5", 0) or 0),
-            "duels_last_5": int(row.get("duels_total_last_5", 0) or 0),
-            "fouls_last_5": int(row.get("fouls_committed_last_5", 0) or 0),
+            # D. Match actions (position-aware V4B columns)
+            "duels_last_3": int(row.get("duels_last_3_matches", 0) or 0),
             "duels_last_14": int(row.get("duels_last_14d", 0) or 0),
+            "tackles_last_3": int(row.get("tackles_last_3_matches", 0) or 0),
             "tackles_last_14": int(row.get("tackles_last_14d", 0) or 0),
-            "fouls_last_14": int(row.get("fouls_last_14d", 0) or 0),
+            "dribbles_last_3": int(row.get("dribbles_last_3_matches", 0) or 0),
             "dribbles_last_14": int(row.get("dribbles_last_14d", 0) or 0),
+            "fouls_last_3": int(row.get("fouls_last_3_matches", 0) or 0),
+            "fouls_last_14": int(row.get("fouls_last_14d", 0) or 0),
+            "cards_last_5": int(row.get("cards_last_5_matches", 0) or 0),
             "physical_load_index": round(float(row.get("physical_load_index", 0) or 0), 4),
-            "recent_action_load_per90": round(float(row.get("recent_action_load_per90", 0) or 0), 2),
-            "recent_action_load_per90_pos_z": round(float(row.get("recent_action_load_per90_pos_z", 0) or 0), 2),
-            "minutes_last_5_matches_pos_z": round(float(row.get("minutes_last_5_matches_pos_z", 0) or 0), 2),
+            "duels_total_position_z": round(float(row.get("duels_total_position_z", 0) or 0), 2),
+            "tackles_total_position_z": round(float(row.get("tackles_total_position_z", 0) or 0), 2),
+            "fouls_committed_position_z": round(float(row.get("fouls_committed_position_z", 0) or 0), 2),
+            "minutes_played_position_z": round(float(row.get("minutes_played_position_z", 0) or 0), 2),
+            "physical_load_last_14d_vs_player_avg": round(float(row.get("physical_load_last_14d_vs_player_avg", 0) or 0), 2),
 
             # E. Squad context
             "squad_injured_count": int(row.get("squad_injured_count", 0) or 0),
             "squad_soft_tissue_count": int(row.get("squad_soft_tissue_count", 0) or 0),
             "squad_avg_days_out": int(row.get("squad_avg_days_out", 0) or 0),
             "returning_from_injury": bool(row.get("returning_from_injury", False)),
-            "days_since_last_injury": int(_dsli) if pd.notna(_dsli) and _dsli != 999 else None,
-            "injury_context_score": int(row.get("injury_context_score", 0) or 0),
             "fixtures_missed_last_30": int(row.get("fixtures_missed_last_30d", 0) or 0),
-            "fixtures_missed_last_90": int(row.get("fixtures_missed_last_90d", 0) or 0),
 
-            # Rating context
-            "avg_rating_last_3": round(float(row.get("avg_rating_last_3", 0) or 0), 2) if not pd.isna(row.get("avg_rating_last_3")) else None,
-            "avg_rating_last_5": round(float(row.get("avg_rating_last_5", 0) or 0), 2) if not pd.isna(row.get("avg_rating_last_5")) else None,
-
-            # G. SHAP driver data (from CatBoost model)
-            "shap_drivers_perf": shap_drivers_perf[i] if i < len(shap_drivers_perf) else [],
-            "shap_drivers_fatigue": shap_drivers_fatigue[i] if i < len(shap_drivers_fatigue) else [],
+            # SHAP driver data (single V4B score)
+            "shap_drivers": shap_drivers[i] if i < len(shap_drivers) else [],
 
             "workload_timeline": [],
         }
@@ -410,7 +405,7 @@ def main():
             euro_comp = team_competitions[0]
 
         total_matches = grp["fixture_id"].nunique()
-        avg_rest = grp["rest_days"].mean()
+        avg_rest = grp["rest_days"].clip(upper=10).mean()
         avg_pts = grp["points"].mean() if "points" in grp.columns else 0
 
         # Rotation index: average Jaccard distance between consecutive starting XIs
@@ -526,10 +521,11 @@ def main():
     # --- Build model_metadata.json ---
     print("Building model_metadata.json...")
     feature_importances = []
-    model = m_perf
+    feat_list = metadata["features"]
+    cat_feats = metadata["categorical_features"]
     try:
-        ohe_feature_names = _get_ohe_feature_names(preproc_perf, meta_perf["categorical_features"])
-        num_feats = [f for f in meta_perf["features"] if f not in meta_perf["categorical_features"]]
+        ohe_feature_names = _get_ohe_feature_names(preprocessor, cat_feats)
+        num_feats = [f for f in feat_list if f not in cat_feats]
         shap_feature_names = num_feats + ohe_feature_names
         fi = model.feature_importances_
         total = fi.sum()
@@ -543,20 +539,24 @@ def main():
     except Exception as e:
         print(f"  Warning: could not extract feature importances: {e}")
 
+    raw_meta = metadata.get("raw_metadata", {})
+    meta_target = raw_meta.get("target", "")
+    test_metrics = raw_meta.get("test_metrics_validation_selected_model", {})
     model_metadata = {
-        "model_name": meta_perf.get("model_name", "V6 No Competition"),
-        "target": meta_perf.get("target", ""),
-        "test_auc_roc": meta_perf.get("auc", None),
-        "test_pr_auc": meta_perf.get("pr_auc", None),
+        "model_name": raw_meta.get("model_name", "V4B"),
+        "variant": raw_meta.get("variant", "v4b_no_competition"),
+        "target": meta_target,
+        "target_definition": raw_meta.get("target_definition", ""),
+        "test_auc_roc": test_metrics.get("auc_roc", None),
+        "test_pr_auc": test_metrics.get("auc_pr", None),
         "feature_importances": feature_importances,
-        "feature_groups": meta_perf.get("feature_groups", {}),
-        "threshold_policy": meta_perf.get("operating_policy", {}),
+        "threshold_policy": metadata.get("operating_policy", {}),
         "feature_count": len(feature_importances),
         "current_season": str(latest_season),
-        "risk_bands": V6_RISK_BANDS,
-        "risk_labels": V6_RISK_LABELS,
+        "risk_bands": V4B_RISK_BANDS,
+        "risk_labels": V4B_RISK_LABELS,
         "interpretation": (
-            "V6 is a staff-support monitoring model. A positive flag indicates that the player "
+            "V4B is a staff-support monitoring model. A positive flag indicates that the player "
             "should be reviewed because their workload, rest pattern, competition sequence, "
             "role context, and injury context resemble situations historically associated with "
             "underperformance or managed minutes."
@@ -576,9 +576,9 @@ def main():
             timeline.append({
                 "date": str(mr.get("date", pd.NaT)),
                 "minutes": int(mr.get("min_last_14d", 0) or 0),
+                "minutes_played": int(mr.get("minutes_played", 0) or 0),
                 "rest_days": float(mr.get("rest_days", 0) or 0),
-                "fatigue_score": round(float(mr.get("risk_score_fatigue", 0) or 0), 4),
-                "performance_risk_score": round(float(mr.get("risk_score_perf", 0) or 0), 4),
+                "fatigue_score": round(float(mr.get("risk_score", 0) or 0), 4),
                 "starts_last_14": int(mr.get("starts_last_14d", 0) or 0),
                 "full_90s_last_14": int(mr.get("full_90s_last_14d", 0) or 0),
                 "ucl_minutes": int(mr.get("ucl_minutes_last_14d", 0) or 0),

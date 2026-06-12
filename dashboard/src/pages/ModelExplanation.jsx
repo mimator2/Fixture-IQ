@@ -82,7 +82,7 @@ export default function ModelExplanation() {
         <p className="font-semibold text-foreground mb-1">{label}</p>
         {payload.map(e => (
           <p key={e.name} className="text-muted-foreground">
-            {e.name}: <span className="font-medium text-foreground">{e.value}%</span>
+            {e.name}: <span className="font-medium text-foreground">{e.value.toFixed(4)}%</span>
           </p>
         ))}
       </div>
@@ -99,7 +99,7 @@ export default function ModelExplanation() {
             <h1 className="text-2xl font-bold">Model Explanation</h1>
           </div>
           <p className="text-muted-foreground text-sm max-w-2xl">
-            How the V6 XGBoost model assesses workload-associated risk — global feature drivers,
+            How the V4B XGBoost model assesses workload-associated risk — global feature drivers,
             player-specific contributors, threshold policy, and limitations.
           </p>
         </div>
@@ -112,7 +112,7 @@ export default function ModelExplanation() {
           </div>
           <p className="text-xs text-muted-foreground mb-4">
             Feature importance measured by XGBoost built-in importance (gain-weighted contribution to splits).
-            The V4 profile is consistent with fatigue monitoring: workload and rest features dominate.
+            The V4B profile is consistent with fatigue monitoring: workload and rest features dominate.
           </p>
           <div className="h-96">
             <ResponsiveContainer width="100%" height="100%">
@@ -169,8 +169,8 @@ export default function ModelExplanation() {
               {[
                 { text: "minutes_median_last_5 = 90", contribution: 0.5144 },
                 { text: "cup_minutes_last_14d = 90", contribution: 0.2209 },
-                { text: "avg_rating_last_3 = 6.52", contribution: 0.1829 },
-                { text: "injury_context_score = 4", contribution: 0.1011 },
+                { text: "min_last_14d = 210", contribution: 0.1829 },
+                { text: "squad_injured_count = 4", contribution: 0.1011 },
                 { text: "matches_with_rest_le_4d_last_30d = 3", contribution: 0.0589 },
               ].map((r, i) => {
                 const weight = Math.round(Math.min(100, Math.abs(r.contribution) * 500));
@@ -212,7 +212,7 @@ export default function ModelExplanation() {
             </div>
           </div>
           <p className="text-sm text-muted-foreground bg-muted/30 rounded-lg p-3 leading-relaxed">
-            {policy.interpretation || metadata?.interpretation || "V6 is a staff-support monitoring model. A positive flag indicates that the player should be reviewed because their workload, rest pattern, competition sequence, role context, and injury context resemble situations historically associated with underperformance or managed minutes."}
+            {policy.interpretation || metadata?.interpretation || "V4B is a staff-support monitoring model. A positive flag indicates that the player should be reviewed because their workload, rest pattern, competition sequence, role context, and injury context resemble situations historically associated with underperformance or managed minutes."}
           </p>
         </div>
 

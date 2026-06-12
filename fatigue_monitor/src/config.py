@@ -2,14 +2,15 @@ from pathlib import Path
 
 MODELS_DIR = Path(__file__).resolve().parent.parent / "models" 
 
-V4B_MODEL_DIR = MODELS_DIR / "model_b_v4b"
-V4B_MODEL_PATH = V4B_MODEL_DIR / "xgb_model.pkl"
-V4B_PREPROCESSOR_PATH = V4B_MODEL_DIR / "preprocessor.pkl"
-V4B_NUM_FEATURES_PATH = V4B_MODEL_DIR / "num_features.pkl"
-V4B_CAT_FEATURES_PATH = V4B_MODEL_DIR / "cat_features.pkl"
-V4B_POLICY_PATH = V4B_MODEL_DIR / "policy.pkl"
+V4B_MODEL_DIR = MODELS_DIR / "xgboost_v4b"
+V4B_MODEL_PATH = V4B_MODEL_DIR / "xgboost_model_b_v4b_final.pkl"
+V4B_PREPROCESSOR_PATH = V4B_MODEL_DIR / "xgboost_model_b_v4b_preprocessor.pkl"
+V4B_NUM_FEATURES_PATH = V4B_MODEL_DIR / "xgboost_model_b_v4b_numeric_features.pkl"
+V4B_CAT_FEATURES_PATH = V4B_MODEL_DIR / "xgboost_model_b_v4b_categorical_features.pkl"
+V4B_METADATA_PATH = V4B_MODEL_DIR / "xgboost_model_b_v4b_metadata.json"
+V4B_POLICY_PATH = V4B_MODEL_DIR / "xgboost_model_b_v4b_operating_policy.json"
 
-OPERATING_POLICY = {
+V4B_OPERATING_POLICY = {
     "name": "balanced_monitoring",
     "core_starter_threshold": 0.45,
     "rotation_player_threshold": 0.50,
@@ -20,9 +21,9 @@ OPERATING_POLICY = {
     ),
 }
 
-RISK_BANDS = [0, 0.25, 0.45, 0.65, 1.01]
-RISK_LABELS = ["Low", "Medium", "High", "Very High"]
-RISK_COLORS = {"Low": "#27ae60", "Medium": "#f39c12", "High": "#e74c3c", "Very High": "#8e44ad"}
+V4B_RISK_BANDS = [0, 0.35, 0.45, 0.55, 1.01]
+V4B_RISK_LABELS = ["Low", "Medium", "High", "Very High"]
+V4B_RISK_COLORS = {"Low": "#27ae60", "Medium": "#f39c12", "High": "#e74c3c", "Very High": "#8e44ad"}
 
 MONITORING_FLAG_COLOR = {0: "#27ae60", 1: "#e74c3c"}
 MONITORING_FLAG_LABEL = {0: "Clear", 1: "Monitor"}
