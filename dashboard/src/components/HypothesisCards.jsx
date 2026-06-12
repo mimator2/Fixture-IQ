@@ -8,6 +8,13 @@ const statusConfig = {
   "Pending": { icon: Clock, color: "text-muted-foreground", bg: "bg-muted", border: "border-border" },
 };
 
+const CONCLUSIONS = {
+  "H1": "The absence of a simple bivariate rest→rating relationship is itself a significant finding. Naive 'fewer days = worse performance' logic is insufficient. The V4B model succeeds precisely because fixture congestion effects are multivariate: rest interacts with workload accumulation, action load, competition sequence, and injury context. A single-feature test cannot capture this complexity.",
+  "H2": "Rotation is inversely related to available rest. During congested periods, managers rely on a settled XI rather than rotating, which paradoxically increases individual player load accumulation — the exact condition the V4B model is designed to detect. Squad rotation is a strategic response to fixture density, not random variation.",
+  "H3": "European involvement modifies rotation behaviour, but it is not deterministic. Squad depth and managerial approach are significant moderators. The V4B model captures this through dedicated competition-transition features (transition_ucl_to_pl, pl_after_ucl_with_short_rest) rather than simple binary competition flags.",
+  "H4": "The previous three hypotheses establish that fixture congestion has measurable, complex effects on performance and squad behaviour. H4 is the natural next step: studying whether the dashboard's risk scores and SHAP explanations actually change staff behaviour. This requires a controlled longitudinal study with coaching and medical teams — impossible to evaluate from historical match data alone.",
+};
+
 export default function HypothesisCards({ compact = false }) {
   const { data: hypotheses = [], isLoading } = useHypotheses();
 
@@ -28,6 +35,7 @@ export default function HypothesisCards({ compact = false }) {
       {sorted.map((h) => {
         const config = statusConfig[h.status] || statusConfig["Pending"];
         const Icon = config.icon;
+        const conclusion = CONCLUSIONS[h.hypothesis_id];
         return (
           <div
             key={h.id}
@@ -49,21 +57,26 @@ export default function HypothesisCards({ compact = false }) {
             </div>
 
             {!compact && (
-              <>
-                <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{h.description}</p>
+              <div className="space-y-3">
                 {h.evidence_summary && (
                   <div className="bg-muted/50 rounded-lg p-3 border border-border">
                     <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Evidence</div>
                     <p className="text-sm text-foreground/80 leading-relaxed">{h.evidence_summary}</p>
+                    {h.key_metric && h.key_value && (
+                      <div className="mt-2 flex items-center gap-2 text-xs">
+                        <span className="text-muted-foreground">{h.key_metric}:</span>
+                        <span className="font-semibold text-primary">{h.key_value}</span>
+                      </div>
+                    )}
                   </div>
                 )}
-                {h.key_metric && h.key_value && (
-                  <div className="mt-3 flex items-center gap-2 text-xs">
-                    <span className="text-muted-foreground">{h.key_metric}:</span>
-                    <span className="font-semibold text-primary">{h.key_value}</span>
+                {conclusion && (
+                  <div className="bg-muted/30 rounded-lg p-3 border border-border/50">
+                    <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Conclusion</div>
+                    <p className="text-sm text-foreground/80 leading-relaxed">{conclusion}</p>
                   </div>
                 )}
-              </>
+              </div>
             )}
           </div>
         );
