@@ -70,9 +70,7 @@ export default function StatsOverview() {
             </div>
             <div className="text-2xl md:text-3xl font-bold tracking-tight mb-0.5">{stat.value}</div>
             <div className="text-sm font-medium text-foreground/80">{stat.label}</div>
-            <div className="text-xs text-muted-foreground mt-0.5 whitespace-pre-line">
-              {stat.sub}
-            </div>
+            <div className="text-xs text-muted-foreground mt-0.5 whitespace-pre-line">{stat.sub}</div>
 
           </div>
         );

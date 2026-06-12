@@ -1,7 +1,6 @@
 # Data Manipulation & Core Mathematics
 pandas>=2.0.0
 numpy>=1.24.0
-sklearn
 
 # Visualization
 matplotlib>=3.7.0
