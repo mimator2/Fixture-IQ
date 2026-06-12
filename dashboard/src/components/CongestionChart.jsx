@@ -51,7 +51,7 @@ export default function CongestionChart() {
   return (
     <div className="bg-card border border-border rounded-xl p-5 md:p-6">
       <h3 className="text-lg font-semibold mb-1">Performance by Congestion Level</h3>
-      <p className="text-sm text-muted-foreground mb-5">
+      <p className="text-sm text-muted-foreground mb-9">
         Average metrics across all teams grouped by fixture density
       </p>
       <div className="h-72 md:h-80">

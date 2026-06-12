@@ -53,15 +53,15 @@ const WorkloadTimeline = memo(function WorkloadTimeline({ data = [] }) {
       <h3 className="font-semibold mb-4">Workload Timeline (Last 8 Weeks)</h3>
       <div className="space-y-0">
         <div className="flex items-center gap-3 text-xs text-muted-foreground mb-1">
-          <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm" style={{ background: "hsl(var(--primary))" }} />Rolling (14d)</span>
-          <span className="flex items-center gap-1"><span className="w-2.5 h-1.5 rounded-sm" style={{ background: "hsl(var(--chart-4))" }} />Match</span>
+          <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm" style={{ background: "hsl(var(--primary))" }} />Rolling 14d (min)</span>
+          <span className="flex items-center gap-1"><span className="w-2.5 h-1.5 rounded-sm" style={{ background: "hsl(var(--chart-4))" }} />Match (min)</span>
         </div>
         <div className="h-24">
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={data} syncId={SYNC_ID} margin={{ top: 2, right: 10, left: -20, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
               <XAxis dataKey="date" tickFormatter={formatDate} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} hide={true} />
-              <YAxis domain={["auto", "auto"]} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
+              <YAxis domain={["auto", "auto"]} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} label={{ value: "min", position: "insideTopLeft", offset: -5, style: { fill: "hsl(var(--muted-foreground))", fontSize: 10 } }} />
               <Tooltip content={<CustomTooltip />} cursor={{ stroke: "hsl(var(--muted-foreground))", strokeDasharray: "3 3" }} />
               <Area type="monotone" dataKey="minutes" name="Rolling 14d" stroke="hsl(var(--primary))" fill="hsl(var(--primary)/.12)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: "hsl(var(--primary))" }} />
               <Area type="monotone" dataKey="minutes_played" name="Match" stroke="hsl(var(--chart-4))" fill="hsl(var(--chart-4)/.08)" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: "hsl(var(--chart-4))" }} />

@@ -50,9 +50,9 @@ export default function StatsOverview() {
       bg: "bg-destructive/10",
     },
     {
-      label: "Rest Drop (Congestion)",
-      value: `-${restDrop.toFixed(1)}d`,
-      sub: "Avg rest: Low → Medium congestion",
+      label: "Rest Drop",
+      value: `${avgMediumRest.toFixed(1) - avgLowRest.toFixed(1)}d`,
+      sub: "Avg rest: Low vs Medium congestion \n | (≥7d) vs (4-6d)",
       icon: TrendingDown,
       color: "text-chart-3",
       bg: "bg-chart-3/10",
@@ -64,16 +64,16 @@ export default function StatsOverview() {
       {stats.map((stat) => {
         const Icon = stat.icon;
         return (
-          <div
-            key={stat.label}
-            className="bg-card border border-border rounded-xl p-4 md:p-5 hover:border-primary/30 transition-colors"
-          >
+          <div key={stat.label} className="bg-card border border-border rounded-xl p-4 md:p-5 hover:border-primary/30 transition-colors">
             <div className={`w-9 h-9 rounded-lg ${stat.bg} flex items-center justify-center mb-3`}>
               <Icon className={`w-4 h-4 ${stat.color}`} />
             </div>
             <div className="text-2xl md:text-3xl font-bold tracking-tight mb-0.5">{stat.value}</div>
             <div className="text-sm font-medium text-foreground/80">{stat.label}</div>
-            <div className="text-xs text-muted-foreground mt-0.5">{stat.sub}</div>
+            <div className="text-xs text-muted-foreground mt-0.5 whitespace-pre-line">
+              {stat.sub}
+            </div>
+
           </div>
         );
       })}

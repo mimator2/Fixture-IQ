@@ -43,9 +43,9 @@ export default function RotationChart() {
   return (
     <div className="bg-card border border-border rounded-xl p-5 md:p-6">
       <h3 className="text-lg font-semibold mb-1">Squad Rotation by Team</h3>
-      <p className="text-sm text-muted-foreground mb-5">
+      <p className="text-sm text-muted-foreground mb-10">
         Rotation index (0–1) under different congestion levels
-      </p>
+      </p>      
       {allZero ? (
         <div className="h-72 md:h-80 flex items-center justify-center">
           <p className="text-muted-foreground text-sm">No rotation data available for this period.</p>

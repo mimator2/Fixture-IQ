@@ -1,12 +1,95 @@
 import { Lightbulb } from "lucide-react";
 
+const FEATURE_LABELS = {
+  rest_days: "Rest days since last match",
+  acwr_ratio: "Acute:chronic workload ratio",
+  consecutive_away_games: "Consecutive away games",
+  min_last_7d: "Minutes played (last 7 days)",
+  min_last_14d: "Minutes played (last 14 days)",
+  min_last_21d: "Minutes played (last 21 days)",
+  min_last_28d: "Minutes played (last 28 days)",
+  starts_last_7d: "Starts (last 7 days)",
+  starts_last_14d: "Starts (last 14 days)",
+  starts_last_28d: "Starts (last 28 days)",
+  full_90s_last_7d: "Full-90 appearances (last 7 days)",
+  full_90s_last_14d: "Full-90 appearances (last 14 days)",
+  full_90s_last_28d: "Full-90 appearances (last 28 days)",
+  short_rest_last_3_matches: "Short-rest matches in last 3",
+  avg_rest_last_3_matches: "Avg rest between recent matches",
+  min_rest_last_3_matches: "Minimum rest between recent matches",
+  matches_with_rest_le_3d_last_30d: "Matches with ≤3 days rest (last 30d)",
+  matches_with_rest_le_4d_last_30d: "Matches with ≤4 days rest (last 30d)",
+  matches_with_rest_le_6d_last_30d: "Matches with ≤6 days rest (last 30d)",
+  matches_last_7d: "Matches played (last 7 days)",
+  matches_last_14d: "Matches played (last 14 days)",
+  matches_last_21d: "Matches played (last 21 days)",
+  matches_last_28d: "Matches played (last 28 days)",
+  high_congestion_flag: "High fixture congestion period",
+  ucl_minutes_last_7d: "UCL minutes (last 7 days)",
+  ucl_minutes_last_14d: "UCL minutes (last 14 days)",
+  ucl_minutes_last_21d: "UCL minutes (last 21 days)",
+  ucl_starts_last_14d: "UCL starts (last 14 days)",
+  ucl_full90s_last_14d: "UCL full-90s (last 14 days)",
+  ucl_matches_last_30d: "UCL matches (last 30 days)",
+  days_since_last_ucl: "Days since last UCL match",
+  played_ucl_last_match: "Played in UCL last match",
+  cup_minutes_last_7d: "Cup minutes (last 7 days)",
+  cup_minutes_last_14d: "Cup minutes (last 14 days)",
+  cup_starts_last_14d: "Cup starts (last 14 days)",
+  cup_full90s_last_14d: "Cup full-90s (last 14 days)",
+  cup_matches_last_30d: "Cup matches (last 30 days)",
+  played_domestic_cup_last_match: "Played in domestic cup last match",
+  transition_ucl_to_pl: "Transition from UCL to PL",
+  transition_pl_to_ucl: "Transition from PL to UCL",
+  transition_cup_to_pl: "Transition from Cup to PL",
+  transition_pl_to_cup: "Transition from PL to Cup",
+  competition_switches_last_30d: "Competition switches (last 30 days)",
+  competitions_played_last_30d: "Competitions played (last 30 days)",
+  rest_days_after_ucl: "Rest days after UCL match",
+  post_ucl_short_rest: "Post-UCL short recovery window",
+  pl_after_ucl_with_short_rest: "PL match after UCL with short rest",
+  ucl_full90_then_pl_short_rest: "Full UCL match then PL with short rest",
+  days_since_european_match: "Days since last European match",
+  matches_since_european_match: "Matches since last European match",
+  duels_last_3_matches: "Duels (last 3 matches)",
+  duels_last_14d: "Duels (last 14 days)",
+  tackles_last_3_matches: "Tackles (last 3 matches)",
+  tackles_last_14d: "Tackles (last 14 days)",
+  fouls_last_3_matches: "Fouls (last 3 matches)",
+  fouls_last_14d: "Fouls (last 14 days)",
+  dribbles_last_3_matches: "Dribbles (last 3 matches)",
+  dribbles_last_14d: "Dribbles (last 14 days)",
+  cards_last_5_matches: "Cards (last 5 matches)",
+  duels_total_position_z: "Duels vs position average",
+  tackles_total_position_z: "Tackles vs position average",
+  fouls_committed_position_z: "Fouls vs position average",
+  minutes_played_position_z: "Minutes vs position average",
+  physical_load_index: "Physical load index (PLI)",
+  minutes_last_21d_vs_player_avg: "Minutes vs player's season average",
+  minutes_last_21d_player_z: "Minutes vs player's season average",
+  full90_last_14d_vs_player_avg: "Full-90s vs player's season average",
+  physical_load_last_14d_vs_player_avg: "Physical load vs player's season average",
+  starts_last_14d_vs_player_avg: "Starts vs player's season average",
+  squad_injured_count: "Squad injury burden",
+  squad_soft_tissue_count: "Squad soft-tissue injuries",
+  squad_avg_days_out: "Squad avg days out injured",
+  returning_from_injury: "Returning from injury",
+  fixtures_missed_last_30d: "Fixtures missed (last 30 days)",
+  player_position_M: "Position: Midfielder",
+  player_position_D: "Position: Defender",
+  player_position_F: "Position: Forward",
+  player_position_G: "Position: Goalkeeper",
+  is_home: "Playing at home",
+  is_substitute: "Came on as substitute",
+};
+
 function buildShapDrivers(player) {
   const raw = player.shap_drivers || [];
   return raw.slice(0, 5).map((d) => ({
     feature: d.feature,
     value: d.value,
     contribution: d.contribution,
-    text: `${d.feature} = ${d.value}`,
+    text: `${FEATURE_LABELS[d.feature] || d.feature}: ${d.value}`,
     weight: Math.round(Math.min(100, Math.abs(d.contribution) * 500)),
   }));
 }
@@ -63,7 +146,7 @@ export default function PlayerExplanation({ player }) {
   const reasons = useShap ? shapDrivers : buildExplanations(player);
   const intro = BAND_INTRO[player.risk_band] || "";
   const subtitle = useShap
-    ? "SHAP TreeExplainer feature contributions"
+    ? "Top contributing factors to this player's risk score"
     : "rule-based feature explanation (SHAP proxy)";
 
   if (player.risk_band === "Low" && reasons.length === 0) {
@@ -113,7 +196,7 @@ export default function PlayerExplanation({ player }) {
       )}
       <p className="text-xs text-muted-foreground mt-4 border-t border-border pt-3">
         {useShap
-          ? "SHAP TreeExplainer local values from the XGBoost model — feature contributions to the V4B risk score."
+          ? "Each factor shows the current value and how much it contributes to the overall risk score."
           : "In production: replace with SHAP TreeExplainer local values from the XGBoost model artefact for fully grounded explanations."}
       </p>
     </div>

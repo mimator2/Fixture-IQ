@@ -115,11 +115,23 @@ export default function PlayerDetail() {
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4"> */}
             <ScoreGauge
               label="Risk Score"
-              description="V4B — workload-associated monitoring risk"
+              description="0–1 scale. Higher values mean more workload-related risk signals detected."
               score={player.fatigue_score}
               color={player.risk_band === "Very High" ? "red" : player.risk_band === "High" ? "amber" : player.risk_band === "Medium" ? "amber" : "teal"}
             />
-          {/* </div> */}
+          <details className="group mt-2">
+            <summary className="text-xs text-muted-foreground cursor-pointer hover:text-foreground transition-colors select-none">
+              What does this score mean?
+            </summary>
+            <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
+              The risk score reflects how closely the player's current workload, rest patterns,
+              competition schedule, and squad context resemble situations that have historically
+              led to underperformance or managed minutes. It is a monitoring signal, not a
+              diagnosis — a high score means "review this player before the next match", not
+              "this player is fatigued". Combine with GPS data, wellness reports, and staff
+              observation for the full picture.
+            </p>
+          </details>
           <div className="grid grid-cols-3 gap-3 mt-3">
             <div className="bg-muted/30 rounded-lg p-3 text-center">
               <div className="flex items-center justify-center gap-1.5 mb-1">
