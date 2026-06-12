@@ -7,6 +7,7 @@ from fatigue_monitor.src.config import (
     V4B_MODEL_PATH, V4B_PREPROCESSOR_PATH,
     V4B_NUM_FEATURES_PATH, V4B_CAT_FEATURES_PATH, V4B_METADATA_PATH,
     V4B_OPERATING_POLICY, V4B_RISK_BANDS, V4B_RISK_LABELS,
+    V4B_FEATURE_GROUPS,
 )
 from fatigue_monitor.src.feature_engineering_v4b import engineer_features_v4b, assign_player_role_v4b
 
@@ -26,6 +27,7 @@ def load_v4b_artifacts():
         "imputation_values": {},
         "operating_policy": raw_meta.get("operating_policy", V4B_OPERATING_POLICY),
         "raw_metadata": raw_meta,
+        "feature_groups": {k: [f for f in v if f in num_features + cat_features] for k, v in V4B_FEATURE_GROUPS.items()},
     }
     return model, preprocessor, metadata
 

@@ -6,13 +6,13 @@ import FlagBadge from "./FlagBadge";
 import { ChevronRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
-const BANDS = ["All", "Low", "Medium", "High", "Very High"];
+const BANDS = ["All Labels", "Low", "Medium", "High", "Very High"];
 const ROLES = ["All Roles", "Core Starter", "Rotation Player"];
 const POSITIONS = ["All Positions", "Defender", "Midfielder", "Forward"];
 
 export default function PlayerRiskTable() {
   const [search, setSearch] = useState("");
-  const [band, setBand] = useState("All");
+  const [band, setBand] = useState("All Labels");
   const [role, setRole] = useState("All Roles");
   const [position, setPosition] = useState("All Positions");
   const [team, setTeam] = useState("All Teams");
@@ -24,15 +24,9 @@ export default function PlayerRiskTable() {
     return t.sort();
   }, [players]);
 
-  const bandCounts = useMemo(() => {
-    const counts = { All: players.length, Low: 0, Medium: 0, High: 0, "Very High": 0 };
-    players.forEach(p => { if (counts[p.risk_band] !== undefined) counts[p.risk_band]++; });
-    return counts;
-  }, [players]);
-
   const filtered = players.filter(p => {
     const matchSearch = !search || p.player_name?.toLowerCase().includes(search.toLowerCase()) || p.team_name?.toLowerCase().includes(search.toLowerCase());
-    const matchBand = band === "All" || p.risk_band === band;
+    const matchBand = band === "All Labels" || p.risk_band === band;
     const matchRole = role === "All Roles" || p.player_role === role;
     const matchPos = position === "All Positions" || p.position === position;
     const matchTeam = team === "All Teams" || p.team_name === team;
@@ -43,6 +37,9 @@ export default function PlayerRiskTable() {
     const order = { "Very High": 0, "High": 1, "Medium": 2, "Low": 3 };
     return (order[a.risk_band] ?? 4) - (order[b.risk_band] ?? 4);
   });
+
+  const [openFilter, setOpenFilter] = useState(null);
+
 
   if (isLoading) return (
     <div className="space-y-3">
@@ -57,7 +54,7 @@ export default function PlayerRiskTable() {
   );
 
   return (
-    <div>
+     <div>
       <div className="flex flex-wrap gap-3 mb-4">
         <div className="relative flex-1 min-w-48">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
@@ -65,17 +62,42 @@ export default function PlayerRiskTable() {
         </div>
         {[
           { label: "Team", options: ["All Teams", ...teams], value: team, set: setTeam },
-          { label: "Risk", options: BANDS, value: band, set: setBand, counts: bandCounts },
+          { label: "Risk", options: BANDS, value: band, set: setBand },
           { label: "Role", options: ROLES, value: role, set: setRole },
           { label: "Position", options: POSITIONS, value: position, set: setPosition },
         ].map(f => (
-          <select key={f.label} value={f.value} onChange={e => f.set(e.target.value)}
-            className="bg-card border border-border rounded-md px-3 py-2 text-sm text-foreground focus:outline-none focus:ring-1 focus:ring-ring">
-            {f.options.map(o => <option key={o} value={o}>{o}{f.counts ? ` (${f.counts[o] ?? 0})` : ""}</option>)}
-          </select>
+          <div key={f.label} className="relative">
+            <button
+              type="button"
+              onClick={() => setOpenFilter(openFilter === f.label ? null : f.label)}
+              className="bg-background border border-border/60 rounded-md px-3 py-2 text-sm text-foreground/80 focus:outline-none focus:ring-1 focus:ring-ring/50 transition-colors min-w-[140px] text-left flex items-center justify-between"
+            >
+              <span>{f.value}</span>
+              <span className="text-muted-foreground text-xs ml-2">▾</span>
+            </button>
+            {openFilter === f.label && (
+              <div className="absolute top-full left-0 mt-1 bg-background border border-border/60 rounded-md shadow-lg z-50 max-h-[220px] overflow-y-auto pr-2 pb-8
+                [&::-webkit-scrollbar]:w-[3px]
+                [&::-webkit-scrollbar-track]:bg-transparent
+                [&::-webkit-scrollbar-thumb]:bg-muted-foreground/30
+                [&::-webkit-scrollbar-thumb]:rounded-full">
+                {f.options.map(o => (
+                  <button
+                    key={o}
+                    type="button"
+                    onClick={() => { f.set(o); setOpenFilter(null); }}
+                    className={`block w-full text-left px-3 py-1.5 text-sm transition-colors ${
+                      f.value === o ? "text-foreground bg-muted/50" : "text-foreground/70 hover:text-foreground hover:bg-muted/30"
+                    }`}
+                  >
+                    {o}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
       </div>
-
       <div className="text-xs text-muted-foreground mb-3">{sorted.length} player{sorted.length !== 1 ? "s" : ""} shown</div>
 
       <div className="space-y-2">

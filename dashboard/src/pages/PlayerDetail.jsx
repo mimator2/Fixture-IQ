@@ -112,14 +112,14 @@ export default function PlayerDetail() {
             <Activity className="w-4 h-4 text-primary" />
             Current Risk Assessment
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4"> */}
             <ScoreGauge
               label="Risk Score"
               description="V4B — workload-associated monitoring risk"
               score={player.fatigue_score}
               color={player.risk_band === "Very High" ? "red" : player.risk_band === "High" ? "amber" : player.risk_band === "Medium" ? "amber" : "teal"}
             />
-          </div>
+          {/* </div> */}
           <div className="grid grid-cols-3 gap-3 mt-3">
             <div className="bg-muted/30 rounded-lg p-3 text-center">
               <div className="flex items-center justify-center gap-1.5 mb-1">

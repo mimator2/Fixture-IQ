@@ -28,6 +28,7 @@ from fatigue_monitor.src.config import (
     MASTER_CSV_PATH,
     V4B_RISK_BANDS,
     V4B_RISK_LABELS,
+    V4B_FEATURE_GROUPS,
 )
 from fatigue_monitor.src.prediction_v4b import load_v4b_artifacts, predict_v4b
 from fatigue_monitor.src.feature_engineering_v4b import assign_player_role_v4b
@@ -550,6 +551,7 @@ def main():
         "test_auc_roc": test_metrics.get("auc_roc", None),
         "test_pr_auc": test_metrics.get("auc_pr", None),
         "feature_importances": feature_importances,
+        "feature_groups": metadata.get("feature_groups", {}),
         "threshold_policy": metadata.get("operating_policy", {}),
         "feature_count": len(feature_importances),
         "current_season": str(latest_season),

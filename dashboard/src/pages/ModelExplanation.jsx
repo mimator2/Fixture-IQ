@@ -137,19 +137,25 @@ export default function ModelExplanation() {
             Aggregate importance by functional group. Workload and recent form are the dominant drivers.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {sortedGroups.map(([group, pct]) => (
-              <div key={group} className="bg-muted/30 rounded-lg p-3">
-                <div className="flex items-center justify-between mb-1.5">
-                  <span className={`text-xs font-semibold ${GROUP_COLORS[group] || "text-foreground"}`}>
-                    {GROUP_LABELS[group] || group}
-                  </span>
-                  <span className="text-sm font-bold">{pct}%</span>
+            {sortedGroups.length > 0 ? (
+              sortedGroups.map(([group, pct]) => (
+                <div key={group} className="bg-muted/30 rounded-lg p-3">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className={`text-xs font-semibold ${GROUP_COLORS[group] || "text-foreground"}`}>
+                      {GROUP_LABELS[group] || group}
+                    </span>
+                    <span className="text-sm font-bold">{pct}%</span>
+                  </div>
+                  <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full rounded-full" style={{ width: `${Math.min(100, pct)}%`, background: "hsl(217 91% 60%)" }} />
+                  </div>
                 </div>
-                <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
-                  <div className="h-full rounded-full" style={{ width: `${Math.min(100, pct)}%`, background: "hsl(217 91% 60%)" }} />
+              ))
+            ) : (
+                <div className="sm:col-span-2 bg-muted/20 rounded-lg border border-dashed border-border p-4 text-center">
+                  <p className="text-xs text-muted-foreground">Unable to display group contributions.</p>
                 </div>
-              </div>
-            ))}
+            )}
           </div>
         </div>
 
