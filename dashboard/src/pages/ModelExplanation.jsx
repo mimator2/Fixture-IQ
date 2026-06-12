@@ -60,7 +60,9 @@ export default function ModelExplanation() {
   const featureGroups = metadata?.feature_groups || {};
   const policy = metadata?.threshold_policy || {};
 
-  const groupImportance = {};
+  const groupImportance = Object.fromEntries(
+    Object.keys(GROUP_LABELS).map(g => [g, 0])
+  );
   for (const [group, feats] of Object.entries(featureGroups)) {
     let total = 0;
     for (const feat of feats) {

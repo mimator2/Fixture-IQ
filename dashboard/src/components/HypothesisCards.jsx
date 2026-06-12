@@ -9,7 +9,7 @@ const statusConfig = {
 };
 
 const CONCLUSIONS = {
-  "H1": "The absence of a simple bivariate rest→rating relationship is itself a significant finding. Naive 'fewer days = worse performance' logic is insufficient. The V4B model succeeds precisely because fixture congestion effects are multivariate: rest interacts with workload accumulation, action load, competition sequence, and injury context. A single-feature test cannot capture this complexity.",
+  "H1": "H1 tests whether short rest (≤3d) alone predicts worse next-match performance, under two views: (1) scorable appearances (minutes_played ≥45) and (2) full population (all minutes). The results show no meaningful rating drop under short rest in either view—confirming that simple single-heuristic fatigue rules underestimate the complexity of congestion effects and justifying the V4B model's multivariate approach.",
   "H2": "Rotation is inversely related to available rest. During congested periods, managers rely on a settled XI rather than rotating, which paradoxically increases individual player load accumulation — the exact condition the V4B model is designed to detect. Squad rotation is a strategic response to fixture density, not random variation.",
   "H3": "European involvement modifies rotation behaviour, but it is not deterministic. Squad depth and managerial approach are significant moderators. The V4B model captures this through dedicated competition-transition features (transition_ucl_to_pl, pl_after_ucl_with_short_rest) rather than simple binary competition flags.",
   "H4": "The previous three hypotheses establish that fixture congestion has measurable, complex effects on performance and squad behaviour. H4 is the natural next step: studying whether the dashboard's risk scores and SHAP explanations actually change staff behaviour. This requires a controlled longitudinal study with coaching and medical teams — impossible to evaluate from historical match data alone.",
@@ -35,7 +35,7 @@ export default function HypothesisCards({ compact = false }) {
       {sorted.map((h) => {
         const config = statusConfig[h.status] || statusConfig["Pending"];
         const Icon = config.icon;
-        const conclusion = CONCLUSIONS[h.hypothesis_id];
+        const conclusion = h.conclusion || CONCLUSIONS[h.hypothesis_id];
         return (
           <div
             key={h.id}

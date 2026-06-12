@@ -22,11 +22,11 @@ export default function WorkloadSection({ player }) {
       {/* Wrapped in a relative container so the absolute fade pins exactly to the rows */}
       <div className="relative group"> 
         {/* Scrollable wrapper container */}
-        <div className="max-h-[220px] overflow-y-auto pr-2 space-y-1 pb-8
-          [&::-webkit-scrollbar]:w-[3px] 
-          [&::-webkit-scrollbar-track]:bg-transparent 
-          [&::-webkit-scrollbar-thumb]:bg-muted-foreground/30 
-          [&::-webkit-scrollbar-thumb]:rounded-full"
+          <div className="max-h-[280px] overflow-y-auto pr-2 space-y-1 pb-8
+            [&::-webkit-scrollbar]:w-[3px] 
+            [&::-webkit-scrollbar-track]:bg-transparent 
+            [&::-webkit-scrollbar-thumb]:bg-muted-foreground/30 
+            [&::-webkit-scrollbar-thumb]:rounded-full"
         >
           <Row label="Minutes last 14d"          value={player.minutes_last_14}                highlight={(player.minutes_last_14 ?? 0) > 180} />
           <Row label="Minutes last 21d"          value={player.minutes_last_21}                highlight={(player.minutes_last_21 ?? 0) > 270} />

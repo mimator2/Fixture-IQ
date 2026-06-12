@@ -35,7 +35,7 @@ const Panel = memo(function Panel({ data, dataKey, name, color, domain, showXAxi
         <XAxis dataKey="date" tickFormatter={formatDate} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} hide={!showXAxis} />
         <YAxis domain={domain} tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 10 }} />
         <Tooltip content={<CustomTooltip />} cursor={{ stroke: "hsl(var(--muted-foreground))", strokeDasharray: "3 3" }} />
-        <Area type="monotone" dataKey={dataKey} name={name} stroke={color} fill={`${color}/.12`} strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: color }} />
+        <Area type="monotone" dataKey={dataKey} name={name} stroke={color} fill={color} fillOpacity=".12" strokeWidth={1.5} dot={false} activeDot={{ r: 3, fill: color }} />
       </AreaChart>
     </ResponsiveContainer>
   );

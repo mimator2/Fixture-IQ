@@ -472,12 +472,18 @@ def main():
     print(f"  {len(cong_list)} metrics written.")
 
     # --- Build hypotheses.json (compute values from actual data) ---
-    # H1: use full dataset for general rating pattern
-    sr = df[df["rest_days"] <= 3]["next_api_rating"].dropna()
-    nr = df[df["rest_days"] > 3]["next_api_rating"].dropna()
-    rating_diff = sr.mean() - nr.mean()
-    n_obs = len(df)
+    # H1: simpler — raw rating comparison short-rest vs normal-rest (scorable)
+    short_rest_ratings = df[(df["rest_days"] <= 3) & (df["minutes_played"] >= 45)]["next_api_rating"].dropna()
+    normal_rest_ratings = df[(df["rest_days"] > 3) & (df["minutes_played"] >= 45)]["next_api_rating"].dropna()
+    rating_diff = short_rest_ratings.mean() - normal_rest_ratings.mean()
+
+    short_rest_all = df[(df["rest_days"] <= 3)]["next_api_rating"].dropna()
+    normal_rest_all = df[(df["rest_days"] > 3)]["next_api_rating"].dropna()
+    rating_diff_all = short_rest_all.mean() - normal_rest_all.mean()
+
     n_seasons = df["season"].nunique()
+    n_short = len(short_rest_ratings)
+    n_normal = len(normal_rest_ratings)
 
     # H2/H3: use congestion_metrics computed from merged PL data
     rot_low = [c["rotation_index"] for c in cong_list if c["congestion_level"] == "Low"]
@@ -488,21 +494,21 @@ def main():
 
     euro_by_team = {t["name"]: t.get("european_competition", "") for t in teams}
     cl_rot = [c["rotation_index"] for c in cong_list if "Champions" in euro_by_team.get(c["team_name"], "")]
-    other_euro = [c["rotation_index"] for c in cong_list if c["team_name"] in euro_by_team and "Champions" not in euro_by_team.get(c["team_name"], "") and euro_by_team.get(c["team_name"], "")]
+    non_cl_rot = [c["rotation_index"] for c in cong_list if "Champions" not in euro_by_team.get(c["team_name"], "")]
     avg_cl = sum(cl_rot) / len(cl_rot) if cl_rot else 0
-    avg_other_euro = sum(other_euro) / len(other_euro) if other_euro else 0
+    avg_non_cl = sum(non_cl_rot) / len(non_cl_rot) if non_cl_rot else 0
 
     hypotheses = [
         {
             "id": "h1",
             "hypothesis_id": "H1",
             "title": "Lower rest periods reduce performance.",
-            "description": f"Across all {n_obs:,} observations ({n_seasons} seasons), players with ≤3 days rest show a {abs(rating_diff):+.2f} point {'higher' if rating_diff > 0 else 'lower'} average next-match rating vs normal rest (>3 days) — a negligible raw difference. The V4B model detects multi-feature fatigue signals beyond raw rating.",
-            "status": "Partially Supported",
-            "evidence_summary": f"Raw rating difference: {rating_diff:+.3f} ({sr.mean():.2f} short-rest vs {nr.mean():.2f} normal-rest, n={len(sr)+len(nr):,}). The V4B model's multivariate approach captures position-specific and contextual fatigue signals not visible in raw rating averages.",
-            "key_metric": "Rating change under ≤3d rest",
-            "key_value": f"{rating_diff:+.3f} avg rating difference",
-            "detail": f"Analysis of {n_obs:,} player-match observations across {n_seasons} seasons. Under ≤3 days rest, next-match ratings average {sr.mean():.3f} (n={len(sr):,}) vs {nr.mean():.3f} under normal rest >3 days (n={len(nr):,}) — a {rating_diff:+.3f} difference. While the raw rating gap is small and in the unexpected direction, the V4B model integrates rest with workload, action load, injury context, and competition sequence to identify elevated fatigue risk scenarios."
+            "description": "H1 tests whether short rest (≤3d) predicts worse next-match performance under two views: scorable appearances (minutes_played >= 45) and full population (all rest groups).",
+            "status": "Not Supported" if (rating_diff > -0.05 and rating_diff_all > -0.05) else ("Partially Supported" if (rating_diff <= -0.05 or rating_diff_all <= -0.05) else "Not Supported"),
+            "evidence_summary": f"Scorable (min ≥45): short={short_rest_ratings.mean():.2f} vs normal={normal_rest_ratings.mean():.2f} (∆={rating_diff:+.3f}). Full population (all minutes): short={short_rest_all.mean():.2f} vs normal={normal_rest_all.mean():.2f} (∆={rating_diff_all:+.3f}).",
+            "key_metric": "Avg next-match rating by rest group",
+            "key_value": f"Scorable: {short_rest_ratings.mean():.2f} vs {normal_rest_ratings.mean():.2f} (∆{rating_diff:+.3f}) | Full pop: {short_rest_all.mean():.2f} vs {normal_rest_all.mean():.2f} (∆{rating_diff_all:+.3f})",
+            "detail": f"Two views: (1) Scorable appearances (minutes_played ≥45) drop partial/injury appearances; (2) Full population includes all appearances regardless of minutes. Under neither view does short rest (≤3d) predict worse next-match performance. Slightly higher ratings in short-rest groups suggest simple rest heuristics are not capturing fatigue effects here.",
         },
         {
             "id": "h2",
@@ -519,12 +525,12 @@ def main():
             "id": "h3",
             "hypothesis_id": "H3",
             "title": "Clubs respond differently to congestion based on European involvement and squad depth.",
-            "description": "Rotation patterns vary by competition level: Champions League clubs show average rotation of {avg_cl:.2f} vs {avg_other_euro:.2f} for other European participants. Variance within groups is substantial.",
+            "description": f"Rotation patterns differ by European competition: Champions League clubs show avg rotation of {avg_cl:.2f} vs {avg_non_cl:.2f} for non-CL clubs.",
             "status": "Partially Supported",
-            "evidence_summary": f"CL clubs ({len(cl_rot)} team-groups): {avg_cl:.2f}. Other European ({len(other_euro)} team-groups): {avg_other_euro:.2f}. Within-group variance suggests squad depth and managerial approach are key moderators.",
-            "key_metric": "Rotation by competition level",
-            "key_value": f"CL: {avg_cl:.2f} vs Other: {avg_other_euro:.2f}",
-            "detail": f"Champions League clubs ({len(cl_rot)} team-groups) show average rotation of {avg_cl:.3f}, compared to {avg_other_euro:.3f} for other European participants ({len(other_euro)} team-groups). The data confirms rotation strategy differs by competition level, though within-group variance is high — squad depth and individual manager preferences explain much of the variation."
+            "evidence_summary": f"Champions League clubs ({len(cl_rot)} team-groups): {avg_cl:.2f}. Non-CL clubs ({len(non_cl_rot)} team-groups): {avg_non_cl:.2f}. Within-group variance suggests squad depth and managerial approach are key moderators.",
+            "key_metric": "Rotation by European involvement",
+            "key_value": f"CL: {avg_cl:.2f} | Non-CL: {avg_non_cl:.2f}",
+            "detail": f"Champions League clubs ({len(cl_rot)} team-groups) show average rotation of {avg_cl:.3f}, compared to {avg_non_cl:.3f} for non-CL clubs ({len(non_cl_rot)} team-groups). The data confirms rotation strategy differs by competition level, though within-group variance is high — squad depth and individual manager preferences explain much of the variation."
         },
         {
             "id": "h4",
