@@ -1,8 +1,5 @@
 # Data files and directories
 Data/
-!Data/Injuries/
-!Data/Injuries/**
-EDA/DATA/
 *.csv
 models/XgBoost/artifacts/
 models/CatBoostClassifier/catboost_info/
@@ -11,13 +8,8 @@ models/CatBoostClassifier/data/
 fatigue_monitor/ideas
 !Data/Injuries/*.csv
 !Data/Injuries/**/*.csv
-# Allow CSVs in models directory
-#!models/**/*.csv
-# Allow CSVs in XgBoost_model data directory
-#!XgBoost_model/data/**/*.csv
 *.xlsx
 *.xls
-#*.json
 *.parquet
 *.feather
 
@@ -27,9 +19,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
-venv/
-ENV/
 build/
 develop-eggs/
 #dist/
@@ -71,24 +60,48 @@ Thumbs.db
 *.npy
 *.npz
 *.png
-*.md
+
+# Generated dashboard data (rebuilt by export_data.py)
+dashboard/public/data/*.json
+dashboard/public/data/**/*.json
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Virtual environments
+venv/
+env/
+ENV/
+VENV/
+.venv/
+.venv*/
 
 # Temporary files
 *.tmp
 *.temp
 *.log
 
-# Virtual environments
-venv/
-env/
-.venv/
-.venv311/
-
 # OS specific
 .DS_Store
 ._*
 .Spotlight-V100
 .Trashes
+Thumbs.db
 ehthumbs.db
 
+# Documents
+*.txt
+*.pdf
+*.docx
+*.doc
+*.odt
 
+.git
+
+#remove
+*.md
+!README.md
+.kilo
+.opencode
+thesis_memory/
