@@ -29,8 +29,8 @@ TEAMS = {
     }
 }
 
-OUTPUT_DIR = "Data"
-SCRIPT_PATH = "football_data_pipeline.py"
+OUTPUT_DIR = "data"
+SCRIPT_PATH = "fbref_pipeline.py"
 
 
 def run_team_extraction(team_name, team_info):

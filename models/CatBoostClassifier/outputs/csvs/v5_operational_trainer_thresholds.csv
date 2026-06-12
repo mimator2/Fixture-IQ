@@ -1,0 +1,7 @@
+model,threshold_type,threshold,expected_alert_rate,interpretation
+V5,top_5pct,0.568729594840508,0.05,Critical fatigue-associated decline signal
+V5,top_10pct,0.5510408119244842,0.1,High fatigue-associated decline signal
+V5,top_20pct,0.5299079079638849,0.2,Moderate fatigue-associated monitoring signal
+V5-NoHome,top_5pct,0.5091129633636705,0.05,Critical fatigue-associated decline signal
+V5-NoHome,top_10pct,0.5070328532036653,0.1,High fatigue-associated decline signal
+V5-NoHome,top_20pct,0.5042923278222626,0.2,Moderate fatigue-associated monitoring signal

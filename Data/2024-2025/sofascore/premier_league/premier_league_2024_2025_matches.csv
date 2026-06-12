@@ -1,0 +1,382 @@
+match_id,date,home_team,away_team,home_score,away_score,status
+12436564,1746885600,Ipswich Town,Brentford,0.0,1.0,Ended
+12436566,1746885600,Fulham,Everton,1.0,3.0,Ended
+12436581,1746885600,Wolverhampton,Brighton & Hove Albion,0.0,2.0,Ended
+12436575,1746885600,Southampton,Manchester City,0.0,0.0,Ended
+12436570,1746894600,Bournemouth,Aston Villa,0.0,1.0,Ended
+12436573,1746961200,Newcastle United,Chelsea,2.0,0.0,Ended
+12436574,1746969300,Nottingham Forest,Leicester City,2.0,2.0,Ended
+12436583,1746969300,Tottenham Hotspur,Crystal Palace,0.0,2.0,Ended
+12436569,1746969300,Manchester United,West Ham United,0.0,2.0,Ended
+12436568,1746977400,Liverpool FC,Arsenal,2.0,2.0,Ended
+12436577,1747420200,Aston Villa,Tottenham Hotspur,2.0,0.0,Ended
+12436582,1747422900,Chelsea,Manchester United,1.0,0.0,Ended
+12436579,1747566000,Everton,Southampton,2.0,0.0,Ended
+12436533,1747574100,West Ham United,Nottingham Forest,1.0,2.0,Ended
+12436586,1747576800,Brentford,Fulham,2.0,3.0,Ended
+12436534,1747576800,Leicester City,Ipswich Town,2.0,0.0,Ended
+12436585,1747582200,Arsenal,Newcastle United,1.0,0.0,Ended
+12436590,1747681200,Brighton & Hove Albion,Liverpool FC,3.0,2.0,Ended
+12436592,1747767600,Crystal Palace,Wolverhampton,4.0,2.0,Ended
+13854588,1747767600,Manchester City,Bournemouth,3.0,1.0,Ended
+12436542,1748185200,Wolverhampton,Brentford,1.0,1.0,Ended
+12436536,1748185200,Bournemouth,Leicester City,2.0,0.0,Ended
+12436538,1748185200,Ipswich Town,West Ham United,1.0,3.0,Ended
+12436541,1748185200,Newcastle United,Everton,0.0,1.0,Ended
+12436557,1748185200,Tottenham Hotspur,Brighton & Hove Albion,1.0,4.0,Ended
+12436556,1748185200,Nottingham Forest,Chelsea,0.0,1.0,Ended
+12436549,1748185200,Southampton,Arsenal,1.0,2.0,Ended
+12436548,1748185200,Liverpool FC,Crystal Palace,1.0,1.0,Ended
+12436540,1748185200,Manchester United,Aston Villa,2.0,0.0,Ended
+12436559,1748185200,Fulham,Manchester City,0.0,2.0,Ended
+12436616,1745071200,Crystal Palace,Bournemouth,0.0,0.0,Ended
+12436554,1745071200,West Ham United,Southampton,1.0,1.0,Ended
+12436619,1745071200,Brentford,Brighton & Hove Albion,4.0,2.0,Ended
+12436628,1745071200,Everton,Manchester City,0.0,2.0,Ended
+12436615,1745080200,Aston Villa,Newcastle United,4.0,1.0,Ended
+12436618,1745154000,Fulham,Chelsea,1.0,2.0,Ended
+12436620,1745154000,Ipswich Town,Arsenal,0.0,4.0,Ended
+12436622,1745154000,Manchester United,Wolverhampton,0.0,1.0,Ended
+12436626,1745163000,Leicester City,Liverpool FC,0.0,1.0,Ended
+12436537,1745262000,Tottenham Hotspur,Nottingham Forest,1.0,2.0,Ended
+12436551,1745348400,Manchester City,Aston Villa,2.0,1.0,Ended
+12436547,1745434800,Arsenal,Crystal Palace,2.0,2.0,Ended
+12436550,1745667000,Chelsea,Everton,1.0,0.0,Ended
+12436539,1745676000,Southampton,Fulham,1.0,2.0,Ended
+12436558,1745676000,Wolverhampton,Leicester City,3.0,0.0,Ended
+12436546,1745676000,Brighton & Hove Albion,West Ham United,3.0,2.0,Ended
+12436545,1745676000,Newcastle United,Ipswich Town,3.0,0.0,Ended
+12436535,1745758800,Bournemouth,Manchester United,1.0,1.0,Ended
+12436544,1745767800,Liverpool FC,Tottenham Hotspur,5.0,1.0,Ended
+12436552,1746124200,Nottingham Forest,Brentford,0.0,2.0,Ended
+12436562,1746212400,Manchester City,Wolverhampton,1.0,0.0,Ended
+12436553,1746271800,Aston Villa,Fulham,1.0,0.0,Ended
+12436572,1746280800,Everton,Ipswich Town,2.0,2.0,Ended
+12436571,1746280800,Leicester City,Southampton,2.0,0.0,Ended
+12436543,1746289800,Arsenal,Bournemouth,1.0,2.0,Ended
+12436567,1746363600,Brighton & Hove Albion,Newcastle United,1.0,1.0,Ended
+12436565,1746363600,West Ham United,Tottenham Hotspur,1.0,1.0,Ended
+12436560,1746363600,Brentford,Manchester United,4.0,3.0,Ended
+12436563,1746372600,Chelsea,Liverpool FC,3.0,1.0,Ended
+12436561,1746471600,Crystal Palace,Nottingham Forest,1.0,1.0,Ended
+12436580,1743533100,Arsenal,Fulham,2.0,1.0,Ended
+12436591,1743534000,Nottingham Forest,Manchester United,1.0,0.0,Ended
+12436576,1743619500,Bournemouth,Ipswich Town,1.0,2.0,Ended
+12436588,1743619500,Southampton,Crystal Palace,1.0,1.0,Ended
+12436600,1743619500,Newcastle United,Brentford,2.0,1.0,Ended
+12436584,1743619500,Brighton & Hove Albion,Aston Villa,0.0,3.0,Ended
+12436594,1743619500,Manchester City,Leicester City,2.0,0.0,Ended
+12436593,1743620400,Liverpool FC,Everton,1.0,0.0,Ended
+12436587,1743706800,Chelsea,Tottenham Hotspur,1.0,0.0,Ended
+12436596,1743852600,Everton,Arsenal,1.0,1.0,Ended
+12436601,1743861600,Ipswich Town,Wolverhampton,1.0,2.0,Ended
+12436595,1743861600,Crystal Palace,Brighton & Hove Albion,2.0,1.0,Ended
+12436604,1743861600,West Ham United,Bournemouth,2.0,2.0,Ended
+12436597,1743870600,Aston Villa,Nottingham Forest,2.0,1.0,Ended
+12436606,1743944400,Tottenham Hotspur,Southampton,3.0,1.0,Ended
+12436589,1743944400,Brentford,Chelsea,0.0,0.0,Ended
+12436598,1743944400,Fulham,Liverpool FC,3.0,2.0,Ended
+12436602,1743953400,Manchester United,Manchester City,0.0,0.0,Ended
+13560219,1744052400,Leicester City,Newcastle United,0.0,3.0,Ended
+12436610,1744457400,Manchester City,Crystal Palace,5.0,2.0,Ended
+12436613,1744466400,Nottingham Forest,Everton,0.0,1.0,Ended
+12436607,1744466400,Brighton & Hove Albion,Leicester City,2.0,2.0,Ended
+12436614,1744466400,Southampton,Aston Villa,0.0,3.0,Ended
+12436608,1744475400,Arsenal,Brentford,1.0,1.0,Ended
+12436617,1744549200,Wolverhampton,Tottenham Hotspur,4.0,2.0,Ended
+12436609,1744549200,Chelsea,Ipswich Town,2.0,2.0,Ended
+12436612,1744549200,Liverpool FC,West Ham United,2.0,1.0,Ended
+12436611,1744558200,Newcastle United,Manchester United,4.0,1.0,Ended
+13560222,1744657200,Bournemouth,Fulham,1.0,0.0,Ended
+12437031,1744828200,Newcastle United,Crystal Palace,5.0,0.0,Ended
+12436627,1740328200,Manchester City,Liverpool FC,0.0,2.0,Ended
+12436981,1740511800,Wolverhampton,Fulham,1.0,2.0,Ended
+12436970,1740511800,Brighton & Hove Albion,Bournemouth,2.0,1.0,Ended
+12436983,1740511800,Crystal Palace,Aston Villa,4.0,1.0,Ended
+12436986,1740514500,Chelsea,Southampton,4.0,0.0,Ended
+12436968,1740598200,Brentford,Everton,1.0,1.0,Ended
+12436974,1740598200,Nottingham Forest,Arsenal,0.0,0.0,Ended
+12436991,1740598200,Manchester United,Ipswich Town,3.0,2.0,Ended
+12436975,1740598200,Tottenham Hotspur,Manchester City,0.0,1.0,Ended
+12436988,1740600900,Liverpool FC,Newcastle United,2.0,0.0,Ended
+13365051,1740686400,West Ham United,Leicester City,2.0,0.0,Ended
+12437007,1741437000,Nottingham Forest,Manchester City,1.0,0.0,Ended
+12437000,1741446000,Crystal Palace,Ipswich Town,1.0,0.0,Ended
+12436996,1741446000,Brighton & Hove Albion,Fulham,2.0,1.0,Ended
+12437003,1741446000,Liverpool FC,Southampton,3.0,1.0,Ended
+12436994,1741455000,Brentford,Aston Villa,0.0,1.0,Ended
+12437012,1741464000,Wolverhampton,Everton,1.0,1.0,Ended
+12437009,1741528800,Tottenham Hotspur,Bournemouth,2.0,2.0,Ended
+12436998,1741528800,Chelsea,Leicester City,1.0,0.0,Ended
+12437005,1741537800,Manchester United,Arsenal,1.0,1.0,Ended
+12437010,1741636800,West Ham United,Newcastle United,0.0,1.0,Ended
+12436578,1742050800,Southampton,Wolverhampton,1.0,2.0,Ended
+12437025,1742050800,Ipswich Town,Nottingham Forest,2.0,4.0,Ended
+12437021,1742050800,Everton,West Ham United,1.0,1.0,Ended
+12437029,1742050800,Manchester City,Brighton & Hove Albion,2.0,2.0,Ended
+12437014,1742059800,Bournemouth,Brentford,1.0,2.0,Ended
+12437023,1742131800,Fulham,Tottenham Hotspur,2.0,0.0,Ended
+12437017,1742131800,Arsenal,Chelsea,1.0,0.0,Ended
+12437027,1742151600,Leicester City,Manchester United,0.0,3.0,Ended
+12436599,1743533100,Wolverhampton,West Ham United,1.0,0.0,Ended
+12436924,1738422000,Ipswich Town,Southampton,1.0,2.0,Ended
+12436921,1738422000,Everton,Leicester City,4.0,0.0,Ended
+12436928,1738422000,Newcastle United,Fulham,1.0,2.0,Ended
+12436911,1738422000,Bournemouth,Liverpool FC,0.0,2.0,Ended
+12436932,1738431000,Wolverhampton,Aston Villa,2.0,0.0,Ended
+12436916,1738504800,Brentford,Tottenham Hotspur,0.0,2.0,Ended
+12436925,1738504800,Manchester United,Crystal Palace,0.0,2.0,Ended
+12436913,1738513800,Arsenal,Manchester City,5.0,1.0,Ended
+12436919,1738612800,Chelsea,West Ham United,2.0,1.0,Ended
+13344418,1739388600,Everton,Liverpool FC,2.0,2.0,Ended
+12436937,1739563200,Brighton & Hove Albion,Chelsea,3.0,0.0,Ended
+12436943,1739622600,Leicester City,Arsenal,0.0,2.0,Ended
+12436950,1739631600,Southampton,Bournemouth,1.0,3.0,Ended
+12436940,1739631600,Fulham,Nottingham Forest,2.0,1.0,Ended
+12436956,1739631600,West Ham United,Brentford,0.0,1.0,Ended
+12436934,1739631600,Aston Villa,Ipswich Town,1.0,1.0,Ended
+12436948,1739631600,Manchester City,Newcastle United,4.0,0.0,Ended
+12436939,1739640600,Crystal Palace,Everton,1.0,2.0,Ended
+12436945,1739714400,Liverpool FC,Wolverhampton,2.0,1.0,Ended
+12436952,1739723400,Tottenham Hotspur,Manchester United,1.0,0.0,Ended
+12437019,1739993400,Aston Villa,Liverpool FC,2.0,2.0,Ended
+12436623,1740168000,Leicester City,Brentford,0.0,4.0,Ended
+12436625,1740227400,Everton,Manchester United,2.0,2.0,Ended
+12436958,1740236400,Bournemouth,Wolverhampton,0.0,1.0,Ended
+12436624,1740236400,Fulham,Crystal Palace,0.0,2.0,Ended
+12436965,1740236400,Southampton,Brighton & Hove Albion,0.0,4.0,Ended
+12436629,1740236400,Ipswich Town,Tottenham Hotspur,1.0,4.0,Ended
+12436960,1740236400,Arsenal,West Ham United,0.0,1.0,Ended
+12436621,1740245400,Aston Villa,Chelsea,2.0,1.0,Ended
+12436963,1740319200,Newcastle United,Nottingham Forest,4.0,3.0,Ended
+12436531,1736883000,Chelsea,Bournemouth,2.0,2.0,Ended
+12436436,1736883000,Brentford,Manchester City,2.0,2.0,Ended
+12436526,1736884800,Nottingham Forest,Liverpool FC,1.0,1.0,Ended
+12436527,1736969400,Leicester City,Crystal Palace,0.0,2.0,Ended
+12436434,1736969400,Everton,Aston Villa,0.0,1.0,Ended
+12436529,1736969400,Newcastle United,Wolverhampton,3.0,0.0,Ended
+12436511,1736971200,Arsenal,Tottenham Hotspur,2.0,1.0,Ended
+12436524,1737055800,Ipswich Town,Brighton & Hove Albion,0.0,2.0,Ended
+12436516,1737057600,Manchester United,Southampton,3.0,1.0,Ended
+12436885,1737203400,Newcastle United,Bournemouth,1.0,4.0,Ended
+12436442,1737212400,Leicester City,Fulham,0.0,2.0,Ended
+12436889,1737212400,West Ham United,Crystal Palace,0.0,2.0,Ended
+12436440,1737212400,Brentford,Liverpool FC,0.0,2.0,Ended
+12436443,1737221400,Arsenal,Aston Villa,2.0,2.0,Ended
+12436887,1737295200,Nottingham Forest,Southampton,3.0,2.0,Ended
+12436448,1737295200,Everton,Tottenham Hotspur,3.0,2.0,Ended
+12436883,1737295200,Manchester United,Brighton & Hove Albion,1.0,3.0,Ended
+12436439,1737304200,Ipswich Town,Manchester City,0.0,6.0,Ended
+12436455,1737403200,Chelsea,Wolverhampton,3.0,1.0,Ended
+12436891,1737817200,Bournemouth,Nottingham Forest,5.0,0.0,Ended
+12436895,1737817200,Brighton & Hove Albion,Everton,0.0,1.0,Ended
+12436905,1737817200,Southampton,Newcastle United,1.0,3.0,Ended
+12436909,1737817200,Wolverhampton,Arsenal,0.0,1.0,Ended
+12436901,1737817200,Liverpool FC,Ipswich Town,4.0,1.0,Ended
+12436903,1737826200,Manchester City,Chelsea,3.0,1.0,Ended
+12436897,1737900000,Crystal Palace,Brentford,1.0,2.0,Ended
+12436907,1737900000,Tottenham Hotspur,Leicester City,1.0,2.0,Ended
+12436893,1737909000,Aston Villa,West Ham United,1.0,1.0,Ended
+12436899,1737918000,Fulham,Manchester United,0.0,1.0,Ended
+12436930,1738413000,Nottingham Forest,Brighton & Hove Albion,7.0,0.0,Ended
+12436476,1735225200,Bournemouth,Crystal Palace,0.0,0.0,Ended
+12436480,1735225200,Southampton,West Ham United,0.0,1.0,Ended
+12436477,1735225200,Newcastle United,Aston Villa,3.0,0.0,Ended
+12436479,1735225200,Nottingham Forest,Tottenham Hotspur,1.0,0.0,Ended
+12436473,1735225200,Chelsea,Fulham,1.0,2.0,Ended
+12436482,1735234200,Wolverhampton,Manchester United,2.0,0.0,Ended
+12436474,1735243200,Liverpool FC,Leicester City,3.0,1.0,Ended
+12436475,1735327800,Brighton & Hove Albion,Brentford,0.0,0.0,Ended
+12436472,1735330500,Arsenal,Ipswich Town,1.0,0.0,Ended
+12436512,1735482600,Leicester City,Manchester City,0.0,2.0,Ended
+12436532,1735484400,Crystal Palace,Southampton,2.0,1.0,Ended
+12436515,1735484400,Fulham,Bournemouth,2.0,2.0,Ended
+12436517,1735484400,Everton,Nottingham Forest,0.0,2.0,Ended
+12436521,1735484400,Tottenham Hotspur,Wolverhampton,2.0,2.0,Ended
+12436513,1735492500,West Ham United,Liverpool FC,0.0,5.0,Ended
+12436530,1735587900,Aston Villa,Brighton & Hove Albion,2.0,2.0,Ended
+12436510,1735587900,Ipswich Town,Chelsea,2.0,0.0,Ended
+12436522,1735588800,Manchester United,Newcastle United,0.0,2.0,Ended
+12436410,1735752600,Brentford,Arsenal,1.0,3.0,Ended
+12436519,1735993800,Tottenham Hotspur,Newcastle United,1.0,2.0,Ended
+12436520,1736002800,Southampton,Brentford,0.0,5.0,Ended
+12436518,1736002800,Bournemouth,Everton,1.0,0.0,Ended
+12436523,1736002800,Aston Villa,Leicester City,2.0,1.0,Ended
+12436419,1736002800,Crystal Palace,Chelsea,1.0,1.0,Ended
+12436508,1736002800,Manchester City,West Ham United,4.0,1.0,Ended
+12436528,1736011800,Brighton & Hove Albion,Arsenal,1.0,1.0,Ended
+12436525,1736085600,Fulham,Ipswich Town,2.0,2.0,Ended
+12436514,1736094600,Liverpool FC,Manchester United,2.0,2.0,Ended
+12436437,1736193600,Wolverhampton,Nottingham Forest,0.0,3.0,Ended
+12436509,1736883000,West Ham United,Fulham,3.0,2.0,Ended
+12436990,1733583600,Aston Villa,Southampton,1.0,0.0,Ended
+12436450,1733583600,Brentford,Newcastle United,4.0,2.0,Ended
+12436445,1733583600,Crystal Palace,Manchester City,2.0,2.0,Ended
+12436449,1733592600,Manchester United,Nottingham Forest,2.0,3.0,Ended
+12436462,1733666400,Ipswich Town,Bournemouth,1.0,2.0,Ended
+12436444,1733666400,Leicester City,Brighton & Hove Albion,2.0,2.0,Ended
+12436459,1733666400,Fulham,Arsenal,1.0,1.0,Ended
+12436441,1733675400,Tottenham Hotspur,Chelsea,3.0,4.0,Ended
+12436454,1733774400,West Ham United,Wolverhampton,2.0,1.0,Ended
+12436456,1734188400,Wolverhampton,Ipswich Town,1.0,2.0,Ended
+12436460,1734188400,Newcastle United,Leicester City,4.0,0.0,Ended
+12436438,1734188400,Arsenal,Everton,0.0,0.0,Ended
+12436446,1734188400,Liverpool FC,Fulham,2.0,2.0,Ended
+12436447,1734197400,Nottingham Forest,Aston Villa,2.0,1.0,Ended
+12436457,1734271200,Brighton & Hove Albion,Crystal Palace,1.0,3.0,Ended
+12436451,1734280200,Manchester City,Manchester United,1.0,2.0,Ended
+12436458,1734289200,Southampton,Tottenham Hotspur,0.0,5.0,Ended
+12436461,1734289200,Chelsea,Brentford,2.0,1.0,Ended
+12436465,1734379200,Bournemouth,West Ham United,1.0,1.0,Ended
+12436453,1734784200,Aston Villa,Manchester City,2.0,1.0,Ended
+12436463,1734793200,Brentford,Nottingham Forest,0.0,2.0,Ended
+12436478,1734793200,West Ham United,Brighton & Hove Albion,1.0,1.0,Ended
+12436467,1734793200,Ipswich Town,Newcastle United,0.0,4.0,Ended
+12436464,1734802200,Crystal Palace,Arsenal,1.0,5.0,Ended
+12436468,1734876000,Fulham,Southampton,0.0,0.0,Ended
+12436469,1734876000,Leicester City,Wolverhampton,0.0,3.0,Ended
+12436466,1734876000,Everton,Chelsea,0.0,0.0,Ended
+12436470,1734876000,Manchester United,Bournemouth,0.0,3.0,Ended
+12436471,1734885000,Tottenham Hotspur,Liverpool FC,3.0,6.0,Ended
+12436481,1735216200,Manchester City,Everton,1.0,1.0,Ended
+12436490,1732374000,Fulham,Wolverhampton,1.0,4.0,Ended
+12436488,1732374000,Everton,Brentford,0.0,0.0,Ended
+12436491,1732374000,Bournemouth,Brighton & Hove Albion,1.0,2.0,Ended
+12436493,1732374000,Aston Villa,Crystal Palace,2.0,2.0,Ended
+12436489,1732374000,Arsenal,Nottingham Forest,3.0,0.0,Ended
+12436499,1732383000,Manchester City,Tottenham Hotspur,0.0,4.0,Ended
+12436506,1732456800,Southampton,Liverpool FC,2.0,3.0,Ended
+12436497,1732465800,Ipswich Town,Manchester United,1.0,1.0,Ended
+12436496,1732564800,Newcastle United,West Ham United,0.0,2.0,Ended
+12436501,1732910400,Brighton & Hove Albion,Southampton,1.0,1.0,Ended
+12436503,1732978800,Nottingham Forest,Ipswich Town,1.0,0.0,Ended
+12436922,1732978800,Wolverhampton,Bournemouth,2.0,4.0,Ended
+12436500,1732978800,Brentford,Leicester City,4.0,1.0,Ended
+12436502,1732978800,Crystal Palace,Newcastle United,1.0,1.0,Ended
+12436914,1732987800,West Ham United,Arsenal,2.0,5.0,Ended
+12436507,1733059800,Tottenham Hotspur,Fulham,1.0,1.0,Ended
+12436498,1733059800,Chelsea,Aston Villa,3.0,0.0,Ended
+12436505,1733059800,Manchester United,Everton,4.0,0.0,Ended
+12436504,1733068800,Liverpool FC,Manchester City,2.0,0.0,Ended
+12436961,1733254200,Ipswich Town,Crystal Palace,0.0,1.0,Ended
+12436966,1733256900,Leicester City,West Ham United,3.0,1.0,Ended
+12436947,1733340600,Everton,Wolverhampton,4.0,0.0,Ended
+12436984,1733340600,Southampton,Chelsea,1.0,5.0,Ended
+12436978,1733340600,Newcastle United,Liverpool FC,3.0,3.0,Ended
+12436972,1733340600,Manchester City,Nottingham Forest,3.0,0.0,Ended
+12436942,1733343300,Aston Villa,Brentford,3.0,1.0,Ended
+12436935,1733343300,Arsenal,Manchester United,2.0,0.0,Ended
+12436955,1733427000,Fulham,Brighton & Hove Albion,3.0,1.0,Ended
+13015216,1733429700,Bournemouth,Tottenham Hotspur,1.0,0.0,Ended
+12436452,1733574600,Everton,Liverpool FC,,,Postponed
+12437043,1729951200,Brentford,Ipswich Town,4.0,3.0,Ended
+12437044,1729951200,Brighton & Hove Albion,Wolverhampton,2.0,2.0,Ended
+12437041,1729951200,Aston Villa,Bournemouth,1.0,1.0,Ended
+12437049,1729951200,Manchester City,Southampton,1.0,0.0,Ended
+12437047,1729960200,Everton,Fulham,1.0,1.0,Ended
+12437046,1730037600,Crystal Palace,Tottenham Hotspur,1.0,0.0,Ended
+12437045,1730037600,Chelsea,Newcastle United,2.0,1.0,Ended
+12437050,1730037600,West Ham United,Manchester United,2.0,1.0,Ended
+12437040,1730046600,Arsenal,Liverpool FC,2.0,2.0,Ended
+12437056,1730550600,Newcastle United,Arsenal,1.0,0.0,Ended
+12437058,1730559600,Southampton,Everton,1.0,0.0,Ended
+12437053,1730559600,Ipswich Town,Leicester City,1.0,1.0,Ended
+12437057,1730559600,Nottingham Forest,West Ham United,3.0,0.0,Ended
+12437054,1730559600,Liverpool FC,Brighton & Hove Albion,2.0,1.0,Ended
+12437051,1730559600,Bournemouth,Manchester City,2.0,1.0,Ended
+12437060,1730568600,Wolverhampton,Crystal Palace,2.0,2.0,Ended
+12437059,1730642400,Tottenham Hotspur,Aston Villa,4.0,1.0,Ended
+12437055,1730651400,Manchester United,Chelsea,1.0,1.0,Ended
+12437052,1730750400,Fulham,Brentford,2.0,1.0,Ended
+12436876,1731164400,Brentford,Bournemouth,3.0,2.0,Ended
+12436485,1731164400,Wolverhampton,Southampton,2.0,0.0,Ended
+12436483,1731164400,Crystal Palace,Fulham,0.0,2.0,Ended
+12436486,1731164400,West Ham United,Everton,0.0,0.0,Ended
+12436882,1731173400,Brighton & Hove Albion,Manchester City,2.0,1.0,Ended
+12436484,1731182400,Liverpool FC,Aston Villa,2.0,0.0,Ended
+12436487,1731247200,Nottingham Forest,Newcastle United,1.0,3.0,Ended
+12436492,1731247200,Tottenham Hotspur,Ipswich Town,1.0,2.0,Ended
+12436494,1731247200,Manchester United,Leicester City,3.0,0.0,Ended
+12436890,1731256200,Chelsea,Arsenal,1.0,1.0,Ended
+12436495,1732365000,Leicester City,Chelsea,1.0,2.0,Ended
+12437001,1727532000,Nottingham Forest,Fulham,0.0,1.0,Ended
+12436992,1727532000,Everton,Crystal Palace,2.0,1.0,Ended
+12436987,1727532000,Brentford,West Ham United,1.0,1.0,Ended
+12436989,1727532000,Chelsea,Brighton & Hove Albion,4.0,2.0,Ended
+12436985,1727532000,Arsenal,Leicester City,4.0,2.0,Ended
+12437002,1727541000,Wolverhampton,Liverpool FC,1.0,2.0,Ended
+12436993,1727614800,Ipswich Town,Aston Villa,2.0,2.0,Ended
+12436995,1727623800,Manchester United,Tottenham Hotspur,0.0,3.0,Ended
+12436982,1727722800,Bournemouth,Southampton,3.0,1.0,Ended
+12437015,1728127800,Crystal Palace,Liverpool FC,0.0,1.0,Ended
+12437008,1728136800,Brentford,Wolverhampton,5.0,3.0,Ended
+12437020,1728136800,Leicester City,Bournemouth,1.0,0.0,Ended
+12437024,1728136800,West Ham United,Ipswich Town,4.0,1.0,Ended
+12437004,1728136800,Arsenal,Southampton,3.0,1.0,Ended
+12437022,1728136800,Manchester City,Fulham,3.0,2.0,Ended
+12437018,1728145800,Everton,Newcastle United,0.0,0.0,Ended
+12437013,1728219600,Chelsea,Nottingham Forest,1.0,1.0,Ended
+12437006,1728219600,Aston Villa,Manchester United,0.0,0.0,Ended
+12437011,1728228600,Brighton & Hove Albion,Tottenham Hotspur,3.0,2.0,Ended
+12437038,1729337400,Tottenham Hotspur,West Ham United,4.0,1.0,Ended
+12437037,1729346400,Southampton,Leicester City,2.0,3.0,Ended
+12437028,1729346400,Fulham,Aston Villa,1.0,3.0,Ended
+12437035,1729346400,Newcastle United,Brighton & Hove Albion,0.0,1.0,Ended
+12437034,1729346400,Manchester United,Brentford,2.0,1.0,Ended
+12437030,1729347300,Ipswich Town,Everton,0.0,2.0,Ended
+12437026,1729355400,Bournemouth,Arsenal,2.0,0.0,Ended
+12437039,1729429200,Wolverhampton,Manchester City,1.0,2.0,Ended
+12437032,1729438200,Liverpool FC,Chelsea,2.0,1.0,Ended
+12437036,1729537200,Nottingham Forest,Crystal Palace,1.0,0.0,Ended
+12437048,1729882800,Leicester City,Nottingham Forest,1.0,3.0,Ended
+12436908,1725112800,Brentford,Southampton,3.0,1.0,Ended
+12436915,1725112800,Ipswich Town,Fulham,1.0,1.0,Ended
+12436926,1725112800,Nottingham Forest,Wolverhampton,1.0,1.0,Ended
+12436912,1725112800,Everton,Bournemouth,2.0,3.0,Ended
+12436918,1725112800,Leicester City,Aston Villa,1.0,2.0,Ended
+12436927,1725121800,West Ham United,Manchester City,1.0,3.0,Ended
+12436923,1725193800,Newcastle United,Tottenham Hotspur,2.0,1.0,Ended
+12436910,1725193800,Chelsea,Crystal Palace,1.0,1.0,Ended
+12436920,1725202800,Manchester United,Liverpool FC,0.0,3.0,Ended
+12436949,1726313400,Southampton,Manchester United,0.0,3.0,Ended
+12436938,1726322400,Crystal Palace,Leicester City,2.0,2.0,Ended
+12436936,1726322400,Brighton & Hove Albion,Ipswich Town,0.0,0.0,Ended
+12436941,1726322400,Fulham,West Ham United,1.0,1.0,Ended
+12436944,1726322400,Liverpool FC,Nottingham Forest,0.0,1.0,Ended
+12436946,1726322400,Manchester City,Brentford,2.0,1.0,Ended
+12436933,1726331400,Aston Villa,Everton,3.0,2.0,Ended
+12436931,1726340400,Bournemouth,Chelsea,0.0,1.0,Ended
+12436951,1726405200,Tottenham Hotspur,Arsenal,0.0,1.0,Ended
+12436954,1726414200,Wolverhampton,Newcastle United,1.0,2.0,Ended
+12436980,1726918200,West Ham United,Chelsea,0.0,3.0,Ended
+12436973,1726927200,Southampton,Ipswich Town,1.0,1.0,Ended
+12436967,1726927200,Leicester City,Everton,1.0,1.0,Ended
+12436957,1726927200,Aston Villa,Wolverhampton,3.0,1.0,Ended
+12436964,1726927200,Fulham,Newcastle United,3.0,1.0,Ended
+12436977,1726927200,Tottenham Hotspur,Brentford,3.0,1.0,Ended
+12436969,1726927200,Liverpool FC,Bournemouth,3.0,0.0,Ended
+12436962,1726936200,Crystal Palace,Manchester United,0.0,0.0,Ended
+12436959,1727010000,Brighton & Hove Albion,Nottingham Forest,2.0,2.0,Ended
+12436971,1727019000,Manchester City,Arsenal,2.0,2.0,Ended
+12436999,1727523000,Newcastle United,Manchester City,1.0,1.0,Ended
+12436870,1723834800,Manchester United,Fulham,1.0,0.0,Ended
+12436871,1723894200,Ipswich Town,Liverpool FC,0.0,2.0,Ended
+12436875,1723903200,Nottingham Forest,Bournemouth,1.0,1.0,Ended
+12436873,1723903200,Everton,Brighton & Hove Albion,0.0,3.0,Ended
+12436874,1723903200,Newcastle United,Southampton,1.0,0.0,Ended
+12436872,1723903200,Arsenal,Wolverhampton,2.0,0.0,Ended
+12436877,1723912200,West Ham United,Aston Villa,1.0,2.0,Ended
+12436879,1723986000,Brentford,Crystal Palace,2.0,1.0,Ended
+12436880,1723995000,Chelsea,Manchester City,0.0,2.0,Ended
+12436881,1724094000,Leicester City,Tottenham Hotspur,1.0,1.0,Ended
+12436888,1724499000,Brighton & Hove Albion,Manchester United,2.0,1.0,Ended
+12436900,1724508000,Southampton,Nottingham Forest,0.0,1.0,Ended
+12436894,1724508000,Fulham,Leicester City,2.0,1.0,Ended
+12436892,1724508000,Crystal Palace,West Ham United,0.0,2.0,Ended
+12436902,1724508000,Tottenham Hotspur,Everton,4.0,0.0,Ended
+12436898,1724508000,Manchester City,Ipswich Town,4.0,1.0,Ended
+12436886,1724517000,Aston Villa,Arsenal,0.0,2.0,Ended
+12436884,1724590800,Bournemouth,Newcastle United,1.0,1.0,Ended
+12436904,1724590800,Wolverhampton,Chelsea,2.0,6.0,Ended
+12436896,1724599800,Liverpool FC,Brentford,2.0,0.0,Ended
+12436906,1725103800,Arsenal,Brighton & Hove Albion,1.0,1.0,Ended

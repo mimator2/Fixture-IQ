@@ -1,0 +1,21 @@
+feature,importance
+full_90s_last_28d,0.05130573
+minutes_played_position_z,0.038202748
+next_competition_Premier League,0.030403037
+player_position_D,0.028766245
+full_90s_last_21d,0.025474543
+matches_with_rest_le_4d_last_30d,0.024564136
+matches_last_28d,0.024067665
+next_competition_League Cup,0.022566535
+competition_switch,0.02220386
+matches_last_21d,0.02079812
+matches_with_rest_le_6d_last_30d,0.019513328
+avg_rest_last_3_matches,0.01942856
+next_competition_FA Cup,0.01934966
+next_competition_Champions League,0.019122876
+matches_with_rest_le_3d_last_30d,0.019038249
+tackles_last_3_matches,0.019033832
+duels_last_3_matches,0.01872624
+dribbles_last_3_matches,0.01840323
+rest_days,0.018361779
+ucl_after_pl,0.018353006

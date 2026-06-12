@@ -1,0 +1,280 @@
+match_id,date,home_team,away_team,home_score,away_score,status
+13412185,1739995200,Real Madrid,Manchester City,3,1,Ended
+13511919,1741110300,Club Brugge KV,Aston Villa,1,3,Ended
+13511921,1741118400,Borussia Dortmund,Lille,1,1,Ended
+13511927,1741118400,PSV Eindhoven,Arsenal,1,7,Ended
+13511923,1741118400,Real Madrid,Atlético Madrid,2,1,Ended
+13511929,1741196700,Feyenoord,Inter,0,2,Ended
+13511925,1741204800,FC Bayern München,Bayer 04 Leverkusen,3,0,Ended
+13511931,1741204800,Paris Saint-Germain,Liverpool FC,0,1,Ended
+13511933,1741204800,Benfica,FC Barcelona,0,1,Ended
+13511934,1741715100,FC Barcelona,Benfica,3,1,Ended
+13511930,1741723200,Inter,Feyenoord,2,1,Ended
+13511926,1741723200,Bayer 04 Leverkusen,FC Bayern München,0,2,Ended
+13511932,1741723200,Liverpool FC,Paris Saint-Germain,1,5,AP
+13511922,1741801500,Lille,Borussia Dortmund,1,2,Ended
+13511920,1741809600,Aston Villa,Club Brugge KV,3,0,Ended
+13511928,1741809600,Arsenal,PSV Eindhoven,2,2,Ended
+13511924,1741809600,Atlético Madrid,Real Madrid,3,4,AP
+13513402,1744138800,FC Bayern München,Inter,1,2,Ended
+13513403,1744138800,Arsenal,Real Madrid,3,0,Ended
+13513406,1744225200,Paris Saint-Germain,Aston Villa,3,1,Ended
+13513404,1744225200,FC Barcelona,Borussia Dortmund,4,0,Ended
+13513421,1744743600,Aston Villa,Paris Saint-Germain,3,2,Ended
+13513405,1744743600,Borussia Dortmund,FC Barcelona,3,1,Ended
+13513420,1744830000,Inter,FC Bayern München,2,2,Ended
+13513422,1744830000,Real Madrid,Arsenal,1,2,Ended
+13513415,1745953200,Arsenal,Paris Saint-Germain,0,1,Ended
+13513414,1746039600,FC Barcelona,Inter,3,3,Ended
+13513416,1746558000,Inter,FC Barcelona,4,3,AET
+13513417,1746644400,Paris Saint-Germain,Arsenal,2,1,Ended
+13516694,1748718000,Paris Saint-Germain,Inter,5,0,Ended
+12764494,1738180800,Sporting CP,Bologna,1,1,Ended
+12763958,1738180800,Aston Villa,Celtic,4,2,Ended
+12764059,1738180800,Bayer 04 Leverkusen,AC Sparta Praha,2,0,Ended
+12764152,1738180800,Borussia Dortmund,Shakhtar Donetsk,3,1,Ended
+12764448,1738180800,Red Bull Salzburg,Atlético Madrid,1,4,Ended
+12764271,1738180800,Inter,AS Monaco,3,0,Ended
+12764222,1738180800,GNK Dinamo Zagreb,Milan,2,1,Ended
+12764277,1738180800,Juventus,Benfica,0,2,Ended
+12764517,1738180800,VfB Stuttgart,Paris Saint-Germain,1,4,Ended
+12764084,1738180800,FC Bayern München,ŠK Slovan Bratislava,3,1,Ended
+12764241,1738180800,Girona FC,Arsenal,1,2,Ended
+12764399,1738180800,PSV Eindhoven,Liverpool FC,3,2,Ended
+12764332,1738180800,Manchester City,Club Brugge KV,3,1,Ended
+12764006,1738180800,FC Barcelona,Atalanta,2,2,Ended
+12764165,1738180800,Stade Brestois,Real Madrid,0,3,Ended
+13412173,1739295900,Stade Brestois,Paris Saint-Germain,0,3,Ended
+13412192,1739304000,Sporting CP,Borussia Dortmund,0,3,Ended
+13412179,1739304000,Juventus,PSV Eindhoven,2,1,Ended
+13412184,1739304000,Manchester City,Real Madrid,2,3,Ended
+13412190,1739382300,Club Brugge KV,Atalanta,2,1,Ended
+13412175,1739390400,AS Monaco,Benfica,0,1,Ended
+13412180,1739390400,Feyenoord,Milan,1,0,Ended
+13412186,1739390400,Celtic,FC Bayern München,1,2,Ended
+13412182,1739900700,Milan,Feyenoord,1,1,Ended
+13412191,1739908800,Atalanta,Club Brugge KV,1,3,Ended
+13412176,1739908800,Benfica,AS Monaco,3,3,Ended
+13412187,1739908800,FC Bayern München,Celtic,1,1,Ended
+13412194,1739987100,Borussia Dortmund,Sporting CP,0,0,Ended
+13412181,1739995200,PSV Eindhoven,Juventus,3,1,AET
+13412174,1739995200,Paris Saint-Germain,Stade Brestois,7,0,Ended
+12764311,1733939100,Lille,SK Sturm Graz,3,2,Ended
+12764001,1733939100,Atlético Madrid,ŠK Slovan Bratislava,3,1,Ended
+12764525,1733947200,VfB Stuttgart,BSC Young Boys,5,1,Ended
+12764239,1733947200,Feyenoord,AC Sparta Praha,4,2,Ended
+12764103,1733947200,Benfica,Bologna,0,0,Ended
+12763934,1733947200,Milan,FK Crvena zvezda,2,1,Ended
+12763949,1733947200,Arsenal,AS Monaco,3,0,Ended
+12764281,1733947200,Juventus,Manchester City,2,0,Ended
+12764146,1733947200,Borussia Dortmund,FC Barcelona,2,3,Ended
+12763976,1737481500,Atalanta,SK Sturm Graz,5,0,Ended
+12764355,1737481500,AS Monaco,Aston Villa,1,0,Ended
+12764480,1737489600,ŠK Slovan Bratislava,VfB Stuttgart,1,3,Ended
+12764217,1737489600,FK Crvena zvezda,PSV Eindhoven,2,3,Ended
+12764111,1737489600,Bologna,Borussia Dortmund,2,1,Ended
+12764198,1737489600,Club Brugge KV,Juventus,0,0,Ended
+12763983,1737489600,Atlético Madrid,Bayer 04 Leverkusen,2,1,Ended
+12764324,1737489600,Liverpool FC,Lille,2,1,Ended
+12764100,1737489600,Benfica,FC Barcelona,4,5,Ended
+12764466,1737567900,Shakhtar Donetsk,Stade Brestois,2,0,Ended
+12764428,1737567900,RB Leipzig,Sporting CP,2,1,Ended
+12764178,1737576000,Celtic,BSC Young Boys,1,0,Ended
+12764485,1737576000,AC Sparta Praha,Inter,0,1,Ended
+12763938,1737576000,Milan,Girona FC,1,0,Ended
+12764233,1737576000,Feyenoord,FC Bayern München,3,0,Ended
+12763942,1737576000,Arsenal,GNK Dinamo Zagreb,3,0,Ended
+12764388,1737576000,Paris Saint-Germain,Manchester City,4,2,Ended
+12764439,1737576000,Real Madrid,Red Bull Salzburg,5,1,Ended
+12764530,1738180800,BSC Young Boys,FK Crvena zvezda,0,1,Ended
+12764296,1738180800,Lille,Feyenoord,6,1,Ended
+12764504,1738180800,SK Sturm Graz,RB Leipzig,1,0,Ended
+12764064,1730923200,FC Bayern München,Benfica,1,0,Ended
+12764263,1730923200,Inter,Arsenal,1,0,Ended
+12764209,1730923200,FK Crvena zvezda,FC Barcelona,2,5,Ended
+12764481,1732643100,AC Sparta Praha,Atlético Madrid,0,6,Ended
+12764471,1732643100,ŠK Slovan Bratislava,Milan,2,3,Ended
+12764527,1732651200,BSC Young Boys,Atalanta,1,6,Ended
+12764052,1732651200,Bayer 04 Leverkusen,Red Bull Salzburg,5,0,Ended
+12764274,1732651200,Inter,RB Leipzig,1,0,Ended
+12764491,1732651200,Sporting CP,Arsenal,1,5,Ended
+12764080,1732651200,FC Bayern München,Paris Saint-Germain,1,0,Ended
+12764341,1732651200,Manchester City,Feyenoord,3,3,Ended
+12764020,1732651200,FC Barcelona,Stade Brestois,3,0,Ended
+12764218,1732729500,FK Crvena zvezda,VfB Stuttgart,5,1,Ended
+12764501,1732729500,SK Sturm Graz,Girona FC,1,0,Ended
+12764118,1732737600,Bologna,Lille,1,2,Ended
+12764168,1732737600,Celtic,Club Brugge KV,1,1,Ended
+12764404,1732737600,PSV Eindhoven,Shakhtar Donetsk,3,2,Ended
+12764364,1732737600,AS Monaco,Benfica,2,3,Ended
+12764224,1732737600,GNK Dinamo Zagreb,Borussia Dortmund,0,3,Ended
+12763959,1732737600,Aston Villa,Juventus,0,0,Ended
+12764328,1732737600,Liverpool FC,Real Madrid,2,0,Ended
+12764226,1733852700,GNK Dinamo Zagreb,Celtic,0,0,Ended
+12764249,1733852700,Girona FC,Liverpool FC,0,1,Ended
+12764164,1733860800,Stade Brestois,PSV Eindhoven,1,0,Ended
+12764204,1733860800,Club Brugge KV,Sporting CP,2,1,Ended
+12764414,1733860800,RB Leipzig,Aston Villa,2,3,Ended
+12764458,1733860800,Red Bull Salzburg,Paris Saint-Germain,0,3,Ended
+12764043,1733860800,Bayer 04 Leverkusen,Inter,1,0,Ended
+12764464,1733860800,Shakhtar Donetsk,FC Bayern München,1,5,Ended
+12763974,1733860800,Atalanta,Real Madrid,2,3,Ended
+12764511,1729623600,SK Sturm Graz,Sporting CP,0,2,Ended
+12763957,1729623600,Aston Villa,Bologna,2,0,Ended
+12764289,1729623600,Juventus,VfB Stuttgart,0,1,Ended
+12764392,1729623600,Paris Saint-Germain,PSV Eindhoven,1,1,Ended
+12763955,1729623600,Arsenal,Shakhtar Donetsk,1,0,Ended
+12764435,1729623600,Real Madrid,Borussia Dortmund,5,2,Ended
+12763972,1729701900,Atalanta,Celtic,0,0,Ended
+12764162,1729701900,Stade Brestois,Bayer 04 Leverkusen,1,1,Ended
+12764456,1729710000,Red Bull Salzburg,GNK Dinamo Zagreb,0,2,Ended
+12764105,1729710000,Benfica,Feyenoord,1,3,Ended
+12763988,1729710000,Atlético Madrid,Lille,1,3,Ended
+12764532,1729710000,BSC Young Boys,Inter,0,1,Ended
+12764425,1729710000,RB Leipzig,Liverpool FC,0,1,Ended
+12764347,1729710000,Manchester City,AC Sparta Praha,5,0,Ended
+12764014,1729710000,FC Barcelona,FC Bayern München,4,1,Ended
+12764474,1730828700,ŠK Slovan Bratislava,GNK Dinamo Zagreb,1,4,Ended
+12764396,1730828700,PSV Eindhoven,Girona FC,4,0,Ended
+12764139,1730836800,Bologna,AS Monaco,0,1,Ended
+12764172,1730836800,Celtic,RB Leipzig,3,1,Ended
+12764155,1730836800,Borussia Dortmund,SK Sturm Graz,1,0,Ended
+12764301,1730836800,Lille,Juventus,1,1,Ended
+12764316,1730836800,Liverpool FC,Bayer 04 Leverkusen,4,0,Ended
+12764498,1730836800,Sporting CP,Manchester City,4,1,Ended
+12764432,1730836800,Real Madrid,Milan,1,3,Ended
+12764468,1730915100,Shakhtar Donetsk,BSC Young Boys,2,1,Ended
+12764191,1730915100,Club Brugge KV,Aston Villa,1,0,Ended
+12764482,1730923200,AC Sparta Praha,Stade Brestois,1,2,Ended
+12764236,1730923200,Feyenoord,Red Bull Salzburg,1,3,Ended
+12764513,1730923200,VfB Stuttgart,Atalanta,0,2,Ended
+12764375,1730923200,Paris Saint-Germain,Atlético Madrid,1,2,Ended
+12764194,1726686000,Club Brugge KV,Borussia Dortmund,0,3,Ended
+12764383,1726686000,Paris Saint-Germain,Girona FC,1,0,Ended
+12764343,1726686000,Manchester City,Inter,0,0,Ended
+12764213,1726764300,FK Crvena zvezda,Benfica,1,2,Ended
+12764229,1726764300,Feyenoord,Bayer 04 Leverkusen,0,4,Ended
+12764167,1726772400,Stade Brestois,SK Sturm Graz,2,1,Ended
+12763995,1726772400,Atlético Madrid,RB Leipzig,2,1,Ended
+12763970,1726772400,Atalanta,Arsenal,0,0,Ended
+12764362,1726772400,AS Monaco,FC Barcelona,2,1,Ended
+12764453,1727801100,Red Bull Salzburg,Stade Brestois,0,4,Ended
+12764523,1727801100,VfB Stuttgart,AC Sparta Praha,1,1,Ended
+12764410,1727809200,PSV Eindhoven,Sporting CP,1,1,Ended
+12764149,1727809200,Borussia Dortmund,Celtic,7,1,Ended
+12764267,1727809200,Inter,FK Crvena zvezda,4,0,Ended
+12764036,1727809200,Bayer 04 Leverkusen,Milan,1,0,Ended
+12764476,1727809200,ŠK Slovan Bratislava,Manchester City,0,4,Ended
+12763954,1727809200,Arsenal,Paris Saint-Germain,2,0,Ended
+12764029,1727809200,FC Barcelona,BSC Young Boys,5,0,Ended
+12764462,1727887500,Shakhtar Donetsk,Atalanta,0,3,Ended
+12764244,1727887500,Girona FC,Feyenoord,2,3,Ended
+12764499,1727895600,SK Sturm Graz,Club Brugge KV,0,1,Ended
+12764228,1727895600,GNK Dinamo Zagreb,AS Monaco,2,2,Ended
+12764088,1727895600,Benfica,Atlético Madrid,4,0,Ended
+12764419,1727895600,RB Leipzig,Juventus,2,3,Ended
+12763956,1727895600,Aston Villa,FC Bayern München,1,0,Ended
+12764320,1727895600,Liverpool FC,Bologna,2,0,Ended
+12764304,1727895600,Lille,Real Madrid,1,0,Ended
+12764370,1729615500,AS Monaco,FK Crvena zvezda,5,1,Ended
+12763924,1729615500,Milan,Club Brugge KV,3,1,Ended
+12764255,1729623600,Girona FC,ŠK Slovan Bratislava,2,0,Ended
+12628381,1723568400,Fenerbahçe,Lille,1,1,Ended
+12630519,1723570200,PAOK,Malmö FF,3,4,Ended
+12630420,1723572000,Ferencváros TC,FC Midtjylland,1,1,Ended
+12631518,1723572000,Ludogorets,Qarabağ FK,2,7,Ended
+12630490,1723573800,FCSB,AC Sparta Praha,2,3,Ended
+12584048,1723573800,Royale Union Saint-Gilloise,SK Slavia Praha,0,1,Ended
+12630517,1723574700,Rangers,Dynamo Kyiv,0,2,Ended
+12684589,1724180400,Lille,SK Slavia Praha,2,0,Ended
+12684538,1724180400,Bodø/Glimt,FK Crvena zvezda,2,1,Ended
+12684539,1724180400,GNK Dinamo Zagreb,Qarabağ FK,3,0,Ended
+12684535,1724266800,FC Midtjylland,ŠK Slovan Bratislava,1,1,Ended
+12684536,1724266800,Malmö FF,AC Sparta Praha,0,2,Ended
+12684588,1724266800,Dynamo Kyiv,Red Bull Salzburg,0,2,Ended
+12650706,1724266800,BSC Young Boys,Galatasaray,3,2,Ended
+12684540,1724785200,AC Sparta Praha,Malmö FF,2,0,Ended
+12685671,1724785200,Red Bull Salzburg,Dynamo Kyiv,1,1,Ended
+12650707,1724785200,Galatasaray,BSC Young Boys,0,1,Ended
+12684546,1724863500,Qarabağ FK,GNK Dinamo Zagreb,0,2,Ended
+12684537,1724871600,ŠK Slovan Bratislava,FC Midtjylland,3,2,Ended
+12685504,1724871600,SK Slavia Praha,Lille,2,1,Ended
+12684547,1724871600,FK Crvena zvezda,Bodø/Glimt,2,0,Ended
+12764526,1726591500,BSC Young Boys,Aston Villa,0,3,Ended
+12764285,1726591500,Juventus,PSV Eindhoven,3,1,Ended
+12764496,1726599600,Sporting CP,Lille,2,0,Ended
+12764072,1726599600,FC Bayern München,GNK Dinamo Zagreb,9,2,Ended
+12763940,1726599600,Milan,Liverpool FC,1,3,Ended
+12764442,1726599600,Real Madrid,VfB Stuttgart,3,1,Ended
+12764489,1726677900,AC Sparta Praha,Red Bull Salzburg,3,0,Ended
+12764143,1726677900,Bologna,Shakhtar Donetsk,0,0,Ended
+12764175,1726686000,Celtic,ŠK Slovan Bratislava,5,1,Ended
+12566489,1721842200,PAOK,FK Borac Banja Luka,3,2,Ended
+12566343,1721844000,Ludogorets,Dinamo Minsk,2,0,Ended
+12566342,1721844900,NK Celje,ŠK Slovan Bratislava,1,1,Ended
+12548608,1722355200,Qarabağ FK,Lincoln Red Imps,5,0,Ended
+12568934,1722358800,FC Petrocub Hîncesti,APOEL Nicosia,1,1,Ended
+12548611,1722358800,AC Sparta Praha,Shamrock Rovers,4,2,Ended
+12444861,1722358800,Fenerbahçe,FC Lugano,2,1,Ended
+12548607,1722362400,The New Saints,Ferencváros TC,1,2,Ended
+12568932,1722364200,ŠK Slovan Bratislava,NK Celje,5,0,Ended
+12568929,1722365100,Klaksvíkar Ítróttarfelag,Malmö FF,3,2,Ended
+12568935,1722445200,RFS,Bodø/Glimt,1,3,Ended
+12558955,1722446100,FC Midtjylland,UE Santa Coloma,1,0,Ended
+12558961,1722448800,Maccabi Tel Aviv,FCSB,0,1,Ended
+12444860,1722448800,FK Partizan,Dynamo Kyiv,0,3,Ended
+12548603,1722450600,Jagiellonia Białystok,FK Panevėžys,3,1,Ended
+12568933,1722451500,Dinamo Minsk,Ludogorets,1,0,Ended
+12566490,1722452400,FK Borac Banja Luka,PAOK,0,1,Ended
+12630515,1722960000,Qarabağ FK,Ludogorets,1,2,Ended
+12630514,1722963600,Malmö FF,PAOK,2,2,Ended
+12630419,1722964500,FC Midtjylland,Ferencváros TC,2,0,Ended
+12630489,1722967200,AC Sparta Praha,FCSB,1,1,Ended
+12630516,1722967200,Dynamo Kyiv,Rangers,1,1,Ended
+12627097,1722969000,Lille,Fenerbahçe,2,1,Ended
+12584047,1722969900,Red Bull Salzburg,FC Twente,2,1,Ended
+12584046,1723050000,SK Slavia Praha,Royale Union Saint-Gilloise,3,1,Ended
+12627098,1723055400,ŠK Slovan Bratislava,APOEL Nicosia,2,0,Ended
+12630518,1723056300,Jagiellonia Białystok,Bodø/Glimt,0,1,Ended
+12628382,1723568400,APOEL Nicosia,ŠK Slovan Bratislava,0,0,Ended
+12631519,1723568400,Bodø/Glimt,Jagiellonia Białystok,4,1,Ended
+12587491,1723568400,FC Twente,Red Bull Salzburg,3,3,Ended
+12438124,1720630800,ŠK Slovan Bratislava,FC Struga Trim & Lum,4,2,Ended
+12438150,1720634400,Klaksvíkar Ítróttarfelag,Differdange FC 03,2,0,Ended
+12438128,1720634400,Ludogorets,Dinamo Batumi,3,1,Ended
+12438154,1720637100,Dinamo Minsk,Pyunik Yerevan,0,0,Ended
+12438126,1720638000,FK Borac Banja Luka,KF Egnatia,1,0,Ended
+12438138,1721140200,KF Ballkani,UE Santa Coloma,6,8,AP
+12438134,1721145600,Lincoln Red Imps,Ħamrun Spartans FC,5,5,AP
+12438155,1721145600,Pyunik Yerevan,Dinamo Minsk,0,1,Ended
+12438132,1721145600,HJK,FK Panevėžys,1,1,Ended
+12438145,1721149200,NK Celje,Flora Tallinn,2,1,Ended
+12438153,1721151000,FCSB,SS Virtus,4,0,Ended
+12438148,1721156400,FK Dečić Tuzi,The New Saints,1,1,Ended
+12438143,1721156400,Shamrock Rovers,Víkingur Reykjavík,2,1,Ended
+12438149,1721228400,FC Struga Trim & Lum,ŠK Slovan Bratislava,1,2,Ended
+12438141,1721235600,FC Petrocub Hîncesti,FC Ordabasy,1,0,Ended
+12438151,1721235600,Differdange FC 03,Klaksvíkar Ítróttarfelag,0,0,Ended
+12438129,1721235600,Dinamo Batumi,Ludogorets,1,0,Ended
+12438146,1721242800,KF Egnatia,FK Borac Banja Luka,3,5,AP
+12438137,1721242800,Larne FC,RFS,0,4,Ended
+12566447,1721746800,Bodø/Glimt,RFS,4,0,Ended
+12548595,1721748600,FK Panevėžys,Jagiellonia Białystok,0,4,Ended
+12548600,1721750400,Lincoln Red Imps,Qarabağ FK,0,2,Ended
+12566341,1721754000,APOEL Nicosia,FC Petrocub Hîncesti,1,0,Ended
+12566445,1721754000,Malmö FF,Klaksvíkar Ítróttarfelag,4,1,Ended
+12548610,1721755800,FCSB,Maccabi Tel Aviv,1,1,Ended
+12548609,1721757600,UE Santa Coloma,FC Midtjylland,0,3,Ended
+12548601,1721757600,Ferencváros TC,The New Saints,5,0,Ended
+12442372,1721757600,Dynamo Kyiv,FK Partizan,6,2,Ended
+12442373,1721759400,FC Lugano,Fenerbahçe,3,4,Ended
+12548606,1721761200,Shamrock Rovers,AC Sparta Praha,0,2,Ended
+12438131,1720539000,FK Panevėžys,HJK,3,0,Ended
+12438133,1720543500,Ħamrun Spartans FC,Lincoln Red Imps,0,1,Ended
+12438139,1720548000,UE Santa Coloma,KF Ballkani,1,2,Ended
+12438125,1720548000,The New Saints,FK Dečić Tuzi,3,0,Ended
+12438142,1720550700,Víkingur Reykjavík,Shamrock Rovers,0,0,Ended
+12438152,1720551600,SS Virtus,FCSB,1,7,Ended
+12438140,1720623600,FC Ordabasy,FC Petrocub Hîncesti,0,0,Ended
+12438144,1720627200,Flora Tallinn,NK Celje,0,5,Ended
+12438136,1720630800,RFS,Larne FC,3,0,Ended

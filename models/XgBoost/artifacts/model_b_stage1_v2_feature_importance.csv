@@ -1,0 +1,214 @@
+feature,importance
+next_opponent_team_Manchester City,0.029060181
+next_player_team_Manchester City,0.027610645
+next_rating_mean_last_10,0.024564702
+next_is_home,0.01610413
+next_team_possession_mean_last_5,0.01563323
+next_competition_Premier League,0.0150891645
+next_player_team_Manchester United,0.014097369
+next_opponent_team_Arsenal,0.014067497
+next_opponent_team_Southampton,0.014020597
+next_opponent_team_Bournemouth,0.013895519
+next_opponent_team_Brighton,0.013180674
+next_player_team_Crystal Palace,0.012568812
+next_opponent_goals_against_mean_last_5,0.01247105
+next_rating_mean_last_5,0.012448966
+next_opponent_points_mean_last_5,0.0123622045
+next_player_team_West Ham,0.012186244
+next_player_team_Leeds,0.01198201
+next_player_team_Fleetwood Town,0.011746922
+next_competition_FA Cup,0.011671435
+next_player_team_Rangers,0.011574369
+next_opponent_team_RB Leipzig,0.011292946
+next_player_team_Brentford,0.011071125
+next_player_team_Real Madrid,0.011010684
+next_opponent_goals_for_mean_last_5,0.010980504
+next_player_team_Newcastle,0.01070339
+next_player_team_Liverpool,0.010698459
+next_opponent_team_Blackburn,0.010487937
+next_player_team_Nottingham Forest,0.010481157
+next_opponent_team_Rangers,0.010370332
+next_opponent_team_Newcastle,0.010321748
+next_player_team_Bournemouth,0.01031495
+next_opponent_team_Coalville Town,0.009967004
+next_team_rating_mean_last_5,0.009945713
+next_opponent_team_Liverpool,0.0099196825
+next_opponent_team_Cardiff,0.0097410325
+next_team_goals_against_mean_last_5,0.009512872
+next_opponent_team_Sheffield Wednesday,0.009476845
+next_player_team_Arsenal,0.009204847
+next_player_team_Wolves,0.009179191
+next_player_team_Brighton,0.009167802
+next_opponent_team_Leeds,0.009075019
+next_player_team_Aston Villa,0.009067979
+next_player_team_Derby,0.009012459
+next_player_team_Charlton,0.0089752255
+next_player_team_Borussia Dortmund,0.008951014
+next_player_team_Tottenham,0.008874513
+next_opponent_team_Manchester United,0.008857192
+next_competition_League Cup,0.008807918
+next_team_points_mean_last_5,0.008784376
+next_player_team_Blackburn,0.00877881
+next_opponent_team_Everton,0.0087477
+next_rating_median_last_5,0.008720048
+next_opponent_team_Aston Villa,0.008650017
+next_opponent_team_Real Madrid,0.008649537
+next_opponent_team_Fleetwood Town,0.008632937
+next_player_team_RB Leipzig,0.008609923
+next_player_team_Torquay,0.008552707
+next_team_goals_for_mean_last_5,0.008398334
+next_opponent_team_Fulham,0.008360609
+next_player_team_Grimsby,0.008350402
+next_opponent_team_Reading,0.008026071
+next_player_team_Southampton,0.007991563
+next_opponent_team_Burnley,0.007981931
+next_player_team_Chelsea,0.007970283
+next_opponent_team_Accrington ST,0.007949916
+next_opponent_team_Bristol City,0.007883364
+next_opponent_team_Brentford,0.007830167
+next_opponent_team_Sheffield Utd,0.007633363
+next_player_team_Cardiff,0.0076327696
+next_player_team_Eintracht Frankfurt,0.007401101
+next_opponent_team_Leicester,0.007399337
+next_opponent_team_Tottenham,0.0072956956
+next_player_team_Stoke City,0.0072386493
+next_opponent_team_Eintracht Frankfurt,0.0072326707
+player_position_G,0.0070793135
+next_opponent_team_South Shields,0.007060216
+next_opponent_team_Preston,0.007038089
+player_position_F,0.0070034526
+next_opponent_team_Napoli,0.0069604213
+next_player_team_Wycombe,0.0069146273
+next_player_team_Bristol City,0.006783055
+next_competition_Champions League,0.0067608533
+next_opponent_team_Torquay,0.00671578
+next_rating_trend_last_5,0.006627299
+next_opponent_team_King's Lynn Town,0.006578691
+player_position_D,0.006566034
+next_opponent_team_Wolves,0.006553042
+next_player_team_Dagenham & Redbridge,0.00637367
+next_player_team_Portsmouth,0.0063626035
+next_rating_std_last_5,0.0063342554
+next_opponent_team_Farnborough,0.006283475
+next_player_team_Forest Green,0.0062527647
+next_opponent_team_Sevilla,0.006248254
+next_rating_mean_last_3,0.0062398184
+next_opponent_team_Newport County,0.005827069
+next_player_team_Oxford United,0.005793901
+next_player_team_Bolton,0.005763321
+next_player_team_Middlesbrough,0.005642541
+next_opponent_team_Milton Keynes Dons,0.0055656154
+next_player_team_Rochdale,0.005528229
+next_opponent_team_Chelsea,0.0053941417
+next_player_team_Fulham,0.005324721
+next_opponent_team_Wrexham,0.0050981967
+next_opponent_team_Barrow,0.0047313133
+next_opponent_team_West Brom,0.0045624217
+next_player_team_FC Copenhagen,0.004424113
+player_position_M,0.0041083847
+next_opponent_team_West Ham,0.0037403596
+next_opponent_team_Borussia Dortmund,0.0016414862
+next_opponent_team_Charlton,0.0016109825
+next_player_team_Peterborough,0.0
+next_player_team_Bradford,0.0
+next_player_team_Bristol Rovers,0.0
+next_player_team_Burton Albion,0.0
+next_player_team_Cambridge United,0.0
+next_player_team_Colchester,0.0
+next_player_team_Crawley Town,0.0
+next_season,0.0
+next_player_team_Norwich,0.0
+next_player_team_Napoli,0.0
+next_player_team_Newport County,0.0
+next_player_team_Morecambe,0.0
+next_player_team_Lincoln,0.0
+next_player_team_Marseille,0.0
+next_player_team_Milton Keynes Dons,0.0
+next_player_team_Luton,0.0
+next_player_team_Everton,0.0
+next_player_team_Dinamo Zagreb,0.0
+next_player_team_Exeter City,0.0
+next_player_team_Gillingham,0.0
+next_player_team_Hull City,0.0
+next_player_team_Ipswich,0.0
+next_player_team_Leicester,0.0
+next_player_team_Boreham Wood,0.0
+next_player_team_Blackpool,0.0
+next_player_team_Bayern Munich,0.0
+next_player_team_Birmingham,0.0
+next_player_team_Barrow,0.0
+next_player_team_Barnsley,0.0
+next_player_team_Ajax,0.0
+next_player_team_Accrington ST,0.0
+next_player_team_AC Milan,0.0
+next_player_team_Burnley,0.0
+next_opponent_team_Ajax,0.0
+next_player_team_Shrewsbury,0.0
+next_player_team_Sporting CP,0.0
+next_player_team_Red Bull Salzburg,0.0
+next_player_team_Reading,0.0
+next_player_team_Preston,0.0
+next_opponent_team_Derby,0.0
+next_opponent_team_Dagenham & Redbridge,0.0
+next_opponent_team_Curzon Ashton,0.0
+next_opponent_team_Crystal Palace,0.0
+next_opponent_team_Crawley Town,0.0
+next_opponent_team_Chippenham Town,0.0
+next_opponent_team_Chesterfield,0.0
+next_opponent_team_Cambridge United,0.0
+next_opponent_team_Buxton,0.0
+next_opponent_team_Bayern Munich,0.0
+next_opponent_team_Alvechurch,0.0
+next_opponent_team_Blackpool,0.0
+next_opponent_team_Boreham Wood,0.0
+next_opponent_team_Bolton,0.0
+next_opponent_team_Bracknell Town,0.0
+next_opponent_team_Bradford,0.0
+next_opponent_team_Barnsley,0.0
+next_opponent_team_Birmingham,0.0
+next_player_team_Sheffield Wednesday,0.0
+next_player_team_Sheffield Utd,0.0
+next_player_team_Salford City,0.0
+next_player_team_Sevilla,0.0
+next_player_team_Rotherham,0.0
+next_player_team_Stevenage,0.0
+next_player_team_Walsall,0.0
+next_player_team_Tranmere,0.0
+next_player_team_Stockport County,0.0
+next_player_team_Sunderland,0.0
+next_player_team_Wrexham,0.0
+next_player_team_West Brom,0.0
+next_opponent_team_AC Milan,0.0
+next_opponent_team_Dinamo Zagreb,0.0
+next_opponent_team_Nottingham Forest,0.0
+next_opponent_team_Norwich,0.0
+next_opponent_team_Middlesbrough,0.0
+next_opponent_team_Morecambe,0.0
+next_opponent_team_Luton,0.0
+next_opponent_team_Lincoln,0.0
+next_opponent_team_Marseille,0.0
+next_opponent_team_Ebbsfleet United,0.0
+next_opponent_team_Exeter City,0.0
+next_opponent_team_FC Copenhagen,0.0
+next_opponent_team_Grimsby,0.0
+next_opponent_team_Gillingham,0.0
+next_opponent_team_Hereford,0.0
+next_opponent_team_Hull City,0.0
+next_opponent_team_Inter,0.0
+next_opponent_team_Ipswich,0.0
+next_opponent_team_Red Bull Salzburg,0.0
+next_opponent_team_Rochdale,0.0
+next_opponent_team_Rotherham,0.0
+next_opponent_team_Salford City,0.0
+next_opponent_team_Oxford United,0.0
+next_opponent_team_Portsmouth,0.0
+next_opponent_team_Peterborough,0.0
+next_opponent_team_Sporting CP,0.0
+next_opponent_team_Stoke City,0.0
+next_opponent_team_Sunderland,0.0
+next_opponent_team_Stevenage,0.0
+next_opponent_team_Stockport County,0.0
+next_opponent_team_Watford,0.0
+next_opponent_team_Walsall,0.0
+next_opponent_team_Tranmere,0.0
+next_opponent_team_Wycombe,0.0

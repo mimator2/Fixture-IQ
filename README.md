@@ -2,7 +2,7 @@
 
 ## 🎯 Project Overview
 
-**Fixture IQ** is a data-driven analytical framework designed to quantify fixture congestion in elite football and evaluate its relationship with competitive performance and squad rotation. The project focuses on Premier League clubs competing in European competitions during the 2024-2025 season.
+**Fixture IQ** is a data-driven analytical framework designed to quantify fixture congestion in elite football and evaluate its relationship with competitive performance and squad rotation. The project covers Premier League clubs competing in European competitions across the 2022–2025 seasons (68,700+ player-match observations).
 
 ---
 
@@ -44,48 +44,41 @@ Even small performance differences can translate into significant financial cons
 
 ## 🔬 Main Objective
 
-**Develop a data-driven framework that quantifies fixture congestion and evaluates its relationship with competitive performance and squad rotation in Premier League clubs competing in European competitions.**
+**Develop a data-driven framework that quantifies fixture congestion and evaluates its relationship with competitive performance and squad rotation in Premier League clubs competing in European competitions, using an XGBoost machine learning model.**
 
 ### Specific Objectives
 
-1. **Data Integration**: Collect and integrate match, lineup, minutes, and performance data from public football sources into a structured dataset
+1. **Data Integration**: Collect and integrate match, lineup, minutes, and performance data from public football sources (API-Football, FBref) into a structured dataset via automated extraction pipelines.
 
-2. **Congestion Indicators**: Define and compute metrics such as:
+2. **Congestion Indicators**: Define and compute player-level workload metrics:
    - Days of rest between matches
-   - Number of matches in rolling time windows (7, 14, 21 days)
+   - Number of matches in rolling time windows (7, 14, 21, 28 days)
    - Domestic/European fixture sequences and transitions
+   - ACWR (acute-to-chronic workload ratio)
+   - Position-adjusted z-scores for minutes and action load
 
-3. **Performance Analysis**: Analyze relationships between congestion and:
-   - Points earned and match results
-   - Goal difference
-   - Expected goals (xG) and other advanced metrics
-   - Win rates under different scheduling conditions
+3. **Exploratory Analysis**: Analyze team-level and player-level patterns:
+   - Rest-period distributions and congestion categories
+   - Points per match and goal difference under high/moderate/normal rest
+   - European "hangover" effect on subsequent Premier League performance
+   - Squad rotation patterns and Jaccard-based rotation indices
+   - Injury-availability contextualisation
 
-4. **Rotation Analysis**: Measure changes in:
-   - Starting lineup composition
-   - Player-minute distribution
-   - Squad usage patterns across congestion levels
-   - Team-specific rotation strategies
+4. **Machine Learning Modelling**:
+   - **XGBoost V4B** (`fatigue_monitor/models/xgboost_v4b/`): Active fatigue-performance risk model. 75 features: workload windows, competition sequence, action load, injury context, position-adjusted z-scores. AUC-ROC 0.634, AUC-PR 0.422.
+   - **CatBoost V6** (`models/CatBoostClassifier/CatBoost.ipynb`): Complementary role-adjusted performance-risk model (legacy — not used by dashboard).
+   - The model predicts binary player-match risk labels for staff-support monitoring, with role-specific alert thresholds.
 
-5. **Comparative Insights**: Identify:
-   - Whether highly congested periods correlate with lower performance
-   - How different teams respond to similar scheduling pressure
-   - Which fixture transitions are most damaging
-
-6. **Decision Support**: Design a prototype dashboard and analytical framework to support:
-   - Performance analysts
-   - Coaching staff
-   - Technical directors
-   - Strategic planning
+5. **Dashboard Development**: A React + Vite frontend (`dashboard/`) that transforms model outputs into interpretable visual intelligence: risk badges, SHAP driver explanations, workload timelines, team congestion charts, and feature group contribution breakdowns.
 
 ---
 
 ## 📊 Core Hypotheses
 
-- **H1**: Lower rest periods and higher match density are associated with lower competitive performance
-- **H2**: Higher fixture congestion is associated with greater squad rotation
-- **H3**: Clubs show different rotation responses under congested conditions
-- **H4**: A data-driven dashboard can effectively identify congestion windows and support performance analysis
+- **H1**: Lower rest periods reduce performance. *Status: Not Supported — short-rest groups (≤3d) average slightly higher next-match ratings than normal-rest groups in both scorable (minutes ≥45) and full-population views, indicating simple rest heuristics do not predict fatigue.*
+- **H2**: Fixture congestion influences squad rotation patterns. *Status: Supported — rotation index 0.625 (low) vs 0.558 (medium). Managers keep a more settled XI during dense fixture blocks.*
+- **H3**: Clubs respond differently to congestion based on European involvement and squad depth. *Status: Partially Supported — Champions League clubs rotate 0.557 vs non-CL clubs 0.591; within-group variance is high.*
+- **H4**: A data-driven dashboard can help staff identify workload risk and support performance management decisions. *Status: Pending — requires longitudinal staff feedback study.*
 
 ---
 
@@ -116,47 +109,57 @@ Even small performance differences can translate into significant financial cons
 
 ---
 
-## 📈 Key Findings (2024-25 Season)
+## 📈 Key Findings (2022–2025)
 
-Based on analysis of Arsenal, Aston Villa, Liverpool, and Manchester City:
+Based on analysis of the full Premier League dataset (20 clubs, 68,700+ player-match observations):
 
-- **Congestion Impact**: Teams show measurable performance decline under fixture density
-- **Defensive Vulnerability**: Goal-against rate increases more than offensive decline during congestion
-- **European Hangover**: Post-Champions League matches show -13% PPM reduction
-- **Team Variation**: Response to congestion varies significantly (e.g., Liverpool +20% vs Manchester City -23% under pressure)
-- **Strategic Transitions**: PL-to-CL transitions are most damaging; CL-to-PL transitions show recovery
+- **V4B Model Performance**: AUC-ROC 0.634, AUC-PR 0.422 (1.38× baseline). Top drivers: position-normalised minutes, physical load vs season average, full-90 exposure, match frequency, rest patterns.
+- **Rotation Patterns**: Average rotation index 0.625 under low congestion vs 0.558 under medium congestion — managers keep a more settled XI during tighter schedules.
+- **CL vs non-CL**: Champions League clubs rotate 0.557 vs non-CL clubs 0.591; within-group variance is substantial.
+- **Feature Profile**: The V4B model's top features are interpretable workload/rest/recovery variables — minutes, starts, full-90s, rest days, UCL burden, physical action load.
+- **Model Limitations**: The model is correlational, not causal. It flags players for staff review, not automatic rest decisions. No GPS, wellness, or medical data is included.
 
 ---
 
 ## 🛠️ Technologies & Libraries
 
-- **Python 3.10+**
-- **Data Analysis**: pandas, numpy
-- **Visualization**: matplotlib, seaborn, PIL
+- **Python 3.10+**: pandas, numpy, scikit-learn, xgboost, shap, joblib
+- **Data extraction**: API-Football (REST), FBref (Selenium), SofaScore
+- **Machine learning**: XGBoost (V4B), SHAP for interpretability
+- **Dashboard**: React 18, Vite 6, Tailwind CSS, shadcn/ui, Recharts, TanStack Query
 - **Notebooks**: Jupyter
-- **Version Control**: Git/GitHub
+- **Version control**: Git/GitHub
 
 ---
 
-## 🚀 Usage
+## 🚀 Launch dashboard
 
-1. **Review Data Sources**: See [Data.md](Data.md) for source descriptions and collection methods
-2. **Run Analysis**: Execute `01_Match_Calendar_and_Workload_Analysis.ipynb` sequentially
-3. **Interpret Results**: Follow markdown section headers for analytical flow and findings
-4. **Generate Insights**: Use visualizations and tables to inform squad management decisions
-
----
-
-## 📝 Project Timeline
-
-- **Data Collection**: 2024-25 season (August 2024 - May 2025)
-- **Analysis Phase**: Current
-- **Dashboard Development**: In progress
-- **Recommendations**: Ongoing
+```bash
+cd dashboard
+pip install -r ..\requirements.txt
+python export_data.py    # ~2 min: CSV → XGBoost V4B inference → public/data/*.json
+npm install              # first time only
+npm run dev              # http://localhost:5173
+```
 
 ---
 
-## 🤝 Contributing
+## 📁 Repository Structure
+
+| Directory | Purpose |
+|-----------|---------|
+| `Data/` | Master CSV (68k+ rows) and raw extraction outputs (gitignored) |
+| `Data_Extraction/` | Pipelines for API-Football, FBref, SofaScore |
+| `models/` | Training notebooks for XGBoost V4B + CatBoost V6 (legacy) |
+| `fatigue_monitor/` | Active inference pipeline, feature engineering, model artifacts |
+| `dashboard/` | React + Vite frontend and `export_data.py` batch job |
+| `thesis_memory/` | Thesis draft storage |
+
+See each directory's README.md for detailed documentation.
+
+---
+
+##  Contributing
 
 This project welcomes:
 - Additional team data
@@ -165,15 +168,8 @@ This project welcomes:
 - Advanced statistical models
 - Performance improvements
 
----
-
-## 📧 Contact & Inquiries
-
-For questions, suggestions, or collaboration opportunities, please open an issue or contact the project maintainer.
-
-
 
 ---
 
-**Last Updated**: May 2026  
+**Last Updated**: Jun 2026  
 **Status**: Active Development

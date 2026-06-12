@@ -1,0 +1,24 @@
+# Data Manipulation & Core Mathematics
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Machine Learning & Evaluation Metrics
+scikit-learn>=1.5.0,<1.9.0
+shap>=0.41.0
+eli5>=0.13.0
+
+# Gradient Boosting Frameworks
+catboost>=1.2.0
+xgboost>=2.0.0
+
+plotly
+
+# Dashboard export
+joblib>=1.2
+
+#SofascoreFC
+soccerdata

@@ -1,0 +1,176 @@
+import { useState, useMemo, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { usePlayerRisk } from "@/hooks/usePlayerRisks";
+import RiskBadge from "@/components/risk/RiskBadge";
+import FlagBadge from "@/components/risk/FlagBadge";
+import ScoreGauge from "@/components/risk/ScoreGauge";
+import PlayerExplanation from "@/components/risk/PlayerExplanation";
+import WorkloadSection from "@/components/risk/WorkloadSection";
+import CompetitionSection from "@/components/risk/CompetitionSection";
+import MatchActionsSection from "@/components/risk/MatchActionsSection";
+import SquadContextSection from "@/components/risk/SquadContextSection";
+import WorkloadTimeline from "@/components/risk/WorkloadTimeline";
+import InfoTip, { METRIC_HELP } from "@/components/ui/InfoTip";
+import { ArrowLeft, Shield, Activity, AlertTriangle, Gauge, BrainCircuit } from "lucide-react";
+
+const ACTION_COLORS = {
+  "Normal Monitoring":              "bg-chart-3/10 text-chart-3 border-chart-3/20",
+  "Monitor Training Response":      "bg-chart-4/10 text-chart-4 border-chart-4/20",
+  "Check GPS/Wellness/Soreness":    "bg-chart-4/10 text-chart-4 border-chart-4/20",
+  "Review Minutes Plan":            "bg-chart-5/10 text-chart-5 border-chart-5/20",
+  "Consider Rest / Recovery Protocol": "bg-red-400/10 text-red-400 border-red-400/20",
+};
+
+export default function PlayerDetail() {
+  const { playerId } = useParams();
+  const { data: player, isLoading } = usePlayerRisk(playerId);
+  const [timelineData, setTimelineData] = useState([]);
+
+  useEffect(() => {
+    if (player) {
+      fetch(`/data/player_timelines/${player.id}.json`)
+        .then(r => r.ok ? r.json() : [])
+        .then(setTimelineData)
+        .catch(() => setTimelineData([]));
+    }
+  }, [player?.id]);
+
+  const playerExplanation = useMemo(
+    () => player ? <PlayerExplanation player={player} /> : null,
+    [player?.id]
+  );
+  const sectionsGrid = useMemo(
+    () => player ? (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <WorkloadSection player={player} />
+        <CompetitionSection player={player} />
+        <MatchActionsSection player={player} />
+        <SquadContextSection player={player} />
+      </div>
+    ) : null,
+    [player?.id]
+  );
+
+  if (isLoading) return (
+    <div className="max-w-5xl mx-auto px-4 py-8 space-y-4">
+      {[1,2,3].map(i => <div key={i} className="bg-card border border-border rounded-xl h-40 animate-pulse" />)}
+    </div>
+  );
+
+  if (!player) return (
+    <div className="max-w-5xl mx-auto px-4 py-12 text-center text-muted-foreground">Player not found.</div>
+  );
+
+  const actionCls = ACTION_COLORS[player.recommended_action] || "bg-muted text-muted-foreground border-border";
+
+  return (
+    <div className="min-h-screen bg-background">
+      <div className="max-w-5xl mx-auto px-4 py-8 space-y-6">
+
+        {/* Back */}
+        <Link to="/player-monitor" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <ArrowLeft className="w-4 h-4" /> Back to Monitor
+        </Link>
+
+        {/* Header */}
+        <div className="bg-card border border-border rounded-xl p-6">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+            <div>
+              <h1 className="text-2xl font-bold mb-1">{player.player_name}</h1>
+              <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-3">
+                <span>{player.team_name}</span>
+                <span>·</span>
+                <span>{player.position}</span>
+                <span>·</span>
+                <span>{player.player_role}</span>
+                <span>·</span>
+                <span>{player.season}</span>
+              </div>
+              <div className="flex flex-wrap gap-2 items-center">
+                <RiskBadge band={player.risk_band} size="lg" />
+                {(player.risk_flags || []).map(f => <FlagBadge key={f} flag={f} />)}
+              </div>
+            </div>
+            <div className="flex flex-col items-end gap-2">
+              <div className={`px-4 py-2 rounded-lg border text-sm font-medium ${actionCls} text-center max-w-56`}>
+                {player.recommended_action}
+              </div>
+              <Link
+                to={`/model/${player.id}`}
+                className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
+              >
+                <BrainCircuit className="w-3.5 h-3.5" />
+                View model drivers
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* A. Current Risk Assessment */}
+        <div>
+          <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+            <Activity className="w-4 h-4 text-primary" />
+            Current Risk Assessment
+          </h2>
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4"> */}
+            <ScoreGauge
+              label="Risk Score"
+              description="0–1 scale. Higher values mean more workload-related risk signals detected."
+              score={player.fatigue_score}
+              color={player.risk_band === "Very High" ? "red" : player.risk_band === "High" ? "amber" : player.risk_band === "Medium" ? "amber" : "teal"}
+            />
+          <details className="group mt-2">
+            <summary className="text-xs text-muted-foreground cursor-pointer hover:text-foreground transition-colors select-none">
+              What does this score mean?
+            </summary>
+            <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
+              The risk score reflects how closely the player's current workload, rest patterns,
+              competition schedule, and squad context resemble situations that have historically
+              led to underperformance or managed minutes. It is a monitoring signal, not a
+              diagnosis — a high score means "review this player before the next match", not
+              "this player is fatigued". Combine with GPS data, wellness reports, and staff
+              observation for the full picture.
+            </p>
+          </details>
+          <div className="grid grid-cols-3 gap-3 mt-3">
+            <div className="bg-muted/30 rounded-lg p-3 text-center">
+              <div className="flex items-center justify-center gap-1.5 mb-1">
+                <AlertTriangle className="w-3.5 h-3.5 text-chart-5" />
+                <span className="text-xs text-muted-foreground">Risk Band</span>
+              </div>
+              <div className={`text-lg font-bold ${player.risk_band === "Very High" ? "text-red-400" : player.risk_band === "High" ? "text-chart-5" : player.risk_band === "Medium" ? "text-chart-4" : "text-chart-3"}`}>{player.risk_band}</div>
+            </div>
+            <div className="bg-muted/30 rounded-lg p-3 text-center">
+              <div className="flex items-center justify-center gap-1.5 mb-1">
+                <Shield className="w-3.5 h-3.5 text-primary" />
+                <span className="text-xs text-muted-foreground">Monitoring Flag</span>
+                <InfoTip text={METRIC_HELP.risk_flags} />
+              </div>
+              <div className={`text-lg font-bold ${player.risk_flags?.length ? "text-chart-5" : "text-chart-3"}`}>{player.risk_flags?.length ? "Active" : "Clear"}</div>
+            </div>
+            <div className="bg-muted/30 rounded-lg p-3 text-center">
+              <div className="flex items-center justify-center gap-1.5 mb-1">
+                <Gauge className="w-3.5 h-3.5 text-primary" />
+                <span className="text-xs text-muted-foreground">Threshold</span>
+                <InfoTip text={METRIC_HELP.monitoring_threshold} />
+              </div>
+              <div className="text-lg font-bold text-primary">{player.monitoring_threshold?.toFixed(3) ?? "—"}</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Player Explanation — rule-based SHAP proxy */}
+        {playerExplanation}
+
+        {/* B–E: Section components */}
+        {sectionsGrid}
+
+        {/* Workload Timeline */}
+        <WorkloadTimeline data={timelineData} />
+
+
+
+      </div>
+    </div>
+  );
+}
