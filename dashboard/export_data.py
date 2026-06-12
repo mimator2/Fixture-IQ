@@ -473,8 +473,8 @@ def main():
 
     # --- Build hypotheses.json (compute values from actual data) ---
     # H1: use full dataset for general rating pattern
-    sr = df[df["rest_days"] <= 4]["next_api_rating"].dropna()
-    nr = df[df["rest_days"] > 4]["next_api_rating"].dropna()
+    sr = df[df["rest_days"] <= 3]["next_api_rating"].dropna()
+    nr = df[df["rest_days"] > 3]["next_api_rating"].dropna()
     rating_diff = sr.mean() - nr.mean()
     n_obs = len(df)
     n_seasons = df["season"].nunique()
@@ -497,12 +497,12 @@ def main():
             "id": "h1",
             "hypothesis_id": "H1",
             "title": "Lower rest periods reduce performance.",
-            "description": f"Across all {n_obs:,} observations ({n_seasons} seasons), players with ≤4 days rest show a {abs(rating_diff):+.2f} point {'higher' if rating_diff > 0 else 'lower'} average next-match rating vs normal rest — a negligible raw difference. The V4B model detects multi-feature fatigue signals beyond raw rating.",
+            "description": f"Across all {n_obs:,} observations ({n_seasons} seasons), players with ≤3 days rest show a {abs(rating_diff):+.2f} point {'higher' if rating_diff > 0 else 'lower'} average next-match rating vs normal rest (>3 days) — a negligible raw difference. The V4B model detects multi-feature fatigue signals beyond raw rating.",
             "status": "Partially Supported",
             "evidence_summary": f"Raw rating difference: {rating_diff:+.3f} ({sr.mean():.2f} short-rest vs {nr.mean():.2f} normal-rest, n={len(sr)+len(nr):,}). The V4B model's multivariate approach captures position-specific and contextual fatigue signals not visible in raw rating averages.",
-            "key_metric": "Rating change under ≤4d rest",
+            "key_metric": "Rating change under ≤3d rest",
             "key_value": f"{rating_diff:+.3f} avg rating difference",
-            "detail": f"Analysis of {n_obs:,} player-match observations across {n_seasons} seasons. Under ≤4 days rest, next-match ratings average {sr.mean():.3f} (n={len(sr):,}) vs {nr.mean():.3f} under normal rest (n={len(nr):,}) — a {rating_diff:+.3f} difference. While the raw rating gap is small and in the unexpected direction, the V4B model integrates rest with workload, action load, injury context, and competition sequence to identify elevated fatigue risk scenarios."
+            "detail": f"Analysis of {n_obs:,} player-match observations across {n_seasons} seasons. Under ≤3 days rest, next-match ratings average {sr.mean():.3f} (n={len(sr):,}) vs {nr.mean():.3f} under normal rest >3 days (n={len(nr):,}) — a {rating_diff:+.3f} difference. While the raw rating gap is small and in the unexpected direction, the V4B model integrates rest with workload, action load, injury context, and competition sequence to identify elevated fatigue risk scenarios."
         },
         {
             "id": "h2",

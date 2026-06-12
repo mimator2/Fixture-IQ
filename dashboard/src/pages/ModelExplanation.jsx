@@ -1,13 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "react-router-dom";
-import { usePlayerRisk } from "@/hooks/usePlayerRisks";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from "recharts";
 import {
-  Info, AlertTriangle, BarChart3, Layers, Shield, ArrowLeft,
+  Info, BarChart3, Layers, Shield, ArrowLeft,
 } from "lucide-react";
-import PlayerExplanation from "@/components/risk/PlayerExplanation";
 
 const fetchJson = async (url) => {
   const res = await fetch(url);
@@ -48,7 +46,6 @@ const GROUP_COLORS = {
 export default function ModelExplanation() {
   const { playerId } = useParams();
   const { data: metadata, isLoading: metaLoading } = useModelMetadata();
-  const { data: player } = usePlayerRisk(playerId);
 
   if (metaLoading) {
     return (
@@ -100,7 +97,7 @@ export default function ModelExplanation() {
           </div>
           <p className="text-muted-foreground text-sm max-w-2xl">
             How the V4B XGBoost model assesses workload-associated risk — global feature drivers,
-            player-specific contributors, threshold policy, and limitations.
+            threshold policy, and limitations.
           </p>
         </div>
 
@@ -159,49 +156,7 @@ export default function ModelExplanation() {
           </div>
         </div>
 
-        {/* C. Player-specific drivers */}
-        {playerId ? (
-          <PlayerExplanation player={player} />
-        ) : (
-          <div className="bg-card border border-border rounded-xl p-5">
-            <div className="flex items-center gap-2 mb-3">
-              <AlertTriangle className="w-4 h-4 text-chart-5" />
-              <h3 className="font-semibold">Player-Specific Feature Drivers</h3>
-            </div>
-            <p className="text-xs text-muted-foreground mb-4">
-              Navigate to a player detail page to see their specific risk drivers. Example shown below.
-            </p>
-            <ol className="space-y-2">
-              {[
-                { text: "minutes_median_last_5 = 90", contribution: 0.5144 },
-                { text: "cup_minutes_last_14d = 90", contribution: 0.2209 },
-                { text: "min_last_14d = 210", contribution: 0.1829 },
-                { text: "squad_injured_count = 4", contribution: 0.1011 },
-                { text: "matches_with_rest_le_4d_last_30d = 3", contribution: 0.0589 },
-              ].map((r, i) => {
-                const weight = Math.round(Math.min(100, Math.abs(r.contribution) * 500));
-                return (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-primary/15 text-primary text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
-                      {i + 1}
-                    </span>
-                    <div className="flex-1 min-w-0">
-                      <span className="text-sm text-foreground/90">{r.text}</span>
-                      <span className="text-xs text-muted-foreground block">
-                        Contribution: +{r.contribution.toFixed(4)}
-                      </span>
-                    </div>
-                    <div className="w-20 h-1.5 bg-muted rounded-full overflow-hidden self-center shrink-0">
-                      <div className="h-full bg-primary/60 rounded-full" style={{ width: `${weight}%` }} />
-                    </div>
-                  </li>
-                );
-              })}
-            </ol>
-          </div>
-        )}
-
-        {/* D. Threshold Policy */}
+        {/* C. Threshold Policy */}
         <div className="bg-card border border-border rounded-xl p-6">
           <div className="flex items-center gap-2 mb-3">
             <Shield className="w-4 h-4 text-primary" />
@@ -222,7 +177,7 @@ export default function ModelExplanation() {
           </p>
         </div>
 
-        {/* E. Model Limitations */}
+        {/* D. Model Limitations */}
         <div className="bg-card border border-border rounded-xl p-6">
           <div className="flex items-center gap-2 mb-3">
             <Info className="w-4 h-4 text-accent" />
