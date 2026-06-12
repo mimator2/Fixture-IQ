@@ -1,0 +1,3 @@
+Model,Interpretation,Uses Recent Rating Baseline,AUROC,PR_AUC,F1_at_0_50,Precision_at_0_50,Recall_at_0_50,Balanced_Accuracy_at_0_50,Features
+V6 No Competition,Best predictive role-adjusted risk model,Yes,0.6752579904804439,0.4694956462809039,0.4841628959276018,0.44490644490644493,0.5310173697270472,0.637019753198461,100
+V6 No Competition No Rating Baseline,Cleaner fatigue/workload/action-load interpretation model,No,0.6079058170554336,0.38472766015864407,0.41333333333333333,0.37424547283702214,0.46153846153846156,0.581106093136892,98

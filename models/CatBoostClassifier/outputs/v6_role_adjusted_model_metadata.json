@@ -1,0 +1,737 @@
+{
+    "model_name": "V6 Role-Adjusted Fatigue Risk - No Competition",
+    "target": "v6_role_adjusted_fatigue_performance_risk",
+    "features": [
+        "player_position",
+        "player_role_v6",
+        "is_home",
+        "is_substitute",
+        "start_flag",
+        "rest_days_missing",
+        "squad_injured_count_missing",
+        "squad_soft_tissue_count_missing",
+        "squad_avg_days_out_missing",
+        "days_since_last_injury_missing",
+        "fixtures_missed_last_30d_missing",
+        "fixtures_missed_last_90d_missing",
+        "returning_from_injury_missing",
+        "acwr_ratio_missing",
+        "min_last_7d_missing",
+        "days_since_european_match_missing",
+        "rest_days",
+        "acwr_ratio",
+        "consecutive_away_games",
+        "min_last_7d",
+        "min_last_14d",
+        "min_last_21d",
+        "min_last_28d",
+        "starts_last_7d",
+        "starts_last_14d",
+        "starts_last_28d",
+        "full_90s_last_7d",
+        "full_90s_last_14d",
+        "full_90s_last_28d",
+        "matches_with_rest_le_3d_last_30d",
+        "matches_with_rest_le_4d_last_30d",
+        "matches_with_rest_le_6d_last_30d",
+        "minutes_median_last_5",
+        "minutes_median_last_10",
+        "starts_last_10_matches",
+        "appearances_last_10_matches",
+        "avg_minutes_last_10",
+        "is_champions_league",
+        "is_european_fixture",
+        "is_domestic_cup",
+        "is_league",
+        "ucl_minutes_last_7d",
+        "ucl_minutes_last_14d",
+        "ucl_minutes_last_21d",
+        "ucl_matches_last_30d",
+        "cup_minutes_last_7d",
+        "cup_minutes_last_14d",
+        "cup_matches_last_30d",
+        "days_since_european_match",
+        "post_ucl_short_rest",
+        "pl_after_ucl_with_short_rest",
+        "minutes_last_3_matches",
+        "minutes_last_5_matches",
+        "starts_last_5",
+        "appearances_last_5",
+        "all_comp_minutes_pressure",
+        "avg_minutes_last_5",
+        "managed_minutes_last_5",
+        "full_match_exposure_last_5",
+        "avg_rating_last_3",
+        "avg_rating_last_5",
+        "shots_last_5",
+        "key_passes_last_5",
+        "tackles_last_5",
+        "interceptions_last_5",
+        "dribbles_attempts_last_5",
+        "duels_total_last_5",
+        "fouls_committed_last_5",
+        "recent_action_load_score",
+        "high_recent_action_load_by_position",
+        "minutes_last_5_matches_pos_z",
+        "minutes_last_3_matches_pos_z",
+        "min_last_7d_pos_z",
+        "all_comp_minutes_pressure_pos_z",
+        "recent_action_load_score_pos_z",
+        "shots_last_5_pos_z",
+        "key_passes_last_5_pos_z",
+        "tackles_last_5_pos_z",
+        "interceptions_last_5_pos_z",
+        "dribbles_attempts_last_5_pos_z",
+        "duels_total_last_5_pos_z",
+        "squad_injured_count",
+        "squad_soft_tissue_count",
+        "squad_avg_days_out",
+        "fixtures_missed_last_30d",
+        "fixtures_missed_last_90d",
+        "returning_from_injury",
+        "days_since_last_injury",
+        "recent_injury_return_flag",
+        "medium_recent_injury_return_flag",
+        "long_recent_injury_history_flag",
+        "missed_recent_fixture_flag",
+        "missed_multiple_recent_fixtures_flag",
+        "missed_fixtures_90d_pressure",
+        "high_squad_injury_pressure",
+        "high_soft_tissue_pressure",
+        "long_squad_absence_pressure",
+        "squad_injury_high_workload",
+        "soft_tissue_pressure_high_load",
+        "injury_context_score"
+    ],
+    "categorical_features": [
+        "is_home",
+        "is_substitute",
+        "player_position",
+        "player_role_v6"
+    ],
+    "numerical_features": [
+        "start_flag",
+        "rest_days_missing",
+        "squad_injured_count_missing",
+        "squad_soft_tissue_count_missing",
+        "squad_avg_days_out_missing",
+        "days_since_last_injury_missing",
+        "fixtures_missed_last_30d_missing",
+        "fixtures_missed_last_90d_missing",
+        "returning_from_injury_missing",
+        "acwr_ratio_missing",
+        "min_last_7d_missing",
+        "days_since_european_match_missing",
+        "rest_days",
+        "acwr_ratio",
+        "consecutive_away_games",
+        "min_last_7d",
+        "min_last_14d",
+        "min_last_21d",
+        "min_last_28d",
+        "starts_last_7d",
+        "starts_last_14d",
+        "starts_last_28d",
+        "full_90s_last_7d",
+        "full_90s_last_14d",
+        "full_90s_last_28d",
+        "matches_with_rest_le_3d_last_30d",
+        "matches_with_rest_le_4d_last_30d",
+        "matches_with_rest_le_6d_last_30d",
+        "minutes_median_last_5",
+        "minutes_median_last_10",
+        "starts_last_10_matches",
+        "appearances_last_10_matches",
+        "avg_minutes_last_10",
+        "is_champions_league",
+        "is_european_fixture",
+        "is_domestic_cup",
+        "is_league",
+        "ucl_minutes_last_7d",
+        "ucl_minutes_last_14d",
+        "ucl_minutes_last_21d",
+        "ucl_matches_last_30d",
+        "cup_minutes_last_7d",
+        "cup_minutes_last_14d",
+        "cup_matches_last_30d",
+        "days_since_european_match",
+        "post_ucl_short_rest",
+        "pl_after_ucl_with_short_rest",
+        "minutes_last_3_matches",
+        "minutes_last_5_matches",
+        "starts_last_5",
+        "appearances_last_5",
+        "all_comp_minutes_pressure",
+        "avg_minutes_last_5",
+        "managed_minutes_last_5",
+        "full_match_exposure_last_5",
+        "avg_rating_last_3",
+        "avg_rating_last_5",
+        "shots_last_5",
+        "key_passes_last_5",
+        "tackles_last_5",
+        "interceptions_last_5",
+        "dribbles_attempts_last_5",
+        "duels_total_last_5",
+        "fouls_committed_last_5",
+        "recent_action_load_score",
+        "high_recent_action_load_by_position",
+        "minutes_last_5_matches_pos_z",
+        "minutes_last_3_matches_pos_z",
+        "min_last_7d_pos_z",
+        "all_comp_minutes_pressure_pos_z",
+        "recent_action_load_score_pos_z",
+        "shots_last_5_pos_z",
+        "key_passes_last_5_pos_z",
+        "tackles_last_5_pos_z",
+        "interceptions_last_5_pos_z",
+        "dribbles_attempts_last_5_pos_z",
+        "duels_total_last_5_pos_z",
+        "squad_injured_count",
+        "squad_soft_tissue_count",
+        "squad_avg_days_out",
+        "fixtures_missed_last_30d",
+        "fixtures_missed_last_90d",
+        "returning_from_injury",
+        "days_since_last_injury",
+        "recent_injury_return_flag",
+        "medium_recent_injury_return_flag",
+        "long_recent_injury_history_flag",
+        "missed_recent_fixture_flag",
+        "missed_multiple_recent_fixtures_flag",
+        "missed_fixtures_90d_pressure",
+        "high_squad_injury_pressure",
+        "high_soft_tissue_pressure",
+        "long_squad_absence_pressure",
+        "squad_injury_high_workload",
+        "soft_tissue_pressure_high_load",
+        "injury_context_score"
+    ],
+    "imputation_values": {
+        "start_flag": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "rest_days_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "squad_injured_count_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "squad_soft_tissue_count_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "squad_avg_days_out_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "days_since_last_injury_missing": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "fixtures_missed_last_30d_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "fixtures_missed_last_90d_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "returning_from_injury_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "acwr_ratio_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "min_last_7d_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "days_since_european_match_missing": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "rest_days": {
+            "type": "numerical",
+            "value": 4.0
+        },
+        "acwr_ratio": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "consecutive_away_games": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "min_last_7d": {
+            "type": "numerical",
+            "value": 90.0
+        },
+        "min_last_14d": {
+            "type": "numerical",
+            "value": 163.0
+        },
+        "min_last_21d": {
+            "type": "numerical",
+            "value": 231.0
+        },
+        "min_last_28d": {
+            "type": "numerical",
+            "value": 270.0
+        },
+        "starts_last_7d": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "starts_last_14d": {
+            "type": "numerical",
+            "value": 2.0
+        },
+        "starts_last_28d": {
+            "type": "numerical",
+            "value": 3.0
+        },
+        "full_90s_last_7d": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "full_90s_last_14d": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "full_90s_last_28d": {
+            "type": "numerical",
+            "value": 3.0
+        },
+        "matches_with_rest_le_3d_last_30d": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "matches_with_rest_le_4d_last_30d": {
+            "type": "numerical",
+            "value": 2.0
+        },
+        "matches_with_rest_le_6d_last_30d": {
+            "type": "numerical",
+            "value": 2.0
+        },
+        "minutes_median_last_5": {
+            "type": "numerical",
+            "value": 90.0
+        },
+        "minutes_median_last_10": {
+            "type": "numerical",
+            "value": 90.0
+        },
+        "starts_last_10_matches": {
+            "type": "numerical",
+            "value": 10.0
+        },
+        "appearances_last_10_matches": {
+            "type": "numerical",
+            "value": 10.0
+        },
+        "avg_minutes_last_10": {
+            "type": "numerical",
+            "value": 85.3
+        },
+        "is_champions_league": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "is_european_fixture": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "is_domestic_cup": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "is_league": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "ucl_minutes_last_7d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "ucl_minutes_last_14d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "ucl_minutes_last_21d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "ucl_matches_last_30d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "cup_minutes_last_7d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "cup_minutes_last_14d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "cup_matches_last_30d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "days_since_european_match": {
+            "type": "numerical",
+            "value": 25.0
+        },
+        "post_ucl_short_rest": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "pl_after_ucl_with_short_rest": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "minutes_last_3_matches": {
+            "type": "numerical",
+            "value": 264.0
+        },
+        "minutes_last_5_matches": {
+            "type": "numerical",
+            "value": 427.0
+        },
+        "starts_last_5": {
+            "type": "numerical",
+            "value": 5.0
+        },
+        "appearances_last_5": {
+            "type": "numerical",
+            "value": 5.0
+        },
+        "all_comp_minutes_pressure": {
+            "type": "numerical",
+            "value": 0.9488888888888889
+        },
+        "avg_minutes_last_5": {
+            "type": "numerical",
+            "value": 86.2
+        },
+        "managed_minutes_last_5": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "full_match_exposure_last_5": {
+            "type": "numerical",
+            "value": 4.0
+        },
+        "avg_rating_last_3": {
+            "type": "numerical",
+            "value": 7.133333333333334
+        },
+        "avg_rating_last_5": {
+            "type": "numerical",
+            "value": 7.15
+        },
+        "shots_last_5": {
+            "type": "numerical",
+            "value": 4.0
+        },
+        "key_passes_last_5": {
+            "type": "numerical",
+            "value": 4.0
+        },
+        "tackles_last_5": {
+            "type": "numerical",
+            "value": 7.0
+        },
+        "interceptions_last_5": {
+            "type": "numerical",
+            "value": 3.0
+        },
+        "dribbles_attempts_last_5": {
+            "type": "numerical",
+            "value": 5.0
+        },
+        "duels_total_last_5": {
+            "type": "numerical",
+            "value": 39.0
+        },
+        "fouls_committed_last_5": {
+            "type": "numerical",
+            "value": 4.0
+        },
+        "recent_action_load_score": {
+            "type": "numerical",
+            "value": 70.0
+        },
+        "high_recent_action_load_by_position": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "minutes_last_5_matches_pos_z": {
+            "type": "numerical",
+            "value": 0.429595461274666
+        },
+        "minutes_last_3_matches_pos_z": {
+            "type": "numerical",
+            "value": 0.5069423317262335
+        },
+        "min_last_7d_pos_z": {
+            "type": "numerical",
+            "value": 0.149699363929815
+        },
+        "all_comp_minutes_pressure_pos_z": {
+            "type": "numerical",
+            "value": 0.4715803370264217
+        },
+        "recent_action_load_score_pos_z": {
+            "type": "numerical",
+            "value": 0.21782660677893992
+        },
+        "shots_last_5_pos_z": {
+            "type": "numerical",
+            "value": 0.001289855847985957
+        },
+        "key_passes_last_5_pos_z": {
+            "type": "numerical",
+            "value": -0.18127927639569755
+        },
+        "tackles_last_5_pos_z": {
+            "type": "numerical",
+            "value": 0.10998272418250167
+        },
+        "interceptions_last_5_pos_z": {
+            "type": "numerical",
+            "value": 0.009180785529273497
+        },
+        "dribbles_attempts_last_5_pos_z": {
+            "type": "numerical",
+            "value": -0.14647941638916953
+        },
+        "duels_total_last_5_pos_z": {
+            "type": "numerical",
+            "value": 0.234795275259761
+        },
+        "squad_injured_count": {
+            "type": "numerical",
+            "value": 2.0
+        },
+        "squad_soft_tissue_count": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "squad_avg_days_out": {
+            "type": "numerical",
+            "value": 150.0
+        },
+        "fixtures_missed_last_30d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "fixtures_missed_last_90d": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "returning_from_injury": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "days_since_last_injury": {
+            "type": "numerical",
+            "value": 999.0
+        },
+        "recent_injury_return_flag": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "medium_recent_injury_return_flag": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "long_recent_injury_history_flag": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "missed_recent_fixture_flag": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "missed_multiple_recent_fixtures_flag": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "missed_fixtures_90d_pressure": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "high_squad_injury_pressure": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "high_soft_tissue_pressure": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "long_squad_absence_pressure": {
+            "type": "numerical",
+            "value": 1.0
+        },
+        "squad_injury_high_workload": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "soft_tissue_pressure_high_load": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "injury_context_score": {
+            "type": "numerical",
+            "value": 0.0
+        },
+        "is_home": {
+            "type": "categorical",
+            "value": "False"
+        },
+        "is_substitute": {
+            "type": "categorical",
+            "value": "False"
+        },
+        "player_position": {
+            "type": "categorical",
+            "value": "D"
+        },
+        "player_role_v6": {
+            "type": "categorical",
+            "value": "core_starter"
+        }
+    },
+    "auc": 0.6752579904804439,
+    "pr_auc": 0.4694956462809039,
+    "f1_at_0_50": 0.4841628959276018,
+    "precision_at_0_50": 0.44490644490644493,
+    "recall_at_0_50": 0.5310173697270472,
+    "balanced_accuracy_at_0_50": 0.637019753198461,
+    "operating_policy": {
+        "policy_name": "v6_balanced_role_aware_monitoring",
+        "model_name": "V6 No Competition",
+        "target": "v6_role_adjusted_fatigue_performance_risk",
+        "core_starter_threshold": 0.5,
+        "rotation_player_threshold": 0.6,
+        "selection_metric": "best_f1_from_role_specific_grid",
+        "interpretation": "V6 is a staff-support monitoring model. A positive flag indicates that the player should be reviewed because their workload, rest pattern, competition sequence, role context, and injury context resemble situations historically associated with underperformance or managed minutes."
+    },
+    "feature_groups": {
+        "role_context": [
+            "player_position",
+            "player_role_v6",
+            "is_home",
+            "is_substitute",
+            "start_flag",
+            "minutes_median_last_5",
+            "minutes_median_last_10",
+            "starts_last_10_matches",
+            "appearances_last_10_matches",
+            "avg_minutes_last_10"
+        ],
+        "missingness_context": [
+            "rest_days_missing",
+            "squad_injured_count_missing",
+            "squad_soft_tissue_count_missing",
+            "squad_avg_days_out_missing",
+            "days_since_last_injury_missing",
+            "fixtures_missed_last_30d_missing",
+            "fixtures_missed_last_90d_missing",
+            "returning_from_injury_missing",
+            "acwr_ratio_missing",
+            "min_last_7d_missing",
+            "days_since_european_match_missing"
+        ],
+        "workload_recovery_windows": [
+            "rest_days",
+            "acwr_ratio",
+            "consecutive_away_games",
+            "min_last_7d",
+            "min_last_14d",
+            "min_last_21d",
+            "min_last_28d",
+            "starts_last_7d",
+            "starts_last_14d",
+            "starts_last_28d",
+            "full_90s_last_7d",
+            "full_90s_last_14d",
+            "full_90s_last_28d",
+            "matches_with_rest_le_3d_last_30d",
+            "matches_with_rest_le_4d_last_30d",
+            "matches_with_rest_le_6d_last_30d"
+        ],
+        "competition_sequence_load": [
+            "is_champions_league",
+            "is_european_fixture",
+            "is_domestic_cup",
+            "is_league",
+            "ucl_minutes_last_7d",
+            "ucl_minutes_last_14d",
+            "ucl_minutes_last_21d",
+            "ucl_matches_last_30d",
+            "cup_minutes_last_7d",
+            "cup_minutes_last_14d",
+            "cup_matches_last_30d",
+            "days_since_european_match",
+            "post_ucl_short_rest",
+            "pl_after_ucl_with_short_rest"
+        ],
+        "recent_action_load": [
+            "shots_last_5",
+            "key_passes_last_5",
+            "tackles_last_5",
+            "interceptions_last_5",
+            "dribbles_attempts_last_5",
+            "duels_total_last_5",
+            "fouls_committed_last_5",
+            "recent_action_load_score",
+            "high_recent_action_load_by_position"
+        ],
+        "position_adjusted_load": [
+            "minutes_last_5_matches_pos_z",
+            "minutes_last_3_matches_pos_z",
+            "min_last_7d_pos_z",
+            "all_comp_minutes_pressure_pos_z",
+            "recent_action_load_score_pos_z",
+            "shots_last_5_pos_z",
+            "key_passes_last_5_pos_z",
+            "tackles_last_5_pos_z",
+            "interceptions_last_5_pos_z",
+            "dribbles_attempts_last_5_pos_z",
+            "duels_total_last_5_pos_z"
+        ],
+        "injury_context": [
+            "squad_injured_count",
+            "squad_soft_tissue_count",
+            "squad_avg_days_out",
+            "fixtures_missed_last_30d",
+            "fixtures_missed_last_90d",
+            "returning_from_injury",
+            "days_since_last_injury",
+            "recent_injury_return_flag",
+            "medium_recent_injury_return_flag",
+            "long_recent_injury_history_flag",
+            "missed_recent_fixture_flag",
+            "missed_multiple_recent_fixtures_flag",
+            "missed_fixtures_90d_pressure",
+            "high_squad_injury_pressure",
+            "high_soft_tissue_pressure",
+            "long_squad_absence_pressure",
+            "squad_injury_high_workload",
+            "soft_tissue_pressure_high_load",
+            "injury_context_score"
+        ],
+        "recent_baseline_form": [
+            "avg_rating_last_3",
+            "avg_rating_last_5"
+        ]
+    }
+}

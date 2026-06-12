@@ -1,0 +1,53 @@
+CatBoost Performance Decrease Model
+============================================================
+
+Model setup
+------------------------------------------------------------
+Model type: CatBoostClassifier
+Target: performance_decrease
+Train seasons: 2022-2023, 2023-2024
+Test season: 2024-2025
+Train rows: 4,657
+Test rows: 2,605
+Number of features: 40
+Best iteration: 85
+
+Test metrics
+------------------------------------------------------------
+AUC-ROC: 0.7659
+Accuracy: 0.6868
+Balanced accuracy: 0.6896
+Precision: 0.4982
+Recall: 0.6970
+F1-score: 0.5811
+
+Confusion matrix
+------------------------------------------------------------
+TN: 1,223
+FP: 570
+FN: 246
+TP: 566
+
+Top 20 features
+------------------------------------------------------------
+                      feature  importance
+            rating_prev_3_avg   58.241426
+                is_substitute    8.951266
+                     opponent    8.084765
+       consecutive_away_games    3.382483
+                  player_team    3.345085
+              player_position    1.608419
+         effort_per_90_last_5    1.476960
+                effort_last_3    1.126118
+         minutes_last_14_days    1.110352
+                  competition    1.080900
+                effort_last_5    1.043536
+                    rest_days    0.992792
+matches_since_last_ucl_capped    0.806917
+                  min_last_7d    0.799537
+                 season_label    0.788943
+          matches_last_7_days    0.784568
+         previous_competition    0.766740
+                   acwr_ratio    0.756726
+          minutes_last_7_days    0.745798
+         effort_per_90_last_3    0.671769
