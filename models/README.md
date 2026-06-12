@@ -1,124 +1,76 @@
 # Fixture IQ Models
 
-This directory contains trained machine learning models and associated data for the Fixture IQ project.
+Trained machine learning models for player-match congestion and performance-risk monitoring. The repository contains two model families: **XGBoost V4B** (active, deployed in dashboard) and **CatBoost V6** (legacy, notebook experiments).
 
-## Models
+## Model Families
 
-### CatBoostClassifier - Player Performance Decrease Prediction
+### XGBoost V4B (`XgBoost/`)
 
-**Location**: `CatBoostClassifier/`
+The production model deployed in the dashboard. A gradient-boosted decision-tree ensemble trained on 68,700+ player-match observations (2022–2025) to predict a binary **fatigue-performance risk** label.
 
-A predictive model that identifies players at risk of performance decline in their next match, enabling:
-- Early injury prevention through targeted interventions
-- Optimized squad rotation decisions
-- Data-driven performance preservation
+- **Algorithm**: `XGBClassifier` (XGBoost 3.x)
+- **Variant**: `v4b_no_competition` — excludes raw competition one-hot encoding for interpretability
+- **Features**: 75 (74 numeric + 1 categorical `player_position`), 77 after one-hot expansion
+- **Target**: `fatigue_performance_risk` = performance underperformance OR role-adjusted load reduction with fatigue context
+- **Temporal split**: Train 2022 (5,749), Validation 2023 (6,479), Test 2024 (6,771)
+- **Key metrics**:
+  - AUC-ROC: 0.634
+  - AUC-PR: 0.422 (1.38× over baseline 0.305)
+  - Best F1 threshold: 0.435 (precision 0.351, recall 0.839)
+- **Role-specific thresholds**: core_starter ≥ 0.45, rotation_player ≥ 0.50
+- **Artifacts**: `fatigue_monitor/models/xgboost_v4b/` (model.pkl, preprocessor.pkl, metadata.json)
+- **Training notebook**: `XgBoost/XG_Boost.ipynb`
+- **Deployment**: loaded by `fatigue_monitor/src/prediction_v4b.py`, exported via `dashboard/export_data.py`
 
-**Key Metrics**:
-- AUC-ROC: 0.7714 (test set)
-- F1-Score: 0.5986
-- Catches 91% of true performance declines
-- Only 24% false alarm rate
+### CatBoost V6 (`CatBoostClassifier/`)
 
-**Data Used**:
-- 2,361 training matches (2022-2023 season)
-- 674 test matches (2023-2024 season)
-- 11 injury-related features
-- 38 performance & workload features
+A complementary role-adjusted performance-risk model (legacy — not used by dashboard). Broader than V4B because it incorporates recent player form baselines (`avg_rating_last_3`, `avg_rating_last_5`) alongside workload features.
 
-See `CatBoostClassifier/README.md` for full documentation.
+- **Algorithm**: `CatBoostClassifier`
+- **Final variant**: `V6 No Competition` (100 features)
+- **Sensitivity variant**: `V6 No Competition No Rating Baseline` (98 features, excludes form)
+- **Target**: `v6_role_adjusted_fatigue_performance_risk`
+- **Temporal split**: Train seasons < 2024, Test 2024
+- **Key metrics (V6 No Competition)**:
+  - AUC-ROC: 0.6753
+  - AUC-PR: 0.4695
+  - F1: 0.4842 (precision 0.4449, recall 0.5310)
+- **Role-specific thresholds**: core_starter ≥ 0.50, rotation_player ≥ 0.60
+- **Artifacts**: `CatBoostClassifier/outputs/` (.cbm model files, metadata, CSVs, PNGs)
+- **Training notebook**: `CatBoostClassifier/CatBoost.ipynb`
 
----
+**When to use which**: XGBoost V4B is the primary trainer-facing fatigue/workload score (active). CatBoost V6 is a legacy reference model not deployed in the dashboard.
 
-## Data Structure
+## Directory Structure
 
 ```
 models/
-├── CatBoostClassifier/
-│   ├── 01_player_performance_decrease_model.ipynb    (main notebook)
-│   ├── README.md                                      (model documentation)
-│   └── data/
-│       ├── API/                          (multi-competition player/team stats)
-│       │   ├── API_SEASON_2022_2023/     (CSVs for PL, CL, FA Cup, League Cup)
-│       │   └── API_SEASON_2023_2024/
-│       └── injuries/                     (processed injury data)
-│           └── processed_injuries/       (injury spells, burden metrics)
+├── XgBoost/
+│   └── XG_Boost.ipynb              # Training notebook with all version comparisons
+│
+└── CatBoostClassifier/
+    ├── CatBoost.ipynb              # Training notebook
+    └── outputs/                    # V4/V5/V6 artifacts, CSVs, PNGs
+        ├── *.cbm                   # Serialised CatBoost models
+        ├── *metadata.json          # Feature importances, policies
+        ├── csvs/                   # Comparison tables, predictions
+        └── pngs/                   # SHAP plots, threshold curves
 ```
 
----
+Production artifacts are at `fatigue_monitor/models/xgboost_v4b/`.
 
-## Quick Start
 
-1. **View the Model**: Open `CatBoostClassifier/01_player_performance_decrease_model.ipynb`
-2. **Understand the Data**: Check API and injury data in `CatBoostClassifier/data/`
-3. **Review Results**: See SHAP analysis, threshold optimization, and performance metrics in notebook
+## Key Design Choices
 
----
+- **Temporal splitting**: both models train on past seasons and evaluate on the most recent season, preventing future leakage.
+- **SHAP interpretability**: both models use TreeSHAP for global and local explanations.
+- **Role-specific thresholds**: core starters and rotation players have different alert thresholds reflecting their different workload profiles.
+- **No medical diagnosis**: both models are monitoring-support tools, not clinical fatigue detectors.
 
 ## Data Sources
 
-- **API Data**: Multi-competition player statistics extracted from official APIs
-  - Premier League, Champions League, FA Cup, League Cup, Community Shield
-  - Seasons: 2022-2023, 2023-2024
-  
-- **Injury Data**: Processed injury records from Transfermarkt
-  - Individual injury timelines with recovery windows
-  - Team-level injury burden metrics
-  - Match-outcome injury data
+- Master CSV: `Data/Fixture_IQ_Data_Seasons_2022-2025.csv` (~68,700 rows, 5 competitions, 3 seasons)
+- Extraction: `Data_Extraction/` (API-Football + FBref pipelines)
 
----
 
-## Model Architecture
-
-**Algorithm**: CatBoostClassifier (Gradient Boosting)
-- Handles categorical variables natively
-- Feature importance via SHAP
-- Balanced class weights for fairness
-- 49 features (form + workload + injury + context)
-
-**Target Variable**: Context-adjusted performance decrease
-- Normalized for match difficulty and opponent strength
-- Fair assessment independent of fixture type
-- Binary classification (0 = maintain form, 1 = decline risk)
-
----
-
-## Key Findings
-
-1. **Form Dominance (71.5% importance)**: Recent performance is the strongest predictor
-2. **Injury Matters (10.9% importance)**: Recovery status adds complementary signal
-3. **Workload Effect (8.1% importance)**: Cumulative fatigue accumulates linearly
-4. **Context Weak Effect (5.9% importance)**: Already captured by categorical features
-5. **Regression to Mean**: High recent form increases decline risk (natural reversion)
-
----
-
-## Deployment Status
-
-✅ **Production Ready**
-- Validated temporal generalization (2022-23 → 2023-24)
-- Zero data leakage confirmed
-- Fair predictions across match contexts
-- SHAP interpretability for all predictions
-- Optimal threshold identified (0.60)
-
-⚠️ **Operational Integration Required**
-- Combine with coaching expertise
-- Real-time injury monitoring integration
-- Quarterly model drift checks
-- Annual retraining on new seasons
-
----
-
-## Future Enhancements
-
-Potential improvements (requiring additional data):
-- Advanced injury severity scores
-- Player aging/career stage factors
-- Tactical system awareness
-- Wearable sensor integration
-
----
-
-For detailed documentation, see individual model READMEs.
-
-*Last Updated: May 26, 2026*
+*Last Updated: June 2026*
